@@ -1,0 +1,7 @@
+# Model feature weights (updated post-match via backprop)
+iteration: 0
+alpha_fatigue_weight: 1.0
+alpha_intensity_weight: 0.8
+alpha_recovery_weight: 0.6
+loss_history: []
+last_updated: "2026-06-03T00:00:00"

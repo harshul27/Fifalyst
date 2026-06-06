@@ -1,0 +1,72 @@
+name: FIFA Shadow Coach Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Trigger daily at 00:00 UTC (adjust TZ as needed)
+  workflow_dispatch:     # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write        # Allow auto-commit to main
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for commit detection
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Configure Git (for auto-commit)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "FIFA Shadow Coach Bot"
+
+      - name: Execute pipeline
+        id: pipeline_run
+        run: |
+          python src/pipeline.py
+          echo "status=success" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Check for modified parquet and config files
+        id: changes
+        run: |
+          # Check if any .parquet or .yaml config files were modified
+          if git diff --quiet data/ config/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            git status
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git add data/*.parquet data/**/*.parquet config/*.yaml
+          git commit -m "chore: auto-update parquet assets and model weights [$(date -u +'%Y-%m-%dT%H:%M:%SZ')]"
+          git push origin main
+        continue-on-error: true
+
+      - name: Report pipeline status
+        if: always()
+        run: |
+          if [ "${{ steps.pipeline_run.outputs.status }}" = "success" ]; then
+            echo "✓ Pipeline completed successfully"
+            exit 0
+          else
+            echo "✗ Pipeline encountered an error (see logs above)"
+            exit 1
+          fi

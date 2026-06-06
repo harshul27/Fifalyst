@@ -1,0 +1,75 @@
+=== COMPLETE PROJECT STRUCTURE ===
+
+Location: C:\Users\owner\Documents\Claude\Projects\FIFA RT Pred Eng.
+Last Updated: Sat Jun  6 21:39:46 UTC 2026
+
+📁 Directory Tree:
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./.github
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./.github/workflows
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./.github/workflows/match_pipeline.yml
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./.gitignore
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./app.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./CLAUDE.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./config
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./config/feature_weights.yaml
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./config/player_metadata.yaml
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./config/sim_config.yaml
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./data
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./data/.gitkeep
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./data/database.duckdb
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./data/latest_squad_state.parquet
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./data/model_config.json
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./DEPLOY_STEPS.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./Dockerfile
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./ENTERPRISE_ARCHITECTURE.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./GITHUB_SETUP.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./OPEN_SOURCE_ARCHITECTURE.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./QUICKSTART.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./QUICK_START.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./README.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./REALTIME_SETUP.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./render.yaml
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./RENDER_CHECKLIST.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./RENDER_DEPLOY.md
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./requirements.txt
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./run_streamlit.sh
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/agent_simple.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/app.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/app_realtime.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/data_stream.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/main.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/model.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/pipeline.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/real_time_engine.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/storage.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/__init__.py
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/__pycache__
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/__pycache__/model.cpython-310.pyc
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/__pycache__/pipeline.cpython-310.pyc
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./src/__pycache__/__init__.cpython-310.pyc
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./tests
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./tests/.gitkeep
+/sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./test_deployment.py
+
+📄 Core Files:
+-rwx------ 1 practical-amazing-keller practical-amazing-keller  739 Jun  6 21:39 CLAUDE.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 6.0K Jun  6 21:39 DEPLOY_STEPS.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller  273 Jun  6 21:39 Dockerfile
+-rwx------ 1 practical-amazing-keller practical-amazing-keller  39K Jun  6 21:39 ENTERPRISE_ARCHITECTURE.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 6.8K Jun  6 21:39 GITHUB_SETUP.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller  23K Jun  6 21:39 OPEN_SOURCE_ARCHITECTURE.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 2.9K Jun  6 21:39 QUICKSTART.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 3.9K Jun  6 21:39 QUICK_START.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 1.3K Jun  6 21:39 README.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 7.3K Jun  6 21:39 REALTIME_SETUP.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 1.4K Jun  6 21:39 RENDER_CHECKLIST.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 4.8K Jun  6 21:39 RENDER_DEPLOY.md
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 7.4K Jun  6 21:39 app.py
+-rwx------ 1 practical-amazing-keller practical-amazing-keller  714 Jun  6 21:39 render.yaml
+-rwx------ 1 practical-amazing-keller practical-amazing-keller  165 Jun  6 21:39 requirements.txt
+-rwx------ 1 practical-amazing-keller practical-amazing-keller 2.3K Jun  6 21:39 test_deployment.py
+
+📦 Directories:
+drwx------ 1 practical-amazing-keller practical-amazing-keller 4.0K Jun  6 21:39 /sessions/practical-amazing-keller/mnt/FIFA RT Pred Eng./

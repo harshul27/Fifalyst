@@ -1,0 +1,33 @@
+# Player baseline attributes and position mappings
+positions:
+  GK: "Goalkeeper"
+  CB: "Center Back"
+  LB: "Left Back"
+  RB: "Right Back"
+  CM: "Central Midfielder"
+  CAM: "Attacking Midfielder"
+  CF: "Center Forward"
+  LW: "Left Winger"
+  RW: "Right Winger"
+
+baseline_stamina:
+  GK: 85.0
+  CB: 90.0
+  LB: 88.0
+  RB: 88.0
+  CM: 92.0
+  CAM: 85.0
+  CF: 88.0
+  LW: 86.0
+  RW: 86.0
+
+substitution_thresholds:
+  GK: 30.0
+  CB: 35.0
+  LB: 33.0
+  RB: 33.0
+  CM: 38.0
+  CAM: 35.0
+  CF: 36.0
+  LW: 34.0
+  RW: 34.0

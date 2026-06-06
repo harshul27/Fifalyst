@@ -1,0 +1,20 @@
+# Simulation hyperparameters
+simulation:
+  n_simulations: 10000
+  base_goal_intensity_lambda: 2.5
+  tau_decay: 0.5
+  min_pes_floor: 15.0
+  max_pes_ceiling: 100.0
+
+# Match constraints
+match:
+  total_minutes: 90
+  substitute_window_start: 45
+  substitute_window_end: 85
+  max_substitutions: 3
+
+# Feature weights (auto-updated by backprop)
+feature_weights:
+  alpha_fatigue: 1.0
+  alpha_intensity: 0.8
+  alpha_recovery: 0.6
