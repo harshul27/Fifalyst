@@ -132,7 +132,7 @@ class MasterOrchestrator:
             fitness_tasks = [
                 self.fitness_model.run(
                     match.get("match_id"),
-                    match.get("data", {}),
+                    match,
                 )
                 for match in matches_data[:self.max_concurrent_matches]
             ]
@@ -143,7 +143,7 @@ class MasterOrchestrator:
             live_match_tasks = [
                 self.live_match.run(
                     match.get("match_id"),
-                    match.get("data", {}),
+                    match,
                 )
                 for match in matches_data[:self.max_concurrent_matches]
             ]
@@ -154,7 +154,7 @@ class MasterOrchestrator:
             recommendation_tasks = [
                 self.recommendation_engine.run(
                     match.get("match_id"),
-                    match.get("data", {}),
+                    match,
                 )
                 for match in matches_data[:self.max_concurrent_matches]
             ]
