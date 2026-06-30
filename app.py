@@ -275,13 +275,20 @@ st.divider()
 
 # ==================== SQUAD ENERGY & SIMULATION ====================
 
+# CRITICAL: Find match_id FIRST before fetching fitness
+match_id = None
+for match in get_live_matches():
+    if match.get("home_team") == home_team and match.get("away_team") == away_team:
+        match_id = match.get("match_id")
+        break
+
 col_left, col_right = st.columns([1.2, 1])
 
 with col_left:
     st.subheader(f"Squad Fitness — {home_team}")
     st.caption("Real-time fitness estimation from agent fitness model")
 
-    home_fitness = get_team_energy_from_agents(home_team)
+    home_fitness = get_team_energy_from_agents(home_team, match_id)
     players = home_fitness.get("players", {})
 
     if players and isinstance(players, dict):
@@ -313,7 +320,7 @@ with col_right:
     st.subheader("Match Simulation")
 
     home_energy = home_fitness.get("energy", 80.0)
-    away_fitness = get_team_energy_from_agents(away_team)
+    away_fitness = get_team_energy_from_agents(away_team, match_id)
     away_energy = away_fitness.get("energy", 80.0)
 
     pes_col1, pes_col2 = st.columns(2)
@@ -362,13 +369,6 @@ with col_right:
 st.divider()
 st.header("AI Substitution Recommendations")
 st.caption("Powered by RecommendationEngineAgent")
-
-# Find match ID for selected teams
-match_id = None
-for match in get_live_matches():
-    if match.get("home_team") == home_team and match.get("away_team") == away_team:
-        match_id = match.get("match_id")
-        break
 
 if match_id:
     recs = get_recommendations(match_id)

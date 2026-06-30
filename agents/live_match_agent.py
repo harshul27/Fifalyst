@@ -35,16 +35,24 @@ class LiveMatchAgent(BaseAgent):
 
             logger.info(f"LiveMatchAgent: Tracking match {match_id}")
 
+            home_team = match_data.get("home_team", "Unknown")
+            away_team = match_data.get("away_team", "Unknown")
+
+            # Generate 11 starting players per team
+            positions = ["GK", "CB", "CB", "LB", "RB", "CM", "CM", "LW", "RW", "ST", "ST"]
+            home_lineup = [{"player_id": f"{home_team}_P{i}", "position": positions[i], "status": "on"} for i in range(11)]
+            away_lineup = [{"player_id": f"{away_team}_P{i}", "position": positions[i], "status": "on"} for i in range(11)]
+
             match_state = {
                 "match_id": match_id,
                 "status": match_data.get("status", "UNKNOWN"),
                 "minute": match_data.get("minute", 0),
-                "home_team": match_data.get("home_team"),
-                "away_team": match_data.get("away_team"),
+                "home_team": home_team,
+                "away_team": away_team,
                 "home_score": match_data.get("home_score", 0),
                 "away_score": match_data.get("away_score", 0),
-                "home_lineup": [],
-                "away_lineup": [],
+                "home_lineup": home_lineup,
+                "away_lineup": away_lineup,
                 "substitutions": [],
                 "timestamp": datetime.utcnow().isoformat(),
             }

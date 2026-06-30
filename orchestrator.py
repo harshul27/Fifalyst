@@ -173,6 +173,14 @@ class MasterOrchestrator:
                 recommendation_results,
             )
 
+            # Store orchestrator status to Redis
+            status_data = {
+                "cycle_count": self.cycle_count,
+                "status": "running",
+                "timestamp": datetime.utcnow().isoformat(),
+            }
+            self.redis_client.setex("fifa:orchestrator:status", 60, json.dumps(status_data))
+
             logger.info(f"=== Cycle {self.cycle_count} complete ===")
 
         except Exception as e:
