@@ -21,18 +21,15 @@ st.sidebar.info("""
 - Real-time ESPN data
 """)
 
-col1, col2, col3 = st.sidebar.columns(3)
+col1, col2 = st.sidebar.columns(2)
 if col1.button("🔄 Refresh", use_container_width=True):
     st.rerun()
-
-if col2.button("⚙️ Cache Clear", use_container_width=True):
+if col2.button("⚙️ Clear Cache", use_container_width=True):
     st.cache_data.clear()
     st.rerun()
 
-auto_refresh = st.sidebar.toggle("Auto-refresh (5min)", value=False)
-
 st.sidebar.divider()
-st.sidebar.caption("Powered by ESPN API + AI Fitness Models")
+st.sidebar.caption("Real-time ESPN data | AI Fitness Models | 5-min refresh")
 
 # ==================== MAIN CONTENT ====================
 st.title("🎯 FIFA World Cup 2026 Live Analytics")
@@ -134,9 +131,3 @@ col1.metric("ESPN API", "🟢 Connected")
 col2.metric("Fitness Model", "🟢 Ready")
 col3.metric("Last Update", live_data.get('timestamp', 'Never')[:19])
 col4.metric("Matches Tracked", len(matches))
-
-if auto_refresh:
-    import time
-    st.write("Auto-refreshing in 5 minutes...")
-    time.sleep(300)
-    st.rerun()

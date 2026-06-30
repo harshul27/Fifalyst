@@ -3,8 +3,6 @@ import asyncio
 import logging
 import requests
 from typing import List, Dict, Any
-from datetime import datetime
-from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
@@ -13,9 +11,7 @@ class LiveMetricsFetcher:
 
     ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world"
 
-    def __init__(self, cache_dir=".cache/live_data"):
-        self.cache_dir = Path(cache_dir)
-        self.cache_dir.mkdir(parents=True, exist_ok=True)
+    def __init__(self):
         self.session = requests.Session()
         logger.info("✓ LiveMetricsFetcher initialized (real ESPN API)")
 
@@ -23,7 +19,9 @@ class LiveMetricsFetcher:
         """Fetch live/scheduled World Cup matches from ESPN"""
         try:
             loop = asyncio.get_event_loop()
-            response = await loop.run_in_executor(None, self._fetch_espn_scoreboard)
+            response = await loop.run_in_executor(
+                None, lambda: self.session.get(f"{self.ESPN_BASE}/scoreboard", timeout=10)
+            )
             data = response.json()
 
             matches = []
@@ -74,10 +72,6 @@ class LiveMetricsFetcher:
             logger.error(f"✗ Failed to fetch ESPN: {e}")
             return []
 
-    def _fetch_espn_scoreboard(self):
-        """Blocking ESPN API call"""
-        return self.session.get(f"{self.ESPN_BASE}/scoreboard", timeout=10)
-
     def _parse_minute(self, clock_str: str) -> int:
         """Parse minute from clock string like '67:30'"""
         try:
@@ -87,16 +81,15 @@ class LiveMetricsFetcher:
 
     def _parse_lineup(self, lineup: List[Dict]) -> List[Dict[str, Any]]:
         """Parse ESPN lineup format into player list"""
-        players = []
-        for entry in lineup[:20]:  # first 20: typically 11 starters + bench
-            player = entry.get('athlete', {})
-            players.append({
-                'player_id': player.get('id', ''),
-                'name': player.get('displayName', ''),
+        return [
+            {
+                'player_id': entry.get('athlete', {}).get('id', ''),
+                'name': entry.get('athlete', {}).get('displayName', ''),
                 'position': entry.get('position', {}).get('abbreviation', 'MID'),
-                'status': 'active' if len(players) < 11 else 'bench'
-            })
-        return players
+                'status': 'active' if i < 11 else 'bench'
+            }
+            for i, entry in enumerate(lineup[:20])
+        ]
 
     async def close(self):
         self.session.close()

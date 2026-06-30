@@ -9,7 +9,6 @@ import json
 import logging
 from datetime import datetime
 from typing import Dict, List, Optional, Any
-import pandas as pd
 
 from pipeline.live_metrics_fetcher import LiveMetricsFetcher
 from pipeline.match_state_tracker import MatchStateTracker
@@ -35,8 +34,6 @@ class LiveMatchOrchestrator:
         self.fetcher = LiveMetricsFetcher()
         self.state_tracker = MatchStateTracker()
         self.fitness_calc = LiveFitnessCalculator()
-        self.live_matches = {}
-        self.last_update = None
 
     async def fetch_live_matches(self) -> List[Dict[str, Any]]:
         """Fetch live World Cup matches from ESPN"""
@@ -73,6 +70,8 @@ class LiveMatchOrchestrator:
             )
 
             # Calculate live fitness for all players
+            # ponytail: baseline_fitness derived from player_id hash (deterministic, arbitrary)
+            # Upgrade path: Load from real player ratings (FIFA, PES) for accuracy
             home_players = [
                 {
                     'player_id': p.get('player_id', p.get('name', 'unknown')),
@@ -80,7 +79,7 @@ class LiveMatchOrchestrator:
                     'position': p.get('position', 'MID'),
                     'baseline_fitness': 80 + (hash(str(p.get('player_id'))) % 20 - 10)
                 }
-                for p in (state.home_lineup if hasattr(state, 'home_lineup') else state.get('home_lineup', []))
+                for p in state.home_lineup
             ]
             away_players = [
                 {
@@ -89,7 +88,7 @@ class LiveMatchOrchestrator:
                     'position': p.get('position', 'MID'),
                     'baseline_fitness': 80 + (hash(str(p.get('player_id'))) % 20 - 10)
                 }
-                for p in (state.away_lineup if hasattr(state, 'away_lineup') else state.get('away_lineup', []))
+                for p in state.away_lineup
             ]
 
             # Mock live metrics (in production, fetch from Sofascore/ESPN)
@@ -137,7 +136,7 @@ class LiveMatchOrchestrator:
 
             result = {
                 'match_id': match_id,
-                'status': state.state if hasattr(state, 'state') else state.get('status', 'LIVE'),
+                'status': state.state,
                 'minute': minute,
                 'score': f"{home_score}-{away_score}",
                 'home_team': home_team,
@@ -155,21 +154,17 @@ class LiveMatchOrchestrator:
             return {}
 
     def _generate_recommendations(
-        self, state: Dict, fitness_scores: Dict, home_score: int, away_score: int
+        self, state, fitness_scores: Dict, home_score: int, away_score: int
     ) -> List[Dict]:
         """Generate substitution recommendations based on fatigue and team status"""
         recommendations = []
 
-        # Only recommend after 30 minutes
-        minute = state.minute if hasattr(state, 'minute') else state.get('minute', 0)
-        if minute < 30:
+        # Only recommend after 30 minutes (MatchState is a dataclass from match_state_tracker)
+        if state.minute < 30:
             return recommendations
 
         for team_key in ['home', 'away']:
-            subs_remaining = self.state_tracker.get_available_subs(
-                state.match_id if hasattr(state, 'match_id') else state.get('match_id', ''),
-                team_key
-            )
+            subs_remaining = self.state_tracker.get_available_subs(state.match_id, team_key)
             if subs_remaining <= 0:
                 continue
 
@@ -237,18 +232,6 @@ class LiveMatchOrchestrator:
         except Exception as e:
             logger.error(f"✗ Cycle failed: {e}")
             return {'matches': [], 'error': str(e), 'timestamp': datetime.now().isoformat()}
-
-    async def continuous_loop(self, interval_seconds: int = 300):
-        """Run continuous 5-minute refresh loop"""
-        logger.info(f"Starting live match monitoring loop (refresh every {interval_seconds}s)")
-
-        try:
-            while True:
-                await self.run_cycle()
-                await asyncio.sleep(interval_seconds)
-        except KeyboardInterrupt:
-            logger.info("Live monitoring stopped")
-
 
 # Singleton instance for Streamlit caching
 _orchestrator = None
