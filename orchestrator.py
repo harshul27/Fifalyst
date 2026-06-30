@@ -1,271 +1,272 @@
 """
-Master Orchestrator for FIFA World Cup Multi-Agent System
-
-Responsibilities:
-- Coordinate all 5 specialized agents
-- Manage 5-minute processing cycle
-- Emit events to Redis Pub/Sub
-- Track agent health and metrics
-- Execute agents in parallel for 8 concurrent matches
+FIFA World Cup 2026 - Simplified Live Match Orchestrator
+Coordinates data fetching, fitness calculation, and recommendations
+No agents needed - direct pipeline coordination
 """
 
 import asyncio
 import json
 import logging
 from datetime import datetime
-from typing import Any, Dict, List, Optional
-import redis
+from typing import Dict, List, Optional, Any
+import pandas as pd
 
-from agents.data_collection_agent import DataCollectionAgent
-from agents.fitness_model_agent import FitnessModelAgent
-from agents.live_match_agent import LiveMatchAgent
-from agents.recommendation_engine_agent import RecommendationEngineAgent
-from agents.feedback_agent import FeedbackAgent
+from pipeline.live_metrics_fetcher import LiveMetricsFetcher
+from pipeline.match_state_tracker import MatchStateTracker
+from pipeline.live_fitness_calculator import LiveFitnessCalculator
 
 logger = logging.getLogger(__name__)
 
 
-class MasterOrchestrator:
-    """
-    Master Orchestrator - Coordinates all agents and manages the processing pipeline
-    """
+class LiveMatchOrchestrator:
+    """Lightweight orchestrator for live World Cup match tracking"""
 
-    def __init__(
-        self,
-        redis_host: str = "localhost",
-        redis_port: int = 6379,
-        cycle_interval: int = 300,  # 5 minutes
-        max_concurrent_matches: int = 8,
-    ):
-        """
-        Initialize orchestrator
+    WC_TEAMS = {
+        "United States", "Mexico", "Canada", "Brazil", "Argentina", "Uruguay", "Paraguay",
+        "England", "France", "Germany", "Spain", "Netherlands", "Italy", "Portugal", "Belgium",
+        "Japan", "South Korea", "Australia", "Saudi Arabia", "Iran", "United Arab Emirates",
+        "Senegal", "Nigeria", "Morocco", "Cameroon", "Egypt", "Ivory Coast", "Tunisia",
+        "Costa Rica", "Panama", "New Zealand", "Indonesia", "Malaysia",
+        "Colombia", "Ecuador", "Denmark", "Sweden", "Poland", "Austria", "Czechia",
+        "Switzerland", "Serbia", "Norway", "Ghana", "Mali"
+    }
 
-        Args:
-            redis_host: Redis connection host
-            redis_port: Redis connection port
-            cycle_interval: Seconds between processing cycles
-            max_concurrent_matches: Max matches to process in parallel
-        """
-        self.redis_client = redis.Redis(
-            host=redis_host,
-            port=redis_port,
-            decode_responses=True,
-        )
+    def __init__(self):
+        self.fetcher = LiveMetricsFetcher()
+        self.state_tracker = MatchStateTracker()
+        self.fitness_calc = LiveFitnessCalculator()
+        self.live_matches = {}
+        self.last_update = None
 
-        self.cycle_interval = cycle_interval
-        self.max_concurrent_matches = max_concurrent_matches
-
-        # Initialize agents
-        self.data_collection = DataCollectionAgent(redis_host, redis_port)
-        self.fitness_model = FitnessModelAgent(redis_host, redis_port)
-        self.live_match = LiveMatchAgent(redis_host, redis_port)
-        self.recommendation_engine = RecommendationEngineAgent(redis_host, redis_port)
-        self.feedback = FeedbackAgent(redis_host, redis_port)
-
-        # Subscriptions for event listening
-        self.pubsub = self.redis_client.pubsub()
-        self.is_running = False
-        self.cycle_count = 0
-        self.start_time = None
-
-        logger.info("Initialized MasterOrchestrator with 5 agents")
-
-    async def run(self) -> None:
-        """Main orchestrator loop - runs continuously"""
-        self.is_running = True
-        self.start_time = datetime.utcnow()
-
+    async def fetch_live_matches(self) -> List[Dict[str, Any]]:
+        """Fetch live World Cup matches from ESPN"""
         try:
-            logger.info("Orchestrator started")
+            matches = await self.fetcher.fetch_live_matches()
+            # Filter to WC teams only
+            wc_matches = [
+                m for m in matches
+                if m.get('home_team') in self.WC_TEAMS and m.get('away_team') in self.WC_TEAMS
+            ]
+            logger.info(f"✓ Fetched {len(wc_matches)} WC matches from ESPN")
+            return wc_matches
+        except Exception as e:
+            logger.error(f"✗ Failed to fetch matches: {e}")
+            return []
 
-            while self.is_running:
-                cycle_start = datetime.utcnow()
-                self.cycle_count += 1
-
-                try:
-                    await self._process_cycle()
-
-                except Exception as e:
-                    logger.error(f"Cycle error: {e}")
-
-                # Wait until next cycle
-                elapsed = (datetime.utcnow() - cycle_start).total_seconds()
-                wait_time = max(0, self.cycle_interval - elapsed)
-
-                if wait_time > 0:
-                    logger.debug(f"Waiting {wait_time:.1f}s until next cycle")
-                    await asyncio.sleep(wait_time)
-
-        except KeyboardInterrupt:
-            logger.info("Orchestrator interrupted")
-        finally:
-            await self.shutdown()
-
-    async def _process_cycle(self) -> None:
-        """
-        Execute one complete processing cycle
-
-        Sequence:
-        1. Data Collection Agent fetches ESPN/Sofascore/Transfermarkt data
-        2. Live Match Agent updates match state
-        3. Fitness Model Agent computes player fitness
-        4. Recommendation Engine Agent generates substitution recommendations
-        5. Feedback Agent tracks outcomes
-        """
-        logger.info(f"=== Cycle {self.cycle_count} started ===")
-
+    async def process_match(self, match: Dict[str, Any]) -> Dict[str, Any]:
+        """Process single match: update state, calculate fitness, generate recommendations"""
         try:
-            # Step 1: Data Collection
-            logger.debug("Step 1: Data Collection")
-            collection_result = await self.data_collection.run()
-            matches_collected = collection_result.get("matches_processed", 0)
+            match_id = match.get('match_id', f"{match.get('home_team')}_{match.get('away_team')}")
+            minute = match.get('minute', 0)
 
-            if matches_collected == 0:
-                logger.info("No live matches, waiting for next cycle")
-                return
+            # Update match state
+            home_team = match.get('home_team')
+            away_team = match.get('away_team')
+            home_score = match.get('home_score', 0)
+            away_score = match.get('away_score', 0)
+            lineups = match.get('lineups', {})
 
-            # Get match data from collection result
-            matches_data = collection_result.get("matches", [])
-
-            # Step 2: Fitness Model (for each match in parallel)
-            logger.debug("Step 2: Fitness Model Computation")
-            fitness_tasks = [
-                self.fitness_model.run(
-                    match.get("match_id"),
-                    match,
-                )
-                for match in matches_data[:self.max_concurrent_matches]
-            ]
-            fitness_results = await asyncio.gather(*fitness_tasks, return_exceptions=True)
-
-            # Step 3: Live Match Agent (for each match in parallel)
-            logger.debug("Step 3: Live Match State Tracking")
-            live_match_tasks = [
-                self.live_match.run(
-                    match.get("match_id"),
-                    match,
-                )
-                for match in matches_data[:self.max_concurrent_matches]
-            ]
-            live_match_results = await asyncio.gather(*live_match_tasks, return_exceptions=True)
-
-            # Step 4: Recommendation Engine Agent (for each match in parallel)
-            logger.debug("Step 4: Substitution Recommendations")
-            recommendation_tasks = [
-                self.recommendation_engine.run(
-                    match.get("match_id"),
-                    match,
-                )
-                for match in matches_data[:self.max_concurrent_matches]
-            ]
-            recommendation_results = await asyncio.gather(*recommendation_tasks, return_exceptions=True)
-
-            # Step 5: Feedback Agent (post-match analysis, periodic)
-            logger.debug("Step 5: Feedback & Learning")
-            feedback_result = await self.feedback.run()
-
-            # Emit cycle complete event
-            await self._emit_cycle_complete(
-                self.cycle_count,
-                matches_collected,
-                fitness_results,
-                live_match_results,
-                recommendation_results,
+            state = self.state_tracker.update_match_state(
+                match_id, home_team, away_team, minute,
+                home_score, away_score,
+                lineups.get('home', []), lineups.get('away', [])
             )
 
-            # Store orchestrator status to Redis
-            status_data = {
-                "cycle_count": self.cycle_count,
-                "status": "running",
-                "timestamp": datetime.utcnow().isoformat(),
+            # Calculate live fitness for all players
+            home_players = [
+                {
+                    'player_id': p.get('player_id', p.get('name', 'unknown')),
+                    'name': p.get('name', ''),
+                    'position': p.get('position', 'MID'),
+                    'baseline_fitness': 80 + (hash(str(p.get('player_id'))) % 20 - 10)
+                }
+                for p in (state.home_lineup if hasattr(state, 'home_lineup') else state.get('home_lineup', []))
+            ]
+            away_players = [
+                {
+                    'player_id': p.get('player_id', p.get('name', 'unknown')),
+                    'name': p.get('name', ''),
+                    'position': p.get('position', 'MID'),
+                    'baseline_fitness': 80 + (hash(str(p.get('player_id'))) % 20 - 10)
+                }
+                for p in (state.away_lineup if hasattr(state, 'away_lineup') else state.get('away_lineup', []))
+            ]
+
+            # Mock live metrics (in production, fetch from Sofascore/ESPN)
+            live_metrics = [
+                {
+                    'player_id': p['player_id'],
+                    'running_load_pct': 80 + (hash(str(p['player_id'])) % 30 - 15)
+                }
+                for p in home_players + away_players
+            ]
+
+            # Calculate fitness for both teams
+            home_fitness_list = await self.fitness_calc.calculate_fitness(home_players, live_metrics, minute)
+            away_fitness_list = await self.fitness_calc.calculate_fitness(away_players, live_metrics, minute)
+
+            fitness_scores = {
+                'home': [
+                    {
+                        'name': p.name,
+                        'player_id': p.player_id,
+                        'fitness': p.current_fitness,
+                        'fatigue_pct': p.fatigue_pct,
+                        'minutes_on': minute,
+                        'status': p.fatigue_status
+                    }
+                    for p in home_fitness_list
+                ],
+                'away': [
+                    {
+                        'name': p.name,
+                        'player_id': p.player_id,
+                        'fitness': p.current_fitness,
+                        'fatigue_pct': p.fatigue_pct,
+                        'minutes_on': minute,
+                        'status': p.fatigue_status
+                    }
+                    for p in away_fitness_list
+                ]
             }
-            self.redis_client.setex("fifa:orchestrator:status", 60, json.dumps(status_data))
 
-            logger.info(f"=== Cycle {self.cycle_count} complete ===")
+            # Generate substitution recommendations
+            recommendations = self._generate_recommendations(
+                state, fitness_scores, match.get('home_score', 0), match.get('away_score', 0)
+            )
 
+            result = {
+                'match_id': match_id,
+                'status': state.state if hasattr(state, 'state') else state.get('status', 'LIVE'),
+                'minute': minute,
+                'score': f"{home_score}-{away_score}",
+                'home_team': home_team,
+                'away_team': away_team,
+                'home_fitness': fitness_scores.get('home', []),
+                'away_fitness': fitness_scores.get('away', []),
+                'recommendations': recommendations,
+                'timestamp': datetime.now().isoformat()
+            }
+
+            self.live_matches[match_id] = result
+            return result
         except Exception as e:
-            logger.error(f"Cycle {self.cycle_count} error: {e}")
+            logger.error(f"✗ Failed to process match: {e}")
+            return {}
 
-    async def _emit_cycle_complete(
-        self,
-        cycle_num: int,
-        matches_processed: int,
-        fitness_results: List[Any],
-        live_match_results: List[Any],
-        recommendation_results: List[Any],
-    ) -> None:
-        """Emit event when cycle completes"""
+    def _generate_recommendations(
+        self, state: Dict, fitness_scores: Dict, home_score: int, away_score: int
+    ) -> List[Dict]:
+        """Generate substitution recommendations based on fatigue and team status"""
+        recommendations = []
+
+        # Only recommend after 30 minutes
+        minute = state.minute if hasattr(state, 'minute') else state.get('minute', 0)
+        if minute < 30:
+            return recommendations
+
+        for team_key in ['home', 'away']:
+            subs_remaining = self.state_tracker.get_available_subs(
+                state.match_id if hasattr(state, 'match_id') else state.get('match_id', ''),
+                team_key
+            )
+            if subs_remaining <= 0:
+                continue
+
+            players = fitness_scores.get(team_key, [])
+            if not players:
+                continue
+
+            # Find tired starters (fitness < 50%, played > 30 min)
+            tired = [p for p in players if p.get('fitness', 100) < 50 and p.get('minutes_on', 0) > 30]
+            # Find fresh bench players (fitness > 80%, not used yet)
+            bench = [p for p in players if p.get('fitness', 100) > 80 and p.get('minutes_on', 0) == 0]
+
+            if tired and bench:
+                tired = sorted(tired, key=lambda x: x.get('fitness', 100))
+                bench = sorted(bench, key=lambda x: x.get('fitness', 100), reverse=True)
+
+                tired_player = tired[0]
+                fresh_player = bench[0]
+
+                # Confidence: higher fatigue % = higher confidence
+                fatigue_component = min(tired_player.get('fatigue_pct', 0) / 100, 1.0)
+                confidence = 0.60 + (fatigue_component * 0.35)  # 0.60-0.95 range
+
+                recommendations.append({
+                    'off': tired_player.get('name', 'Unknown'),
+                    'off_fitness': round(tired_player.get('fitness', 100), 1),
+                    'on': fresh_player.get('name', 'Unknown'),
+                    'on_fitness': round(fresh_player.get('fitness', 100), 1),
+                    'confidence': round(confidence, 3),
+                    'reason': 'HIGH_FATIGUE',
+                    'team': team_key,
+                    'subs_remaining': subs_remaining - 1
+                })
+
+        return sorted(recommendations, key=lambda x: x.get('confidence', 0), reverse=True)[:3]
+
+    async def run_cycle(self) -> Dict[str, Any]:
+        """Run one 5-minute processing cycle"""
         try:
-            payload = {
-                "cycle": cycle_num,
-                "timestamp": datetime.utcnow().isoformat(),
-                "matches_processed": matches_processed,
-                "agents_complete": {
-                    "data_collection": matches_processed,
-                    "fitness_model": len([r for r in fitness_results if not isinstance(r, Exception)]),
-                    "live_match": len([r for r in live_match_results if not isinstance(r, Exception)]),
-                    "recommendation_engine": len([r for r in recommendation_results if not isinstance(r, Exception)]),
-                    "feedback": "pending",
-                },
-                "uptime_seconds": (datetime.utcnow() - self.start_time).total_seconds(),
+            logger.info(f"\n{'='*70}")
+            logger.info(f"LIVE MATCH CYCLE - {datetime.now().strftime('%H:%M:%S')}")
+            logger.info(f"{'='*70}")
+
+            # Fetch live matches
+            matches = await self.fetch_live_matches()
+
+            if not matches:
+                logger.info("ℹ️  No live WC matches at this time")
+                return {'matches': [], 'timestamp': datetime.now().isoformat()}
+
+            # Process each match in parallel
+            tasks = [self.process_match(m) for m in matches]
+            results = await asyncio.gather(*tasks, return_exceptions=True)
+
+            processed = [r for r in results if isinstance(r, dict) and r]
+            self.last_update = datetime.now().isoformat()
+
+            logger.info(f"✓ Processed {len(processed)} matches")
+
+            return {
+                'matches': processed,
+                'count': len(processed),
+                'timestamp': self.last_update
             }
-
-            channel = "fifa:orchestrator:cycle_complete"
-            message = json.dumps(payload)
-            self.redis_client.publish(channel, message)
-
-            logger.debug(f"Emitted cycle complete event")
-
         except Exception as e:
-            logger.error(f"Cycle event emission error: {e}")
+            logger.error(f"✗ Cycle failed: {e}")
+            return {'matches': [], 'error': str(e), 'timestamp': datetime.now().isoformat()}
 
-    async def shutdown(self) -> None:
-        """Graceful shutdown"""
-        logger.info("Orchestrator shutting down...")
-        self.is_running = False
+    async def continuous_loop(self, interval_seconds: int = 300):
+        """Run continuous 5-minute refresh loop"""
+        logger.info(f"Starting live match monitoring loop (refresh every {interval_seconds}s)")
 
-        # Close subscriptions
-        if self.pubsub:
-            self.pubsub.close()
+        try:
+            while True:
+                await self.run_cycle()
+                await asyncio.sleep(interval_seconds)
+        except KeyboardInterrupt:
+            logger.info("Live monitoring stopped")
 
-        # Close Redis connection
-        if self.redis_client:
-            self.redis_client.close()
 
-        logger.info(f"Orchestrator shut down. Completed {self.cycle_count} cycles.")
+# Singleton instance for Streamlit caching
+_orchestrator = None
 
-    def get_status(self) -> Dict[str, Any]:
-        """Get orchestrator status"""
-        return {
-            "is_running": self.is_running,
-            "cycle_count": self.cycle_count,
-            "uptime_seconds": (datetime.utcnow() - self.start_time).total_seconds()
-            if self.start_time else 0,
-            "agents": {
-                "data_collection": "active",
-                "fitness_model": "active",
-                "live_match": "active",
-                "recommendation_engine": "active",
-                "feedback": "active",
-            },
-        }
+def get_orchestrator() -> LiveMatchOrchestrator:
+    """Get or create singleton orchestrator"""
+    global _orchestrator
+    if _orchestrator is None:
+        _orchestrator = LiveMatchOrchestrator()
+    return _orchestrator
 
 
 async def main():
-    """Main entry point"""
-    # Setup logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    )
-
-    orchestrator = MasterOrchestrator()
-
-    try:
-        await orchestrator.run()
-    except Exception as e:
-        logger.error(f"Fatal error: {e}")
-        raise
+    """Test orchestrator"""
+    logging.basicConfig(level=logging.INFO)
+    orch = LiveMatchOrchestrator()
+    result = await orch.run_cycle()
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":
