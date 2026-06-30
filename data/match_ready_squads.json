@@ -1,0 +1,5075 @@
+{
+  "Manchester City": {
+    "avg_pes": 67.52000000000001,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Manchester_City_P0",
+          "pes": 65.5,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Manchester_City_P4",
+          "pes": 70.9,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_City_P1",
+          "pes": 63.7,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Manchester_City_P2",
+          "pes": 70.4,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Manchester_City_P3",
+          "pes": 68.7,
+          "fatigue": 15.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Manchester_City_P8",
+          "pes": 68.4,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P5",
+          "pes": 65.2,
+          "fatigue": 18.9,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Manchester_City_P6",
+          "pes": 72.4,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LM": [
+        {
+          "id": "Manchester_City_P7",
+          "pes": 60.4,
+          "fatigue": 10.5,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "Manchester_City_P17",
+          "pes": 72.3,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P13",
+          "pes": 68.8,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P25",
+          "pes": 68.8,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_City_P9",
+          "pes": 66.7,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_City_P21",
+          "pes": 66.7,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P29",
+          "pes": 62.5,
+          "fatigue": 10.5,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Manchester_City_P14",
+          "pes": 70.4,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P10",
+          "pes": 68.7,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P22",
+          "pes": 67.4,
+          "fatigue": 17.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P18",
+          "pes": 65.5,
+          "fatigue": 15.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P26",
+          "pes": 60.2,
+          "fatigue": 11.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "Manchester_City_P11",
+          "pes": 71.9,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_City_P27",
+          "pes": 70.5,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_City_P15",
+          "pes": 69.1,
+          "fatigue": 16.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_City_P23",
+          "pes": 67.0,
+          "fatigue": 17.9,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_City_P19",
+          "pes": 65.9,
+          "fatigue": 15.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Manchester_City_P12",
+          "pes": 72.3,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_City_P16",
+          "pes": 71.2,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_City_P24",
+          "pes": 65.2,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_City_P28",
+          "pes": 64.9,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_City_P20",
+          "pes": 64.0,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ]
+    }
+  },
+  "Manchester United": {
+    "avg_pes": 70.05666666666666,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Manchester_United_P0",
+          "pes": 69.7,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Manchester_United_P1",
+          "pes": 72.4,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_United_P4",
+          "pes": 65.8,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "RB": [
+        {
+          "id": "Manchester_United_P2",
+          "pes": 69.9,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Manchester_United_P3",
+          "pes": 72.3,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Manchester_United_P8",
+          "pes": 72.0,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P5",
+          "pes": 65.4,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "CM": [
+        {
+          "id": "Manchester_United_P6",
+          "pes": 69.2,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Manchester_United_P7",
+          "pes": 70.0,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "Manchester_United_P13",
+          "pes": 72.4,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_United_P17",
+          "pes": 72.2,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P21",
+          "pes": 72.0,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_United_P29",
+          "pes": 71.8,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P25",
+          "pes": 71.6,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_United_P9",
+          "pes": 69.3,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Manchester_United_P22",
+          "pes": 72.8,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P26",
+          "pes": 71.7,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_United_P18",
+          "pes": 70.6,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P10",
+          "pes": 67.7,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Manchester_United_P14",
+          "pes": 67.1,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "Manchester_United_P27",
+          "pes": 73.4,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P19",
+          "pes": 71.6,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Manchester_United_P23",
+          "pes": 69.6,
+          "fatigue": 18.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_United_P15",
+          "pes": 66.3,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 5
+        },
+        {
+          "id": "Manchester_United_P11",
+          "pes": 62.3,
+          "fatigue": 12.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Manchester_United_P28",
+          "pes": 73.1,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Manchester_United_P20",
+          "pes": 71.8,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P12",
+          "pes": 71.6,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Manchester_United_P16",
+          "pes": 69.8,
+          "fatigue": 15.8,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Manchester_United_P24",
+          "pes": 66.3,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ]
+    }
+  },
+  "Liverpool": {
+    "avg_pes": 68.60333333333332,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Liverpool_P0",
+          "pes": 65.2,
+          "fatigue": 10.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Liverpool_P1",
+          "pes": 66.8,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P4",
+          "pes": 65.0,
+          "fatigue": 8.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "RB": [
+        {
+          "id": "Liverpool_P2",
+          "pes": 71.1,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CB": [
+        {
+          "id": "Liverpool_P3",
+          "pes": 65.2,
+          "fatigue": 10.0,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "RM": [
+        {
+          "id": "Liverpool_P8",
+          "pes": 71.3,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P5",
+          "pes": 67.1,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Liverpool_P6",
+          "pes": 64.7,
+          "fatigue": 8.9,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "LM": [
+        {
+          "id": "Liverpool_P7",
+          "pes": 65.2,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Liverpool_P21",
+          "pes": 71.0,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P17",
+          "pes": 71.0,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P9",
+          "pes": 69.6,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P25",
+          "pes": 66.4,
+          "fatigue": 16.3,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Liverpool_P29",
+          "pes": 66.2,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P13",
+          "pes": 64.7,
+          "fatigue": 19.5,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Liverpool_P18",
+          "pes": 72.1,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P26",
+          "pes": 71.4,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P22",
+          "pes": 70.9,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P10",
+          "pes": 69.6,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P14",
+          "pes": 66.1,
+          "fatigue": 14.2,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "Liverpool_P15",
+          "pes": 72.1,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P11",
+          "pes": 70.1,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Liverpool_P23",
+          "pes": 69.6,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 4
+        },
+        {
+          "id": "Liverpool_P27",
+          "pes": 68.8,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 3
+        },
+        {
+          "id": "Liverpool_P19",
+          "pes": 68.5,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "ST": [
+        {
+          "id": "Liverpool_P12",
+          "pes": 71.4,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P20",
+          "pes": 70.6,
+          "fatigue": 14.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Liverpool_P28",
+          "pes": 70.2,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P16",
+          "pes": 70.1,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Liverpool_P24",
+          "pes": 66.1,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ]
+    }
+  },
+  "Arsenal": {
+    "avg_pes": 69.29333333333334,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Arsenal_P0",
+          "pes": 68.0,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Arsenal_P1",
+          "pes": 68.9,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P4",
+          "pes": 65.2,
+          "fatigue": 8.4,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "RB": [
+        {
+          "id": "Arsenal_P2",
+          "pes": 69.8,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Arsenal_P3",
+          "pes": 70.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        }
+      ],
+      "RM": [
+        {
+          "id": "Arsenal_P5",
+          "pes": 67.0,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P8",
+          "pes": 64.4,
+          "fatigue": 8.4,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Arsenal_P6",
+          "pes": 62.2,
+          "fatigue": 8.9,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "LM": [
+        {
+          "id": "Arsenal_P7",
+          "pes": 70.2,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "Arsenal_P9",
+          "pes": 71.8,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Arsenal_P29",
+          "pes": 70.1,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Arsenal_P13",
+          "pes": 68.6,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P17",
+          "pes": 68.3,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P25",
+          "pes": 68.2,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Arsenal_P21",
+          "pes": 67.8,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Arsenal_P18",
+          "pes": 72.3,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P22",
+          "pes": 72.3,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P14",
+          "pes": 70.8,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P26",
+          "pes": 66.7,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P10",
+          "pes": 65.5,
+          "fatigue": 16.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Arsenal_P27",
+          "pes": 73.6,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Arsenal_P19",
+          "pes": 72.0,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Arsenal_P11",
+          "pes": 71.9,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Arsenal_P15",
+          "pes": 70.6,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Arsenal_P23",
+          "pes": 70.0,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Arsenal_P20",
+          "pes": 71.1,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Arsenal_P12",
+          "pes": 71.0,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Arsenal_P28",
+          "pes": 70.9,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Arsenal_P16",
+          "pes": 70.8,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Arsenal_P24",
+          "pes": 68.0,
+          "fatigue": 15.8,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ]
+    }
+  },
+  "Chelsea": {
+    "avg_pes": 69.53666666666666,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Chelsea_P0",
+          "pes": 66.6,
+          "fatigue": 14.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Chelsea_P1",
+          "pes": 65.0,
+          "fatigue": 16.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P4",
+          "pes": 63.1,
+          "fatigue": 10.5,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Chelsea_P2",
+          "pes": 68.7,
+          "fatigue": 17.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Chelsea_P3",
+          "pes": 69.0,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RM": [
+        {
+          "id": "Chelsea_P5",
+          "pes": 71.0,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P8",
+          "pes": 70.1,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CM": [
+        {
+          "id": "Chelsea_P6",
+          "pes": 69.7,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Chelsea_P7",
+          "pes": 71.3,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "Chelsea_P17",
+          "pes": 72.0,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Chelsea_P29",
+          "pes": 71.7,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P21",
+          "pes": 70.6,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P13",
+          "pes": 70.3,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Chelsea_P9",
+          "pes": 68.8,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P25",
+          "pes": 67.4,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Chelsea_P14",
+          "pes": 73.0,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Chelsea_P18",
+          "pes": 71.0,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Chelsea_P22",
+          "pes": 70.6,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Chelsea_P10",
+          "pes": 69.8,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P26",
+          "pes": 69.1,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Chelsea_P19",
+          "pes": 72.5,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P11",
+          "pes": 72.3,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Chelsea_P27",
+          "pes": 72.3,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Chelsea_P15",
+          "pes": 66.1,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 3
+        },
+        {
+          "id": "Chelsea_P23",
+          "pes": 65.4,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "ST": [
+        {
+          "id": "Chelsea_P12",
+          "pes": 71.2,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Chelsea_P20",
+          "pes": 69.8,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Chelsea_P28",
+          "pes": 69.4,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Chelsea_P24",
+          "pes": 69.2,
+          "fatigue": 16.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Chelsea_P16",
+          "pes": 69.1,
+          "fatigue": 14.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ]
+    }
+  },
+  "Real Madrid": {
+    "avg_pes": 69.51,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Real_Madrid_P0",
+          "pes": 68.5,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Real_Madrid_P1",
+          "pes": 70.4,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P4",
+          "pes": 68.1,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Real_Madrid_P2",
+          "pes": 66.2,
+          "fatigue": 13.7,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Real_Madrid_P3",
+          "pes": 67.9,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Real_Madrid_P8",
+          "pes": 72.7,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P5",
+          "pes": 64.6,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Real_Madrid_P6",
+          "pes": 71.6,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Real_Madrid_P7",
+          "pes": 68.9,
+          "fatigue": 15.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Real_Madrid_P17",
+          "pes": 72.5,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P29",
+          "pes": 70.9,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P13",
+          "pes": 68.6,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P25",
+          "pes": 68.4,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P21",
+          "pes": 66.9,
+          "fatigue": 16.8,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P9",
+          "pes": 65.4,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RW": [
+        {
+          "id": "Real_Madrid_P18",
+          "pes": 71.3,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P26",
+          "pes": 71.1,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P14",
+          "pes": 71.1,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P22",
+          "pes": 70.4,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P10",
+          "pes": 67.9,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "CF": [
+        {
+          "id": "Real_Madrid_P15",
+          "pes": 73.8,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Real_Madrid_P19",
+          "pes": 72.9,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Real_Madrid_P27",
+          "pes": 71.3,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P23",
+          "pes": 70.5,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P11",
+          "pes": 66.7,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Real_Madrid_P12",
+          "pes": 71.4,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P16",
+          "pes": 70.3,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P28",
+          "pes": 69.9,
+          "fatigue": 13.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Real_Madrid_P20",
+          "pes": 69.3,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Real_Madrid_P24",
+          "pes": 65.8,
+          "fatigue": 8.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ]
+    }
+  },
+  "Barcelona": {
+    "avg_pes": 69.35666666666665,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Barcelona_P0",
+          "pes": 71.0,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Barcelona_P4",
+          "pes": 72.9,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Barcelona_P1",
+          "pes": 67.0,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RB": [
+        {
+          "id": "Barcelona_P2",
+          "pes": 71.5,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Barcelona_P3",
+          "pes": 70.9,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Barcelona_P5",
+          "pes": 70.0,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Barcelona_P8",
+          "pes": 65.4,
+          "fatigue": 13.2,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Barcelona_P6",
+          "pes": 65.3,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Barcelona_P7",
+          "pes": 69.0,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Barcelona_P29",
+          "pes": 72.2,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P13",
+          "pes": 71.5,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P21",
+          "pes": 70.9,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Barcelona_P9",
+          "pes": 69.8,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P17",
+          "pes": 69.2,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P25",
+          "pes": 66.3,
+          "fatigue": 14.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Barcelona_P10",
+          "pes": 72.5,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P14",
+          "pes": 72.5,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P18",
+          "pes": 70.7,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P22",
+          "pes": 68.0,
+          "fatigue": 17.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Barcelona_P26",
+          "pes": 61.5,
+          "fatigue": 11.6,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Barcelona_P23",
+          "pes": 72.0,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Barcelona_P11",
+          "pes": 71.6,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Barcelona_P19",
+          "pes": 71.4,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P27",
+          "pes": 67.3,
+          "fatigue": 18.4,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Barcelona_P15",
+          "pes": 65.9,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "ST": [
+        {
+          "id": "Barcelona_P16",
+          "pes": 70.8,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P28",
+          "pes": 69.4,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P24",
+          "pes": 68.8,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Barcelona_P20",
+          "pes": 67.8,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Barcelona_P12",
+          "pes": 67.6,
+          "fatigue": 16.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ]
+    }
+  },
+  "Atletico Madrid": {
+    "avg_pes": 69.71000000000001,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Atletico_Madrid_P0",
+          "pes": 67.9,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Atletico_Madrid_P1",
+          "pes": 68.8,
+          "fatigue": 17.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Atletico_Madrid_P4",
+          "pes": 68.5,
+          "fatigue": 16.8,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Atletico_Madrid_P2",
+          "pes": 71.9,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Atletico_Madrid_P3",
+          "pes": 71.5,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Atletico_Madrid_P5",
+          "pes": 72.7,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Atletico_Madrid_P8",
+          "pes": 67.8,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "CM": [
+        {
+          "id": "Atletico_Madrid_P6",
+          "pes": 69.1,
+          "fatigue": 17.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Atletico_Madrid_P7",
+          "pes": 67.5,
+          "fatigue": 19.5,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Atletico_Madrid_P13",
+          "pes": 71.8,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Atletico_Madrid_P21",
+          "pes": 68.9,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Atletico_Madrid_P9",
+          "pes": 68.8,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Atletico_Madrid_P17",
+          "pes": 68.8,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Atletico_Madrid_P29",
+          "pes": 67.5,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Atletico_Madrid_P25",
+          "pes": 65.5,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "RW": [
+        {
+          "id": "Atletico_Madrid_P26",
+          "pes": 73.4,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Atletico_Madrid_P22",
+          "pes": 72.0,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Atletico_Madrid_P14",
+          "pes": 71.0,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Atletico_Madrid_P18",
+          "pes": 69.7,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Atletico_Madrid_P10",
+          "pes": 64.4,
+          "fatigue": 18.9,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Atletico_Madrid_P19",
+          "pes": 73.9,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Atletico_Madrid_P11",
+          "pes": 72.6,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Atletico_Madrid_P27",
+          "pes": 72.1,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Atletico_Madrid_P23",
+          "pes": 72.0,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Atletico_Madrid_P15",
+          "pes": 71.1,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "ST": [
+        {
+          "id": "Atletico_Madrid_P16",
+          "pes": 71.7,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Atletico_Madrid_P24",
+          "pes": 71.7,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Atletico_Madrid_P20",
+          "pes": 69.4,
+          "fatigue": 17.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 4
+        },
+        {
+          "id": "Atletico_Madrid_P28",
+          "pes": 67.9,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Atletico_Madrid_P12",
+          "pes": 61.4,
+          "fatigue": 8.4,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 4
+        }
+      ]
+    }
+  },
+  "Sevilla": {
+    "avg_pes": 68.45666666666666,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Sevilla_P0",
+          "pes": 71.1,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Sevilla_P4",
+          "pes": 73.4,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Sevilla_P1",
+          "pes": 63.0,
+          "fatigue": 7.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Sevilla_P2",
+          "pes": 67.9,
+          "fatigue": 13.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Sevilla_P3",
+          "pes": 65.4,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RM": [
+        {
+          "id": "Sevilla_P8",
+          "pes": 68.8,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P5",
+          "pes": 67.3,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Sevilla_P6",
+          "pes": 67.3,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Sevilla_P7",
+          "pes": 62.3,
+          "fatigue": 7.9,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "LW": [
+        {
+          "id": "Sevilla_P29",
+          "pes": 73.9,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P21",
+          "pes": 71.1,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P25",
+          "pes": 67.1,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Sevilla_P17",
+          "pes": 66.5,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P13",
+          "pes": 65.1,
+          "fatigue": 13.2,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P9",
+          "pes": 63.4,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "RW": [
+        {
+          "id": "Sevilla_P26",
+          "pes": 71.4,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P10",
+          "pes": 68.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P14",
+          "pes": 68.1,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Sevilla_P22",
+          "pes": 67.6,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P18",
+          "pes": 65.7,
+          "fatigue": 10.0,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Sevilla_P11",
+          "pes": 72.6,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Sevilla_P19",
+          "pes": 71.4,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Sevilla_P23",
+          "pes": 70.5,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Sevilla_P27",
+          "pes": 70.3,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Sevilla_P15",
+          "pes": 65.7,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "ST": [
+        {
+          "id": "Sevilla_P16",
+          "pes": 73.3,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Sevilla_P12",
+          "pes": 70.2,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Sevilla_P24",
+          "pes": 69.9,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Sevilla_P28",
+          "pes": 68.6,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Sevilla_P20",
+          "pes": 66.0,
+          "fatigue": 12.6,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ]
+    }
+  },
+  "Valencia": {
+    "avg_pes": 69.01666666666667,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Valencia_P0",
+          "pes": 69.8,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Valencia_P1",
+          "pes": 66.3,
+          "fatigue": 15.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P4",
+          "pes": 65.0,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Valencia_P2",
+          "pes": 68.4,
+          "fatigue": 19.5,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CB": [
+        {
+          "id": "Valencia_P3",
+          "pes": 73.2,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "RM": [
+        {
+          "id": "Valencia_P8",
+          "pes": 67.3,
+          "fatigue": 10.0,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P5",
+          "pes": 65.7,
+          "fatigue": 8.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "CM": [
+        {
+          "id": "Valencia_P6",
+          "pes": 73.6,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Valencia_P7",
+          "pes": 71.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Valencia_P9",
+          "pes": 71.3,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P21",
+          "pes": 70.5,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P29",
+          "pes": 70.4,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P25",
+          "pes": 70.2,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P17",
+          "pes": 68.4,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P13",
+          "pes": 61.1,
+          "fatigue": 12.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Valencia_P22",
+          "pes": 71.7,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P14",
+          "pes": 70.8,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P18",
+          "pes": 70.6,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P10",
+          "pes": 69.3,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P26",
+          "pes": 67.0,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Valencia_P23",
+          "pes": 71.0,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P27",
+          "pes": 70.2,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P11",
+          "pes": 66.5,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Valencia_P19",
+          "pes": 66.3,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 3
+        },
+        {
+          "id": "Valencia_P15",
+          "pes": 62.1,
+          "fatigue": 11.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "ST": [
+        {
+          "id": "Valencia_P28",
+          "pes": 72.5,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Valencia_P20",
+          "pes": 71.9,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Valencia_P12",
+          "pes": 70.5,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P16",
+          "pes": 70.1,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Valencia_P24",
+          "pes": 67.0,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ]
+    }
+  },
+  "Juventus": {
+    "avg_pes": 68.90666666666667,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Juventus_P0",
+          "pes": 72.2,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Juventus_P4",
+          "pes": 70.2,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P1",
+          "pes": 66.7,
+          "fatigue": 14.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Juventus_P2",
+          "pes": 69.6,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Juventus_P3",
+          "pes": 72.1,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 5
+        }
+      ],
+      "RM": [
+        {
+          "id": "Juventus_P5",
+          "pes": 66.6,
+          "fatigue": 15.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Juventus_P8",
+          "pes": 66.2,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Juventus_P6",
+          "pes": 67.9,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Juventus_P7",
+          "pes": 69.6,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "LW": [
+        {
+          "id": "Juventus_P9",
+          "pes": 70.8,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P29",
+          "pes": 69.0,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Juventus_P21",
+          "pes": 68.4,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P13",
+          "pes": 67.6,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P17",
+          "pes": 67.4,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Juventus_P25",
+          "pes": 66.7,
+          "fatigue": 14.7,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Juventus_P22",
+          "pes": 72.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P10",
+          "pes": 67.8,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P18",
+          "pes": 65.9,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P26",
+          "pes": 65.2,
+          "fatigue": 12.6,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P14",
+          "pes": 61.1,
+          "fatigue": 8.4,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "Juventus_P23",
+          "pes": 72.7,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Juventus_P27",
+          "pes": 71.6,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Juventus_P19",
+          "pes": 71.0,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P11",
+          "pes": 68.8,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Juventus_P15",
+          "pes": 68.4,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "ST": [
+        {
+          "id": "Juventus_P20",
+          "pes": 70.9,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Juventus_P28",
+          "pes": 70.5,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Juventus_P16",
+          "pes": 70.1,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Juventus_P24",
+          "pes": 69.9,
+          "fatigue": 13.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Juventus_P12",
+          "pes": 69.5,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ]
+    }
+  },
+  "Inter Milan": {
+    "avg_pes": 69.42666666666666,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Inter_Milan_P0",
+          "pes": 70.7,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Inter_Milan_P1",
+          "pes": 68.2,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P4",
+          "pes": 66.5,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "RB": [
+        {
+          "id": "Inter_Milan_P2",
+          "pes": 71.1,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Inter_Milan_P3",
+          "pes": 71.6,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Inter_Milan_P8",
+          "pes": 70.9,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P5",
+          "pes": 69.2,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "CM": [
+        {
+          "id": "Inter_Milan_P6",
+          "pes": 68.5,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Inter_Milan_P7",
+          "pes": 69.4,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Inter_Milan_P13",
+          "pes": 73.0,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P17",
+          "pes": 72.2,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Inter_Milan_P25",
+          "pes": 71.2,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Inter_Milan_P21",
+          "pes": 68.5,
+          "fatigue": 14.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P29",
+          "pes": 66.4,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P9",
+          "pes": 65.3,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "RW": [
+        {
+          "id": "Inter_Milan_P10",
+          "pes": 72.0,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Inter_Milan_P26",
+          "pes": 70.9,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Inter_Milan_P14",
+          "pes": 69.9,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P18",
+          "pes": 65.2,
+          "fatigue": 18.9,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Inter_Milan_P22",
+          "pes": 62.6,
+          "fatigue": 9.5,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Inter_Milan_P23",
+          "pes": 71.8,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Inter_Milan_P11",
+          "pes": 71.4,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Inter_Milan_P15",
+          "pes": 70.5,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Inter_Milan_P19",
+          "pes": 67.3,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Inter_Milan_P27",
+          "pes": 67.1,
+          "fatigue": 15.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Inter_Milan_P28",
+          "pes": 71.6,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Inter_Milan_P20",
+          "pes": 71.4,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Inter_Milan_P24",
+          "pes": 71.0,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P12",
+          "pes": 69.8,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Inter_Milan_P16",
+          "pes": 67.6,
+          "fatigue": 17.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ]
+    }
+  },
+  "AC Milan": {
+    "avg_pes": 69.83,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "AC_Milan_P0",
+          "pes": 69.8,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "AC_Milan_P4",
+          "pes": 70.7,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "AC_Milan_P1",
+          "pes": 69.8,
+          "fatigue": 15.8,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "AC_Milan_P2",
+          "pes": 72.4,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "AC_Milan_P3",
+          "pes": 68.0,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RM": [
+        {
+          "id": "AC_Milan_P5",
+          "pes": 69.5,
+          "fatigue": 17.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P8",
+          "pes": 65.9,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "AC_Milan_P6",
+          "pes": 74.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "AC_Milan_P7",
+          "pes": 68.9,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "AC_Milan_P17",
+          "pes": 72.4,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "AC_Milan_P9",
+          "pes": 72.2,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P25",
+          "pes": 71.4,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "AC_Milan_P13",
+          "pes": 69.9,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P21",
+          "pes": 66.4,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P29",
+          "pes": 66.2,
+          "fatigue": 16.3,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "AC_Milan_P26",
+          "pes": 70.8,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "AC_Milan_P14",
+          "pes": 69.2,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P10",
+          "pes": 69.1,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P22",
+          "pes": 66.7,
+          "fatigue": 14.2,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "AC_Milan_P18",
+          "pes": 64.6,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "AC_Milan_P19",
+          "pes": 73.7,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 4
+        },
+        {
+          "id": "AC_Milan_P27",
+          "pes": 73.1,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "AC_Milan_P11",
+          "pes": 70.0,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 4
+        },
+        {
+          "id": "AC_Milan_P15",
+          "pes": 68.9,
+          "fatigue": 14.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "AC_Milan_P23",
+          "pes": 66.6,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "ST": [
+        {
+          "id": "AC_Milan_P20",
+          "pes": 72.1,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "AC_Milan_P12",
+          "pes": 71.9,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "AC_Milan_P24",
+          "pes": 71.6,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "AC_Milan_P16",
+          "pes": 70.9,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "AC_Milan_P28",
+          "pes": 67.4,
+          "fatigue": 14.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ]
+    }
+  },
+  "Napoli": {
+    "avg_pes": 69.04,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Napoli_P0",
+          "pes": 65.7,
+          "fatigue": 8.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Napoli_P1",
+          "pes": 71.1,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P4",
+          "pes": 68.6,
+          "fatigue": 12.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Napoli_P2",
+          "pes": 67.5,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Napoli_P3",
+          "pes": 72.4,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "RM": [
+        {
+          "id": "Napoli_P5",
+          "pes": 69.9,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P8",
+          "pes": 68.3,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Napoli_P6",
+          "pes": 65.7,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LM": [
+        {
+          "id": "Napoli_P7",
+          "pes": 69.2,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Napoli_P9",
+          "pes": 73.4,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Napoli_P29",
+          "pes": 71.9,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P25",
+          "pes": 71.9,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P13",
+          "pes": 70.6,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P17",
+          "pes": 69.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Napoli_P21",
+          "pes": 67.0,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "RW": [
+        {
+          "id": "Napoli_P14",
+          "pes": 71.5,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P22",
+          "pes": 67.9,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Napoli_P18",
+          "pes": 65.2,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P10",
+          "pes": 64.5,
+          "fatigue": 14.2,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Napoli_P26",
+          "pes": 64.2,
+          "fatigue": 11.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "Napoli_P11",
+          "pes": 73.0,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Napoli_P15",
+          "pes": 69.1,
+          "fatigue": 15.8,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Napoli_P27",
+          "pes": 69.1,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Napoli_P19",
+          "pes": 68.1,
+          "fatigue": 10.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Napoli_P23",
+          "pes": 67.6,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "ST": [
+        {
+          "id": "Napoli_P28",
+          "pes": 70.8,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Napoli_P12",
+          "pes": 70.7,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Napoli_P24",
+          "pes": 70.5,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Napoli_P16",
+          "pes": 69.9,
+          "fatigue": 15.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Napoli_P20",
+          "pes": 66.1,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ]
+    }
+  },
+  "Roma": {
+    "avg_pes": 68.97666666666666,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Roma_P0",
+          "pes": 70.6,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Roma_P4",
+          "pes": 61.9,
+          "fatigue": 12.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P1",
+          "pes": 61.7,
+          "fatigue": 7.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Roma_P2",
+          "pes": 71.8,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Roma_P3",
+          "pes": 67.0,
+          "fatigue": 14.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Roma_P5",
+          "pes": 70.3,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P8",
+          "pes": 70.3,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Roma_P6",
+          "pes": 65.8,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "LM": [
+        {
+          "id": "Roma_P7",
+          "pes": 70.9,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Roma_P13",
+          "pes": 73.3,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P9",
+          "pes": 71.3,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P25",
+          "pes": 71.1,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P17",
+          "pes": 70.5,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P21",
+          "pes": 69.4,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P29",
+          "pes": 68.7,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Roma_P10",
+          "pes": 72.3,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Roma_P18",
+          "pes": 72.0,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P22",
+          "pes": 71.4,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Roma_P14",
+          "pes": 65.9,
+          "fatigue": 11.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P26",
+          "pes": 65.3,
+          "fatigue": 12.6,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Roma_P23",
+          "pes": 73.4,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P11",
+          "pes": 72.1,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P19",
+          "pes": 72.1,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P27",
+          "pes": 66.3,
+          "fatigue": 18.9,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P15",
+          "pes": 59.7,
+          "fatigue": 9.5,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Roma_P28",
+          "pes": 70.9,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P16",
+          "pes": 70.8,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P20",
+          "pes": 70.5,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Roma_P24",
+          "pes": 66.3,
+          "fatigue": 10.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Roma_P12",
+          "pes": 65.7,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 3
+        }
+      ]
+    }
+  },
+  "Bayern Munich": {
+    "avg_pes": 68.88666666666667,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Bayern_Munich_P0",
+          "pes": 66.9,
+          "fatigue": 17.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Bayern_Munich_P1",
+          "pes": 68.3,
+          "fatigue": 11.1,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P4",
+          "pes": 68.2,
+          "fatigue": 19.5,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Bayern_Munich_P2",
+          "pes": 71.5,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Bayern_Munich_P3",
+          "pes": 66.8,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Bayern_Munich_P8",
+          "pes": 66.1,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayern_Munich_P5",
+          "pes": 61.2,
+          "fatigue": 12.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CM": [
+        {
+          "id": "Bayern_Munich_P6",
+          "pes": 66.6,
+          "fatigue": 19.5,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Bayern_Munich_P7",
+          "pes": 67.1,
+          "fatigue": 14.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "Bayern_Munich_P29",
+          "pes": 73.2,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P25",
+          "pes": 72.4,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P17",
+          "pes": 71.0,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P13",
+          "pes": 69.3,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayern_Munich_P21",
+          "pes": 66.0,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayern_Munich_P9",
+          "pes": 63.6,
+          "fatigue": 7.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "RW": [
+        {
+          "id": "Bayern_Munich_P18",
+          "pes": 70.5,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayern_Munich_P14",
+          "pes": 68.4,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P26",
+          "pes": 68.2,
+          "fatigue": 16.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P22",
+          "pes": 67.9,
+          "fatigue": 13.7,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P10",
+          "pes": 67.6,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Bayern_Munich_P19",
+          "pes": 73.3,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Bayern_Munich_P11",
+          "pes": 72.2,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Bayern_Munich_P15",
+          "pes": 71.7,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P27",
+          "pes": 70.0,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 4
+        },
+        {
+          "id": "Bayern_Munich_P23",
+          "pes": 69.5,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "Bayern_Munich_P16",
+          "pes": 73.7,
+          "fatigue": 13.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Bayern_Munich_P12",
+          "pes": 72.6,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P24",
+          "pes": 70.0,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "Bayern_Munich_P20",
+          "pes": 69.2,
+          "fatigue": 17.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayern_Munich_P28",
+          "pes": 63.6,
+          "fatigue": 18.9,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ]
+    }
+  },
+  "Borussia Dortmund": {
+    "avg_pes": 68.46666666666667,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Borussia_Dortmund_P0",
+          "pes": 66.7,
+          "fatigue": 18.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Borussia_Dortmund_P1",
+          "pes": 70.5,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P4",
+          "pes": 65.2,
+          "fatigue": 17.4,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RB": [
+        {
+          "id": "Borussia_Dortmund_P2",
+          "pes": 72.1,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        }
+      ],
+      "CB": [
+        {
+          "id": "Borussia_Dortmund_P3",
+          "pes": 65.3,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RM": [
+        {
+          "id": "Borussia_Dortmund_P8",
+          "pes": 71.9,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Borussia_Dortmund_P5",
+          "pes": 63.7,
+          "fatigue": 11.6,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CM": [
+        {
+          "id": "Borussia_Dortmund_P6",
+          "pes": 66.6,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "LM": [
+        {
+          "id": "Borussia_Dortmund_P7",
+          "pes": 68.7,
+          "fatigue": 11.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "Borussia_Dortmund_P25",
+          "pes": 72.4,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P9",
+          "pes": 71.7,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Borussia_Dortmund_P21",
+          "pes": 69.9,
+          "fatigue": 17.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Borussia_Dortmund_P17",
+          "pes": 69.7,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P29",
+          "pes": 69.3,
+          "fatigue": 13.2,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P13",
+          "pes": 63.4,
+          "fatigue": 14.2,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "Borussia_Dortmund_P18",
+          "pes": 70.4,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Borussia_Dortmund_P26",
+          "pes": 69.7,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P10",
+          "pes": 68.7,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P22",
+          "pes": 68.2,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Borussia_Dortmund_P14",
+          "pes": 65.7,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "CF": [
+        {
+          "id": "Borussia_Dortmund_P15",
+          "pes": 72.8,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Borussia_Dortmund_P27",
+          "pes": 71.0,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Borussia_Dortmund_P23",
+          "pes": 67.8,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P11",
+          "pes": 65.1,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "Borussia_Dortmund_P19",
+          "pes": 63.7,
+          "fatigue": 8.4,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "ST": [
+        {
+          "id": "Borussia_Dortmund_P28",
+          "pes": 72.0,
+          "fatigue": 16.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P16",
+          "pes": 71.9,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P24",
+          "pes": 71.5,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P12",
+          "pes": 64.8,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Borussia_Dortmund_P20",
+          "pes": 63.6,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ]
+    }
+  },
+  "RB Leipzig": {
+    "avg_pes": 68.82666666666665,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "RB_Leipzig_P0",
+          "pes": 67.1,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "RB_Leipzig_P1",
+          "pes": 67.8,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P4",
+          "pes": 60.6,
+          "fatigue": 7.9,
+          "injury": 30,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "RB": [
+        {
+          "id": "RB_Leipzig_P2",
+          "pes": 71.0,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CB": [
+        {
+          "id": "RB_Leipzig_P3",
+          "pes": 68.0,
+          "fatigue": 19.5,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 3
+        }
+      ],
+      "RM": [
+        {
+          "id": "RB_Leipzig_P8",
+          "pes": 70.0,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P5",
+          "pes": 67.4,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "RB_Leipzig_P6",
+          "pes": 73.4,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LM": [
+        {
+          "id": "RB_Leipzig_P7",
+          "pes": 68.2,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "LW": [
+        {
+          "id": "RB_Leipzig_P13",
+          "pes": 70.0,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P9",
+          "pes": 69.6,
+          "fatigue": 15.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P29",
+          "pes": 69.3,
+          "fatigue": 10.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P25",
+          "pes": 68.6,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P17",
+          "pes": 68.4,
+          "fatigue": 7.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P21",
+          "pes": 68.2,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "RW": [
+        {
+          "id": "RB_Leipzig_P14",
+          "pes": 71.4,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P10",
+          "pes": 68.3,
+          "fatigue": 18.9,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P18",
+          "pes": 66.0,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P22",
+          "pes": 65.9,
+          "fatigue": 8.9,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P26",
+          "pes": 62.9,
+          "fatigue": 7.9,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "RB_Leipzig_P19",
+          "pes": 73.8,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 3
+        },
+        {
+          "id": "RB_Leipzig_P11",
+          "pes": 70.9,
+          "fatigue": 16.3,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "RB_Leipzig_P23",
+          "pes": 68.7,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        },
+        {
+          "id": "RB_Leipzig_P15",
+          "pes": 68.1,
+          "fatigue": 18.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "RB_Leipzig_P27",
+          "pes": 68.0,
+          "fatigue": 11.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "ST": [
+        {
+          "id": "RB_Leipzig_P20",
+          "pes": 71.8,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P24",
+          "pes": 71.5,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "RB_Leipzig_P28",
+          "pes": 70.3,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "RB_Leipzig_P12",
+          "pes": 69.8,
+          "fatigue": 9.5,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 3
+        },
+        {
+          "id": "RB_Leipzig_P16",
+          "pes": 69.8,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ]
+    }
+  },
+  "Bayer Leverkusen": {
+    "avg_pes": 69.28666666666668,
+    "players_by_position": {
+      "GK": [
+        {
+          "id": "Bayer_Leverkusen_P0",
+          "pes": 71.4,
+          "fatigue": 12.1,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LB": [
+        {
+          "id": "Bayer_Leverkusen_P1",
+          "pes": 72.8,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P4",
+          "pes": 71.8,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "RB": [
+        {
+          "id": "Bayer_Leverkusen_P2",
+          "pes": 73.2,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CB": [
+        {
+          "id": "Bayer_Leverkusen_P3",
+          "pes": 70.2,
+          "fatigue": 14.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RM": [
+        {
+          "id": "Bayer_Leverkusen_P8",
+          "pes": 71.6,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P5",
+          "pes": 69.1,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "CM": [
+        {
+          "id": "Bayer_Leverkusen_P6",
+          "pes": 67.0,
+          "fatigue": 13.2,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        }
+      ],
+      "LM": [
+        {
+          "id": "Bayer_Leverkusen_P7",
+          "pes": 65.7,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        }
+      ],
+      "LW": [
+        {
+          "id": "Bayer_Leverkusen_P21",
+          "pes": 69.7,
+          "fatigue": 18.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P13",
+          "pes": 69.1,
+          "fatigue": 18.4,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P17",
+          "pes": 68.0,
+          "fatigue": 16.3,
+          "injury": 15,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P29",
+          "pes": 66.5,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 3
+        },
+        {
+          "id": "Bayer_Leverkusen_P25",
+          "pes": 64.9,
+          "fatigue": 9.5,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P9",
+          "pes": 64.2,
+          "fatigue": 18.4,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "RW": [
+        {
+          "id": "Bayer_Leverkusen_P26",
+          "pes": 72.2,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P18",
+          "pes": 70.9,
+          "fatigue": 14.7,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P10",
+          "pes": 70.5,
+          "fatigue": 10.0,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P14",
+          "pes": 70.4,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P22",
+          "pes": 62.7,
+          "fatigue": 11.1,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 1
+        }
+      ],
+      "CF": [
+        {
+          "id": "Bayer_Leverkusen_P23",
+          "pes": 72.6,
+          "fatigue": 12.6,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P15",
+          "pes": 71.9,
+          "fatigue": 17.4,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P11",
+          "pes": 70.3,
+          "fatigue": 19.5,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P27",
+          "pes": 65.7,
+          "fatigue": 16.8,
+          "injury": 30,
+          "confidence": 0.75,
+          "season_goals": 2
+        },
+        {
+          "id": "Bayer_Leverkusen_P19",
+          "pes": 65.4,
+          "fatigue": 10.0,
+          "injury": 15,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ],
+      "ST": [
+        {
+          "id": "Bayer_Leverkusen_P20",
+          "pes": 72.8,
+          "fatigue": 15.8,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P12",
+          "pes": 72.0,
+          "fatigue": 17.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 1
+        },
+        {
+          "id": "Bayer_Leverkusen_P24",
+          "pes": 71.5,
+          "fatigue": 18.9,
+          "injury": 0,
+          "confidence": 0.75,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P28",
+          "pes": 67.8,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 0
+        },
+        {
+          "id": "Bayer_Leverkusen_P16",
+          "pes": 66.7,
+          "fatigue": 8.4,
+          "injury": 0,
+          "confidence": 0.6,
+          "season_goals": 2
+        }
+      ]
+    }
+  }
+}

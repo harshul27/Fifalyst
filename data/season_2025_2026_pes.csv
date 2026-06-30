@@ -1,0 +1,571 @@
+player_id,team,position,season_apps,season_goals,season_assists,season_xg,current_pes,fitness,form,fatigue,injury_impact,confidence
+Manchester_City_P0,Manchester City,GK,15,0,0,0.0,65.5,78.0,78.9,7.9,0,0.6
+Manchester_City_P1,Manchester City,LB,22,0,0,1.68,63.7,85.2,76.2,11.6,15,0.75
+Manchester_City_P2,Manchester City,RB,36,0,0,1.04,70.4,100.0,79.0,18.9,0,0.75
+Manchester_City_P3,Manchester City,CB,29,1,0,3.92,68.7,100.0,79.9,15.3,15,0.75
+Manchester_City_P4,Manchester City,LB,37,1,1,3.28,70.9,100.0,78.9,19.5,0,0.75
+Manchester_City_P5,Manchester City,RM,36,0,0,2.72,65.2,100.0,79.8,18.9,30,0.75
+Manchester_City_P6,Manchester City,CM,26,1,1,3.36,72.4,94.9,83.1,13.7,0,0.75
+Manchester_City_P7,Manchester City,LM,20,0,1,1.6,60.4,85.7,73.5,10.5,30,0.6
+Manchester_City_P8,Manchester City,RM,22,0,0,3.2,68.4,84.5,82.8,11.6,0,0.75
+Manchester_City_P9,Manchester City,LW,36,1,0,2.08,66.7,100.0,75.5,18.9,15,0.75
+Manchester_City_P10,Manchester City,RW,25,0,1,1.52,68.7,92.7,75.4,13.2,0,0.75
+Manchester_City_P11,Manchester City,CF,27,1,0,3.36,71.9,99.4,79.9,14.2,0,0.75
+Manchester_City_P12,Manchester City,ST,27,2,0,6.24,72.3,100.0,79.2,14.2,0,0.75
+Manchester_City_P13,Manchester City,LW,18,0,0,2.72,68.8,89.9,76.3,9.5,0,0.6
+Manchester_City_P14,Manchester City,RW,31,0,0,2.08,70.4,100.0,76.3,16.3,0,0.75
+Manchester_City_P15,Manchester City,CF,31,0,0,4.24,69.1,100.0,82.7,16.3,15,0.75
+Manchester_City_P16,Manchester City,ST,35,2,0,7.68,71.2,100.0,78.1,18.4,0,0.75
+Manchester_City_P17,Manchester City,LW,32,0,0,1.92,72.3,100.0,83.0,16.8,0,0.75
+Manchester_City_P18,Manchester City,RW,30,0,0,0.88,65.5,100.0,80.2,15.8,30,0.75
+Manchester_City_P19,Manchester City,CF,30,0,0,7.76,65.9,98.4,81.6,15.8,30,0.75
+Manchester_City_P20,Manchester City,ST,22,0,0,3.68,64.0,86.8,76.0,11.6,15,0.75
+Manchester_City_P21,Manchester City,LW,24,0,1,2.4,66.7,97.4,73.9,12.6,15,0.75
+Manchester_City_P22,Manchester City,RW,34,0,1,0.88,67.4,100.0,77.7,17.9,15,0.75
+Manchester_City_P23,Manchester City,CF,34,2,1,3.76,67.0,100.0,83.4,17.9,30,0.75
+Manchester_City_P24,Manchester City,ST,23,1,0,3.44,65.2,86.3,79.9,12.1,15,0.75
+Manchester_City_P25,Manchester City,LW,23,1,0,3.68,68.8,100.0,77.9,12.1,15,0.75
+Manchester_City_P26,Manchester City,RW,21,1,0,1.68,60.2,85.5,72.7,11.1,30,0.75
+Manchester_City_P27,Manchester City,CF,31,2,0,2.64,70.5,98.5,77.5,16.3,0,0.75
+Manchester_City_P28,Manchester City,ST,15,2,0,6.56,64.9,76.0,74.5,7.9,0,0.6
+Manchester_City_P29,Manchester City,LW,20,0,0,0.96,62.5,81.3,86.4,10.5,30,0.6
+Manchester_United_P0,Manchester United,GK,22,0,0,0.0,69.7,91.8,81.6,11.6,0,0.75
+Manchester_United_P1,Manchester United,LB,36,1,0,0.8,72.4,100.0,84.0,18.9,0,0.75
+Manchester_United_P2,Manchester United,RB,32,0,0,3.84,69.9,100.0,75.3,16.8,0,0.75
+Manchester_United_P3,Manchester United,CB,36,1,0,5.52,72.3,100.0,83.7,18.9,0,0.75
+Manchester_United_P4,Manchester United,LB,18,1,0,3.36,65.8,81.3,83.0,9.5,15,0.6
+Manchester_United_P5,Manchester United,RM,17,1,0,3.12,65.4,76.9,77.2,8.9,0,0.6
+Manchester_United_P6,Manchester United,CM,31,0,0,2.4,69.2,96.9,76.0,16.3,0,0.75
+Manchester_United_P7,Manchester United,LM,25,0,0,3.36,70.0,91.6,80.0,13.2,0,0.75
+Manchester_United_P8,Manchester United,RM,24,0,0,2.56,72.0,100.0,79.0,12.6,0,0.75
+Manchester_United_P9,Manchester United,LW,26,0,0,3.76,69.3,90.8,79.0,13.7,0,0.75
+Manchester_United_P10,Manchester United,RW,18,1,1,3.28,67.7,78.8,81.0,9.5,0,0.6
+Manchester_United_P11,Manchester United,CF,23,0,0,3.12,62.3,85.9,81.9,12.1,30,0.75
+Manchester_United_P12,Manchester United,ST,29,0,0,7.2,71.6,99.0,80.1,15.3,0,0.75
+Manchester_United_P13,Manchester United,LW,33,1,1,1.52,72.4,100.0,81.7,17.4,0,0.75
+Manchester_United_P14,Manchester United,RW,20,1,0,2.8,67.1,80.5,79.1,10.5,0,0.6
+Manchester_United_P15,Manchester United,CF,19,5,0,4.72,66.3,78.7,75.2,10.0,0,0.6
+Manchester_United_P16,Manchester United,ST,30,2,1,4.96,69.8,100.0,81.1,15.8,15,0.75
+Manchester_United_P17,Manchester United,LW,37,0,0,0.8,72.2,100.0,85.6,19.5,0,0.75
+Manchester_United_P18,Manchester United,RW,32,0,0,1.68,70.6,100.0,78.8,16.8,0,0.75
+Manchester_United_P19,Manchester United,CF,33,3,0,5.6,71.6,100.0,77.8,17.4,0,0.75
+Manchester_United_P20,Manchester United,ST,32,0,0,4.64,71.8,100.0,81.3,16.8,0,0.75
+Manchester_United_P21,Manchester United,LW,28,1,0,2.88,72.0,100.0,79.0,14.7,0,0.75
+Manchester_United_P22,Manchester United,RW,24,0,0,3.92,72.8,100.0,82.7,12.6,0,0.75
+Manchester_United_P23,Manchester United,CF,35,2,0,4.08,69.6,100.0,83.1,18.4,15,0.75
+Manchester_United_P24,Manchester United,ST,15,1,0,3.76,66.3,79.8,76.8,7.9,0,0.6
+Manchester_United_P25,Manchester United,LW,27,1,0,1.44,71.6,100.0,79.2,14.2,0,0.75
+Manchester_United_P26,Manchester United,RW,31,1,2,2.8,71.7,100.0,77.5,16.3,0,0.75
+Manchester_United_P27,Manchester United,CF,28,0,1,5.68,73.4,100.0,84.0,14.7,0,0.75
+Manchester_United_P28,Manchester United,ST,32,3,2,7.2,73.1,100.0,80.5,16.8,0,0.75
+Manchester_United_P29,Manchester United,LW,26,0,0,3.44,71.8,98.5,80.8,13.7,0,0.75
+Liverpool_P0,Liverpool,GK,20,0,0,0.0,65.2,88.5,79.2,10.5,15,0.6
+Liverpool_P1,Liverpool,LB,18,1,0,1.12,66.8,81.6,78.8,9.5,0,0.6
+Liverpool_P2,Liverpool,RB,29,1,0,3.84,71.1,100.0,76.7,15.3,0,0.75
+Liverpool_P3,Liverpool,CB,19,2,0,6.8,65.2,82.2,80.0,10.0,15,0.6
+Liverpool_P4,Liverpool,LB,17,1,1,3.92,65.0,82.5,78.1,8.9,15,0.6
+Liverpool_P5,Liverpool,RM,22,0,0,3.6,67.1,85.7,76.7,11.6,0,0.75
+Liverpool_P6,Liverpool,CM,17,1,0,1.12,64.7,88.0,84.3,8.9,30,0.6
+Liverpool_P7,Liverpool,LM,21,1,0,3.12,65.2,83.1,82.0,11.1,15,0.75
+Liverpool_P8,Liverpool,RM,31,1,0,0.96,71.3,100.0,79.3,16.3,0,0.75
+Liverpool_P9,Liverpool,LW,23,0,1,3.76,69.6,93.0,76.3,12.1,0,0.75
+Liverpool_P10,Liverpool,RW,36,0,1,3.44,69.6,100.0,85.1,18.9,15,0.75
+Liverpool_P11,Liverpool,CF,37,1,0,3.92,70.1,100.0,76.8,19.5,0,0.75
+Liverpool_P12,Liverpool,ST,28,0,0,7.2,71.4,100.0,78.0,14.7,0,0.75
+Liverpool_P13,Liverpool,LW,37,0,1,1.36,64.7,100.0,79.5,19.5,30,0.75
+Liverpool_P14,Liverpool,RW,27,1,0,1.68,66.1,100.0,79.2,14.2,30,0.75
+Liverpool_P15,Liverpool,CF,31,1,0,7.84,72.1,100.0,80.6,16.3,0,0.75
+Liverpool_P16,Liverpool,ST,37,0,0,4.96,70.1,100.0,77.5,19.5,0,0.75
+Liverpool_P17,Liverpool,LW,30,0,0,1.12,71.0,100.0,79.0,15.8,0,0.75
+Liverpool_P18,Liverpool,RW,22,0,0,3.68,72.1,97.2,81.9,11.6,0,0.75
+Liverpool_P19,Liverpool,CF,23,2,1,3.12,68.5,85.2,79.6,12.1,0,0.75
+Liverpool_P20,Liverpool,ST,28,2,1,2.72,70.6,100.0,84.1,14.7,15,0.75
+Liverpool_P21,Liverpool,LW,35,1,0,1.68,71.0,100.0,79.9,18.4,0,0.75
+Liverpool_P22,Liverpool,RW,19,1,1,0.8,70.9,86.6,84.8,10.0,0,0.6
+Liverpool_P23,Liverpool,CF,36,4,0,6.96,69.6,100.0,80.6,18.9,15,0.75
+Liverpool_P24,Liverpool,ST,18,1,0,6.96,66.1,83.8,72.7,9.5,0,0.6
+Liverpool_P25,Liverpool,LW,31,3,0,1.76,66.4,100.0,80.5,16.3,30,0.75
+Liverpool_P26,Liverpool,RW,34,1,1,2.48,71.4,100.0,79.5,17.9,0,0.75
+Liverpool_P27,Liverpool,CF,20,3,0,5.6,68.8,90.1,73.9,10.5,0,0.6
+Liverpool_P28,Liverpool,ST,37,0,0,7.52,70.2,100.0,76.9,19.5,0,0.75
+Liverpool_P29,Liverpool,LW,16,0,0,1.12,66.2,76.0,82.2,8.4,0,0.6
+Arsenal_P0,Arsenal,GK,23,0,0,0.0,68.0,88.9,79.0,12.1,0,0.75
+Arsenal_P1,Arsenal,LB,21,0,0,2.72,68.9,86.8,80.8,11.1,0,0.75
+Arsenal_P2,Arsenal,RB,37,0,0,3.28,69.8,100.0,76.5,19.5,0,0.75
+Arsenal_P3,Arsenal,CB,34,3,1,6.24,70.8,100.0,74.4,17.9,0,0.75
+Arsenal_P4,Arsenal,LB,16,2,1,2.4,65.2,84.5,75.2,8.4,15,0.6
+Arsenal_P5,Arsenal,RM,19,0,0,0.88,67.0,82.8,78.6,10.0,0,0.6
+Arsenal_P6,Arsenal,CM,17,2,0,3.12,62.2,82.4,80.2,8.9,30,0.6
+Arsenal_P7,Arsenal,LM,37,0,0,3.76,70.2,100.0,78.0,19.5,0,0.75
+Arsenal_P8,Arsenal,RM,16,0,0,0.88,64.4,81.5,80.7,8.4,15,0.6
+Arsenal_P9,Arsenal,LW,32,3,0,2.72,71.8,100.0,77.6,16.8,0,0.75
+Arsenal_P10,Arsenal,RW,32,0,0,1.12,65.5,100.0,81.2,16.8,30,0.75
+Arsenal_P11,Arsenal,CF,27,1,0,5.28,71.9,100.0,79.3,14.2,0,0.75
+Arsenal_P12,Arsenal,ST,33,1,0,5.84,71.0,100.0,78.1,17.4,0,0.75
+Arsenal_P13,Arsenal,LW,17,0,0,2.24,68.6,83.6,81.8,8.9,0,0.6
+Arsenal_P14,Arsenal,RW,23,0,0,2.4,70.8,95.7,80.2,12.1,0,0.75
+Arsenal_P15,Arsenal,CF,36,2,0,2.88,70.6,100.0,77.6,18.9,0,0.75
+Arsenal_P16,Arsenal,ST,33,2,0,3.84,70.8,100.0,77.2,17.4,0,0.75
+Arsenal_P17,Arsenal,LW,17,0,0,1.84,68.3,86.3,79.3,8.9,0,0.6
+Arsenal_P18,Arsenal,RW,31,0,0,0.8,72.3,100.0,82.6,16.3,0,0.75
+Arsenal_P19,Arsenal,CF,29,0,0,5.6,72.0,100.0,81.1,15.3,0,0.75
+Arsenal_P20,Arsenal,ST,35,1,0,6.8,71.1,100.0,78.7,18.4,0,0.75
+Arsenal_P21,Arsenal,LW,24,0,1,3.12,67.8,96.0,78.2,12.6,15,0.75
+Arsenal_P22,Arsenal,RW,28,0,0,2.56,72.3,100.0,81.4,14.7,0,0.75
+Arsenal_P23,Arsenal,CF,24,0,0,5.6,70.0,95.2,77.1,12.6,0,0.75
+Arsenal_P24,Arsenal,ST,30,0,0,6.88,68.0,100.0,77.7,15.8,15,0.75
+Arsenal_P25,Arsenal,LW,18,1,2,3.2,68.2,80.9,81.4,9.5,0,0.6
+Arsenal_P26,Arsenal,RW,19,0,0,1.92,66.7,81.6,77.9,10.0,0,0.6
+Arsenal_P27,Arsenal,CF,30,3,0,4.88,73.6,100.0,84.0,15.8,0,0.75
+Arsenal_P28,Arsenal,ST,24,3,0,6.96,70.9,100.0,72.2,12.6,0,0.75
+Arsenal_P29,Arsenal,LW,21,1,0,2.88,70.1,94.8,76.1,11.1,0,0.75
+Chelsea_P0,Chelsea,GK,28,0,0,0.0,66.6,100.0,75.3,14.7,15,0.75
+Chelsea_P1,Chelsea,LB,32,0,0,3.36,65.0,100.0,79.6,16.8,30,0.75
+Chelsea_P2,Chelsea,RB,34,0,1,3.36,68.7,100.0,79.7,17.9,15,0.75
+Chelsea_P3,Chelsea,CB,16,0,0,4.88,69.0,83.2,83.2,8.4,0,0.6
+Chelsea_P4,Chelsea,LB,20,0,0,3.76,63.1,88.0,79.3,10.5,30,0.6
+Chelsea_P5,Chelsea,RM,37,0,0,3.6,71.0,100.0,80.9,19.5,0,0.75
+Chelsea_P6,Chelsea,CM,28,0,1,3.52,69.7,97.4,74.3,14.7,0,0.75
+Chelsea_P7,Chelsea,LM,26,0,0,2.32,71.3,100.0,78.6,13.7,0,0.75
+Chelsea_P8,Chelsea,RM,34,1,1,3.36,70.1,100.0,74.0,17.9,0,0.75
+Chelsea_P9,Chelsea,LW,24,0,0,2.48,68.8,87.1,81.2,12.6,0,0.75
+Chelsea_P10,Chelsea,RW,35,0,0,2.16,69.8,100.0,76.8,18.4,0,0.75
+Chelsea_P11,Chelsea,CF,34,2,1,4.64,72.3,100.0,80.8,17.9,0,0.75
+Chelsea_P12,Chelsea,ST,21,1,1,3.84,71.2,89.3,84.6,11.1,0,0.75
+Chelsea_P13,Chelsea,LW,21,1,1,2.16,70.3,90.5,79.4,11.1,0,0.75
+Chelsea_P14,Chelsea,RW,31,1,0,1.6,73.0,100.0,84.5,16.3,0,0.75
+Chelsea_P15,Chelsea,CF,17,3,2,4.24,66.1,76.4,75.7,8.9,0,0.6
+Chelsea_P16,Chelsea,ST,27,0,0,6.96,69.1,100.0,80.0,14.2,15,0.75
+Chelsea_P17,Chelsea,LW,33,1,0,3.84,72.0,100.0,81.9,17.4,0,0.75
+Chelsea_P18,Chelsea,RW,26,2,0,2.72,71.0,96.6,76.9,13.7,0,0.75
+Chelsea_P19,Chelsea,CF,30,0,0,3.2,72.5,100.0,83.9,15.8,0,0.75
+Chelsea_P20,Chelsea,ST,26,2,0,6.4,69.8,89.2,80.8,13.7,0,0.75
+Chelsea_P21,Chelsea,LW,27,0,1,3.44,70.6,93.2,80.1,14.2,0,0.75
+Chelsea_P22,Chelsea,RW,37,2,0,3.92,70.6,100.0,75.9,19.5,0,0.75
+Chelsea_P23,Chelsea,CF,18,2,1,3.68,65.4,79.3,83.4,9.5,15,0.6
+Chelsea_P24,Chelsea,ST,31,0,0,2.72,69.2,100.0,83.6,16.3,15,0.75
+Chelsea_P25,Chelsea,LW,25,0,0,2.24,67.4,97.2,77.8,13.2,15,0.75
+Chelsea_P26,Chelsea,RW,22,0,0,3.2,69.1,87.5,81.1,11.6,0,0.75
+Chelsea_P27,Chelsea,CF,32,3,0,2.56,72.3,100.0,80.7,16.8,0,0.75
+Chelsea_P28,Chelsea,ST,21,1,0,3.68,69.4,91.3,77.9,11.1,0,0.75
+Chelsea_P29,Chelsea,LW,36,0,0,2.32,71.7,100.0,82.4,18.9,0,0.75
+Real_Madrid_P0,Real Madrid,GK,25,0,0,0.0,68.5,100.0,80.3,13.2,15,0.75
+Real_Madrid_P1,Real Madrid,LB,22,0,1,3.92,70.4,90.8,81.6,11.6,0,0.75
+Real_Madrid_P2,Real Madrid,RB,26,0,1,0.8,66.2,97.1,83.2,13.7,30,0.75
+Real_Madrid_P3,Real Madrid,CB,23,1,0,3.36,67.9,91.0,73.8,12.1,0,0.75
+Real_Madrid_P4,Real Madrid,LB,20,0,1,1.44,68.1,87.5,75.9,10.5,0,0.6
+Real_Madrid_P5,Real Madrid,RM,23,0,1,2.24,64.6,86.5,76.0,12.1,15,0.75
+Real_Madrid_P6,Real Madrid,CM,27,0,1,3.84,71.6,100.0,77.6,14.2,0,0.75
+Real_Madrid_P7,Real Madrid,LM,29,1,0,3.6,68.9,100.0,78.5,15.3,15,0.75
+Real_Madrid_P8,Real Madrid,RM,26,0,0,3.76,72.7,100.0,82.4,13.7,0,0.75
+Real_Madrid_P9,Real Madrid,LW,23,1,2,3.44,65.4,86.1,76.5,12.1,15,0.75
+Real_Madrid_P10,Real Madrid,RW,17,2,0,1.12,67.9,82.0,80.0,8.9,0,0.6
+Real_Madrid_P11,Real Madrid,CF,18,0,0,7.28,66.7,81.1,77.5,9.5,0,0.6
+Real_Madrid_P12,Real Madrid,ST,28,1,0,6.48,71.4,97.2,80.0,14.7,0,0.75
+Real_Madrid_P13,Real Madrid,LW,17,0,1,2.48,68.6,85.2,78.7,8.9,0,0.6
+Real_Madrid_P14,Real Madrid,RW,26,1,1,2.4,71.1,97.7,77.1,13.7,0,0.75
+Real_Madrid_P15,Real Madrid,CF,26,2,0,4.8,73.8,100.0,84.2,13.7,0,0.75
+Real_Madrid_P16,Real Madrid,ST,29,1,0,7.92,70.3,100.0,73.3,15.3,0,0.75
+Real_Madrid_P17,Real Madrid,LW,33,0,1,2.16,72.5,100.0,83.2,17.4,0,0.75
+Real_Madrid_P18,Real Madrid,RW,26,1,0,3.12,71.3,96.5,80.6,13.7,0,0.75
+Real_Madrid_P19,Real Madrid,CF,25,2,0,7.12,72.9,100.0,80.5,13.2,0,0.75
+Real_Madrid_P20,Real Madrid,ST,37,0,0,7.76,69.3,100.0,74.2,19.5,0,0.75
+Real_Madrid_P21,Real Madrid,LW,32,1,0,2.24,66.9,98.2,75.4,16.8,15,0.75
+Real_Madrid_P22,Real Madrid,RW,22,0,0,1.28,70.4,98.0,75.6,11.6,0,0.75
+Real_Madrid_P23,Real Madrid,CF,18,0,0,7.76,70.5,87.7,83.7,9.5,0,0.6
+Real_Madrid_P24,Real Madrid,ST,17,0,1,5.44,65.8,84.7,80.0,8.9,15,0.6
+Real_Madrid_P25,Real Madrid,LW,21,0,0,1.92,68.4,88.5,78.9,11.1,0,0.75
+Real_Madrid_P26,Real Madrid,RW,24,0,1,3.28,71.1,99.7,75.3,12.6,0,0.75
+Real_Madrid_P27,Real Madrid,CF,37,1,1,7.12,71.3,100.0,78.7,19.5,0,0.75
+Real_Madrid_P28,Real Madrid,ST,26,1,1,4.96,69.9,99.2,81.9,13.7,15,0.75
+Real_Madrid_P29,Real Madrid,LW,31,0,1,0.88,70.9,100.0,77.5,16.3,0,0.75
+Barcelona_P0,Barcelona,GK,31,0,0,0.0,71.0,100.0,81.0,16.3,0,0.75
+Barcelona_P1,Barcelona,LB,21,1,0,1.52,67.0,89.3,81.9,11.1,15,0.75
+Barcelona_P2,Barcelona,RB,25,0,0,2.32,71.5,98.4,79.0,13.2,0,0.75
+Barcelona_P3,Barcelona,CB,19,1,0,3.92,70.9,90.8,82.8,10.0,0,0.6
+Barcelona_P4,Barcelona,LB,27,3,1,3.36,72.9,100.0,78.9,14.2,0,0.75
+Barcelona_P5,Barcelona,RM,22,1,0,2.88,70.0,97.2,82.9,11.6,15,0.75
+Barcelona_P6,Barcelona,CM,17,0,0,1.12,65.3,79.8,76.0,8.9,0,0.6
+Barcelona_P7,Barcelona,LM,21,1,0,1.44,69.0,87.1,79.7,11.1,0,0.75
+Barcelona_P8,Barcelona,RM,25,0,1,1.04,65.4,99.2,77.0,13.2,30,0.75
+Barcelona_P9,Barcelona,LW,21,0,0,1.92,69.8,92.8,78.8,11.1,0,0.75
+Barcelona_P10,Barcelona,RW,29,0,2,2.4,72.5,100.0,81.0,15.3,0,0.75
+Barcelona_P11,Barcelona,CF,33,2,0,6.48,71.6,100.0,78.7,17.4,0,0.75
+Barcelona_P12,Barcelona,ST,31,1,1,5.68,67.6,98.6,76.1,16.3,15,0.75
+Barcelona_P13,Barcelona,LW,37,0,0,2.4,71.5,100.0,82.3,19.5,0,0.75
+Barcelona_P14,Barcelona,RW,25,0,1,0.8,72.5,100.0,79.9,13.2,0,0.75
+Barcelona_P15,Barcelona,CF,16,2,0,5.68,65.9,75.6,78.2,8.4,0,0.6
+Barcelona_P16,Barcelona,ST,21,0,0,2.8,70.8,92.7,82.5,11.1,0,0.75
+Barcelona_P17,Barcelona,LW,20,0,1,1.52,69.2,91.4,76.3,10.5,0,0.6
+Barcelona_P18,Barcelona,RW,25,0,1,1.44,70.7,96.1,78.2,13.2,0,0.75
+Barcelona_P19,Barcelona,CF,21,0,1,4.16,71.4,95.2,80.6,11.1,0,0.75
+Barcelona_P20,Barcelona,ST,21,2,0,2.64,67.8,90.9,82.5,11.1,15,0.75
+Barcelona_P21,Barcelona,LW,18,2,0,1.12,70.9,89.5,83.2,9.5,0,0.6
+Barcelona_P22,Barcelona,RW,33,1,0,2.64,68.0,100.0,78.1,17.4,15,0.75
+Barcelona_P23,Barcelona,CF,26,2,2,6.96,72.0,95.8,79.8,13.7,0,0.75
+Barcelona_P24,Barcelona,ST,19,0,1,7.52,68.8,82.9,82.4,10.0,0,0.6
+Barcelona_P25,Barcelona,LW,27,0,1,2.16,66.3,92.8,77.6,14.2,15,0.75
+Barcelona_P26,Barcelona,RW,22,0,1,2.4,61.5,87.8,75.1,11.6,30,0.75
+Barcelona_P27,Barcelona,CF,35,2,0,3.68,67.3,100.0,85.9,18.4,30,0.75
+Barcelona_P28,Barcelona,ST,25,0,0,4.32,69.4,91.3,80.2,13.2,0,0.75
+Barcelona_P29,Barcelona,LW,29,0,0,2.88,72.2,100.0,81.2,15.3,0,0.75
+Atletico_Madrid_P0,Atletico Madrid,GK,23,0,0,0.0,67.9,88.2,79.4,12.1,0,0.75
+Atletico_Madrid_P1,Atletico Madrid,LB,33,2,0,2.88,68.8,100.0,78.9,17.4,15,0.75
+Atletico_Madrid_P2,Atletico Madrid,RB,23,0,1,3.12,71.9,97.2,80.6,12.1,0,0.75
+Atletico_Madrid_P3,Atletico Madrid,CB,34,1,0,5.36,71.5,100.0,80.4,17.9,0,0.75
+Atletico_Madrid_P4,Atletico Madrid,LB,32,0,0,3.28,68.5,100.0,80.4,16.8,15,0.75
+Atletico_Madrid_P5,Atletico Madrid,RM,29,1,0,0.8,72.7,100.0,82.3,15.3,0,0.75
+Atletico_Madrid_P6,Atletico Madrid,CM,33,0,0,2.32,69.1,100.0,82.0,17.4,15,0.75
+Atletico_Madrid_P7,Atletico Madrid,LM,37,1,2,1.52,67.5,100.0,75.2,19.5,15,0.75
+Atletico_Madrid_P8,Atletico Madrid,RM,16,2,0,3.6,67.8,80.6,79.9,8.4,0,0.6
+Atletico_Madrid_P9,Atletico Madrid,LW,16,0,2,1.92,68.8,84.7,79.0,8.4,0,0.6
+Atletico_Madrid_P10,Atletico Madrid,RW,36,0,1,2.56,64.4,100.0,78.0,18.9,30,0.75
+Atletico_Madrid_P11,Atletico Madrid,CF,21,3,0,6.64,72.6,95.6,81.0,11.1,0,0.75
+Atletico_Madrid_P12,Atletico Madrid,ST,16,4,0,4.48,61.4,78.9,78.3,8.4,30,0.6
+Atletico_Madrid_P13,Atletico Madrid,LW,20,2,0,2.24,71.8,93.0,81.9,10.5,0,0.6
+Atletico_Madrid_P14,Atletico Madrid,RW,31,0,0,2.96,71.0,100.0,77.8,16.3,0,0.75
+Atletico_Madrid_P15,Atletico Madrid,CF,37,1,0,7.92,71.1,100.0,79.1,19.5,0,0.75
+Atletico_Madrid_P16,Atletico Madrid,ST,32,1,0,6.48,71.7,100.0,79.7,16.8,0,0.75
+Atletico_Madrid_P17,Atletico Madrid,LW,24,0,1,3.84,68.8,87.9,78.8,12.6,0,0.75
+Atletico_Madrid_P18,Atletico Madrid,RW,25,0,0,3.12,69.7,95.2,76.1,13.2,0,0.75
+Atletico_Madrid_P19,Atletico Madrid,CF,31,3,0,7.84,73.9,100.0,83.7,16.3,0,0.75
+Atletico_Madrid_P20,Atletico Madrid,ST,34,4,1,7.44,69.4,100.0,78.4,17.9,15,0.75
+Atletico_Madrid_P21,Atletico Madrid,LW,25,1,1,1.2,68.9,88.9,79.8,13.2,0,0.75
+Atletico_Madrid_P22,Atletico Madrid,RW,27,2,0,1.12,72.0,100.0,78.2,14.2,0,0.75
+Atletico_Madrid_P23,Atletico Madrid,CF,22,1,0,7.28,72.0,96.1,81.0,11.6,0,0.75
+Atletico_Madrid_P24,Atletico Madrid,ST,32,1,0,5.6,71.7,100.0,80.6,16.8,0,0.75
+Atletico_Madrid_P25,Atletico Madrid,LW,16,2,0,3.52,65.5,75.0,77.1,8.4,0,0.6
+Atletico_Madrid_P26,Atletico Madrid,RW,23,0,1,2.88,73.4,98.6,84.8,12.1,0,0.75
+Atletico_Madrid_P27,Atletico Madrid,CF,29,3,0,6.48,72.1,100.0,78.3,15.3,0,0.75
+Atletico_Madrid_P28,Atletico Madrid,ST,20,2,0,7.76,67.9,82.2,78.8,10.5,0,0.6
+Atletico_Madrid_P29,Atletico Madrid,LW,23,1,1,3.92,67.5,84.9,76.9,12.1,0,0.75
+Sevilla_P0,Sevilla,GK,36,0,0,0.0,71.1,100.0,82.8,18.9,0,0.75
+Sevilla_P1,Sevilla,LB,15,0,0,1.28,63.0,79.0,78.5,7.9,15,0.6
+Sevilla_P2,Sevilla,RB,26,0,0,1.2,67.9,99.1,78.2,13.7,15,0.75
+Sevilla_P3,Sevilla,CB,15,0,0,4.48,65.4,74.9,79.8,7.9,0,0.6
+Sevilla_P4,Sevilla,LB,27,1,1,1.2,73.4,100.0,83.2,14.2,0,0.75
+Sevilla_P5,Sevilla,RM,21,0,2,3.92,67.3,85.8,75.1,11.1,0,0.75
+Sevilla_P6,Sevilla,CM,23,0,0,2.48,67.3,88.1,75.7,12.1,0,0.75
+Sevilla_P7,Sevilla,LM,15,2,1,2.72,62.3,80.8,80.6,7.9,30,0.6
+Sevilla_P8,Sevilla,RM,25,0,0,3.28,68.8,89.5,79.3,13.2,0,0.75
+Sevilla_P9,Sevilla,LW,21,2,0,1.2,63.4,83.3,74.0,11.1,15,0.75
+Sevilla_P10,Sevilla,RW,34,0,0,3.68,68.8,100.0,72.6,17.9,0,0.75
+Sevilla_P11,Sevilla,CF,23,2,0,4.32,72.6,100.0,79.4,12.1,0,0.75
+Sevilla_P12,Sevilla,ST,25,0,0,7.28,70.2,100.0,82.8,13.2,15,0.75
+Sevilla_P13,Sevilla,LW,25,0,0,1.92,65.1,100.0,77.5,13.2,30,0.75
+Sevilla_P14,Sevilla,RW,19,1,0,2.88,68.1,81.2,81.6,10.0,0,0.6
+Sevilla_P15,Sevilla,CF,16,1,0,7.6,65.7,74.0,79.6,8.4,0,0.6
+Sevilla_P16,Sevilla,ST,36,2,0,3.84,73.3,100.0,86.0,18.9,0,0.75
+Sevilla_P17,Sevilla,LW,15,0,0,1.6,66.5,77.7,80.3,7.9,0,0.6
+Sevilla_P18,Sevilla,RW,19,0,0,2.24,65.7,91.1,75.8,10.0,15,0.6
+Sevilla_P19,Sevilla,CF,22,2,0,7.12,71.4,93.7,80.4,11.6,0,0.75
+Sevilla_P20,Sevilla,ST,24,1,0,2.4,66.0,100.0,79.6,12.6,30,0.75
+Sevilla_P21,Sevilla,LW,36,0,0,3.2,71.1,100.0,80.0,18.9,0,0.75
+Sevilla_P22,Sevilla,RW,15,0,0,1.28,67.6,79.2,81.9,7.9,0,0.6
+Sevilla_P23,Sevilla,CF,25,2,1,2.64,70.5,89.3,83.5,13.2,0,0.75
+Sevilla_P24,Sevilla,ST,23,1,0,7.6,69.9,99.5,80.7,12.1,15,0.75
+Sevilla_P25,Sevilla,LW,16,1,1,1.84,67.1,76.3,82.0,8.4,0,0.6
+Sevilla_P26,Sevilla,RW,29,0,0,0.88,71.4,100.0,78.9,15.3,0,0.75
+Sevilla_P27,Sevilla,CF,26,1,0,5.84,70.3,93.8,79.7,13.7,0,0.75
+Sevilla_P28,Sevilla,ST,18,1,0,3.52,68.6,88.6,77.4,9.5,0,0.6
+Sevilla_P29,Sevilla,LW,24,0,1,3.84,73.9,100.0,83.2,12.6,0,0.75
+Valencia_P0,Valencia,GK,25,0,0,0.0,69.8,95.7,79.1,13.2,0,0.75
+Valencia_P1,Valencia,LB,30,0,1,3.12,66.3,100.0,80.0,15.8,30,0.75
+Valencia_P2,Valencia,RB,37,1,2,1.68,68.4,100.0,79.8,19.5,15,0.75
+Valencia_P3,Valencia,CB,34,2,0,6.56,73.2,100.0,84.2,17.9,0,0.75
+Valencia_P4,Valencia,LB,15,0,2,1.36,65.0,74.2,77.4,7.9,0,0.6
+Valencia_P5,Valencia,RM,17,1,0,2.96,65.7,86.5,77.2,8.9,15,0.6
+Valencia_P6,Valencia,CM,36,0,1,2.96,73.6,100.0,86.9,18.9,0,0.75
+Valencia_P7,Valencia,LM,34,1,1,1.68,71.8,100.0,81.2,17.9,0,0.75
+Valencia_P8,Valencia,RM,19,1,0,2.24,67.3,92.4,78.1,10.0,15,0.6
+Valencia_P9,Valencia,LW,21,0,0,2.16,71.3,96.3,80.7,11.1,0,0.75
+Valencia_P10,Valencia,RW,23,0,0,1.44,69.3,94.0,77.3,12.1,0,0.75
+Valencia_P11,Valencia,CF,18,0,0,7.92,66.5,78.0,80.1,9.5,0,0.6
+Valencia_P12,Valencia,ST,21,1,1,4.88,70.5,91.8,80.0,11.1,0,0.75
+Valencia_P13,Valencia,LW,23,0,1,2.48,61.1,85.7,76.6,12.1,30,0.75
+Valencia_P14,Valencia,RW,30,0,1,0.8,70.8,100.0,77.1,15.8,0,0.75
+Valencia_P15,Valencia,CF,21,2,0,6.48,62.1,82.8,80.4,11.1,30,0.75
+Valencia_P16,Valencia,ST,32,1,0,4.0,70.1,99.0,76.0,16.8,0,0.75
+Valencia_P17,Valencia,LW,16,1,0,2.24,68.4,81.7,82.0,8.4,0,0.6
+Valencia_P18,Valencia,RW,21,1,1,3.12,70.6,87.2,83.2,11.1,0,0.75
+Valencia_P19,Valencia,CF,15,3,0,5.92,66.3,75.3,79.1,7.9,0,0.6
+Valencia_P20,Valencia,ST,33,2,0,4.56,71.9,100.0,80.2,17.4,0,0.75
+Valencia_P21,Valencia,LW,34,0,0,3.2,70.5,100.0,77.5,17.9,0,0.75
+Valencia_P22,Valencia,RW,37,1,2,1.52,71.7,100.0,79.8,19.5,0,0.75
+Valencia_P23,Valencia,CF,35,1,0,3.36,71.0,100.0,79.9,18.4,0,0.75
+Valencia_P24,Valencia,ST,24,0,0,4.16,67.0,89.0,74.0,12.6,0,0.75
+Valencia_P25,Valencia,LW,32,0,0,3.44,70.2,100.0,76.9,16.8,0,0.75
+Valencia_P26,Valencia,RW,19,0,0,3.44,67.0,82.7,78.8,10.0,0,0.6
+Valencia_P27,Valencia,CF,32,0,2,4.8,70.2,98.1,76.1,16.8,0,0.75
+Valencia_P28,Valencia,ST,33,3,0,4.32,72.5,100.0,81.4,17.4,0,0.75
+Valencia_P29,Valencia,LW,25,0,0,3.68,70.4,97.3,77.7,13.2,0,0.75
+Juventus_P0,Juventus,GK,23,0,0,0.0,72.2,99.8,82.4,12.1,0,0.75
+Juventus_P1,Juventus,LB,27,0,0,1.12,66.7,97.8,75.3,14.2,15,0.75
+Juventus_P2,Juventus,RB,25,0,0,3.84,69.6,100.0,80.7,13.2,15,0.75
+Juventus_P3,Juventus,CB,35,5,0,5.52,72.1,100.0,78.0,18.4,0,0.75
+Juventus_P4,Juventus,LB,35,0,0,2.56,70.2,100.0,76.5,18.4,0,0.75
+Juventus_P5,Juventus,RM,30,1,1,1.68,66.6,100.0,81.2,15.8,30,0.75
+Juventus_P6,Juventus,CM,15,0,0,3.52,67.9,78.7,82.8,7.9,0,0.6
+Juventus_P7,Juventus,LM,18,2,0,2.48,69.6,90.2,77.2,9.5,0,0.6
+Juventus_P8,Juventus,RM,15,0,0,3.2,66.2,74.5,81.0,7.9,0,0.6
+Juventus_P9,Juventus,LW,37,0,1,3.68,70.8,100.0,77.9,19.5,0,0.75
+Juventus_P10,Juventus,RW,20,0,0,1.28,67.8,81.5,83.7,10.5,0,0.6
+Juventus_P11,Juventus,CF,22,2,0,5.6,68.8,84.4,80.9,11.6,0,0.75
+Juventus_P12,Juventus,ST,20,1,0,2.8,69.5,86.3,82.9,10.5,0,0.6
+Juventus_P13,Juventus,LW,20,0,0,1.52,67.6,84.5,79.9,10.5,0,0.6
+Juventus_P14,Juventus,RW,16,1,1,2.24,61.1,80.6,78.2,8.4,30,0.6
+Juventus_P15,Juventus,CF,36,2,0,6.48,68.4,100.0,79.3,18.9,15,0.75
+Juventus_P16,Juventus,ST,21,3,1,7.84,70.1,90.4,77.1,11.1,0,0.75
+Juventus_P17,Juventus,LW,21,1,0,2.96,67.4,89.1,81.9,11.1,15,0.75
+Juventus_P18,Juventus,RW,16,0,2,0.8,65.9,82.5,72.2,8.4,0,0.6
+Juventus_P19,Juventus,CF,30,0,0,6.0,71.0,100.0,77.7,15.8,0,0.75
+Juventus_P20,Juventus,ST,19,2,0,7.28,70.9,89.8,81.7,10.0,0,0.6
+Juventus_P21,Juventus,LW,21,0,2,3.28,68.4,88.3,75.7,11.1,0,0.75
+Juventus_P22,Juventus,RW,34,0,0,2.08,72.8,100.0,84.7,17.9,0,0.75
+Juventus_P23,Juventus,CF,35,1,1,7.44,72.7,100.0,83.0,18.4,0,0.75
+Juventus_P24,Juventus,ST,26,1,0,7.6,69.9,100.0,81.9,13.7,15,0.75
+Juventus_P25,Juventus,LW,28,0,0,2.24,66.7,100.0,83.5,14.7,30,0.75
+Juventus_P26,Juventus,RW,24,0,0,2.08,65.2,100.0,77.7,12.6,30,0.75
+Juventus_P27,Juventus,CF,28,2,0,5.68,71.6,95.2,82.0,14.7,0,0.75
+Juventus_P28,Juventus,ST,23,0,0,4.64,70.5,93.7,80.7,12.1,0,0.75
+Juventus_P29,Juventus,LW,31,1,0,1.04,69.0,100.0,70.4,16.3,0,0.75
+Inter_Milan_P0,Inter Milan,GK,36,0,0,0.0,70.7,100.0,81.7,18.9,0,0.75
+Inter_Milan_P1,Inter Milan,LB,22,0,1,2.16,68.2,96.5,79.4,11.6,15,0.75
+Inter_Milan_P2,Inter Milan,RB,32,0,0,2.0,71.1,100.0,78.1,16.8,0,0.75
+Inter_Milan_P3,Inter Milan,CB,33,1,0,4.56,71.6,100.0,80.7,17.4,0,0.75
+Inter_Milan_P4,Inter Milan,LB,17,1,0,1.52,66.5,79.7,77.3,8.9,0,0.6
+Inter_Milan_P5,Inter Milan,RM,19,1,0,2.8,69.2,87.5,79.5,10.0,0,0.6
+Inter_Milan_P6,Inter Milan,CM,23,0,0,3.36,68.5,93.6,74.5,12.1,0,0.75
+Inter_Milan_P7,Inter Milan,LM,17,1,0,2.4,69.4,87.2,80.9,8.9,0,0.6
+Inter_Milan_P8,Inter Milan,RM,25,0,1,1.76,70.9,95.1,80.4,13.2,0,0.75
+Inter_Milan_P9,Inter Milan,LW,20,1,0,1.44,65.3,82.9,72.0,10.5,0,0.6
+Inter_Milan_P10,Inter Milan,RW,34,2,0,3.36,72.0,100.0,80.2,17.9,0,0.75
+Inter_Milan_P11,Inter Milan,CF,36,2,0,2.64,71.4,100.0,80.0,18.9,0,0.75
+Inter_Milan_P12,Inter Milan,ST,20,0,0,5.44,69.8,92.2,78.3,10.5,0,0.6
+Inter_Milan_P13,Inter Milan,LW,29,0,2,3.68,73.0,100.0,82.6,15.3,0,0.75
+Inter_Milan_P14,Inter Milan,RW,28,0,0,1.28,69.9,100.0,73.2,14.7,0,0.75
+Inter_Milan_P15,Inter Milan,CF,34,1,0,2.4,70.5,100.0,77.7,17.9,0,0.75
+Inter_Milan_P16,Inter Milan,ST,34,2,0,2.72,67.6,100.0,77.5,17.9,15,0.75
+Inter_Milan_P17,Inter Milan,LW,24,1,1,2.4,72.2,99.4,78.1,12.6,0,0.75
+Inter_Milan_P18,Inter Milan,RW,36,2,1,2.4,65.2,100.0,78.7,18.9,30,0.75
+Inter_Milan_P19,Inter Milan,CF,22,2,0,7.6,67.3,95.0,75.0,11.6,15,0.75
+Inter_Milan_P20,Inter Milan,ST,30,2,0,6.8,71.4,100.0,76.6,15.8,0,0.75
+Inter_Milan_P21,Inter Milan,LW,28,0,0,2.16,68.5,100.0,79.5,14.7,15,0.75
+Inter_Milan_P22,Inter Milan,RW,18,0,0,2.64,62.6,87.1,79.0,9.5,30,0.6
+Inter_Milan_P23,Inter Milan,CF,32,1,0,3.76,71.8,100.0,80.8,16.8,0,0.75
+Inter_Milan_P24,Inter Milan,ST,37,0,0,3.44,71.0,100.0,80.9,19.5,0,0.75
+Inter_Milan_P25,Inter Milan,LW,22,1,0,2.64,71.2,97.0,78.0,11.6,0,0.75
+Inter_Milan_P26,Inter Milan,RW,24,1,1,1.2,70.9,98.4,75.2,12.6,0,0.75
+Inter_Milan_P27,Inter Milan,CF,29,0,0,7.52,67.1,100.0,74.3,15.3,15,0.75
+Inter_Milan_P28,Inter Milan,ST,30,2,0,5.2,71.6,97.7,80.1,15.8,0,0.75
+Inter_Milan_P29,Inter Milan,LW,15,0,0,1.6,66.4,77.0,80.6,7.9,0,0.6
+AC_Milan_P0,AC Milan,GK,27,0,0,0.0,69.8,100.0,75.6,14.2,0,0.75
+AC_Milan_P1,AC Milan,LB,30,0,1,1.28,69.8,100.0,82.5,15.8,15,0.75
+AC_Milan_P2,AC Milan,RB,23,0,1,2.16,72.4,100.0,80.0,12.1,0,0.75
+AC_Milan_P3,AC Milan,CB,22,0,0,4.48,68.0,91.0,84.6,11.6,15,0.75
+AC_Milan_P4,AC Milan,LB,21,0,0,1.84,70.7,93.3,81.3,11.1,0,0.75
+AC_Milan_P5,AC Milan,RM,33,1,0,1.68,69.5,100.0,82.4,17.4,15,0.75
+AC_Milan_P6,AC Milan,CM,34,0,3,3.68,74.8,100.0,88.2,17.9,0,0.75
+AC_Milan_P7,AC Milan,LM,24,0,1,1.28,68.9,100.0,78.8,12.6,15,0.75
+AC_Milan_P8,AC Milan,RM,18,0,0,2.96,65.9,87.5,78.6,9.5,15,0.6
+AC_Milan_P9,AC Milan,LW,20,1,1,2.24,72.2,92.7,84.4,10.5,0,0.6
+AC_Milan_P10,AC Milan,RW,25,1,0,2.88,69.1,100.0,79.3,13.2,15,0.75
+AC_Milan_P11,AC Milan,CF,17,4,0,3.12,70.0,87.7,78.9,8.9,0,0.6
+AC_Milan_P12,AC Milan,ST,28,2,0,3.6,71.9,96.2,82.3,14.7,0,0.75
+AC_Milan_P13,AC Milan,LW,20,1,1,2.32,69.9,86.2,81.6,10.5,0,0.6
+AC_Milan_P14,AC Milan,RW,36,1,1,2.0,69.2,100.0,81.9,18.9,15,0.75
+AC_Milan_P15,AC Milan,CF,28,2,1,3.68,68.9,100.0,78.3,14.7,15,0.75
+AC_Milan_P16,AC Milan,ST,31,3,0,6.96,70.9,100.0,75.1,16.3,0,0.75
+AC_Milan_P17,AC Milan,LW,35,2,0,1.52,72.4,100.0,83.1,18.4,0,0.75
+AC_Milan_P18,AC Milan,RW,23,1,0,1.76,64.6,86.0,77.7,12.1,15,0.75
+AC_Milan_P19,AC Milan,CF,28,4,0,6.08,73.7,100.0,81.9,14.7,0,0.75
+AC_Milan_P20,AC Milan,ST,34,1,0,7.84,72.1,100.0,81.2,17.9,0,0.75
+AC_Milan_P21,AC Milan,LW,18,1,1,3.76,66.4,78.4,77.5,9.5,0,0.6
+AC_Milan_P22,AC Milan,RW,27,0,1,0.88,66.7,100.0,82.8,14.2,30,0.75
+AC_Milan_P23,AC Milan,CF,16,1,0,6.96,66.6,76.0,81.3,8.4,0,0.6
+AC_Milan_P24,AC Milan,ST,35,0,1,7.76,71.6,100.0,79.6,18.4,0,0.75
+AC_Milan_P25,AC Milan,LW,25,0,0,2.24,71.4,93.5,84.2,13.2,0,0.75
+AC_Milan_P26,AC Milan,RW,30,0,0,3.92,70.8,100.0,76.7,15.8,0,0.75
+AC_Milan_P27,AC Milan,CF,28,3,0,5.84,73.1,100.0,81.4,14.7,0,0.75
+AC_Milan_P28,AC Milan,ST,28,1,0,2.72,67.4,100.0,75.1,14.7,15,0.75
+AC_Milan_P29,AC Milan,LW,31,0,1,0.96,66.2,100.0,81.8,16.3,30,0.75
+Napoli_P0,Napoli,GK,17,0,0,0.0,65.7,86.8,81.4,8.9,15,0.6
+Napoli_P1,Napoli,LB,24,0,0,3.6,71.1,100.0,85.7,12.6,15,0.75
+Napoli_P2,Napoli,RB,15,0,0,2.0,67.5,81.4,79.5,7.9,0,0.6
+Napoli_P3,Napoli,CB,26,2,0,4.24,72.4,100.0,79.6,13.7,0,0.75
+Napoli_P4,Napoli,LB,23,0,0,1.84,68.6,99.0,79.8,12.1,15,0.75
+Napoli_P5,Napoli,RM,22,0,0,0.96,69.9,91.2,81.7,11.6,0,0.75
+Napoli_P6,Napoli,CM,24,1,0,1.52,65.7,87.0,81.1,12.6,15,0.75
+Napoli_P7,Napoli,LM,23,1,0,1.6,69.2,87.1,81.6,12.1,0,0.75
+Napoli_P8,Napoli,RM,19,0,0,2.96,68.3,80.7,83.5,10.0,0,0.6
+Napoli_P9,Napoli,LW,33,1,1,1.84,73.4,100.0,86.1,17.4,0,0.75
+Napoli_P10,Napoli,RW,27,0,0,1.6,64.5,100.0,74.9,14.2,30,0.75
+Napoli_P11,Napoli,CF,28,3,0,7.28,73.0,100.0,80.1,14.7,0,0.75
+Napoli_P12,Napoli,ST,27,1,0,6.56,70.7,96.5,78.0,14.2,0,0.75
+Napoli_P13,Napoli,LW,31,0,0,1.92,70.6,100.0,78.4,16.3,0,0.75
+Napoli_P14,Napoli,RW,30,0,0,1.92,71.5,100.0,80.9,15.8,0,0.75
+Napoli_P15,Napoli,CF,30,1,0,2.88,69.1,100.0,81.3,15.8,15,0.75
+Napoli_P16,Napoli,ST,29,2,0,5.6,69.9,95.1,77.3,15.3,0,0.75
+Napoli_P17,Napoli,LW,34,2,1,2.64,69.8,100.0,73.1,17.9,0,0.75
+Napoli_P18,Napoli,RW,25,0,0,2.4,65.2,88.8,77.3,13.2,15,0.75
+Napoli_P19,Napoli,CF,20,2,0,7.2,68.1,94.4,77.5,10.5,15,0.6
+Napoli_P20,Napoli,ST,16,2,0,4.0,66.1,75.5,80.2,8.4,0,0.6
+Napoli_P21,Napoli,LW,15,2,0,3.52,67.0,77.3,79.9,7.9,0,0.6
+Napoli_P22,Napoli,RW,17,1,0,0.8,67.9,83.8,79.4,8.9,0,0.6
+Napoli_P23,Napoli,CF,18,1,1,6.24,67.6,80.5,79.5,9.5,0,0.6
+Napoli_P24,Napoli,ST,25,3,0,6.56,70.5,91.4,79.9,13.2,0,0.75
+Napoli_P25,Napoli,LW,27,0,0,3.28,71.9,100.0,79.6,14.2,0,0.75
+Napoli_P26,Napoli,RW,21,1,1,3.28,64.2,92.6,77.4,11.1,30,0.75
+Napoli_P27,Napoli,CF,23,1,0,4.56,69.1,90.7,78.2,12.1,0,0.75
+Napoli_P28,Napoli,ST,27,1,0,2.48,70.8,100.0,76.2,14.2,0,0.75
+Napoli_P29,Napoli,LW,35,0,2,3.12,71.9,100.0,80.2,18.4,0,0.75
+Roma_P0,Roma,GK,31,0,0,0.0,70.6,100.0,79.5,16.3,0,0.75
+Roma_P1,Roma,LB,15,0,0,1.6,61.7,75.3,76.5,7.9,15,0.6
+Roma_P2,Roma,RB,31,0,1,3.44,71.8,100.0,78.8,16.3,0,0.75
+Roma_P3,Roma,CB,27,1,0,7.68,67.0,93.2,78.8,14.2,15,0.75
+Roma_P4,Roma,LB,23,1,1,2.24,61.9,86.6,77.7,12.1,30,0.75
+Roma_P5,Roma,RM,26,1,1,2.08,70.3,100.0,72.5,13.7,0,0.75
+Roma_P6,Roma,CM,16,1,1,2.8,65.8,76.2,78.0,8.4,0,0.6
+Roma_P7,Roma,LM,18,1,0,2.32,70.9,89.3,82.5,9.5,0,0.6
+Roma_P8,Roma,RM,33,0,0,3.2,70.3,100.0,76.3,17.4,0,0.75
+Roma_P9,Roma,LW,34,0,1,3.92,71.3,100.0,78.0,17.9,0,0.75
+Roma_P10,Roma,RW,22,2,1,1.44,72.3,97.4,79.4,11.6,0,0.75
+Roma_P11,Roma,CF,35,1,1,3.84,72.1,100.0,82.2,18.4,0,0.75
+Roma_P12,Roma,ST,21,3,0,5.68,65.7,86.5,78.0,11.1,15,0.75
+Roma_P13,Roma,LW,27,1,1,3.12,73.3,100.0,81.4,14.2,0,0.75
+Roma_P14,Roma,RW,22,1,1,3.36,65.9,85.8,79.6,11.6,15,0.75
+Roma_P15,Roma,CF,18,0,1,7.36,59.7,77.4,76.8,9.5,30,0.6
+Roma_P16,Roma,ST,37,0,1,7.36,70.8,100.0,78.7,19.5,0,0.75
+Roma_P17,Roma,LW,28,1,0,1.36,70.5,94.8,80.4,14.7,0,0.75
+Roma_P18,Roma,RW,33,0,0,1.84,72.0,100.0,81.7,17.4,0,0.75
+Roma_P19,Roma,CF,34,1,0,6.08,72.1,100.0,81.8,17.9,0,0.75
+Roma_P20,Roma,ST,33,0,0,4.16,70.5,100.0,78.3,17.4,0,0.75
+Roma_P21,Roma,LW,27,1,1,1.6,69.4,92.7,76.8,14.2,0,0.75
+Roma_P22,Roma,RW,37,2,0,1.52,71.4,100.0,80.7,19.5,0,0.75
+Roma_P23,Roma,CF,32,1,2,7.92,73.4,100.0,83.0,16.8,0,0.75
+Roma_P24,Roma,ST,20,1,0,6.72,66.3,91.3,75.9,10.5,15,0.6
+Roma_P25,Roma,LW,34,0,0,1.68,71.1,100.0,81.0,17.9,0,0.75
+Roma_P26,Roma,RW,24,0,0,1.04,65.3,87.3,79.6,12.6,15,0.75
+Roma_P27,Roma,CF,36,0,1,5.04,66.3,100.0,83.4,18.9,30,0.75
+Roma_P28,Roma,ST,32,0,0,5.36,70.9,100.0,78.5,16.8,0,0.75
+Roma_P29,Roma,LW,24,0,0,1.84,68.7,98.8,80.2,12.6,15,0.75
+Bayern_Munich_P0,Bayern Munich,GK,33,0,0,0.0,66.9,100.0,78.0,17.4,15,0.75
+Bayern_Munich_P1,Bayern Munich,LB,21,0,0,0.96,68.3,96.1,79.5,11.1,15,0.75
+Bayern_Munich_P2,Bayern Munich,RB,33,0,0,2.64,71.5,100.0,80.2,17.4,0,0.75
+Bayern_Munich_P3,Bayern Munich,CB,23,1,0,5.28,66.8,84.8,76.2,12.1,0,0.75
+Bayern_Munich_P4,Bayern Munich,LB,37,0,1,2.64,68.2,100.0,81.1,19.5,15,0.75
+Bayern_Munich_P5,Bayern Munich,RM,23,1,0,1.2,61.2,89.2,72.5,12.1,30,0.75
+Bayern_Munich_P6,Bayern Munich,CM,37,0,0,1.92,66.6,100.0,76.6,19.5,15,0.75
+Bayern_Munich_P7,Bayern Munich,LM,27,1,0,1.6,67.1,92.5,81.6,14.2,15,0.75
+Bayern_Munich_P8,Bayern Munich,RM,15,1,0,3.92,66.1,73.6,82.2,7.9,0,0.6
+Bayern_Munich_P9,Bayern Munich,LW,15,2,0,2.72,63.6,74.5,81.8,7.9,15,0.6
+Bayern_Munich_P10,Bayern Munich,RW,18,0,0,1.92,67.6,79.8,83.8,9.5,0,0.6
+Bayern_Munich_P11,Bayern Munich,CF,27,2,0,4.08,72.2,95.8,83.6,14.2,0,0.75
+Bayern_Munich_P12,Bayern Munich,ST,35,0,0,7.2,72.6,100.0,85.0,18.4,0,0.75
+Bayern_Munich_P13,Bayern Munich,LW,18,1,1,1.2,69.3,85.2,81.1,9.5,0,0.6
+Bayern_Munich_P14,Bayern Munich,RW,18,0,1,1.76,68.4,84.3,79.1,9.5,0,0.6
+Bayern_Munich_P15,Bayern Munich,CF,27,0,1,3.84,71.7,100.0,78.8,14.2,0,0.75
+Bayern_Munich_P16,Bayern Munich,ST,26,2,0,6.72,73.7,98.6,84.5,13.7,0,0.75
+Bayern_Munich_P17,Bayern Munich,LW,30,0,0,1.68,71.0,100.0,78.3,15.8,0,0.75
+Bayern_Munich_P18,Bayern Munich,RW,37,1,1,1.84,70.5,100.0,76.5,19.5,0,0.75
+Bayern_Munich_P19,Bayern Munich,CF,30,3,2,4.24,73.3,100.0,80.8,15.8,0,0.75
+Bayern_Munich_P20,Bayern Munich,ST,34,0,0,4.72,69.2,100.0,84.0,17.9,15,0.75
+Bayern_Munich_P21,Bayern Munich,LW,17,1,0,1.52,66.0,77.7,77.5,8.9,0,0.6
+Bayern_Munich_P22,Bayern Munich,RW,26,0,0,1.6,67.9,100.0,76.0,13.7,15,0.75
+Bayern_Munich_P23,Bayern Munich,CF,30,0,0,7.76,69.5,96.2,76.5,15.8,0,0.75
+Bayern_Munich_P24,Bayern Munich,ST,25,3,0,7.28,70.0,91.9,87.7,13.2,15,0.75
+Bayern_Munich_P25,Bayern Munich,LW,34,0,1,3.52,72.4,100.0,83.3,17.9,0,0.75
+Bayern_Munich_P26,Bayern Munich,RW,31,0,0,3.04,68.2,100.0,78.4,16.3,15,0.75
+Bayern_Munich_P27,Bayern Munich,CF,21,4,0,5.68,70.0,85.4,82.3,11.1,0,0.75
+Bayern_Munich_P28,Bayern Munich,ST,36,2,0,3.92,63.6,100.0,74.5,18.9,30,0.75
+Bayern_Munich_P29,Bayern Munich,LW,26,0,0,2.4,73.2,100.0,83.2,13.7,0,0.75
+Borussia_Dortmund_P0,Borussia Dortmund,GK,35,0,0,0.0,66.7,100.0,78.0,18.4,15,0.75
+Borussia_Dortmund_P1,Borussia Dortmund,LB,28,0,0,1.84,70.5,100.0,75.8,14.7,0,0.75
+Borussia_Dortmund_P2,Borussia Dortmund,RB,37,2,0,3.76,72.1,100.0,82.6,19.5,0,0.75
+Borussia_Dortmund_P3,Borussia Dortmund,CB,17,0,1,3.76,65.3,76.9,77.3,8.9,0,0.6
+Borussia_Dortmund_P4,Borussia Dortmund,LB,33,1,0,3.92,65.2,100.0,77.5,17.4,30,0.75
+Borussia_Dortmund_P5,Borussia Dortmund,RM,22,1,0,2.24,63.7,93.2,76.8,11.6,30,0.75
+Borussia_Dortmund_P6,Borussia Dortmund,CM,17,1,0,3.2,66.6,78.3,79.3,8.9,0,0.6
+Borussia_Dortmund_P7,Borussia Dortmund,LM,22,0,0,3.04,68.7,90.0,78.5,11.6,0,0.75
+Borussia_Dortmund_P8,Borussia Dortmund,RM,23,1,0,2.48,71.9,97.0,80.7,12.1,0,0.75
+Borussia_Dortmund_P9,Borussia Dortmund,LW,18,1,1,3.12,71.7,90.4,84.0,9.5,0,0.6
+Borussia_Dortmund_P10,Borussia Dortmund,RW,36,0,0,2.56,68.7,100.0,83.1,18.9,15,0.75
+Borussia_Dortmund_P11,Borussia Dortmund,CF,17,2,0,3.12,65.1,76.8,75.2,8.9,0,0.6
+Borussia_Dortmund_P12,Borussia Dortmund,ST,18,0,1,3.2,64.8,88.0,75.5,9.5,15,0.6
+Borussia_Dortmund_P13,Borussia Dortmund,LW,27,0,0,1.2,63.4,92.7,79.8,14.2,30,0.75
+Borussia_Dortmund_P14,Borussia Dortmund,RW,15,0,0,3.68,65.7,78.2,76.5,7.9,0,0.6
+Borussia_Dortmund_P15,Borussia Dortmund,CF,30,1,2,5.44,72.8,95.6,85.1,15.8,0,0.75
+Borussia_Dortmund_P16,Borussia Dortmund,ST,34,0,0,4.96,71.9,100.0,82.4,17.9,0,0.75
+Borussia_Dortmund_P17,Borussia Dortmund,LW,24,0,0,2.88,69.7,95.1,76.3,12.6,0,0.75
+Borussia_Dortmund_P18,Borussia Dortmund,RW,23,1,2,3.52,70.4,89.2,79.8,12.1,0,0.75
+Borussia_Dortmund_P19,Borussia Dortmund,CF,16,1,2,4.72,63.7,75.0,80.8,8.4,15,0.6
+Borussia_Dortmund_P20,Borussia Dortmund,ST,18,2,0,2.8,63.6,77.5,80.3,9.5,15,0.6
+Borussia_Dortmund_P21,Borussia Dortmund,LW,33,2,0,3.76,69.9,100.0,84.1,17.4,15,0.75
+Borussia_Dortmund_P22,Borussia Dortmund,RW,17,1,2,2.16,68.2,84.2,77.3,8.9,0,0.6
+Borussia_Dortmund_P23,Borussia Dortmund,CF,23,0,1,7.12,67.8,86.6,76.7,12.1,0,0.75
+Borussia_Dortmund_P24,Borussia Dortmund,ST,36,0,1,6.08,71.5,100.0,80.8,18.9,0,0.75
+Borussia_Dortmund_P25,Borussia Dortmund,LW,25,0,0,3.76,72.4,99.8,80.2,13.2,0,0.75
+Borussia_Dortmund_P26,Borussia Dortmund,RW,16,0,2,3.28,69.7,83.7,81.9,8.4,0,0.6
+Borussia_Dortmund_P27,Borussia Dortmund,CF,34,2,0,7.04,71.0,100.0,76.7,17.9,0,0.75
+Borussia_Dortmund_P28,Borussia Dortmund,ST,32,0,1,2.88,72.0,100.0,82.1,16.8,0,0.75
+Borussia_Dortmund_P29,Borussia Dortmund,LW,25,0,0,3.68,69.3,100.0,79.4,13.2,15,0.75
+RB_Leipzig_P0,RB Leipzig,GK,15,0,0,0.0,67.1,82.3,79.8,7.9,0,0.6
+RB_Leipzig_P1,RB Leipzig,LB,19,1,0,0.96,67.8,85.2,77.4,10.0,0,0.6
+RB_Leipzig_P2,RB Leipzig,RB,33,1,1,0.88,71.0,100.0,77.9,17.4,0,0.75
+RB_Leipzig_P3,RB Leipzig,CB,37,3,0,4.16,68.0,100.0,77.5,19.5,15,0.75
+RB_Leipzig_P4,RB Leipzig,LB,15,1,0,0.88,60.6,78.2,80.4,7.9,30,0.6
+RB_Leipzig_P5,RB Leipzig,RM,23,0,1,3.44,67.4,84.6,77.7,12.1,0,0.75
+RB_Leipzig_P6,RB Leipzig,CM,31,1,1,3.6,73.4,100.0,84.8,16.3,0,0.75
+RB_Leipzig_P7,RB Leipzig,LM,21,1,1,1.68,68.2,82.1,81.5,11.1,0,0.75
+RB_Leipzig_P8,RB Leipzig,RM,36,0,1,1.52,70.0,100.0,76.2,18.9,0,0.75
+RB_Leipzig_P9,RB Leipzig,LW,29,1,0,0.8,69.6,99.9,82.4,15.3,15,0.75
+RB_Leipzig_P10,RB Leipzig,RW,36,1,0,1.44,68.3,100.0,80.5,18.9,15,0.75
+RB_Leipzig_P11,RB Leipzig,CF,31,2,1,7.6,70.9,100.0,74.7,16.3,0,0.75
+RB_Leipzig_P12,RB Leipzig,ST,18,3,0,4.4,69.8,88.8,78.6,9.5,0,0.6
+RB_Leipzig_P13,RB Leipzig,LW,20,1,0,1.2,70.0,93.8,77.9,10.5,0,0.6
+RB_Leipzig_P14,RB Leipzig,RW,37,0,1,3.6,71.4,100.0,81.0,19.5,0,0.75
+RB_Leipzig_P15,RB Leipzig,CF,35,1,0,5.2,68.1,100.0,79.3,18.4,15,0.75
+RB_Leipzig_P16,RB Leipzig,ST,37,0,0,4.96,69.8,100.0,76.5,19.5,0,0.75
+RB_Leipzig_P17,RB Leipzig,LW,15,1,1,0.96,68.4,81.3,82.4,7.9,0,0.6
+RB_Leipzig_P18,RB Leipzig,RW,18,0,1,1.6,66.0,80.8,84.6,9.5,15,0.6
+RB_Leipzig_P19,RB Leipzig,CF,30,3,0,3.68,73.8,100.0,85.2,15.8,0,0.75
+RB_Leipzig_P20,RB Leipzig,ST,35,0,0,4.32,71.8,100.0,82.6,18.4,0,0.75
+RB_Leipzig_P21,RB Leipzig,LW,17,0,0,1.28,68.2,84.7,80.1,8.9,0,0.6
+RB_Leipzig_P22,RB Leipzig,RW,17,1,0,3.28,65.9,78.0,77.8,8.9,0,0.6
+RB_Leipzig_P23,RB Leipzig,CF,19,2,1,4.88,68.7,88.4,75.1,10.0,0,0.6
+RB_Leipzig_P24,RB Leipzig,ST,36,0,0,4.32,71.5,100.0,82.7,18.9,0,0.75
+RB_Leipzig_P25,RB Leipzig,LW,17,0,2,3.12,68.6,83.2,80.0,8.9,0,0.6
+RB_Leipzig_P26,RB Leipzig,RW,15,1,0,1.28,62.9,73.8,81.1,7.9,15,0.6
+RB_Leipzig_P27,RB Leipzig,CF,21,0,0,2.72,68.0,86.2,79.9,11.1,0,0.75
+RB_Leipzig_P28,RB Leipzig,ST,33,2,0,3.52,70.3,100.0,75.2,17.4,0,0.75
+RB_Leipzig_P29,RB Leipzig,LW,20,0,1,2.24,69.3,92.5,76.3,10.5,0,0.6
+Bayer_Leverkusen_P0,Bayer Leverkusen,GK,23,0,0,0.0,71.4,99.1,80.4,12.1,0,0.75
+Bayer_Leverkusen_P1,Bayer Leverkusen,LB,34,0,2,3.36,72.8,100.0,84.0,17.9,0,0.75
+Bayer_Leverkusen_P2,Bayer Leverkusen,RB,35,0,2,2.24,73.2,100.0,84.8,18.4,0,0.75
+Bayer_Leverkusen_P3,Bayer Leverkusen,CB,27,1,1,7.2,70.2,92.3,79.8,14.2,0,0.75
+Bayer_Leverkusen_P4,Bayer Leverkusen,LB,33,0,1,1.44,71.8,100.0,81.2,17.4,0,0.75
+Bayer_Leverkusen_P5,Bayer Leverkusen,RM,34,0,0,3.36,69.1,100.0,73.2,17.9,0,0.75
+Bayer_Leverkusen_P6,Bayer Leverkusen,CM,25,0,0,1.6,67.0,90.4,73.7,13.2,0,0.75
+Bayer_Leverkusen_P7,Bayer Leverkusen,LM,16,0,0,1.2,65.7,77.3,78.6,8.4,0,0.6
+Bayer_Leverkusen_P8,Bayer Leverkusen,RM,37,1,1,2.32,71.6,100.0,80.7,19.5,0,0.75
+Bayer_Leverkusen_P9,Bayer Leverkusen,LW,35,1,0,3.6,64.2,100.0,76.2,18.4,30,0.75
+Bayer_Leverkusen_P10,Bayer Leverkusen,RW,19,0,0,1.28,70.5,85.4,87.2,10.0,0,0.6
+Bayer_Leverkusen_P11,Bayer Leverkusen,CF,37,0,1,7.36,70.3,100.0,76.3,19.5,0,0.75
+Bayer_Leverkusen_P12,Bayer Leverkusen,ST,34,1,1,6.08,72.0,100.0,80.8,17.9,0,0.75
+Bayer_Leverkusen_P13,Bayer Leverkusen,LW,35,1,0,3.44,69.1,100.0,81.7,18.4,15,0.75
+Bayer_Leverkusen_P14,Bayer Leverkusen,RW,36,1,0,3.2,70.4,100.0,76.8,18.9,0,0.75
+Bayer_Leverkusen_P15,Bayer Leverkusen,CF,33,1,1,3.6,71.9,100.0,80.6,17.4,0,0.75
+Bayer_Leverkusen_P16,Bayer Leverkusen,ST,16,2,0,5.28,66.7,80.8,76.3,8.4,0,0.6
+Bayer_Leverkusen_P17,Bayer Leverkusen,LW,31,0,0,3.36,68.0,99.1,78.9,16.3,15,0.75
+Bayer_Leverkusen_P18,Bayer Leverkusen,RW,28,0,1,3.6,70.9,100.0,75.5,14.7,0,0.75
+Bayer_Leverkusen_P19,Bayer Leverkusen,CF,19,2,0,5.84,65.4,88.2,75.6,10.0,15,0.6
+Bayer_Leverkusen_P20,Bayer Leverkusen,ST,30,1,0,6.4,72.8,100.0,82.5,15.8,0,0.75
+Bayer_Leverkusen_P21,Bayer Leverkusen,LW,35,0,0,2.48,69.7,100.0,75.1,18.4,0,0.75
+Bayer_Leverkusen_P22,Bayer Leverkusen,RW,21,1,1,1.44,62.7,84.9,80.9,11.1,30,0.75
+Bayer_Leverkusen_P23,Bayer Leverkusen,CF,24,0,0,4.4,72.6,100.0,81.9,12.6,0,0.75
+Bayer_Leverkusen_P24,Bayer Leverkusen,ST,36,0,0,3.92,71.5,100.0,82.2,18.9,0,0.75
+Bayer_Leverkusen_P25,Bayer Leverkusen,LW,18,1,0,0.8,64.9,82.5,81.6,9.5,15,0.6
+Bayer_Leverkusen_P26,Bayer Leverkusen,RW,28,0,0,3.2,72.2,100.0,80.3,14.7,0,0.75
+Bayer_Leverkusen_P27,Bayer Leverkusen,CF,32,2,0,3.36,65.7,100.0,80.3,16.8,30,0.75
+Bayer_Leverkusen_P28,Bayer Leverkusen,ST,16,0,2,3.44,67.8,79.7,80.9,8.4,0,0.6
+Bayer_Leverkusen_P29,Bayer Leverkusen,LW,16,3,2,1.36,66.5,74.8,78.5,8.4,0,0.6

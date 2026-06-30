@@ -1,0 +1,47 @@
+﻿global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'fifa-wc-2026'
+
+# Alerting
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+# Rules
+rule_files:
+  - '/etc/prometheus/rules/*.yml'
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Redis exporter
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
+
+  # Postgres exporter
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres:5432']
+
+  # Weaviate
+  - job_name: 'weaviate'
+    static_configs:
+      - targets: ['weaviate:8080']
+
+  # Streamlit
+  - job_name: 'streamlit'
+    static_configs:
+      - targets: ['streamlit:8501']
+
+  # MinIO
+  - job_name: 'minio'
+    metrics_path: '/minio/v2/metrics/cluster'
+    static_configs:
+      - targets: ['minio:9000']

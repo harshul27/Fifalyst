@@ -1,0 +1,429 @@
+{
+  "Villarreal": {
+    "pes": 100.0,
+    "matches": 8,
+    "gd": 6,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Liverpool": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Barcelona": {
+    "pes": 100.0,
+    "matches": 8,
+    "gd": 13,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Man City": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 9,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Tottenham": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 8,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Crystal Palace": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Chelsea": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Napoli": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 6,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Roma": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 5,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Real Madrid": {
+    "pes": 100.0,
+    "matches": 8,
+    "gd": 10,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Real Betis": {
+    "pes": 100.0,
+    "matches": 8,
+    "gd": 5,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Atletico Madrid": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 5,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Arsenal": {
+    "pes": 100.0,
+    "matches": 7,
+    "gd": 11,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Bologna": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "AC Milan": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 6,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Atalanta": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 6,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Juventus": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Inter": {
+    "pes": 100.0,
+    "matches": 6,
+    "gd": 9,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Sevilla": {
+    "pes": 99.7,
+    "matches": 8,
+    "gd": 4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Bournemouth": {
+    "pes": 99.6,
+    "matches": 7,
+    "gd": 3,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Elche": {
+    "pes": 98.4,
+    "matches": 8,
+    "gd": 2,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Lazio": {
+    "pes": 97.1,
+    "matches": 6,
+    "gd": 3,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Everton": {
+    "pes": 94.8,
+    "matches": 7,
+    "gd": 2,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Alaves": {
+    "pes": 94.4,
+    "matches": 8,
+    "gd": 1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Como": {
+    "pes": 94.0,
+    "matches": 6,
+    "gd": 2,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Newcastle": {
+    "pes": 93.9,
+    "matches": 7,
+    "gd": 1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Athletic Club": {
+    "pes": 91.9,
+    "matches": 9,
+    "gd": 0,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Sunderland": {
+    "pes": 91.4,
+    "matches": 7,
+    "gd": 1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Espanyol": {
+    "pes": 90.4,
+    "matches": 8,
+    "gd": 0,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Real  Sociedad": {
+    "pes": 89.3,
+    "matches": 1,
+    "gd": 0,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Aston Villa": {
+    "pes": 88.8,
+    "matches": 7,
+    "gd": -1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Brighton": {
+    "pes": 88.7,
+    "matches": 7,
+    "gd": 0,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Cagliari": {
+    "pes": 88.3,
+    "matches": 6,
+    "gd": 0,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Sassuolo": {
+    "pes": 88.0,
+    "matches": 6,
+    "gd": 0,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Man United": {
+    "pes": 87.2,
+    "matches": 7,
+    "gd": -2,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Levante": {
+    "pes": 87.0,
+    "matches": 8,
+    "gd": -1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Osasuna": {
+    "pes": 86.7,
+    "matches": 8,
+    "gd": -1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Cremonese": {
+    "pes": 86.6,
+    "matches": 6,
+    "gd": -1,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Celta Vigo": {
+    "pes": 86.2,
+    "matches": 8,
+    "gd": -3,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Rayo Vallecano": {
+    "pes": 85.6,
+    "matches": 8,
+    "gd": -2,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Getafe": {
+    "pes": 84.3,
+    "matches": 8,
+    "gd": -2,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Fulham": {
+    "pes": 82.2,
+    "matches": 7,
+    "gd": -3,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Brentford": {
+    "pes": 81.9,
+    "matches": 7,
+    "gd": -3,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Valencia": {
+    "pes": 81.6,
+    "matches": 8,
+    "gd": -4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Leeds United": {
+    "pes": 79.7,
+    "matches": 7,
+    "gd": -4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Udinese": {
+    "pes": 79.4,
+    "matches": 6,
+    "gd": -3,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Fiorentina": {
+    "pes": 76.5,
+    "matches": 6,
+    "gd": -4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Parma": {
+    "pes": 76.4,
+    "matches": 6,
+    "gd": -4,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Real Sociedad": {
+    "pes": 76.2,
+    "matches": 7,
+    "gd": -5,
+    "recent_form": "GOOD",
+    "freshness": "RESTED"
+  },
+  "Mallorca": {
+    "pes": 73.2,
+    "matches": 8,
+    "gd": -6,
+    "recent_form": "FAIR",
+    "freshness": "RESTED"
+  },
+  "Nottm Forest": {
+    "pes": 72.8,
+    "matches": 7,
+    "gd": -7,
+    "recent_form": "FAIR",
+    "freshness": "RESTED"
+  },
+  "Lecce": {
+    "pes": 71.8,
+    "matches": 6,
+    "gd": -5,
+    "recent_form": "FAIR",
+    "freshness": "RESTED"
+  },
+  "Genoa": {
+    "pes": 67.6,
+    "matches": 6,
+    "gd": -6,
+    "recent_form": "FAIR",
+    "freshness": "RESTED"
+  },
+  "Verona": {
+    "pes": 65.2,
+    "matches": 6,
+    "gd": -7,
+    "recent_form": "FAIR",
+    "freshness": "RESTED"
+  },
+  "Burnley": {
+    "pes": 64.8,
+    "matches": 7,
+    "gd": -8,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  },
+  "Torino": {
+    "pes": 63.8,
+    "matches": 6,
+    "gd": -8,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  },
+  "Wolves": {
+    "pes": 63.7,
+    "matches": 7,
+    "gd": -9,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  },
+  "Pisa": {
+    "pes": 63.6,
+    "matches": 6,
+    "gd": -7,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  },
+  "West Ham": {
+    "pes": 61.9,
+    "matches": 7,
+    "gd": -10,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  },
+  "Oviedo": {
+    "pes": 61.5,
+    "matches": 8,
+    "gd": -10,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  },
+  "Girona": {
+    "pes": 56.5,
+    "matches": 8,
+    "gd": -12,
+    "recent_form": "POOR",
+    "freshness": "RESTED"
+  }
+}

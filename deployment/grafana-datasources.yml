@@ -1,0 +1,31 @@
+﻿apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: true
+
+  - name: Redis
+    type: redis-datasource
+    access: proxy
+    url: redis:6379
+    editable: true
+
+  - name: PostgreSQL
+    type: postgres
+    access: proxy
+    url: postgres:5432
+    database: fifa_wc_2026
+    user: fifa
+    secureJsonData:
+      password: fifa_dev_password
+    editable: true
+
+  - name: Weaviate
+    type: datasource
+    access: proxy
+    url: http://weaviate:8080
+    editable: true

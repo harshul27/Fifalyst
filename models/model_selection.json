@@ -1,0 +1,9 @@
+{
+  "best_model": "rule_based",
+  "metrics": {
+    "r2_score": 0.78,
+    "rmse": 9.0
+  },
+  "r2_score": 0.78,
+  "rmse": 9.0
+}

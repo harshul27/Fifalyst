@@ -1,347 +1,286 @@
 """
-FIFA Shadow Coach - Automated Data Pipeline
-ETL → Feature Engineering → Self-Correcting Feedback Loop
+FIFA Shadow Coach - Automated Data Pipeline (Agent-Powered)
+Manages orchestrator startup, data validation, and DuckDB sync
 """
 
-import os
 import sys
 import json
 import duckdb
+import redis
 import pandas as pd
-import numpy as np
-from datetime import datetime
+import asyncio
+import time
+import logging
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
 
-# Import the model module (assumes it's in the same src/ directory)
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Import orchestrator
+try:
+    from orchestrator import MasterOrchestrator
+    _HAS_ORCHESTRATOR = True
+except ImportError:
+    _HAS_ORCHESTRATOR = False
+    logger.warning("Orchestrator not available")
+
+# Import legacy modules for fallback
 try:
     from model import calculate_player_energy, BASE_PLAYER_ENERGY, MIN_PHYSIOLOGICAL_ENERGY
 except ImportError:
-    # Fallback if running from outputs directory
-    print("⚠ Warning: Could not import model module. Using stubs.")
     BASE_PLAYER_ENERGY = 100.0
     MIN_PHYSIOLOGICAL_ENERGY = 15.0
     def calculate_player_energy(logs):
         return BASE_PLAYER_ENERGY
 
 
-# ==================== LOGGING & SETUP ====================
-
 class PipelineLogger:
-    """Lightweight logger for pipeline status."""
-    def __init__(self):
-        self.timestamp = datetime.utcnow().isoformat()
-
     def log(self, message: str, level: str = "INFO"):
-        """Log with timestamp and level."""
-        prefix = f"[{datetime.utcnow().isoformat()}] [{level}]"
-        print(f"{prefix} {message}")
+        print(f"[{datetime.now(timezone.utc).isoformat()}] [{level}] {message}")
 
     def success(self, message: str):
-        self.log(f"✓ {message}", "SUCCESS")
+        self.log(f"[OK] {message}", "SUCCESS")
 
     def error(self, message: str):
-        self.log(f"✗ {message}", "ERROR")
+        self.log(f"[FAIL] {message}", "ERROR")
 
     def info(self, message: str):
         self.log(message, "INFO")
 
+    def warn(self, message: str):
+        self.log(message, "WARNING")
 
-logger = PipelineLogger()
+
+logger_pipe = PipelineLogger()
 DATA_DIR = Path("data")
 DB_PATH = DATA_DIR / "database.duckdb"
 CONFIG_PATH = DATA_DIR / "model_config.json"
 PARQUET_PATH = DATA_DIR / "latest_squad_state.parquet"
 
+# Redis connection
+try:
+    redis_client = redis.Redis(host="localhost", port=6379, decode_responses=True)
+    redis_client.ping()
+    _HAS_REDIS = True
+except Exception as e:
+    _HAS_REDIS = False
+    logger_pipe.warn(f"Redis unavailable: {e}")
+    redis_client = None
+
 
 def setup_directories():
-    """Ensure data directory exists."""
-    try:
-        DATA_DIR.mkdir(parents=True, exist_ok=True)
-        logger.success(f"Data directory ready: {DATA_DIR}")
-    except Exception as e:
-        logger.error(f"Failed to create data directory: {e}")
-        raise
+    """Create data directory if needed."""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    logger_pipe.success(f"Data directory ready: {DATA_DIR}")
 
 
 def initialize_duckdb() -> duckdb.DuckDBPyConnection:
-    """Initialize or connect to DuckDB instance."""
-    try:
-        conn = duckdb.connect(str(DB_PATH))
-        logger.success(f"DuckDB connected: {DB_PATH}")
-        return conn
-    except Exception as e:
-        logger.error(f"DuckDB connection failed: {e}")
-        raise
+    """Initialize DuckDB connection."""
+    conn = duckdb.connect(str(DB_PATH))
+    logger_pipe.success(f"DuckDB connected: {DB_PATH}")
+    return conn
 
 
-# ==================== ETL PROCESS ====================
-
-def create_mock_player_data() -> pd.DataFrame:
+def sync_redis_to_duckdb() -> int:
     """
-    Generate mock play-by-play player data simulating scraped match data.
-
-    Returns:
-        DataFrame with columns: Player, minutes, days_ago, intensity
+    Sync match data from Redis (populated by agents) to DuckDB.
+    Returns count of matches synced.
     """
-    np.random.seed(42)
-    players = ['Mbappé', 'Neymar', 'Vinicius', 'Rodrygo', 'Paquetá',
-               'Neymar_backup', 'Vinicius_backup', 'Ney_sub', 'Messi']
-
-    records = []
-    for player in players:
-        # Each player has 1-4 recent match records
-        n_matches = np.random.randint(1, 5)
-        for match_idx in range(n_matches):
-            records.append({
-                'player': player,
-                'minutes_played': np.clip(np.random.normal(75, 15), 0, 90),
-                'days_ago': np.random.exponential(scale=3),
-                'match_intensity': np.clip(np.random.normal(0.7, 0.15), 0.2, 1.0)
-            })
-
-    df = pd.DataFrame(records)
-    return df
-
-
-def insert_mock_data_to_duckdb(conn: duckdb.DuckDBPyConnection, df: pd.DataFrame):
-    """Insert mock DataFrame into DuckDB table."""
-    try:
-        conn.execute("DROP TABLE IF EXISTS player_match_logs")
-        conn.execute("""
-            CREATE TABLE player_match_logs AS
-            SELECT
-                player,
-                minutes_played,
-                days_ago,
-                match_intensity
-            FROM df
-        """)
-        row_count = conn.execute("SELECT COUNT(*) FROM player_match_logs").fetchall()[0][0]
-        logger.success(f"Inserted {row_count} player match records into DuckDB")
-    except Exception as e:
-        logger.error(f"ETL insert failed: {e}")
-        raise
-
-
-# ==================== FEATURE ENGINEERING ====================
-
-def extract_and_engineer_features(conn: duckdb.DuckDBPyConnection) -> pd.DataFrame:
-    """
-    Query player match logs and compute Player Energy Scores (PES).
-
-    Returns:
-        DataFrame with columns: player, pes, n_matches, avg_intensity
-    """
-    try:
-        # Query: group by player, aggregate match history
-        query = """
-            SELECT
-                player,
-                COUNT(*) as n_matches,
-                AVG(match_intensity) as avg_intensity,
-                MAX(days_ago) as days_since_last_match
-            FROM player_match_logs
-            GROUP BY player
-            ORDER BY player
-        """
-        grouped_df = conn.execute(query).fetch_df()
-        logger.info(f"Extracted features for {len(grouped_df)} players")
-
-        # Apply calculate_player_energy to each player's match history
-        results = []
-        for _, row in grouped_df.iterrows():
-            player_name = row['player']
-
-            # Fetch match logs for this specific player
-            player_logs = conn.execute(
-                f"""
-                SELECT minutes_played, days_ago, match_intensity
-                FROM player_match_logs
-                WHERE player = ?
-                ORDER BY days_ago ASC
-                """,
-                [player_name]
-            ).fetch_df()
-
-            # Convert to list of dicts for calculate_player_energy
-            match_logs = [
-                {
-                    'minutes_played': float(m),
-                    'days_ago': float(d),
-                    'match_intensity': float(i)
-                }
-                for m, d, i in zip(
-                    player_logs['minutes_played'],
-                    player_logs['days_ago'],
-                    player_logs['match_intensity']
-                )
-            ]
-
-            # Compute PES
-            pes = calculate_player_energy(match_logs)
-
-            results.append({
-                'player': player_name,
-                'pes': pes,
-                'n_matches': int(row['n_matches']),
-                'avg_intensity': float(row['avg_intensity']),
-                'days_since_last_match': float(row['days_since_last_match'])
-            })
-
-        feature_df = pd.DataFrame(results)
-        logger.success(f"Computed PES for {len(feature_df)} players")
-        return feature_df
-
-    except Exception as e:
-        logger.error(f"Feature engineering failed: {e}")
-        raise
-
-
-def write_features_to_parquet(df: pd.DataFrame):
-    """Write engineered features to compressed Parquet."""
-    try:
-        df.to_parquet(PARQUET_PATH, compression='snappy', index=False)
-        file_size_kb = PARQUET_PATH.stat().st_size / 1024
-        logger.success(f"Wrote squad state to {PARQUET_PATH} ({file_size_kb:.1f} KB)")
-    except Exception as e:
-        logger.error(f"Parquet write failed: {e}")
-        raise
-
-
-# ==================== SELF-CORRECTING FEEDBACK LOOP ====================
-
-def load_or_init_config() -> Dict:
-    """Load model config or initialize with defaults."""
-    if CONFIG_PATH.exists():
-        try:
-            with open(CONFIG_PATH, 'r') as f:
-                config = json.load(f)
-            logger.info(f"Loaded config from {CONFIG_PATH}")
-            return config
-        except Exception as e:
-            logger.error(f"Config load failed: {e}, using defaults")
-
-    # Initialize defaults
-    config = {
-        'alpha_fatigue_weight': 1.0,
-        'loss_history': [],
-        'backprop_iterations': 0,
-        'last_updated': datetime.utcnow().isoformat()
-    }
-    logger.info("Initialized new config with defaults")
-    return config
-
-
-def simulate_backpropagation(config: Dict, squad_pes: pd.DataFrame) -> Dict:
-    """
-    Simulate post-match backpropagation: adjust alpha_fatigue_weight,
-    compute mock loss, and track optimization history.
-    """
-    try:
-        logger.info("Starting backpropagation simulation...")
-
-        # Mock loss: based on variance in squad PES (ideal squad has high coherence)
-        current_loss = float(squad_pes['pes'].std())  # Loss = PES variance
-
-        # Gradient descent: if loss > threshold, reduce alpha (more aggressive fatigue)
-        loss_threshold = 20.0
-        learning_rate = 0.01
-
-        if current_loss > loss_threshold:
-            config['alpha_fatigue_weight'] -= learning_rate
-            config['alpha_fatigue_weight'] = max(0.5, config['alpha_fatigue_weight'])
-            logger.info(f"Loss {current_loss:.2f} > {loss_threshold}, reduced alpha to {config['alpha_fatigue_weight']:.4f}")
-        else:
-            logger.info(f"Loss {current_loss:.2f} ≤ {loss_threshold}, no adjustment needed")
-
-        # Track loss history (rolling window of last 10)
-        config['loss_history'].append(float(current_loss))
-        config['loss_history'] = config['loss_history'][-10:]
-
-        config['backprop_iterations'] += 1
-        config['last_updated'] = datetime.utcnow().isoformat()
-
-        logger.success(f"Backprop iteration {config['backprop_iterations']} complete. Loss: {current_loss:.2f}")
-        return config
-
-    except Exception as e:
-        logger.error(f"Backpropagation failed: {e}")
-        return config
-
-
-def save_config(config: Dict):
-    """Persist config to JSON."""
-    try:
-        with open(CONFIG_PATH, 'w') as f:
-            json.dump(config, f, indent=2)
-        logger.success(f"Config saved to {CONFIG_PATH}")
-    except Exception as e:
-        logger.error(f"Config save failed: {e}")
-
-
-# ==================== MAIN ORCHESTRATION ====================
-
-def run_pipeline():
-    """Execute full production pipeline."""
-    conn = None
-    try:
-        logger.info("=" * 70)
-        logger.info("FIFA SHADOW COACH - DATA PIPELINE STARTED")
-        logger.info("=" * 70)
-
-        # Step 1: Setup
-        logger.info("\n[STEP 1/6] Directory & Database Setup")
-        setup_directories()
-        conn = initialize_duckdb()
-
-        # Step 2: ETL
-        logger.info("\n[STEP 2/6] Mock Data ETL")
-        mock_df = create_mock_player_data()
-        logger.info(f"Generated {len(mock_df)} mock match records")
-        insert_mock_data_to_duckdb(conn, mock_df)
-
-        # Step 3: Feature Engineering
-        logger.info("\n[STEP 3/6] Feature Engineering & PES Calculation")
-        squad_pes = extract_and_engineer_features(conn)
-        logger.info(f"Squad PES distribution: min={squad_pes['pes'].min():.1f}, "
-                    f"max={squad_pes['pes'].max():.1f}, mean={squad_pes['pes'].mean():.1f}")
-
-        # Step 4: Persist Features
-        logger.info("\n[STEP 4/6] Persist to Parquet")
-        write_features_to_parquet(squad_pes)
-
-        # Step 5: Config & Backprop
-        logger.info("\n[STEP 5/6] Self-Correcting Feedback Loop")
-        config = load_or_init_config()
-        config = simulate_backpropagation(config, squad_pes)
-        save_config(config)
-
-        # Step 6: Cleanup
-        logger.info("\n[STEP 6/6] Cleanup & Close Connections")
-        if conn:
-            conn.close()
-            logger.success("DuckDB connection closed safely")
-
-        logger.info("\n" + "=" * 70)
-        logger.success("PIPELINE COMPLETED SUCCESSFULLY")
-        logger.info("=" * 70)
-
+    if not _HAS_REDIS or redis_client is None:
+        logger_pipe.warn("Redis not available — skipping sync")
         return 0
 
-    except Exception as e:
-        logger.error(f"Pipeline failed: {e}")
-        return 1
+    try:
+        conn = initialize_duckdb()
 
-    finally:
-        # Ensure DB connection is closed
-        if conn:
+        # Create matches table if not exists
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS matches (
+                match_id STRING PRIMARY KEY,
+                home_team STRING,
+                away_team STRING,
+                home_score INT,
+                away_score INT,
+                status STRING,
+                minute INT,
+                league STRING,
+                timestamp TIMESTAMP,
+                data JSON
+            )
+        """)
+
+        # Get all match data from Redis
+        match_keys = redis_client.keys("fifa:match:*:data")
+        matches_synced = 0
+
+        for key in match_keys:
             try:
-                conn.close()
-            except:
-                pass
+                match_data = redis_client.get(key)
+                if not match_data:
+                    continue
+
+                data = json.loads(match_data)
+                match_id = data.get("match_id")
+
+                conn.execute("""
+                    INSERT INTO matches VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT (match_id) DO UPDATE SET
+                        home_score = EXCLUDED.home_score,
+                        away_score = EXCLUDED.away_score,
+                        status = EXCLUDED.status,
+                        minute = EXCLUDED.minute,
+                        timestamp = EXCLUDED.timestamp,
+                        data = EXCLUDED.data
+                """, [
+                    match_id,
+                    data.get("home_team"),
+                    data.get("away_team"),
+                    int(data.get("home_score", 0)),
+                    int(data.get("away_score", 0)),
+                    data.get("status", "SCHEDULED"),
+                    int(data.get("minute", 0)),
+                    data.get("league"),
+                    datetime.utcnow(),
+                    match_data,
+                ])
+                matches_synced += 1
+            except Exception as e:
+                logger.error(f"Error syncing match {key}: {e}")
+                continue
+
+        conn.commit()
+        conn.close()
+        logger_pipe.success(f"Synced {matches_synced} matches to DuckDB")
+        return matches_synced
+
+    except Exception as e:
+        logger_pipe.error(f"DuckDB sync failed: {e}")
+        return 0
+
+
+def validate_orchestrator() -> bool:
+    """Check if orchestrator is running and healthy."""
+    if not _HAS_ORCHESTRATOR:
+        logger_pipe.warn("Orchestrator not installed")
+        return False
+
+    if not _HAS_REDIS or redis_client is None:
+        logger_pipe.warn("Redis not available")
+        return False
+
+    try:
+        status = redis_client.get("fifa:orchestrator:status")
+        if status:
+            data = json.loads(status)
+            logger_pipe.success(f"Orchestrator is healthy: {data}")
+            return True
+        else:
+            logger_pipe.warn("Orchestrator status not found in Redis")
+            return False
+    except Exception as e:
+        logger_pipe.error(f"Orchestrator validation failed: {e}")
+        return False
+
+
+def run_orchestrator_async() -> Optional[MasterOrchestrator]:
+    """Start orchestrator in current process (blocking). For manual runs."""
+    if not _HAS_ORCHESTRATOR:
+        logger_pipe.error("Orchestrator not available")
+        return None
+
+    try:
+        orchestrator = MasterOrchestrator(redis_host="localhost", redis_port=6379)
+        logger_pipe.info("Starting orchestrator (blocking mode)...")
+        logger_pipe.warn("Press Ctrl+C to stop")
+
+        # Run orchestrator - this blocks
+        asyncio.run(orchestrator.run())
+        return orchestrator
+
+    except KeyboardInterrupt:
+        logger_pipe.success("Orchestrator stopped by user")
+        return None
+    except Exception as e:
+        logger_pipe.error(f"Orchestrator error: {e}")
+        raise
+
+
+def get_live_match_count() -> int:
+    """Get count of live matches in Redis."""
+    if not _HAS_REDIS or redis_client is None:
+        return 0
+
+    try:
+        keys = redis_client.keys("fifa:match:*:data")
+        return len(keys)
+    except Exception:
+        return 0
+
+
+def get_agent_metrics() -> Dict[str, any]:
+    """Retrieve agent metrics from Redis."""
+    if not _HAS_REDIS or redis_client is None:
+        return {}
+
+    try:
+        metrics = {}
+        for key in redis_client.keys("fifa:agent:*:metrics"):
+            data = redis_client.get(key)
+            if data:
+                metrics[key] = json.loads(data)
+        return metrics
+    except Exception:
+        return {}
+
+
+# ==================== MAIN EXECUTION ====================
+
+def run_pipeline(mode: str = "validate"):
+    """
+    Run pipeline in specified mode.
+
+    Modes:
+    - 'validate': Check orchestrator health and sync Redis→DuckDB
+    - 'orchestrator': Start orchestrator (blocking)
+    - 'sync': One-shot sync from Redis to DuckDB
+    """
+    logger_pipe.info(f"FIFA Shadow Coach Pipeline - Mode: {mode}")
+    setup_directories()
+
+    if mode == "validate":
+        logger_pipe.info("Validating orchestrator...")
+        is_healthy = validate_orchestrator()
+        if is_healthy:
+            logger_pipe.info("Syncing Redis to DuckDB...")
+            count = sync_redis_to_duckdb()
+            logger_pipe.success(f"Pipeline validation complete. {count} matches in DuckDB.")
+        else:
+            logger_pipe.warn("Orchestrator not running. Start it manually or use 'orchestrator' mode.")
+
+    elif mode == "orchestrator":
+        run_orchestrator_async()
+
+    elif mode == "sync":
+        logger_pipe.info("Syncing Redis to DuckDB...")
+        count = sync_redis_to_duckdb()
+        logger_pipe.success(f"Sync complete. {count} matches synced.")
+
+    else:
+        logger_pipe.error(f"Unknown mode: {mode}")
+        print("Available modes: validate, orchestrator, sync")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
-    exit_code = run_pipeline()
-    sys.exit(exit_code)
+    mode = sys.argv[1] if len(sys.argv) > 1 else "validate"
+    try:
+        run_pipeline(mode)
+    except Exception as e:
+        logger_pipe.error(f"Pipeline failed: {e}")
+        sys.exit(1)

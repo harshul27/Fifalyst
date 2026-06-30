@@ -1,0 +1,14 @@
+{
+  "training_date": "2026-06-12T17:55:23.909449",
+  "total_players": 851,
+  "total_teams": 37,
+  "pes_statistics": {
+    "mean": 96.77980433975468,
+    "std": 2.9394743545620177,
+    "min": 75.78315789473685,
+    "max": 100.0,
+    "variance": 8.64050948112779
+  },
+  "data_source": "FIFA World Cup 2026 player data",
+  "model_type": "exponential_decay_with_match_stats"
+}

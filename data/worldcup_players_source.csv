@@ -1,0 +1,852 @@
+player_id,player_name,team,position,age,is_starter,matches_played,minutes_played,goals,assists,yellow_cards,red_cards,recent_form,injury_risk,days_since_match,estimated_energy,confidence,data_source
+Brazil_0,Player_0,Brazil,GK,31,True,29,2263,0,0,1,0,2.93,0.473,4,90.9,0.75,synthesized_from_distributions
+Brazil_1,Player_1,Brazil,CB,31,True,32,2086,1,1,3,0,0.69,0.243,13,82.9,0.75,synthesized_from_distributions
+Brazil_2,Player_2,Brazil,LB,23,True,25,1977,2,0,1,0,-0.44,0.331,12,81.7,0.75,synthesized_from_distributions
+Brazil_3,Player_3,Brazil,RB,19,True,24,1701,1,0,0,0,0.45,0.567,6,83.8,0.75,synthesized_from_distributions
+Brazil_4,Player_4,Brazil,CB,28,True,32,2496,1,0,0,0,-0.44,0.269,13,85.2,0.75,synthesized_from_distributions
+Brazil_5,Player_5,Brazil,CM,24,True,36,3170,0,0,0,0,-0.8,0.203,3,85.3,0.75,synthesized_from_distributions
+Brazil_6,Player_6,Brazil,LM,22,True,20,1299,0,2,1,1,-0.12,0.318,8,78.1,0.75,synthesized_from_distributions
+Brazil_7,Player_7,Brazil,RM,19,True,29,1836,0,0,2,0,-0.19,0.185,5,82.4,0.75,synthesized_from_distributions
+Brazil_8,Player_8,Brazil,AM,25,True,30,2580,0,0,1,0,-1.37,0.194,4,80.9,0.75,synthesized_from_distributions
+Brazil_9,Player_9,Brazil,ST,25,True,33,2273,2,0,0,0,-1.98,0.138,9,82.0,0.75,synthesized_from_distributions
+Brazil_10,Player_10,Brazil,LW,31,True,27,1706,1,0,0,0,-1.26,0.371,7,81.1,0.75,synthesized_from_distributions
+Brazil_11,Player_11,Brazil,RW,36,False,8,514,0,0,2,0,0.64,0.413,5,79.8,0.65,synthesized_from_distributions
+Brazil_12,Player_12,Brazil,FW,31,False,18,1138,3,0,4,0,0.34,0.25,4,77.9,0.65,synthesized_from_distributions
+Brazil_13,Player_13,Brazil,ST,21,False,10,683,1,1,4,0,-0.21,0.327,6,74.4,0.65,synthesized_from_distributions
+Brazil_14,Player_14,Brazil,LW,31,False,19,1319,0,0,1,0,0.98,0.6,12,82.4,0.65,synthesized_from_distributions
+Brazil_15,Player_15,Brazil,RW,31,False,8,647,0,0,2,0,1.2,0.143,9,84.2,0.65,synthesized_from_distributions
+Brazil_16,Player_16,Brazil,FW,25,False,17,1124,1,0,2,0,-1.03,0.219,1,78.0,0.65,synthesized_from_distributions
+Brazil_17,Player_17,Brazil,ST,19,False,16,1108,0,0,1,0,-0.56,0.027,3,83.2,0.65,synthesized_from_distributions
+Brazil_18,Player_18,Brazil,LW,30,False,17,1091,1,0,0,0,0.48,0.306,5,85.6,0.65,synthesized_from_distributions
+Brazil_19,Player_19,Brazil,RW,24,False,7,536,4,0,3,0,0.22,0.254,11,78.0,0.65,synthesized_from_distributions
+Brazil_20,Player_20,Brazil,FW,22,False,10,765,1,0,1,0,-1.06,0.353,12,77.6,0.65,synthesized_from_distributions
+Brazil_21,Player_21,Brazil,ST,30,False,15,949,0,0,2,0,-0.92,0.094,3,79.3,0.65,synthesized_from_distributions
+Brazil_22,Player_22,Brazil,LW,26,False,17,1316,1,0,0,0,1.46,0.083,13,90.8,0.65,synthesized_from_distributions
+Argentina_0,Player_0,Argentina,GK,20,True,16,1055,0,0,0,1,0.23,0.518,13,78.6,0.75,synthesized_from_distributions
+Argentina_1,Player_1,Argentina,CB,32,True,26,1756,1,0,2,0,0.8,0.367,14,83.2,0.75,synthesized_from_distributions
+Argentina_2,Player_2,Argentina,LB,31,True,29,1835,3,0,3,0,-0.69,0.244,0,78.3,0.75,synthesized_from_distributions
+Argentina_3,Player_3,Argentina,RB,23,True,29,2587,0,0,1,1,0.3,0.182,13,81.9,0.75,synthesized_from_distributions
+Argentina_4,Player_4,Argentina,CB,19,True,31,2075,0,0,1,0,-0.52,0.63,11,79.2,0.75,synthesized_from_distributions
+Argentina_5,Player_5,Argentina,CM,31,True,27,2202,0,1,2,0,-0.83,0.255,9,79.5,0.75,synthesized_from_distributions
+Argentina_6,Player_6,Argentina,LM,36,True,18,1551,0,0,2,0,-0.45,0.125,3,80.8,0.75,synthesized_from_distributions
+Argentina_7,Player_7,Argentina,RM,23,True,30,1861,0,1,0,0,-1.31,0.047,4,84.6,0.75,synthesized_from_distributions
+Argentina_8,Player_8,Argentina,AM,22,True,36,2278,0,0,0,0,-0.03,0.067,8,89.0,0.75,synthesized_from_distributions
+Argentina_9,Player_9,Argentina,ST,34,True,25,1650,0,0,1,0,-0.22,0.143,2,84.2,0.75,synthesized_from_distributions
+Argentina_10,Player_10,Argentina,LW,26,True,21,1646,1,0,1,0,0.5,0.174,8,85.5,0.75,synthesized_from_distributions
+Argentina_11,Player_11,Argentina,RW,21,False,16,1389,2,0,0,0,-1.19,0.159,7,81.9,0.65,synthesized_from_distributions
+Argentina_12,Player_12,Argentina,FW,20,False,8,710,0,0,3,0,-1.18,0.516,2,71.4,0.65,synthesized_from_distributions
+Argentina_13,Player_13,Argentina,ST,33,False,19,1456,0,1,4,1,-1.4,0.331,11,68.0,0.65,synthesized_from_distributions
+Argentina_14,Player_14,Argentina,LW,33,False,7,595,0,0,2,1,0.75,0.383,8,76.3,0.65,synthesized_from_distributions
+Argentina_15,Player_15,Argentina,RW,36,False,15,937,1,0,1,0,-1.26,0.467,11,76.5,0.65,synthesized_from_distributions
+Argentina_16,Player_16,Argentina,FW,19,False,14,1214,0,0,2,0,0.66,0.109,6,83.7,0.65,synthesized_from_distributions
+Argentina_17,Player_17,Argentina,ST,27,False,16,1423,0,0,1,0,-0.81,0.279,3,79.9,0.65,synthesized_from_distributions
+Argentina_18,Player_18,Argentina,LW,30,False,13,948,0,0,0,0,-0.87,0.231,8,81.8,0.65,synthesized_from_distributions
+Argentina_19,Player_19,Argentina,RW,23,False,9,664,1,0,0,0,1.03,0.368,2,85.6,0.65,synthesized_from_distributions
+Argentina_20,Player_20,Argentina,FW,29,False,18,1351,3,0,0,0,1.18,0.149,10,89.4,0.65,synthesized_from_distributions
+Argentina_21,Player_21,Argentina,ST,28,False,11,892,2,0,3,0,-0.45,0.411,1,75.0,0.65,synthesized_from_distributions
+Argentina_22,Player_22,Argentina,LW,31,False,16,1109,1,0,1,0,2.14,0.492,2,86.6,0.65,synthesized_from_distributions
+Uruguay_0,Player_0,Uruguay,GK,21,True,37,3012,0,0,1,0,0.99,0.434,1,86.5,0.75,synthesized_from_distributions
+Uruguay_1,Player_1,Uruguay,CB,26,True,17,1135,1,0,0,0,1.12,0.535,5,85.3,0.75,synthesized_from_distributions
+Uruguay_2,Player_2,Uruguay,LB,32,True,21,1652,0,0,2,0,-0.88,0.231,8,78.8,0.75,synthesized_from_distributions
+Uruguay_3,Player_3,Uruguay,RB,22,True,15,1306,0,0,2,0,-0.54,0.335,13,78.0,0.75,synthesized_from_distributions
+Uruguay_4,Player_4,Uruguay,CB,24,True,21,1372,1,0,0,0,1.51,0.157,7,90.7,0.75,synthesized_from_distributions
+Uruguay_5,Player_5,Uruguay,CM,25,True,17,1278,0,0,0,0,-0.28,0.205,9,84.4,0.75,synthesized_from_distributions
+Uruguay_6,Player_6,Uruguay,LM,21,True,21,1819,1,0,0,0,-0.48,0.284,13,83.5,0.75,synthesized_from_distributions
+Uruguay_7,Player_7,Uruguay,RM,33,True,31,2355,0,0,3,0,0.27,0.238,8,81.5,0.75,synthesized_from_distributions
+Uruguay_8,Player_8,Uruguay,AM,33,True,36,2377,0,0,3,0,1.29,0.136,8,86.2,0.75,synthesized_from_distributions
+Uruguay_9,Player_9,Uruguay,ST,21,True,31,2341,0,1,3,0,2.23,0.345,4,86.3,0.75,synthesized_from_distributions
+Uruguay_10,Player_10,Uruguay,LW,21,True,28,2384,0,0,3,0,-0.91,0.162,4,78.3,0.75,synthesized_from_distributions
+Uruguay_11,Player_11,Uruguay,RW,23,False,18,1597,0,0,1,0,-0.11,0.221,1,82.8,0.65,synthesized_from_distributions
+Uruguay_12,Player_12,Uruguay,FW,32,False,17,1480,0,0,2,0,0.28,0.251,9,81.6,0.65,synthesized_from_distributions
+Uruguay_13,Player_13,Uruguay,ST,20,False,6,402,2,1,2,0,1.41,0.269,7,83.3,0.65,synthesized_from_distributions
+Uruguay_14,Player_14,Uruguay,LW,19,False,15,1068,0,0,0,0,0.48,0.209,3,86.3,0.65,synthesized_from_distributions
+Uruguay_15,Player_15,Uruguay,RW,24,False,17,1514,0,0,1,0,-0.05,0.224,14,82.9,0.65,synthesized_from_distributions
+Uruguay_16,Player_16,Uruguay,FW,26,False,18,1603,2,0,0,0,0.2,0.143,5,86.5,0.65,synthesized_from_distributions
+Uruguay_17,Player_17,Uruguay,ST,21,False,16,1300,1,1,0,0,-1.08,0.311,4,80.8,0.65,synthesized_from_distributions
+Uruguay_18,Player_18,Uruguay,LW,32,False,17,1271,0,0,0,0,1.32,0.592,4,85.3,0.65,synthesized_from_distributions
+Uruguay_19,Player_19,Uruguay,RW,24,False,9,804,0,0,1,0,-0.93,0.264,7,78.8,0.65,synthesized_from_distributions
+Uruguay_20,Player_20,Uruguay,FW,33,False,19,1295,0,0,1,0,-0.14,0.192,9,83.1,0.65,synthesized_from_distributions
+Uruguay_21,Player_21,Uruguay,ST,23,False,15,1029,1,1,2,0,-0.21,0.252,11,79.8,0.65,synthesized_from_distributions
+Uruguay_22,Player_22,Uruguay,LW,33,False,12,891,2,0,4,0,3.0,0.11,1,86.5,0.65,synthesized_from_distributions
+Colombia_0,Player_0,Colombia,GK,22,True,16,1012,0,0,1,0,0.46,0.104,3,85.4,0.75,synthesized_from_distributions
+Colombia_1,Player_1,Colombia,CB,28,True,32,2771,2,0,2,0,-1.44,0.411,8,76.8,0.75,synthesized_from_distributions
+Colombia_2,Player_2,Colombia,LB,25,True,17,1244,0,0,0,1,1.4,0.378,11,83.7,0.75,synthesized_from_distributions
+Colombia_3,Player_3,Colombia,RB,33,True,19,1382,1,0,2,0,0.13,0.095,12,82.9,0.75,synthesized_from_distributions
+Colombia_4,Player_4,Colombia,CB,35,True,16,1073,0,0,1,0,-1.26,0.311,6,78.2,0.75,synthesized_from_distributions
+Colombia_5,Player_5,Colombia,CM,36,True,33,2278,0,0,0,0,1.04,0.118,5,91.3,0.75,synthesized_from_distributions
+Colombia_6,Player_6,Colombia,LM,35,True,31,2077,0,0,2,0,-0.44,0.272,2,81.0,0.75,synthesized_from_distributions
+Colombia_7,Player_7,Colombia,RM,29,True,36,2878,1,0,0,0,-0.08,0.196,14,87.5,0.75,synthesized_from_distributions
+Colombia_8,Player_8,Colombia,AM,25,True,18,1422,0,1,0,0,0.2,0.117,12,86.8,0.75,synthesized_from_distributions
+Colombia_9,Player_9,Colombia,ST,31,True,28,1719,2,0,1,0,1.68,0.332,5,88.4,0.75,synthesized_from_distributions
+Colombia_10,Player_10,Colombia,LW,20,True,22,1782,1,1,4,0,0.31,0.527,0,75.6,0.75,synthesized_from_distributions
+Colombia_11,Player_11,Colombia,RW,23,False,19,1366,1,0,2,0,-2.21,0.176,3,75.1,0.65,synthesized_from_distributions
+Colombia_12,Player_12,Colombia,FW,26,False,11,967,0,0,3,0,0.26,0.418,2,77.1,0.65,synthesized_from_distributions
+Colombia_13,Player_13,Colombia,ST,23,False,5,321,1,1,1,0,0.92,0.189,14,84.5,0.65,synthesized_from_distributions
+Colombia_14,Player_14,Colombia,LW,21,False,6,401,1,0,1,0,-0.21,0.08,7,82.4,0.65,synthesized_from_distributions
+Colombia_15,Player_15,Colombia,RW,33,False,17,1152,2,0,0,0,1.11,0.164,7,88.9,0.65,synthesized_from_distributions
+Colombia_16,Player_16,Colombia,FW,36,False,6,450,1,0,2,0,1.41,0.391,2,82.1,0.65,synthesized_from_distributions
+Colombia_17,Player_17,Colombia,ST,22,False,18,1383,0,0,3,0,-0.14,0.241,14,78.5,0.65,synthesized_from_distributions
+Colombia_18,Player_18,Colombia,LW,23,False,5,439,2,0,1,0,-0.39,0.356,5,78.9,0.65,synthesized_from_distributions
+Colombia_19,Player_19,Colombia,RW,30,False,15,1258,0,0,0,1,-0.34,0.149,8,80.4,0.65,synthesized_from_distributions
+Colombia_20,Player_20,Colombia,FW,19,False,15,976,0,0,1,0,0.02,0.476,13,80.3,0.65,synthesized_from_distributions
+Colombia_21,Player_21,Colombia,ST,25,False,5,330,2,0,1,0,-0.62,0.675,6,75.1,0.65,synthesized_from_distributions
+Colombia_22,Player_22,Colombia,LW,34,False,5,404,0,0,1,0,-1.41,0.409,3,75.3,0.65,synthesized_from_distributions
+France_0,Player_0,France,GK,23,True,24,1881,0,0,0,0,0.44,0.157,6,87.9,0.75,synthesized_from_distributions
+France_1,Player_1,France,CB,32,True,36,2406,0,0,4,0,-0.74,0.383,13,75.7,0.75,synthesized_from_distributions
+France_2,Player_2,France,LB,36,True,29,2260,2,1,0,0,-0.4,0.428,8,83.3,0.75,synthesized_from_distributions
+France_3,Player_3,France,RB,25,True,28,1986,0,0,2,0,-0.31,0.497,1,78.8,0.75,synthesized_from_distributions
+France_4,Player_4,France,CB,33,True,19,1505,1,1,2,0,1.28,0.103,8,86.3,0.75,synthesized_from_distributions
+France_5,Player_5,France,CM,20,True,22,1816,1,0,0,0,1.21,0.328,14,88.3,0.75,synthesized_from_distributions
+France_6,Player_6,France,LM,20,True,23,1670,0,0,1,0,0.02,0.055,6,85.5,0.75,synthesized_from_distributions
+France_7,Player_7,France,RM,35,True,16,1268,0,0,1,0,-1.16,0.549,10,76.1,0.75,synthesized_from_distributions
+France_8,Player_8,France,AM,23,True,22,1873,0,1,1,1,-0.22,0.174,8,79.5,0.75,synthesized_from_distributions
+France_9,Player_9,France,ST,19,True,27,2185,0,0,0,0,1.02,0.338,11,88.2,0.75,synthesized_from_distributions
+France_10,Player_10,France,LW,25,True,35,2339,0,1,0,0,-2.7,0.383,0,77.7,0.75,synthesized_from_distributions
+France_11,Player_11,France,RW,26,False,17,1156,1,0,1,0,0.51,0.423,5,82.5,0.65,synthesized_from_distributions
+France_12,Player_12,France,FW,22,False,17,1124,2,0,0,0,-0.43,0.234,11,83.6,0.65,synthesized_from_distributions
+France_13,Player_13,France,ST,19,False,13,1058,1,0,0,0,-0.53,0.417,8,80.9,0.65,synthesized_from_distributions
+France_14,Player_14,France,LW,19,False,5,388,0,0,1,0,-0.88,0.429,10,76.7,0.65,synthesized_from_distributions
+France_15,Player_15,France,RW,22,False,7,537,2,0,0,0,1.33,0.135,9,88.6,0.65,synthesized_from_distributions
+France_16,Player_16,France,FW,36,False,9,660,1,0,2,0,-0.33,0.478,12,76.4,0.65,synthesized_from_distributions
+France_17,Player_17,France,ST,32,False,14,1025,1,0,3,0,-0.19,0.043,9,79.8,0.65,synthesized_from_distributions
+France_18,Player_18,France,LW,21,False,11,707,0,0,0,0,-0.43,0.508,1,80.1,0.65,synthesized_from_distributions
+France_19,Player_19,France,RW,22,False,14,931,2,0,1,0,0.1,0.136,8,83.8,0.65,synthesized_from_distributions
+France_20,Player_20,France,FW,22,False,8,627,1,0,0,0,-0.59,0.577,3,78.5,0.65,synthesized_from_distributions
+France_21,Player_21,France,ST,28,False,9,653,0,0,0,0,0.48,0.43,9,83.3,0.65,synthesized_from_distributions
+France_22,Player_22,France,LW,29,False,10,676,1,0,1,0,1.14,0.459,14,83.2,0.65,synthesized_from_distributions
+England_0,Player_0,England,GK,35,True,32,1970,0,0,2,0,0.53,0.385,4,83.0,0.75,synthesized_from_distributions
+England_1,Player_1,England,CB,20,True,15,1135,3,1,0,0,-0.03,0.124,12,85.7,0.75,synthesized_from_distributions
+England_2,Player_2,England,LB,36,True,16,1287,1,0,1,0,2.53,0.185,8,90.9,0.75,synthesized_from_distributions
+England_3,Player_3,England,RB,21,True,27,1832,1,0,3,0,-2.76,0.151,4,72.8,0.75,synthesized_from_distributions
+England_4,Player_4,England,CB,22,True,19,1474,0,0,1,0,-0.73,0.26,6,80.7,0.75,synthesized_from_distributions
+England_5,Player_5,England,CM,32,True,22,1395,0,0,2,0,0.52,0.259,10,82.9,0.75,synthesized_from_distributions
+England_6,Player_6,England,LM,27,True,21,1429,0,1,3,0,-1.72,0.525,11,71.3,0.75,synthesized_from_distributions
+England_7,Player_7,England,RM,29,True,23,1787,1,0,2,0,2.24,0.159,6,89.1,0.75,synthesized_from_distributions
+England_8,Player_8,England,AM,24,True,22,1492,0,0,4,0,-0.42,0.19,5,76.7,0.75,synthesized_from_distributions
+England_9,Player_9,England,ST,23,True,37,2526,1,0,1,0,-1.0,0.384,3,81.0,0.75,synthesized_from_distributions
+England_10,Player_10,England,LW,27,True,30,2041,1,0,0,0,0.58,0.133,8,89.3,0.75,synthesized_from_distributions
+England_11,Player_11,England,RW,30,False,9,544,0,0,0,0,1.93,0.087,6,91.1,0.65,synthesized_from_distributions
+England_12,Player_12,England,FW,21,False,15,940,0,1,0,1,-1.0,0.291,5,77.1,0.65,synthesized_from_distributions
+England_13,Player_13,England,ST,29,False,9,804,2,0,1,0,-0.6,0.372,6,78.7,0.65,synthesized_from_distributions
+England_14,Player_14,England,LW,33,False,18,1428,1,0,0,0,-1.26,0.145,4,82.1,0.65,synthesized_from_distributions
+England_15,Player_15,England,RW,32,False,13,1079,0,0,1,0,-2.29,0.576,8,72.1,0.65,synthesized_from_distributions
+England_16,Player_16,England,FW,35,False,12,931,0,0,0,0,2.35,0.23,10,91.3,0.65,synthesized_from_distributions
+England_17,Player_17,England,ST,27,False,13,837,2,0,1,0,0.66,0.245,6,84.2,0.65,synthesized_from_distributions
+England_18,Player_18,England,LW,21,False,17,1049,0,0,0,0,-0.67,0.053,12,84.7,0.65,synthesized_from_distributions
+England_19,Player_19,England,RW,36,False,16,1182,0,0,3,0,1.07,0.482,8,79.5,0.65,synthesized_from_distributions
+England_20,Player_20,England,FW,34,False,6,497,0,0,0,0,-0.05,0.63,13,79.3,0.65,synthesized_from_distributions
+England_21,Player_21,England,ST,34,False,9,793,0,0,1,1,0.9,0.349,4,79.4,0.65,synthesized_from_distributions
+England_22,Player_22,England,LW,21,False,8,667,0,0,2,0,-1.15,0.239,4,76.2,0.65,synthesized_from_distributions
+Spain_0,Player_0,Spain,GK,34,True,27,2395,0,0,1,0,0.63,0.38,12,84.6,0.75,synthesized_from_distributions
+Spain_1,Player_1,Spain,CB,32,True,23,1587,1,0,0,0,-0.06,0.372,1,84.1,0.75,synthesized_from_distributions
+Spain_2,Player_2,Spain,LB,35,True,32,2548,0,0,2,1,-0.03,0.396,6,77.2,0.75,synthesized_from_distributions
+Spain_3,Player_3,Spain,RB,33,True,36,3017,0,0,1,0,0.12,0.228,4,85.8,0.75,synthesized_from_distributions
+Spain_4,Player_4,Spain,CB,19,True,19,1249,2,0,0,0,-0.2,0.215,2,84.8,0.75,synthesized_from_distributions
+Spain_5,Player_5,Spain,CM,35,True,17,1250,0,0,0,0,-0.76,0.255,6,82.4,0.75,synthesized_from_distributions
+Spain_6,Player_6,Spain,LM,32,True,29,2376,0,1,0,0,0.19,0.325,12,86.1,0.75,synthesized_from_distributions
+Spain_7,Player_7,Spain,RM,22,True,20,1644,1,0,0,0,0.97,0.101,14,89.5,0.75,synthesized_from_distributions
+Spain_8,Player_8,Spain,AM,36,True,34,2296,0,0,2,0,1.04,0.343,4,85.2,0.75,synthesized_from_distributions
+Spain_9,Player_9,Spain,ST,32,True,21,1314,1,0,1,0,-1.7,0.595,8,74.7,0.75,synthesized_from_distributions
+Spain_10,Player_10,Spain,LW,21,True,16,1015,0,0,3,0,-0.19,0.572,8,74.8,0.75,synthesized_from_distributions
+Spain_11,Player_11,Spain,RW,35,False,11,816,0,0,0,0,-1.53,0.337,0,78.5,0.65,synthesized_from_distributions
+Spain_12,Player_12,Spain,FW,27,False,17,1114,1,0,2,0,-0.38,0.372,3,78.4,0.65,synthesized_from_distributions
+Spain_13,Player_13,Spain,ST,20,False,5,376,1,0,0,0,-0.82,0.369,13,79.5,0.65,synthesized_from_distributions
+Spain_14,Player_14,Spain,LW,24,False,17,1200,1,0,1,0,-0.91,0.104,13,81.5,0.65,synthesized_from_distributions
+Spain_15,Player_15,Spain,RW,26,False,15,1117,0,0,3,0,0.87,0.315,9,80.4,0.65,synthesized_from_distributions
+Spain_16,Player_16,Spain,FW,21,False,7,527,0,0,4,0,0.92,0.372,5,77.0,0.65,synthesized_from_distributions
+Spain_17,Player_17,Spain,ST,26,False,5,410,0,0,2,0,0.03,0.51,14,76.7,0.65,synthesized_from_distributions
+Spain_18,Player_18,Spain,LW,24,False,11,868,0,0,1,0,-0.14,0.092,11,83.1,0.65,synthesized_from_distributions
+Spain_19,Player_19,Spain,RW,33,False,16,1319,2,1,3,0,1.73,0.137,5,84.9,0.65,synthesized_from_distributions
+Spain_20,Player_20,Spain,FW,28,False,8,711,0,0,0,0,1.23,0.253,10,87.2,0.65,synthesized_from_distributions
+Spain_21,Player_21,Spain,ST,29,False,6,472,1,0,0,0,0.35,0.044,5,86.4,0.65,synthesized_from_distributions
+Spain_22,Player_22,Spain,LW,32,False,6,491,3,0,0,0,-0.18,0.35,0,81.8,0.65,synthesized_from_distributions
+Germany_0,Player_0,Germany,GK,25,True,28,2516,0,0,1,0,-0.42,0.587,13,79.5,0.75,synthesized_from_distributions
+Germany_1,Player_1,Germany,CB,20,True,28,1884,2,0,0,0,0.04,0.212,10,86.7,0.75,synthesized_from_distributions
+Germany_2,Player_2,Germany,LB,34,True,22,1382,0,0,0,0,0.76,0.249,2,87.7,0.75,synthesized_from_distributions
+Germany_3,Player_3,Germany,RB,30,True,31,2607,1,0,0,0,-0.32,0.284,3,85.3,0.75,synthesized_from_distributions
+Germany_4,Player_4,Germany,CB,30,True,19,1234,1,0,1,0,-1.25,0.054,2,81.2,0.75,synthesized_from_distributions
+Germany_5,Player_5,Germany,CM,23,True,35,2655,1,0,1,0,-0.22,0.06,6,86.3,0.75,synthesized_from_distributions
+Germany_6,Player_6,Germany,LM,31,True,27,1924,0,0,0,0,0.75,0.428,8,86.5,0.75,synthesized_from_distributions
+Germany_7,Player_7,Germany,RM,27,True,33,2725,0,1,3,0,-1.33,0.517,0,74.2,0.75,synthesized_from_distributions
+Germany_8,Player_8,Germany,AM,29,True,18,1378,0,0,2,0,-1.45,0.427,1,74.8,0.75,synthesized_from_distributions
+Germany_9,Player_9,Germany,ST,25,True,34,2635,2,0,1,0,1.75,0.157,12,91.2,0.75,synthesized_from_distributions
+Germany_10,Player_10,Germany,LW,34,True,34,2079,1,0,0,1,-0.58,0.073,0,83.0,0.75,synthesized_from_distributions
+Germany_11,Player_11,Germany,RW,34,False,12,940,0,0,1,0,-0.15,0.037,13,83.8,0.65,synthesized_from_distributions
+Germany_12,Player_12,Germany,FW,32,False,18,1592,3,0,0,0,0.42,0.119,2,87.5,0.65,synthesized_from_distributions
+Germany_13,Player_13,Germany,ST,24,False,13,1033,2,1,1,0,0.03,0.358,10,81.2,0.65,synthesized_from_distributions
+Germany_14,Player_14,Germany,LW,32,False,18,1127,0,0,1,0,1.2,0.373,3,85.2,0.65,synthesized_from_distributions
+Germany_15,Player_15,Germany,RW,22,False,18,1513,0,2,1,0,0.98,0.191,9,86.4,0.65,synthesized_from_distributions
+Germany_16,Player_16,Germany,FW,26,False,10,834,3,0,3,0,-0.52,0.411,14,74.6,0.65,synthesized_from_distributions
+Germany_17,Player_17,Germany,ST,30,False,7,521,2,1,1,0,1.37,0.345,10,84.6,0.65,synthesized_from_distributions
+Germany_18,Player_18,Germany,LW,20,False,11,867,0,0,1,0,-1.23,0.067,3,80.1,0.65,synthesized_from_distributions
+Germany_19,Player_19,Germany,RW,21,False,14,1163,1,0,0,0,0.73,0.519,14,83.8,0.65,synthesized_from_distributions
+Germany_20,Player_20,Germany,FW,35,False,5,447,1,1,1,0,0.39,0.15,1,83.3,0.65,synthesized_from_distributions
+Germany_21,Player_21,Germany,ST,20,False,10,857,3,0,2,0,-0.31,0.419,5,77.2,0.65,synthesized_from_distributions
+Germany_22,Player_22,Germany,LW,36,False,6,480,1,1,2,0,0.57,0.135,1,82.1,0.65,synthesized_from_distributions
+Italy_0,Player_0,Italy,GK,34,True,29,2261,0,0,1,0,-0.07,0.175,10,84.9,0.75,synthesized_from_distributions
+Italy_1,Player_1,Italy,CB,27,True,31,2505,0,0,0,0,-0.53,0.237,3,85.1,0.75,synthesized_from_distributions
+Italy_2,Player_2,Italy,LB,32,True,37,2458,0,0,1,0,0.57,0.355,2,86.0,0.75,synthesized_from_distributions
+Italy_3,Player_3,Italy,RB,32,True,17,1167,1,0,1,1,0.18,0.508,10,76.7,0.75,synthesized_from_distributions
+Italy_4,Player_4,Italy,CB,26,True,36,3177,1,0,2,0,0.47,0.233,11,84.8,0.75,synthesized_from_distributions
+Italy_5,Player_5,Italy,CM,36,True,21,1515,0,0,1,0,1.8,0.102,14,90.1,0.75,synthesized_from_distributions
+Italy_6,Player_6,Italy,LM,25,True,31,2613,1,0,4,0,-1.22,0.409,10,73.3,0.75,synthesized_from_distributions
+Italy_7,Player_7,Italy,RM,26,True,31,2083,1,0,2,0,-0.01,0.272,5,82.3,0.75,synthesized_from_distributions
+Italy_8,Player_8,Italy,AM,29,True,27,1979,0,0,1,0,-1.02,0.306,0,80.4,0.75,synthesized_from_distributions
+Italy_9,Player_9,Italy,ST,28,True,17,1075,0,0,2,0,0.16,0.574,11,78.0,0.75,synthesized_from_distributions
+Italy_10,Player_10,Italy,LW,24,True,33,2242,1,0,1,0,1.41,0.513,14,86.4,0.75,synthesized_from_distributions
+Italy_11,Player_11,Italy,RW,28,False,17,1243,1,0,0,0,-1.91,0.296,8,78.6,0.65,synthesized_from_distributions
+Italy_12,Player_12,Italy,FW,31,False,13,874,1,1,1,0,0.03,0.378,1,81.0,0.65,synthesized_from_distributions
+Italy_13,Player_13,Italy,ST,29,False,17,1144,1,0,1,0,0.09,0.378,13,81.7,0.65,synthesized_from_distributions
+Italy_14,Player_14,Italy,LW,35,False,19,1428,1,0,1,0,-0.38,0.139,13,83.0,0.65,synthesized_from_distributions
+Italy_15,Player_15,Italy,RW,28,False,8,557,0,0,1,0,0.27,0.123,12,83.6,0.65,synthesized_from_distributions
+Italy_16,Player_16,Italy,FW,36,False,10,822,1,0,2,0,1.19,0.252,1,83.4,0.65,synthesized_from_distributions
+Italy_17,Player_17,Italy,ST,20,False,14,938,1,1,1,0,0.41,0.106,10,85.0,0.65,synthesized_from_distributions
+Italy_18,Player_18,Italy,LW,29,False,8,671,0,0,1,0,1.12,0.256,5,84.8,0.65,synthesized_from_distributions
+Italy_19,Player_19,Italy,RW,30,False,7,627,1,0,1,0,1.79,0.366,12,85.6,0.65,synthesized_from_distributions
+Italy_20,Player_20,Italy,FW,36,False,7,613,0,1,1,0,0.61,0.293,8,82.8,0.65,synthesized_from_distributions
+Italy_21,Player_21,Italy,ST,19,False,17,1157,1,0,2,0,-0.97,0.352,5,76.8,0.65,synthesized_from_distributions
+Italy_22,Player_22,Italy,LW,34,False,19,1580,0,0,2,0,1.23,0.802,6,79.2,0.65,synthesized_from_distributions
+Netherlands_0,Player_0,Netherlands,GK,26,True,17,1443,0,0,2,0,-0.25,0.291,10,79.6,0.75,synthesized_from_distributions
+Netherlands_1,Player_1,Netherlands,CB,26,True,34,2982,2,0,3,0,-1.26,0.219,2,77.5,0.75,synthesized_from_distributions
+Netherlands_2,Player_2,Netherlands,LB,28,True,29,2019,1,0,0,0,-0.9,0.05,14,85.6,0.75,synthesized_from_distributions
+Netherlands_3,Player_3,Netherlands,RB,23,True,27,1768,1,0,2,0,-0.2,0.116,3,82.8,0.75,synthesized_from_distributions
+Netherlands_4,Player_4,Netherlands,CB,23,True,27,1914,1,0,0,0,1.29,0.018,5,92.2,0.75,synthesized_from_distributions
+Netherlands_5,Player_5,Netherlands,CM,30,True,18,1433,1,0,1,0,0.55,0.154,2,85.5,0.75,synthesized_from_distributions
+Netherlands_6,Player_6,Netherlands,LM,24,True,32,2778,0,0,1,0,-1.76,0.151,0,80.4,0.75,synthesized_from_distributions
+Netherlands_7,Player_7,Netherlands,RM,26,True,24,2150,1,0,0,0,0.4,0.396,3,85.4,0.75,synthesized_from_distributions
+Netherlands_8,Player_8,Netherlands,AM,19,True,34,2159,0,0,3,0,-0.55,0.431,7,77.5,0.75,synthesized_from_distributions
+Netherlands_9,Player_9,Netherlands,ST,28,True,24,1785,2,1,0,0,-0.84,0.237,2,83.3,0.75,synthesized_from_distributions
+Netherlands_10,Player_10,Netherlands,LW,26,True,17,1213,0,0,2,0,0.34,0.451,10,79.8,0.75,synthesized_from_distributions
+Netherlands_11,Player_11,Netherlands,RW,22,False,7,453,0,0,2,0,-0.77,0.141,1,78.2,0.65,synthesized_from_distributions
+Netherlands_12,Player_12,Netherlands,FW,21,False,5,373,1,0,1,0,-0.5,0.209,6,80.1,0.65,synthesized_from_distributions
+Netherlands_13,Player_13,Netherlands,ST,26,False,9,566,0,0,3,0,0.04,0.521,9,75.1,0.65,synthesized_from_distributions
+Netherlands_14,Player_14,Netherlands,LW,34,False,7,522,2,0,1,0,0.64,0.313,2,82.7,0.65,synthesized_from_distributions
+Netherlands_15,Player_15,Netherlands,RW,28,False,10,764,0,0,0,0,-0.12,0.357,8,82.4,0.65,synthesized_from_distributions
+Netherlands_16,Player_16,Netherlands,FW,30,False,16,996,0,0,2,0,1.65,0.204,5,86.0,0.65,synthesized_from_distributions
+Netherlands_17,Player_17,Netherlands,ST,28,False,12,981,0,0,1,0,-0.12,0.267,1,81.5,0.65,synthesized_from_distributions
+Netherlands_18,Player_18,Netherlands,LW,23,False,17,1412,3,0,0,0,-1.67,0.448,2,77.8,0.65,synthesized_from_distributions
+Netherlands_19,Player_19,Netherlands,RW,22,False,14,1086,0,0,0,0,0.4,0.364,12,84.4,0.65,synthesized_from_distributions
+Netherlands_20,Player_20,Netherlands,FW,21,False,14,1221,0,0,1,0,0.61,0.283,5,83.8,0.65,synthesized_from_distributions
+Netherlands_21,Player_21,Netherlands,ST,27,False,13,935,0,0,1,0,0.12,0.045,3,84.6,0.65,synthesized_from_distributions
+Netherlands_22,Player_22,Netherlands,LW,28,False,19,1582,0,1,1,0,-1.34,0.378,13,77.7,0.65,synthesized_from_distributions
+Portugal_0,Player_0,Portugal,GK,26,True,37,2708,0,0,2,0,-1.19,0.547,1,76.8,0.75,synthesized_from_distributions
+Portugal_1,Player_1,Portugal,CB,27,True,31,1963,0,0,1,1,-0.56,0.641,11,75.0,0.75,synthesized_from_distributions
+Portugal_2,Player_2,Portugal,LB,33,True,19,1278,0,0,0,0,-0.15,0.226,3,84.8,0.75,synthesized_from_distributions
+Portugal_3,Player_3,Portugal,RB,21,True,32,2296,1,0,2,0,-0.17,0.148,4,83.2,0.75,synthesized_from_distributions
+Portugal_4,Player_4,Portugal,CB,33,True,36,2495,2,0,0,0,-0.42,0.441,4,84.1,0.75,synthesized_from_distributions
+Portugal_5,Player_5,Portugal,CM,24,True,36,2329,1,0,4,0,0.35,0.275,11,80.0,0.75,synthesized_from_distributions
+Portugal_6,Player_6,Portugal,LM,21,True,15,1139,0,0,1,0,0.2,0.359,1,82.0,0.75,synthesized_from_distributions
+Portugal_7,Player_7,Portugal,RM,19,True,34,2972,0,1,1,0,1.1,0.173,0,89.0,0.75,synthesized_from_distributions
+Portugal_8,Player_8,Portugal,AM,21,True,17,1347,0,0,2,0,-0.0,0.446,9,78.8,0.75,synthesized_from_distributions
+Portugal_9,Player_9,Portugal,ST,30,True,17,1137,0,1,1,0,0.34,0.088,13,85.4,0.75,synthesized_from_distributions
+Portugal_10,Player_10,Portugal,LW,22,True,18,1198,1,0,0,0,-0.89,0.232,8,82.4,0.75,synthesized_from_distributions
+Portugal_11,Player_11,Portugal,RW,25,False,11,927,1,0,0,0,-1.14,0.298,2,80.0,0.65,synthesized_from_distributions
+Portugal_12,Player_12,Portugal,FW,26,False,8,634,0,0,0,0,-0.04,0.196,8,84.0,0.65,synthesized_from_distributions
+Portugal_13,Player_13,Portugal,ST,21,False,11,834,1,0,2,0,-1.21,0.207,12,76.7,0.65,synthesized_from_distributions
+Portugal_14,Player_14,Portugal,LW,34,False,5,423,3,0,0,0,0.16,0.616,12,80.0,0.65,synthesized_from_distributions
+Portugal_15,Player_15,Portugal,RW,34,False,5,401,1,0,1,0,-0.22,0.304,4,80.0,0.65,synthesized_from_distributions
+Portugal_16,Player_16,Portugal,FW,35,False,5,427,2,0,3,0,1.19,0.336,9,79.9,0.65,synthesized_from_distributions
+Portugal_17,Player_17,Portugal,ST,34,False,10,779,2,0,1,0,0.46,0.059,1,85.1,0.65,synthesized_from_distributions
+Portugal_18,Player_18,Portugal,LW,27,False,13,896,2,2,1,0,-1.39,0.358,12,76.9,0.65,synthesized_from_distributions
+Portugal_19,Player_19,Portugal,RW,25,False,16,1024,2,0,1,0,1.4,0.597,5,83.3,0.65,synthesized_from_distributions
+Portugal_20,Player_20,Portugal,FW,30,False,8,561,2,0,0,0,-0.16,0.176,4,83.8,0.65,synthesized_from_distributions
+Portugal_21,Player_21,Portugal,ST,24,False,5,395,1,0,3,1,0.24,0.476,3,71.6,0.65,synthesized_from_distributions
+Portugal_22,Player_22,Portugal,LW,19,False,19,1397,0,0,1,0,0.55,0.22,13,84.9,0.65,synthesized_from_distributions
+Belgium_0,Player_0,Belgium,GK,26,True,26,2032,0,0,1,1,0.28,0.422,5,79.0,0.75,synthesized_from_distributions
+Belgium_1,Player_1,Belgium,CB,25,True,30,2072,1,0,3,0,1.2,0.335,2,83.2,0.75,synthesized_from_distributions
+Belgium_2,Player_2,Belgium,LB,36,True,18,1196,2,0,2,0,0.82,0.569,1,80.1,0.75,synthesized_from_distributions
+Belgium_3,Player_3,Belgium,RB,23,True,33,2800,1,0,2,1,-1.55,0.195,6,74.8,0.75,synthesized_from_distributions
+Belgium_4,Player_4,Belgium,CB,20,True,15,1074,0,0,1,0,-0.14,0.208,4,82.5,0.75,synthesized_from_distributions
+Belgium_5,Player_5,Belgium,CM,26,True,16,1414,0,0,2,0,-2.07,0.48,6,72.1,0.75,synthesized_from_distributions
+Belgium_6,Player_6,Belgium,LM,28,True,15,968,0,0,3,0,-0.53,0.593,3,73.4,0.75,synthesized_from_distributions
+Belgium_7,Player_7,Belgium,RM,23,True,28,2448,0,0,0,0,0.69,0.126,5,89.5,0.75,synthesized_from_distributions
+Belgium_8,Player_8,Belgium,AM,20,True,27,1636,1,0,0,0,-0.51,0.392,10,83.1,0.75,synthesized_from_distributions
+Belgium_9,Player_9,Belgium,ST,22,True,31,2379,1,0,0,0,-1.29,0.265,14,82.6,0.75,synthesized_from_distributions
+Belgium_10,Player_10,Belgium,LW,24,True,22,1526,1,0,0,0,-0.6,0.229,10,83.8,0.75,synthesized_from_distributions
+Belgium_11,Player_11,Belgium,RW,27,False,15,1248,1,0,0,0,-0.47,0.028,8,85.3,0.65,synthesized_from_distributions
+Belgium_12,Player_12,Belgium,FW,24,False,6,411,1,1,1,0,-0.26,0.186,6,81.1,0.65,synthesized_from_distributions
+Belgium_13,Player_13,Belgium,ST,20,False,5,345,1,0,0,0,0.99,0.086,13,87.8,0.65,synthesized_from_distributions
+Belgium_14,Player_14,Belgium,LW,23,False,13,892,0,0,1,0,-1.39,0.163,8,78.9,0.65,synthesized_from_distributions
+Belgium_15,Player_15,Belgium,RW,23,False,18,1527,1,1,1,0,-1.1,0.73,12,74.8,0.65,synthesized_from_distributions
+Belgium_16,Player_16,Belgium,FW,28,False,10,656,0,0,1,0,-0.45,0.544,3,77.5,0.65,synthesized_from_distributions
+Belgium_17,Player_17,Belgium,ST,29,False,14,1129,1,0,0,0,0.31,0.388,11,83.9,0.65,synthesized_from_distributions
+Belgium_18,Player_18,Belgium,LW,34,False,9,805,0,0,0,0,0.26,0.235,11,84.6,0.65,synthesized_from_distributions
+Belgium_19,Player_19,Belgium,RW,32,False,19,1199,0,0,1,0,-1.9,0.524,8,74.6,0.65,synthesized_from_distributions
+Belgium_20,Player_20,Belgium,FW,32,False,17,1369,0,1,3,0,-0.15,0.143,5,79.4,0.65,synthesized_from_distributions
+Belgium_21,Player_21,Belgium,ST,34,False,11,983,0,0,0,0,0.38,0.071,4,86.9,0.65,synthesized_from_distributions
+Belgium_22,Player_22,Belgium,LW,30,False,10,837,1,0,3,0,-0.63,0.342,1,75.0,0.65,synthesized_from_distributions
+Switzerland_0,Player_0,Switzerland,GK,22,True,35,2191,0,0,2,0,1.15,0.123,5,87.8,0.75,synthesized_from_distributions
+Switzerland_1,Player_1,Switzerland,CB,25,True,30,2225,0,0,1,0,-0.36,0.337,5,82.5,0.75,synthesized_from_distributions
+Switzerland_2,Player_2,Switzerland,LB,29,True,23,1854,1,0,1,0,0.03,0.391,10,82.2,0.75,synthesized_from_distributions
+Switzerland_3,Player_3,Switzerland,RB,30,True,36,2541,0,0,0,0,-0.89,0.133,10,85.7,0.75,synthesized_from_distributions
+Switzerland_4,Player_4,Switzerland,CB,26,True,16,1270,0,0,2,0,2.26,0.208,2,87.8,0.75,synthesized_from_distributions
+Switzerland_5,Player_5,Switzerland,CM,31,True,25,1647,0,0,2,0,0.2,0.295,10,81.9,0.75,synthesized_from_distributions
+Switzerland_6,Player_6,Switzerland,LM,28,True,35,2542,0,0,1,0,-0.26,0.205,1,84.8,0.75,synthesized_from_distributions
+Switzerland_7,Player_7,Switzerland,RM,34,True,29,2236,0,0,1,0,-0.19,0.447,14,81.8,0.75,synthesized_from_distributions
+Switzerland_8,Player_8,Switzerland,AM,26,True,29,1757,0,1,0,0,-1.45,0.164,3,82.8,0.75,synthesized_from_distributions
+Switzerland_9,Player_9,Switzerland,ST,27,True,22,1442,2,0,0,0,0.2,0.319,8,85.3,0.75,synthesized_from_distributions
+Switzerland_10,Player_10,Switzerland,LW,29,True,17,1479,0,0,0,0,-0.37,0.131,3,84.8,0.75,synthesized_from_distributions
+Switzerland_11,Player_11,Switzerland,RW,20,False,10,832,0,1,2,0,1.21,0.053,12,85.4,0.65,synthesized_from_distributions
+Switzerland_12,Player_12,Switzerland,FW,23,False,16,1352,1,0,1,0,0.49,0.208,10,84.5,0.65,synthesized_from_distributions
+Switzerland_13,Player_13,Switzerland,ST,31,False,12,1019,0,0,2,0,-1.01,0.148,2,78.1,0.65,synthesized_from_distributions
+Switzerland_14,Player_14,Switzerland,LW,21,False,8,698,0,0,3,0,0.68,0.173,9,80.4,0.65,synthesized_from_distributions
+Switzerland_15,Player_15,Switzerland,RW,30,False,8,596,0,0,1,0,-1.78,0.385,12,74.9,0.65,synthesized_from_distributions
+Switzerland_16,Player_16,Switzerland,FW,27,False,7,506,2,0,0,0,0.38,0.207,0,85.0,0.65,synthesized_from_distributions
+Switzerland_17,Player_17,Switzerland,ST,26,False,15,1035,1,0,2,0,-1.14,0.271,5,76.8,0.65,synthesized_from_distributions
+Switzerland_18,Player_18,Switzerland,LW,30,False,19,1155,1,0,0,0,0.29,0.28,8,85.6,0.65,synthesized_from_distributions
+Switzerland_19,Player_19,Switzerland,RW,24,False,11,887,0,0,1,0,0.69,0.268,13,83.9,0.65,synthesized_from_distributions
+Switzerland_20,Player_20,Switzerland,FW,26,False,7,513,1,0,4,1,0.76,0.076,0,75.4,0.65,synthesized_from_distributions
+Switzerland_21,Player_21,Switzerland,ST,35,False,13,798,0,0,1,0,0.49,0.145,10,84.7,0.65,synthesized_from_distributions
+Switzerland_22,Player_22,Switzerland,LW,28,False,12,812,1,0,0,0,1.35,0.437,0,86.2,0.65,synthesized_from_distributions
+Austria_0,Player_0,Austria,GK,21,True,31,2378,0,0,0,0,-0.84,0.547,11,81.1,0.75,synthesized_from_distributions
+Austria_1,Player_1,Austria,CB,26,True,15,1338,3,0,2,0,0.77,0.228,12,83.0,0.75,synthesized_from_distributions
+Austria_2,Player_2,Austria,LB,35,True,23,1808,1,1,4,1,-0.35,0.264,7,72.3,0.75,synthesized_from_distributions
+Austria_3,Player_3,Austria,RB,21,True,37,2427,0,0,1,0,-0.06,0.49,8,82.8,0.75,synthesized_from_distributions
+Austria_4,Player_4,Austria,CB,19,True,34,2392,1,0,1,0,-0.18,0.472,7,82.2,0.75,synthesized_from_distributions
+Austria_5,Player_5,Austria,CM,30,True,32,2155,0,0,1,0,-1.47,0.302,7,79.8,0.75,synthesized_from_distributions
+Austria_6,Player_6,Austria,LM,33,True,29,1843,0,0,0,0,1.62,0.118,11,92.5,0.75,synthesized_from_distributions
+Austria_7,Player_7,Austria,RM,24,True,17,1225,0,0,2,0,-1.6,0.509,11,73.3,0.75,synthesized_from_distributions
+Austria_8,Player_8,Austria,AM,23,True,24,1866,0,0,2,0,-0.95,0.049,9,80.8,0.75,synthesized_from_distributions
+Austria_9,Player_9,Austria,ST,30,True,26,2301,0,0,1,0,-1.48,0.183,3,80.2,0.75,synthesized_from_distributions
+Austria_10,Player_10,Austria,LW,25,True,35,2422,1,0,0,0,0.53,0.165,10,89.6,0.75,synthesized_from_distributions
+Austria_11,Player_11,Austria,RW,23,False,19,1667,1,0,1,0,-0.98,0.338,11,79.2,0.65,synthesized_from_distributions
+Austria_12,Player_12,Austria,FW,22,False,12,987,1,1,1,0,-0.85,0.233,12,79.7,0.65,synthesized_from_distributions
+Austria_13,Player_13,Austria,ST,24,False,9,690,0,0,1,0,0.33,0.332,0,81.9,0.65,synthesized_from_distributions
+Austria_14,Player_14,Austria,LW,35,False,11,885,0,0,1,0,-0.31,0.116,13,82.4,0.65,synthesized_from_distributions
+Austria_15,Player_15,Austria,RW,19,False,18,1404,1,0,4,0,-1.19,0.347,9,72.3,0.65,synthesized_from_distributions
+Austria_16,Player_16,Austria,FW,22,False,18,1483,1,0,2,0,-0.43,0.501,10,77.1,0.65,synthesized_from_distributions
+Austria_17,Player_17,Austria,ST,36,False,17,1216,0,0,1,0,-0.47,0.31,2,80.7,0.65,synthesized_from_distributions
+Austria_18,Player_18,Austria,LW,28,False,6,472,1,0,2,0,-0.65,0.304,4,76.8,0.65,synthesized_from_distributions
+Austria_19,Player_19,Austria,RW,32,False,11,866,1,0,1,0,-1.03,0.185,6,79.5,0.65,synthesized_from_distributions
+Austria_20,Player_20,Austria,FW,27,False,9,652,0,0,1,0,0.47,0.197,2,83.6,0.65,synthesized_from_distributions
+Austria_21,Player_21,Austria,ST,30,False,8,506,0,0,1,0,0.73,0.145,14,84.8,0.65,synthesized_from_distributions
+Austria_22,Player_22,Austria,LW,20,False,5,327,3,1,1,0,-1.09,0.23,1,78.1,0.65,synthesized_from_distributions
+Denmark_0,Player_0,Denmark,GK,28,True,15,1061,0,0,4,0,-0.57,0.426,14,73.0,0.75,synthesized_from_distributions
+Denmark_1,Player_1,Denmark,CB,31,True,15,1097,0,0,1,0,-0.36,0.038,13,83.5,0.75,synthesized_from_distributions
+Denmark_2,Player_2,Denmark,LB,27,True,15,957,0,1,1,0,0.69,0.146,1,85.6,0.75,synthesized_from_distributions
+Denmark_3,Player_3,Denmark,RB,21,True,16,1100,1,0,2,0,-0.93,0.099,8,79.3,0.75,synthesized_from_distributions
+Denmark_4,Player_4,Denmark,CB,30,True,16,1030,0,1,2,1,-0.11,0.394,3,74.8,0.75,synthesized_from_distributions
+Denmark_5,Player_5,Denmark,CM,26,True,23,1686,0,0,0,0,-0.25,0.092,5,86.4,0.75,synthesized_from_distributions
+Denmark_6,Player_6,Denmark,LM,27,True,15,1306,0,1,0,0,-0.92,0.245,7,81.8,0.75,synthesized_from_distributions
+Denmark_7,Player_7,Denmark,RM,34,True,30,2492,0,0,1,0,-0.17,0.238,6,84.1,0.75,synthesized_from_distributions
+Denmark_8,Player_8,Denmark,AM,32,True,16,1180,0,0,4,0,0.83,0.234,8,79.2,0.75,synthesized_from_distributions
+Denmark_9,Player_9,Denmark,ST,32,True,35,3017,0,1,1,0,2.38,0.42,14,90.5,0.75,synthesized_from_distributions
+Denmark_10,Player_10,Denmark,LW,31,True,26,2117,0,0,0,0,-0.24,0.241,6,85.3,0.75,synthesized_from_distributions
+Denmark_11,Player_11,Denmark,RW,33,False,19,1488,1,1,3,0,-1.92,0.35,8,72.3,0.65,synthesized_from_distributions
+Denmark_12,Player_12,Denmark,FW,20,False,9,634,1,0,1,0,-0.68,0.274,8,79.4,0.65,synthesized_from_distributions
+Denmark_13,Player_13,Denmark,ST,20,False,10,786,0,1,0,0,1.46,0.114,8,89.6,0.65,synthesized_from_distributions
+Denmark_14,Player_14,Denmark,LW,25,False,15,1059,0,0,1,0,0.09,0.192,7,83.3,0.65,synthesized_from_distributions
+Denmark_15,Player_15,Denmark,RW,24,False,6,464,2,0,0,0,0.71,0.216,4,85.8,0.65,synthesized_from_distributions
+Denmark_16,Player_16,Denmark,FW,20,False,16,1347,0,0,2,0,1.05,0.241,10,83.8,0.65,synthesized_from_distributions
+Denmark_17,Player_17,Denmark,ST,33,False,19,1451,1,0,1,0,1.38,0.593,10,83.7,0.65,synthesized_from_distributions
+Denmark_18,Player_18,Denmark,LW,24,False,17,1121,0,0,2,0,-0.51,0.159,10,80.1,0.65,synthesized_from_distributions
+Denmark_19,Player_19,Denmark,RW,26,False,10,867,1,0,1,0,0.23,0.496,0,80.1,0.65,synthesized_from_distributions
+Denmark_20,Player_20,Denmark,FW,35,False,16,1340,0,0,1,0,0.14,0.668,10,78.9,0.65,synthesized_from_distributions
+Denmark_21,Player_21,Denmark,ST,33,False,11,698,0,0,2,0,-0.39,0.325,0,78.0,0.65,synthesized_from_distributions
+Denmark_22,Player_22,Denmark,LW,35,False,14,938,1,0,2,0,0.68,0.633,8,78.6,0.65,synthesized_from_distributions
+Sweden_0,Player_0,Sweden,GK,19,True,30,2425,0,0,2,0,-1.39,0.285,2,77.9,0.75,synthesized_from_distributions
+Sweden_1,Player_1,Sweden,CB,32,True,25,1901,3,0,2,0,-0.22,0.332,5,80.3,0.75,synthesized_from_distributions
+Sweden_2,Player_2,Sweden,LB,19,True,34,2549,1,0,0,0,-0.93,0.553,12,81.2,0.75,synthesized_from_distributions
+Sweden_3,Player_3,Sweden,RB,31,True,34,2516,0,0,1,0,0.82,0.637,4,83.6,0.75,synthesized_from_distributions
+Sweden_4,Player_4,Sweden,CB,19,True,31,2260,0,0,1,0,-0.35,0.114,7,84.9,0.75,synthesized_from_distributions
+Sweden_5,Player_5,Sweden,CM,25,True,31,2460,1,0,1,0,0.87,0.111,2,88.6,0.75,synthesized_from_distributions
+Sweden_6,Player_6,Sweden,LM,34,True,34,2815,0,0,1,0,0.77,0.253,8,87.2,0.75,synthesized_from_distributions
+Sweden_7,Player_7,Sweden,RM,20,True,37,2935,1,0,0,1,-0.99,0.298,3,79.9,0.75,synthesized_from_distributions
+Sweden_8,Player_8,Sweden,AM,29,True,32,2360,0,0,1,0,-0.38,0.659,7,79.5,0.75,synthesized_from_distributions
+Sweden_9,Player_9,Sweden,ST,33,True,25,2142,0,1,0,0,0.12,0.349,2,85.2,0.75,synthesized_from_distributions
+Sweden_10,Player_10,Sweden,LW,28,True,22,1462,1,0,3,1,-0.93,0.205,3,73.0,0.75,synthesized_from_distributions
+Sweden_11,Player_11,Sweden,RW,24,False,15,975,0,0,1,0,0.39,0.201,0,84.1,0.65,synthesized_from_distributions
+Sweden_12,Player_12,Sweden,FW,22,False,5,391,0,0,2,0,-1.25,0.245,3,75.5,0.65,synthesized_from_distributions
+Sweden_13,Player_13,Sweden,ST,25,False,17,1310,1,0,1,1,0.97,0.435,10,79.8,0.65,synthesized_from_distributions
+Sweden_14,Player_14,Sweden,LW,26,False,11,919,1,0,1,1,1.34,0.375,1,80.7,0.65,synthesized_from_distributions
+Sweden_15,Player_15,Sweden,RW,31,False,15,1089,2,0,1,0,-0.57,0.128,4,82.0,0.65,synthesized_from_distributions
+Sweden_16,Player_16,Sweden,FW,27,False,5,418,0,0,0,0,-0.14,0.394,1,81.3,0.65,synthesized_from_distributions
+Sweden_17,Player_17,Sweden,ST,25,False,15,989,1,0,0,0,1.36,0.453,5,86.5,0.65,synthesized_from_distributions
+Sweden_18,Player_18,Sweden,LW,19,False,6,399,1,0,1,0,-0.52,0.22,14,80.0,0.65,synthesized_from_distributions
+Sweden_19,Player_19,Sweden,RW,32,False,14,1221,1,0,0,0,1.53,0.292,14,88.5,0.65,synthesized_from_distributions
+Sweden_20,Player_20,Sweden,FW,33,False,15,983,0,0,1,0,1.58,0.324,8,86.5,0.65,synthesized_from_distributions
+Sweden_21,Player_21,Sweden,ST,28,False,17,1032,1,0,1,0,-0.21,0.579,3,78.8,0.65,synthesized_from_distributions
+Sweden_22,Player_22,Sweden,LW,23,False,9,540,0,0,1,0,1.49,0.168,12,87.0,0.65,synthesized_from_distributions
+Poland_0,Player_0,Poland,GK,20,True,19,1655,0,0,2,0,-1.63,0.194,12,76.7,0.75,synthesized_from_distributions
+Poland_1,Player_1,Poland,CB,20,True,16,1037,0,0,2,0,-1.1,0.127,9,78.5,0.75,synthesized_from_distributions
+Poland_2,Player_2,Poland,LB,31,True,37,2725,1,1,0,0,0.66,0.442,7,87.4,0.75,synthesized_from_distributions
+Poland_3,Player_3,Poland,RB,25,True,31,2647,2,0,0,0,0.29,0.138,7,88.6,0.75,synthesized_from_distributions
+Poland_4,Player_4,Poland,CB,29,True,18,1302,1,0,0,0,0.04,0.17,14,85.8,0.75,synthesized_from_distributions
+Poland_5,Player_5,Poland,CM,19,True,23,1539,0,0,1,0,-1.52,0.562,13,75.9,0.75,synthesized_from_distributions
+Poland_6,Player_6,Poland,LM,27,True,33,2917,0,0,0,0,1.39,0.285,10,90.7,0.75,synthesized_from_distributions
+Poland_7,Player_7,Poland,RM,29,True,23,1583,0,0,0,0,-0.89,0.164,13,83.7,0.75,synthesized_from_distributions
+Poland_8,Player_8,Poland,AM,35,True,15,1071,0,0,0,0,-1.09,0.252,12,81.2,0.75,synthesized_from_distributions
+Poland_9,Player_9,Poland,ST,21,True,17,1406,2,0,2,0,-0.68,0.071,11,80.5,0.75,synthesized_from_distributions
+Poland_10,Player_10,Poland,LW,26,True,15,1011,1,0,3,0,0.11,0.113,5,80.2,0.75,synthesized_from_distributions
+Poland_11,Player_11,Poland,RW,32,False,13,1024,0,1,2,0,0.79,0.125,9,83.8,0.65,synthesized_from_distributions
+Poland_12,Player_12,Poland,FW,35,False,16,1092,2,1,0,0,1.53,0.463,2,87.1,0.65,synthesized_from_distributions
+Poland_13,Player_13,Poland,ST,36,False,7,628,3,0,0,1,0.84,0.03,14,84.1,0.65,synthesized_from_distributions
+Poland_14,Player_14,Poland,LW,25,False,9,804,1,0,0,0,-0.73,0.388,14,80.1,0.65,synthesized_from_distributions
+Poland_15,Player_15,Poland,RW,31,False,8,651,0,0,2,0,-0.93,0.04,14,78.9,0.65,synthesized_from_distributions
+Poland_16,Player_16,Poland,FW,19,False,12,924,0,0,1,0,1.91,0.181,12,88.5,0.65,synthesized_from_distributions
+Poland_17,Player_17,Poland,ST,27,False,8,681,1,0,1,0,-0.61,0.054,9,81.7,0.65,synthesized_from_distributions
+Poland_18,Player_18,Poland,LW,27,False,6,393,2,0,1,0,-0.96,0.541,13,75.5,0.65,synthesized_from_distributions
+Poland_19,Player_19,Poland,RW,19,False,8,593,2,0,3,0,0.48,0.076,11,80.7,0.65,synthesized_from_distributions
+Poland_20,Player_20,Poland,FW,21,False,12,953,1,1,0,0,0.29,0.312,11,84.3,0.65,synthesized_from_distributions
+Poland_21,Player_21,Poland,ST,35,False,10,681,3,0,2,0,-1.14,0.294,7,76.0,0.65,synthesized_from_distributions
+Poland_22,Player_22,Poland,LW,27,False,18,1090,1,0,3,0,1.08,0.473,1,79.9,0.65,synthesized_from_distributions
+Czech_Republic_0,Player_0,Czech Republic,GK,21,True,22,1929,0,0,1,0,-0.58,0.442,9,79.7,0.75,synthesized_from_distributions
+Czech_Republic_1,Player_1,Czech Republic,CB,27,True,27,2144,2,0,0,0,-0.68,0.409,9,82.4,0.75,synthesized_from_distributions
+Czech_Republic_2,Player_2,Czech Republic,LB,31,True,17,1471,2,1,0,0,-1.1,0.176,13,82.2,0.75,synthesized_from_distributions
+Czech_Republic_3,Player_3,Czech Republic,RB,29,True,28,1733,0,0,2,0,0.47,0.216,7,83.9,0.75,synthesized_from_distributions
+Czech_Republic_4,Player_4,Czech Republic,CB,35,True,30,2620,0,0,1,1,1.06,0.075,14,85.4,0.75,synthesized_from_distributions
+Czech_Republic_5,Player_5,Czech Republic,CM,23,True,15,964,0,0,2,0,1.67,0.464,7,83.3,0.75,synthesized_from_distributions
+Czech_Republic_6,Player_6,Czech Republic,LM,35,True,20,1406,0,0,1,0,-1.85,0.131,13,78.8,0.75,synthesized_from_distributions
+Czech_Republic_7,Player_7,Czech Republic,RM,29,True,35,2131,0,1,0,0,0.79,0.047,5,91.5,0.75,synthesized_from_distributions
+Czech_Republic_8,Player_8,Czech Republic,AM,20,True,30,2468,1,0,4,0,-0.59,0.177,9,77.4,0.75,synthesized_from_distributions
+Czech_Republic_9,Player_9,Czech Republic,ST,25,True,34,2567,1,0,1,0,0.09,0.537,7,82.4,0.75,synthesized_from_distributions
+Czech_Republic_10,Player_10,Czech Republic,LW,31,True,25,2007,2,1,2,0,-0.39,0.172,11,81.4,0.75,synthesized_from_distributions
+Czech_Republic_11,Player_11,Czech Republic,RW,34,False,11,830,0,0,2,0,0.54,0.375,10,80.3,0.65,synthesized_from_distributions
+Czech_Republic_12,Player_12,Czech Republic,FW,31,False,9,716,0,0,0,0,0.63,0.308,2,85.0,0.65,synthesized_from_distributions
+Czech_Republic_13,Player_13,Czech Republic,ST,19,False,17,1322,0,0,1,0,0.61,0.169,3,85.4,0.65,synthesized_from_distributions
+Czech_Republic_14,Player_14,Czech Republic,LW,20,False,17,1136,1,0,1,0,-1.5,0.203,1,78.7,0.65,synthesized_from_distributions
+Czech_Republic_15,Player_15,Czech Republic,RW,36,False,14,1158,2,0,1,0,0.67,0.125,0,85.6,0.65,synthesized_from_distributions
+Czech_Republic_16,Player_16,Czech Republic,FW,34,False,12,757,1,0,1,0,1.25,0.314,10,85.2,0.65,synthesized_from_distributions
+Czech_Republic_17,Player_17,Czech Republic,ST,21,False,6,422,2,0,0,0,1.33,0.337,6,86.4,0.65,synthesized_from_distributions
+Czech_Republic_18,Player_18,Czech Republic,LW,30,False,15,1095,1,0,0,0,2.21,0.218,8,91.4,0.65,synthesized_from_distributions
+Czech_Republic_19,Player_19,Czech Republic,RW,22,False,10,716,1,0,1,1,2.36,0.258,0,84.8,0.65,synthesized_from_distributions
+Czech_Republic_20,Player_20,Czech Republic,FW,34,False,16,1388,0,0,2,0,-1.12,0.241,2,77.3,0.65,synthesized_from_distributions
+Czech_Republic_21,Player_21,Czech Republic,ST,21,False,18,1137,0,0,1,0,0.36,0.544,6,81.0,0.65,synthesized_from_distributions
+Czech_Republic_22,Player_22,Czech Republic,LW,33,False,18,1105,0,1,0,0,0.93,0.174,11,88.4,0.65,synthesized_from_distributions
+Hungary_0,Player_0,Hungary,GK,25,True,31,1873,0,0,1,0,0.66,0.44,0,84.7,0.75,synthesized_from_distributions
+Hungary_1,Player_1,Hungary,CB,36,True,37,3281,1,0,1,0,1.82,0.403,12,89.3,0.75,synthesized_from_distributions
+Hungary_2,Player_2,Hungary,LB,29,True,15,918,3,1,3,0,0.74,0.183,13,81.4,0.75,synthesized_from_distributions
+Hungary_3,Player_3,Hungary,RB,26,True,26,1608,3,0,3,1,0.49,0.611,7,73.8,0.75,synthesized_from_distributions
+Hungary_4,Player_4,Hungary,CB,21,True,18,1496,0,1,1,0,1.58,0.556,12,84.6,0.75,synthesized_from_distributions
+Hungary_5,Player_5,Hungary,CM,29,True,37,2827,0,1,1,0,0.9,0.026,4,90.3,0.75,synthesized_from_distributions
+Hungary_6,Player_6,Hungary,LM,29,True,22,1506,0,0,1,0,1.1,0.415,1,85.0,0.75,synthesized_from_distributions
+Hungary_7,Player_7,Hungary,RM,30,True,25,1571,1,0,4,0,0.44,0.325,9,78.4,0.75,synthesized_from_distributions
+Hungary_8,Player_8,Hungary,AM,30,True,35,2938,0,0,1,0,-0.66,0.402,11,81.6,0.75,synthesized_from_distributions
+Hungary_9,Player_9,Hungary,ST,22,True,32,2121,1,0,0,0,0.74,0.209,6,89.3,0.75,synthesized_from_distributions
+Hungary_10,Player_10,Hungary,LW,26,True,36,3227,0,0,1,0,1.22,0.173,5,89.7,0.75,synthesized_from_distributions
+Hungary_11,Player_11,Hungary,RW,19,False,12,908,0,0,1,0,-0.55,0.641,14,76.5,0.65,synthesized_from_distributions
+Hungary_12,Player_12,Hungary,FW,27,False,10,864,1,0,2,0,0.77,0.08,8,83.8,0.65,synthesized_from_distributions
+Hungary_13,Player_13,Hungary,ST,32,False,9,807,3,0,1,0,0.78,0.45,10,82.0,0.65,synthesized_from_distributions
+Hungary_14,Player_14,Hungary,LW,24,False,9,598,1,0,3,0,-0.16,0.3,10,76.7,0.65,synthesized_from_distributions
+Hungary_15,Player_15,Hungary,RW,22,False,14,1028,0,0,0,0,-1.38,0.517,0,77.5,0.65,synthesized_from_distributions
+Hungary_16,Player_16,Hungary,FW,36,False,18,1380,0,0,1,0,-2.06,0.387,4,75.3,0.65,synthesized_from_distributions
+Hungary_17,Player_17,Hungary,ST,27,False,7,434,2,0,0,0,1.53,0.571,11,84.8,0.65,synthesized_from_distributions
+Hungary_18,Player_18,Hungary,LW,31,False,9,637,0,0,1,0,-0.78,0.428,11,77.6,0.65,synthesized_from_distributions
+Hungary_19,Player_19,Hungary,RW,21,False,10,709,2,1,1,0,1.07,0.095,12,86.6,0.65,synthesized_from_distributions
+Hungary_20,Player_20,Hungary,FW,26,False,11,989,1,1,0,0,0.58,0.208,10,86.1,0.65,synthesized_from_distributions
+Hungary_21,Player_21,Hungary,ST,20,False,12,755,0,0,3,0,1.17,0.249,11,81.6,0.65,synthesized_from_distributions
+Hungary_22,Player_22,Hungary,LW,28,False,7,496,1,0,1,0,0.64,0.435,3,81.5,0.65,synthesized_from_distributions
+Romania_0,Player_0,Romania,GK,30,True,27,1817,0,0,1,0,-0.08,0.585,9,80.5,0.75,synthesized_from_distributions
+Romania_1,Player_1,Romania,CB,26,True,34,2869,0,0,1,0,-2.0,0.262,8,78.8,0.75,synthesized_from_distributions
+Romania_2,Player_2,Romania,LB,34,True,28,2153,0,0,1,0,0.34,0.236,1,85.3,0.75,synthesized_from_distributions
+Romania_3,Player_3,Romania,RB,28,True,16,1188,1,0,1,1,-0.25,0.258,12,77.8,0.75,synthesized_from_distributions
+Romania_4,Player_4,Romania,CB,28,True,15,957,0,1,0,0,-0.93,0.555,8,78.6,0.75,synthesized_from_distributions
+Romania_5,Player_5,Romania,CM,24,True,34,2720,0,0,1,0,-0.02,0.369,14,83.7,0.75,synthesized_from_distributions
+Romania_6,Player_6,Romania,LM,31,True,36,2362,0,0,1,1,0.21,0.152,14,82.8,0.75,synthesized_from_distributions
+Romania_7,Player_7,Romania,RM,32,True,30,2176,0,0,2,0,-1.59,0.255,3,77.6,0.75,synthesized_from_distributions
+Romania_8,Player_8,Romania,AM,20,True,32,2821,1,0,0,0,0.34,0.728,11,83.0,0.75,synthesized_from_distributions
+Romania_9,Player_9,Romania,ST,24,True,21,1311,2,1,2,0,-3.0,0.172,8,73.0,0.75,synthesized_from_distributions
+Romania_10,Player_10,Romania,LW,33,True,36,2861,2,0,4,0,-1.46,0.518,11,72.2,0.75,synthesized_from_distributions
+Romania_11,Player_11,Romania,RW,26,False,19,1294,0,0,2,0,1.04,0.464,10,82.0,0.65,synthesized_from_distributions
+Romania_12,Player_12,Romania,FW,33,False,17,1460,4,0,2,0,1.69,0.111,5,87.2,0.65,synthesized_from_distributions
+Romania_13,Player_13,Romania,ST,31,False,15,1165,0,0,1,0,0.08,0.399,4,81.2,0.65,synthesized_from_distributions
+Romania_14,Player_14,Romania,LW,30,False,11,953,2,0,1,0,1.09,0.472,10,83.0,0.65,synthesized_from_distributions
+Romania_15,Player_15,Romania,RW,21,False,5,391,2,1,3,0,0.18,0.378,7,76.4,0.65,synthesized_from_distributions
+Romania_16,Player_16,Romania,FW,29,False,12,1024,1,0,1,0,0.75,0.387,12,83.0,0.65,synthesized_from_distributions
+Romania_17,Player_17,Romania,ST,29,False,10,663,1,0,2,0,-0.17,0.327,12,78.5,0.65,synthesized_from_distributions
+Romania_18,Player_18,Romania,LW,28,False,9,739,0,0,2,0,0.18,0.044,0,82.3,0.65,synthesized_from_distributions
+Romania_19,Player_19,Romania,RW,29,False,8,677,2,0,0,0,-1.52,0.151,11,80.0,0.65,synthesized_from_distributions
+Romania_20,Player_20,Romania,FW,35,False,17,1420,0,0,1,0,0.24,0.309,1,82.9,0.65,synthesized_from_distributions
+Romania_21,Player_21,Romania,ST,22,False,15,904,0,0,2,0,-1.33,0.29,9,76.1,0.65,synthesized_from_distributions
+Romania_22,Player_22,Romania,LW,20,False,7,446,0,0,2,0,-0.32,0.384,6,77.1,0.65,synthesized_from_distributions
+Egypt_0,Player_0,Egypt,GK,22,True,29,2194,0,0,2,0,0.07,0.43,4,80.7,0.75,synthesized_from_distributions
+Egypt_1,Player_1,Egypt,CB,28,True,19,1249,1,0,3,0,0.27,0.531,3,77.0,0.75,synthesized_from_distributions
+Egypt_2,Player_2,Egypt,LB,32,True,26,1885,0,0,1,0,1.18,0.18,7,88.2,0.75,synthesized_from_distributions
+Egypt_3,Player_3,Egypt,RB,26,True,22,1883,0,0,4,0,-0.84,0.233,1,75.1,0.75,synthesized_from_distributions
+Egypt_4,Player_4,Egypt,CB,30,True,30,2574,0,0,2,0,-0.91,0.049,6,81.7,0.75,synthesized_from_distributions
+Egypt_5,Player_5,Egypt,CM,31,True,21,1306,1,1,3,0,0.39,0.42,12,78.7,0.75,synthesized_from_distributions
+Egypt_6,Player_6,Egypt,LM,29,True,23,1663,1,0,0,0,-0.18,0.322,8,84.3,0.75,synthesized_from_distributions
+Egypt_7,Player_7,Egypt,RM,26,True,26,2022,0,0,1,0,0.52,0.473,8,83.2,0.75,synthesized_from_distributions
+Egypt_8,Player_8,Egypt,AM,29,True,32,1955,0,0,1,0,-2.4,0.244,13,77.6,0.75,synthesized_from_distributions
+Egypt_9,Player_9,Egypt,ST,26,True,19,1373,0,0,0,0,-1.05,0.629,10,78.1,0.75,synthesized_from_distributions
+Egypt_10,Player_10,Egypt,LW,24,True,31,2225,0,0,3,0,1.95,0.33,10,85.6,0.75,synthesized_from_distributions
+Egypt_11,Player_11,Egypt,RW,32,False,16,1129,1,0,1,0,0.61,0.121,11,85.7,0.65,synthesized_from_distributions
+Egypt_12,Player_12,Egypt,FW,26,False,15,1195,1,0,2,0,-0.19,0.174,11,80.7,0.65,synthesized_from_distributions
+Egypt_13,Player_13,Egypt,ST,30,False,18,1446,1,0,0,1,-0.95,0.236,14,78.2,0.65,synthesized_from_distributions
+Egypt_14,Player_14,Egypt,LW,21,False,7,464,0,0,0,1,0.25,0.106,11,81.6,0.65,synthesized_from_distributions
+Egypt_15,Player_15,Egypt,RW,36,False,11,925,1,1,0,0,-0.08,0.096,14,85.3,0.65,synthesized_from_distributions
+Egypt_16,Player_16,Egypt,FW,32,False,17,1382,0,1,5,0,1.15,0.121,8,79.5,0.65,synthesized_from_distributions
+Egypt_17,Player_17,Egypt,ST,25,False,16,1377,0,0,4,0,-0.85,0.27,9,73.8,0.65,synthesized_from_distributions
+Egypt_18,Player_18,Egypt,LW,29,False,14,973,0,0,0,0,-1.06,0.493,2,78.7,0.65,synthesized_from_distributions
+Egypt_19,Player_19,Egypt,RW,27,False,9,645,1,0,1,0,0.09,0.374,4,80.7,0.65,synthesized_from_distributions
+Egypt_20,Player_20,Egypt,FW,19,False,9,788,0,0,3,0,1.24,0.535,7,78.5,0.65,synthesized_from_distributions
+Egypt_21,Player_21,Egypt,ST,22,False,7,626,0,0,1,0,0.2,0.258,7,81.9,0.65,synthesized_from_distributions
+Egypt_22,Player_22,Egypt,LW,32,False,16,1224,2,1,1,0,0.97,0.438,13,83.6,0.65,synthesized_from_distributions
+Nigeria_0,Player_0,Nigeria,GK,20,True,31,2257,0,0,1,0,-0.93,0.343,9,80.9,0.75,synthesized_from_distributions
+Nigeria_1,Player_1,Nigeria,CB,28,True,22,1758,0,0,2,0,-1.54,0.518,11,74.1,0.75,synthesized_from_distributions
+Nigeria_2,Player_2,Nigeria,LB,35,True,16,1428,1,0,2,0,-0.09,0.054,9,82.3,0.75,synthesized_from_distributions
+Nigeria_3,Player_3,Nigeria,RB,34,True,27,2317,0,0,2,1,-0.01,0.149,7,79.0,0.75,synthesized_from_distributions
+Nigeria_4,Player_4,Nigeria,CB,22,True,35,2920,0,2,3,1,-1.24,0.107,9,74.8,0.75,synthesized_from_distributions
+Nigeria_5,Player_5,Nigeria,CM,31,True,31,2075,1,0,1,0,-0.89,0.28,12,81.6,0.75,synthesized_from_distributions
+Nigeria_6,Player_6,Nigeria,LM,25,True,35,2863,0,0,0,0,1.37,0.367,9,90.0,0.75,synthesized_from_distributions
+Nigeria_7,Player_7,Nigeria,RM,25,True,29,1783,2,0,2,0,2.0,0.629,3,84.5,0.75,synthesized_from_distributions
+Nigeria_8,Player_8,Nigeria,AM,29,True,30,2679,0,0,0,0,-0.61,0.125,2,85.9,0.75,synthesized_from_distributions
+Nigeria_9,Player_9,Nigeria,ST,32,True,35,2313,2,0,1,0,-0.84,0.309,9,82.0,0.75,synthesized_from_distributions
+Nigeria_10,Player_10,Nigeria,LW,21,True,17,1088,1,0,0,0,0.78,0.356,1,86.0,0.75,synthesized_from_distributions
+Nigeria_11,Player_11,Nigeria,RW,22,False,18,1275,1,0,1,0,-1.43,0.135,6,79.7,0.65,synthesized_from_distributions
+Nigeria_12,Player_12,Nigeria,FW,25,False,10,740,0,0,0,0,-0.24,0.318,6,82.4,0.65,synthesized_from_distributions
+Nigeria_13,Player_13,Nigeria,ST,36,False,18,1448,0,0,1,0,1.03,0.284,0,85.6,0.65,synthesized_from_distributions
+Nigeria_14,Player_14,Nigeria,LW,19,False,11,765,0,0,2,0,-0.43,0.384,13,77.3,0.65,synthesized_from_distributions
+Nigeria_15,Player_15,Nigeria,RW,34,False,15,1036,0,0,0,0,-0.27,0.152,13,84.6,0.65,synthesized_from_distributions
+Nigeria_16,Player_16,Nigeria,FW,26,False,9,717,0,1,1,0,1.3,0.245,14,85.6,0.65,synthesized_from_distributions
+Nigeria_17,Player_17,Nigeria,ST,25,False,14,975,1,0,2,0,2.29,0.317,9,86.6,0.65,synthesized_from_distributions
+Nigeria_18,Player_18,Nigeria,LW,21,False,11,916,1,0,1,1,-0.89,0.265,6,75.1,0.65,synthesized_from_distributions
+Nigeria_19,Player_19,Nigeria,RW,28,False,8,577,1,0,1,0,-0.01,0.144,6,82.6,0.65,synthesized_from_distributions
+Nigeria_20,Player_20,Nigeria,FW,20,False,6,531,2,0,3,0,-1.42,0.637,6,69.2,0.65,synthesized_from_distributions
+Nigeria_21,Player_21,Nigeria,ST,31,False,18,1105,0,0,1,0,-0.87,0.159,2,81.2,0.65,synthesized_from_distributions
+Nigeria_22,Player_22,Nigeria,LW,33,False,11,907,1,0,0,0,0.4,0.179,0,85.9,0.65,synthesized_from_distributions
+Senegal_0,Player_0,Senegal,GK,25,True,16,1030,0,0,2,0,1.41,0.484,12,82.5,0.75,synthesized_from_distributions
+Senegal_1,Player_1,Senegal,CB,30,True,15,1100,1,1,2,0,-0.71,0.321,9,77.6,0.75,synthesized_from_distributions
+Senegal_2,Player_2,Senegal,LB,22,True,16,996,0,1,2,0,1.57,0.129,10,86.5,0.75,synthesized_from_distributions
+Senegal_3,Player_3,Senegal,RB,29,True,20,1410,0,0,2,0,0.48,0.22,13,82.9,0.75,synthesized_from_distributions
+Senegal_4,Player_4,Senegal,CB,33,True,23,1906,2,0,1,0,0.09,0.242,9,83.9,0.75,synthesized_from_distributions
+Senegal_5,Player_5,Senegal,CM,20,True,31,2699,0,0,0,0,1.06,0.248,9,89.8,0.75,synthesized_from_distributions
+Senegal_6,Player_6,Senegal,LM,28,True,23,1452,0,2,0,0,0.51,0.23,12,87.2,0.75,synthesized_from_distributions
+Senegal_7,Player_7,Senegal,RM,19,True,36,3224,0,2,1,0,0.02,0.44,11,83.4,0.75,synthesized_from_distributions
+Senegal_8,Player_8,Senegal,AM,30,True,32,1956,0,0,2,0,-0.77,0.182,6,81.1,0.75,synthesized_from_distributions
+Senegal_9,Player_9,Senegal,ST,25,True,35,2819,0,1,4,0,0.15,0.164,7,80.4,0.75,synthesized_from_distributions
+Senegal_10,Player_10,Senegal,LW,25,True,35,2596,2,0,0,0,-0.61,0.385,3,83.9,0.75,synthesized_from_distributions
+Senegal_11,Player_11,Senegal,RW,30,False,13,905,1,1,0,0,-1.09,0.247,12,81.0,0.65,synthesized_from_distributions
+Senegal_12,Player_12,Senegal,FW,32,False,5,342,1,0,1,0,1.05,0.397,10,82.9,0.65,synthesized_from_distributions
+Senegal_13,Player_13,Senegal,ST,25,False,5,407,2,0,0,0,1.34,0.265,14,87.0,0.65,synthesized_from_distributions
+Senegal_14,Player_14,Senegal,LW,19,False,11,875,0,0,0,1,0.6,0.212,0,82.1,0.65,synthesized_from_distributions
+Senegal_15,Player_15,Senegal,RW,24,False,16,1312,1,0,1,0,-0.81,0.786,0,74.8,0.65,synthesized_from_distributions
+Senegal_16,Player_16,Senegal,FW,27,False,11,767,1,0,2,0,-1.0,0.159,2,77.9,0.65,synthesized_from_distributions
+Senegal_17,Player_17,Senegal,ST,23,False,16,1382,0,0,0,0,0.33,0.32,8,84.9,0.65,synthesized_from_distributions
+Senegal_18,Player_18,Senegal,LW,30,False,8,581,2,0,0,0,0.9,0.323,0,85.5,0.65,synthesized_from_distributions
+Senegal_19,Player_19,Senegal,RW,23,False,16,1333,0,0,3,0,0.87,0.097,11,82.8,0.65,synthesized_from_distributions
+Senegal_20,Player_20,Senegal,FW,24,False,19,1338,0,0,1,0,1.11,0.338,5,85.5,0.65,synthesized_from_distributions
+Senegal_21,Player_21,Senegal,ST,34,False,7,450,0,0,1,0,-0.36,0.131,10,81.5,0.65,synthesized_from_distributions
+Senegal_22,Player_22,Senegal,LW,24,False,18,1421,0,0,1,0,-1.5,0.181,0,79.1,0.65,synthesized_from_distributions
+Morocco_0,Player_0,Morocco,GK,23,True,27,1665,0,0,2,0,-1.45,0.321,6,77.0,0.75,synthesized_from_distributions
+Morocco_1,Player_1,Morocco,CB,26,True,17,1415,1,1,1,0,0.49,0.252,12,84.2,0.75,synthesized_from_distributions
+Morocco_2,Player_2,Morocco,LB,23,True,17,1053,0,0,0,0,-0.57,0.196,9,83.6,0.75,synthesized_from_distributions
+Morocco_3,Player_3,Morocco,RB,23,True,25,1806,1,0,1,0,1.13,0.22,7,87.5,0.75,synthesized_from_distributions
+Morocco_4,Player_4,Morocco,CB,27,True,32,2527,0,2,2,0,-0.23,0.062,0,83.9,0.75,synthesized_from_distributions
+Morocco_5,Player_5,Morocco,CM,27,True,36,2454,0,0,4,0,1.51,0.065,12,85.6,0.75,synthesized_from_distributions
+Morocco_6,Player_6,Morocco,LM,31,True,25,1868,0,0,0,0,0.15,0.121,8,87.5,0.75,synthesized_from_distributions
+Morocco_7,Player_7,Morocco,RM,31,True,24,1528,0,0,2,0,-0.15,0.064,13,83.1,0.75,synthesized_from_distributions
+Morocco_8,Player_8,Morocco,AM,21,True,17,1491,0,0,2,0,1.0,0.051,7,85.7,0.75,synthesized_from_distributions
+Morocco_9,Player_9,Morocco,ST,20,True,19,1491,0,0,2,0,-1.0,0.523,0,75.3,0.75,synthesized_from_distributions
+Morocco_10,Player_10,Morocco,LW,34,True,36,2450,0,1,2,0,-0.67,0.393,1,79.8,0.75,synthesized_from_distributions
+Morocco_11,Player_11,Morocco,RW,27,False,5,400,0,0,2,0,0.42,0.121,4,81.7,0.65,synthesized_from_distributions
+Morocco_12,Player_12,Morocco,FW,25,False,12,1000,0,0,0,0,0.32,0.225,5,85.3,0.65,synthesized_from_distributions
+Morocco_13,Player_13,Morocco,ST,27,False,13,1121,1,0,1,1,1.11,0.252,10,81.5,0.65,synthesized_from_distributions
+Morocco_14,Player_14,Morocco,LW,33,False,14,1086,0,1,2,0,0.13,0.258,12,80.7,0.65,synthesized_from_distributions
+Morocco_15,Player_15,Morocco,RW,31,False,14,929,0,0,3,0,-0.77,0.404,13,74.5,0.65,synthesized_from_distributions
+Morocco_16,Player_16,Morocco,FW,35,False,12,908,1,0,1,0,0.51,0.396,2,82.2,0.65,synthesized_from_distributions
+Morocco_17,Player_17,Morocco,ST,20,False,6,502,0,0,1,0,-0.81,0.398,0,77.4,0.65,synthesized_from_distributions
+Morocco_18,Player_18,Morocco,LW,34,False,7,560,0,0,1,0,1.07,0.504,10,82.1,0.65,synthesized_from_distributions
+Morocco_19,Player_19,Morocco,RW,35,False,15,1243,0,0,2,0,1.76,0.294,0,85.3,0.65,synthesized_from_distributions
+Morocco_20,Player_20,Morocco,FW,32,False,8,552,1,0,0,0,1.1,0.388,1,85.5,0.65,synthesized_from_distributions
+Morocco_21,Player_21,Morocco,ST,34,False,8,624,3,0,2,0,0.04,0.26,1,79.6,0.65,synthesized_from_distributions
+Morocco_22,Player_22,Morocco,LW,25,False,12,866,1,0,2,1,-0.06,0.702,9,71.4,0.65,synthesized_from_distributions
+Tunisia_0,Player_0,Tunisia,GK,32,True,15,1127,0,0,1,0,-0.21,0.02,0,84.2,0.75,synthesized_from_distributions
+Tunisia_1,Player_1,Tunisia,CB,30,True,18,1617,0,0,0,0,1.24,0.447,13,86.6,0.75,synthesized_from_distributions
+Tunisia_2,Player_2,Tunisia,LB,33,True,20,1254,0,0,0,0,-0.26,0.111,1,85.7,0.75,synthesized_from_distributions
+Tunisia_3,Player_3,Tunisia,RB,21,True,36,3037,1,0,0,0,0.19,0.132,0,89.0,0.75,synthesized_from_distributions
+Tunisia_4,Player_4,Tunisia,CB,23,True,25,1945,0,0,0,0,-0.64,0.168,0,84.7,0.75,synthesized_from_distributions
+Tunisia_5,Player_5,Tunisia,CM,31,True,22,1594,1,1,0,0,0.4,0.054,5,88.6,0.75,synthesized_from_distributions
+Tunisia_6,Player_6,Tunisia,LM,34,True,17,1044,0,0,0,0,0.84,0.206,9,87.7,0.75,synthesized_from_distributions
+Tunisia_7,Player_7,Tunisia,RM,32,True,21,1546,0,1,1,0,1.33,0.06,3,89.2,0.75,synthesized_from_distributions
+Tunisia_8,Player_8,Tunisia,AM,22,True,32,2635,0,0,0,0,0.74,0.16,6,89.8,0.75,synthesized_from_distributions
+Tunisia_9,Player_9,Tunisia,ST,33,True,31,2649,0,0,1,0,-1.63,0.225,4,79.9,0.75,synthesized_from_distributions
+Tunisia_10,Player_10,Tunisia,LW,23,True,17,1287,1,0,1,0,1.07,0.315,7,85.3,0.75,synthesized_from_distributions
+Tunisia_11,Player_11,Tunisia,RW,30,False,8,588,0,0,1,0,0.57,0.292,4,82.8,0.65,synthesized_from_distributions
+Tunisia_12,Player_12,Tunisia,FW,31,False,10,811,1,1,2,0,-0.86,0.117,0,78.6,0.65,synthesized_from_distributions
+Tunisia_13,Player_13,Tunisia,ST,21,False,19,1318,0,0,0,0,-1.16,0.32,14,80.8,0.65,synthesized_from_distributions
+Tunisia_14,Player_14,Tunisia,LW,19,False,17,1146,1,0,0,0,0.29,0.405,0,84.1,0.65,synthesized_from_distributions
+Tunisia_15,Player_15,Tunisia,RW,24,False,8,619,1,0,0,0,2.19,0.123,14,91.4,0.65,synthesized_from_distributions
+Tunisia_16,Player_16,Tunisia,FW,34,False,10,889,2,0,2,0,-0.19,0.167,4,80.1,0.65,synthesized_from_distributions
+Tunisia_17,Player_17,Tunisia,ST,20,False,14,1058,1,0,3,0,-1.33,0.56,1,71.2,0.65,synthesized_from_distributions
+Tunisia_18,Player_18,Tunisia,LW,33,False,8,657,0,0,1,0,-2.41,0.498,3,71.9,0.65,synthesized_from_distributions
+Tunisia_19,Player_19,Tunisia,RW,33,False,15,1154,1,1,3,0,1.66,0.418,14,81.8,0.65,synthesized_from_distributions
+Tunisia_20,Player_20,Tunisia,FW,27,False,9,593,2,0,4,0,1.18,0.1,13,80.7,0.65,synthesized_from_distributions
+Tunisia_21,Player_21,Tunisia,ST,32,False,8,681,0,0,1,0,0.35,0.36,4,81.5,0.65,synthesized_from_distributions
+Tunisia_22,Player_22,Tunisia,LW,21,False,5,421,1,0,2,0,0.46,0.229,5,80.8,0.65,synthesized_from_distributions
+South_Africa_0,Player_0,South Africa,GK,35,True,32,2529,0,0,3,0,-0.16,0.18,0,80.9,0.75,synthesized_from_distributions
+South_Africa_1,Player_1,South Africa,CB,33,True,20,1291,0,0,1,0,0.02,0.574,14,79.9,0.75,synthesized_from_distributions
+South_Africa_2,Player_2,South Africa,LB,34,True,25,1739,1,0,1,0,-1.61,0.207,3,79.4,0.75,synthesized_from_distributions
+South_Africa_3,Player_3,South Africa,RB,31,True,21,1788,0,0,1,0,-0.06,0.277,3,82.8,0.75,synthesized_from_distributions
+South_Africa_4,Player_4,South Africa,CB,32,True,36,2354,1,1,0,0,0.23,0.142,14,89.0,0.75,synthesized_from_distributions
+South_Africa_5,Player_5,South Africa,CM,24,True,22,1471,0,0,2,0,-0.05,0.318,3,80.6,0.75,synthesized_from_distributions
+South_Africa_6,Player_6,South Africa,LM,24,True,15,1182,0,0,1,0,1.5,0.191,2,87.6,0.75,synthesized_from_distributions
+South_Africa_7,Player_7,South Africa,RM,21,True,16,1352,1,0,2,0,1.19,0.383,4,82.9,0.75,synthesized_from_distributions
+South_Africa_8,Player_8,South Africa,AM,26,True,24,1953,2,0,2,0,-0.88,0.779,12,73.7,0.75,synthesized_from_distributions
+South_Africa_9,Player_9,South Africa,ST,31,True,27,1797,1,0,1,0,0.17,0.681,14,80.3,0.75,synthesized_from_distributions
+South_Africa_10,Player_10,South Africa,LW,36,True,25,1997,1,0,2,0,-1.49,0.028,2,79.5,0.75,synthesized_from_distributions
+South_Africa_11,Player_11,South Africa,RW,27,False,18,1399,1,0,2,0,-0.74,0.209,0,79.1,0.65,synthesized_from_distributions
+South_Africa_12,Player_12,South Africa,FW,30,False,11,715,1,0,0,0,0.19,0.535,8,81.7,0.65,synthesized_from_distributions
+South_Africa_13,Player_13,South Africa,ST,21,False,11,978,0,0,3,0,0.02,0.286,10,77.6,0.65,synthesized_from_distributions
+South_Africa_14,Player_14,South Africa,LW,24,False,19,1383,0,0,3,0,-0.06,0.095,14,80.4,0.65,synthesized_from_distributions
+South_Africa_15,Player_15,South Africa,RW,30,False,14,1239,0,0,0,0,-0.55,0.243,11,82.8,0.65,synthesized_from_distributions
+South_Africa_16,Player_16,South Africa,FW,20,False,10,655,2,0,1,0,0.92,0.152,5,85.5,0.65,synthesized_from_distributions
+South_Africa_17,Player_17,South Africa,ST,32,False,5,372,1,0,0,0,-0.0,0.371,0,81.9,0.65,synthesized_from_distributions
+South_Africa_18,Player_18,South Africa,LW,36,False,19,1273,1,0,1,0,-0.99,0.271,11,79.8,0.65,synthesized_from_distributions
+South_Africa_19,Player_19,South Africa,RW,19,False,16,1385,1,0,1,0,-1.19,0.149,6,80.1,0.65,synthesized_from_distributions
+South_Africa_20,Player_20,South Africa,FW,20,False,8,563,2,1,0,0,0.43,0.096,11,86.4,0.65,synthesized_from_distributions
+South_Africa_21,Player_21,South Africa,ST,29,False,6,535,1,1,1,0,0.76,0.259,8,83.5,0.65,synthesized_from_distributions
+South_Africa_22,Player_22,South Africa,LW,31,False,19,1400,2,0,0,0,-0.22,0.604,7,80.8,0.65,synthesized_from_distributions
+Japan_0,Player_0,Japan,GK,32,True,24,1679,0,0,4,0,0.25,0.561,0,75.3,0.75,synthesized_from_distributions
+Japan_1,Player_1,Japan,CB,20,True,34,2720,1,0,3,0,0.27,0.209,8,82.2,0.75,synthesized_from_distributions
+Japan_2,Player_2,Japan,LB,33,True,35,2641,1,0,2,0,0.96,0.041,8,88.1,0.75,synthesized_from_distributions
+Japan_3,Player_3,Japan,RB,20,True,37,2618,0,0,1,0,0.58,0.469,7,84.9,0.75,synthesized_from_distributions
+Japan_4,Player_4,Japan,CB,22,True,24,1980,0,0,1,0,0.8,0.195,9,86.6,0.75,synthesized_from_distributions
+Japan_5,Player_5,Japan,CM,26,True,33,2943,0,0,1,0,-0.45,0.118,6,84.8,0.75,synthesized_from_distributions
+Japan_6,Player_6,Japan,LM,31,True,27,2116,0,0,0,0,0.11,0.462,5,84.3,0.75,synthesized_from_distributions
+Japan_7,Player_7,Japan,RM,36,True,29,2558,0,0,0,0,0.08,0.198,3,87.1,0.75,synthesized_from_distributions
+Japan_8,Player_8,Japan,AM,33,True,34,2290,0,0,0,0,-1.16,0.02,14,85.8,0.75,synthesized_from_distributions
+Japan_9,Player_9,Japan,ST,33,True,36,2393,2,0,3,0,0.72,0.77,3,78.2,0.75,synthesized_from_distributions
+Japan_10,Player_10,Japan,LW,34,True,32,2823,1,0,1,0,1.26,0.288,10,88.1,0.75,synthesized_from_distributions
+Japan_11,Player_11,Japan,RW,35,False,15,1141,0,0,0,0,0.32,0.203,9,85.9,0.65,synthesized_from_distributions
+Japan_12,Player_12,Japan,FW,19,False,13,1059,1,0,3,0,-0.99,0.203,12,75.7,0.65,synthesized_from_distributions
+Japan_13,Player_13,Japan,ST,29,False,12,822,0,0,2,0,0.02,0.014,8,82.5,0.65,synthesized_from_distributions
+Japan_14,Player_14,Japan,LW,36,False,19,1321,1,0,1,0,0.6,0.239,9,84.9,0.65,synthesized_from_distributions
+Japan_15,Player_15,Japan,RW,31,False,8,714,0,0,1,0,-1.53,0.129,8,78.2,0.65,synthesized_from_distributions
+Japan_16,Player_16,Japan,FW,24,False,18,1116,0,0,1,0,-1.53,0.037,14,80.4,0.65,synthesized_from_distributions
+Japan_17,Player_17,Japan,ST,21,False,18,1080,0,0,0,0,-0.89,0.14,7,83.3,0.65,synthesized_from_distributions
+Japan_18,Player_18,Japan,LW,34,False,7,439,2,1,1,0,1.28,0.119,0,86.6,0.65,synthesized_from_distributions
+Japan_19,Player_19,Japan,RW,35,False,17,1272,0,0,2,0,-1.02,0.155,0,78.6,0.65,synthesized_from_distributions
+Japan_20,Player_20,Japan,FW,20,False,12,926,0,0,0,0,-0.01,0.229,7,84.3,0.65,synthesized_from_distributions
+Japan_21,Player_21,Japan,ST,33,False,9,597,1,0,1,0,1.54,0.206,3,86.7,0.65,synthesized_from_distributions
+Japan_22,Player_22,Japan,LW,23,False,9,733,0,0,3,0,-0.22,0.31,2,76.4,0.65,synthesized_from_distributions
+South_Korea_0,Player_0,South Korea,GK,28,True,26,1726,0,0,3,0,1.01,0.293,4,82.5,0.75,synthesized_from_distributions
+South_Korea_1,Player_1,South Korea,CB,34,True,15,1233,0,0,1,0,-2.0,0.192,6,77.1,0.75,synthesized_from_distributions
+South_Korea_2,Player_2,South Korea,LB,32,True,32,2360,1,0,0,0,-0.02,0.253,8,86.6,0.75,synthesized_from_distributions
+South_Korea_3,Player_3,South Korea,RB,22,True,18,1330,1,0,0,0,-1.38,0.487,12,78.4,0.75,synthesized_from_distributions
+South_Korea_4,Player_4,South Korea,CB,36,True,26,2138,1,0,0,0,0.85,0.329,14,87.7,0.75,synthesized_from_distributions
+South_Korea_5,Player_5,South Korea,CM,28,True,17,1311,0,0,0,0,-0.57,0.408,11,81.4,0.75,synthesized_from_distributions
+South_Korea_6,Player_6,South Korea,LM,32,True,27,2153,1,0,1,0,1.88,0.394,0,88.2,0.75,synthesized_from_distributions
+South_Korea_7,Player_7,South Korea,RM,24,True,21,1284,1,0,0,0,0.76,0.212,13,87.9,0.75,synthesized_from_distributions
+South_Korea_8,Player_8,South Korea,AM,19,True,15,1121,0,1,0,0,2.48,0.109,9,93.3,0.75,synthesized_from_distributions
+South_Korea_9,Player_9,South Korea,ST,28,True,35,2628,3,1,3,0,1.5,0.64,0,81.7,0.75,synthesized_from_distributions
+South_Korea_10,Player_10,South Korea,LW,33,True,37,2946,1,0,3,1,0.6,0.34,13,78.3,0.75,synthesized_from_distributions
+South_Korea_11,Player_11,South Korea,RW,33,False,9,646,0,0,1,0,-0.56,0.264,4,79.9,0.65,synthesized_from_distributions
+South_Korea_12,Player_12,South Korea,FW,32,False,12,1075,1,0,1,0,0.29,0.061,11,84.9,0.65,synthesized_from_distributions
+South_Korea_13,Player_13,South Korea,ST,35,False,14,985,0,0,0,1,0.52,0.486,10,79.5,0.65,synthesized_from_distributions
+South_Korea_14,Player_14,South Korea,LW,23,False,6,406,1,0,2,0,0.99,0.1,2,83.7,0.65,synthesized_from_distributions
+South_Korea_15,Player_15,South Korea,RW,30,False,19,1570,2,1,3,0,1.37,0.237,3,83.2,0.65,synthesized_from_distributions
+South_Korea_16,Player_16,South Korea,FW,31,False,15,998,2,0,0,0,0.37,0.394,6,84.2,0.65,synthesized_from_distributions
+South_Korea_17,Player_17,South Korea,ST,28,False,11,852,1,0,1,1,0.27,0.254,3,78.7,0.65,synthesized_from_distributions
+South_Korea_18,Player_18,South Korea,LW,35,False,17,1425,1,0,3,0,-1.09,0.404,10,73.9,0.65,synthesized_from_distributions
+South_Korea_19,Player_19,South Korea,RW,22,False,19,1302,1,1,1,0,-0.36,0.31,1,81.3,0.65,synthesized_from_distributions
+South_Korea_20,Player_20,South Korea,FW,36,False,12,806,0,0,2,0,1.08,0.282,1,83.0,0.65,synthesized_from_distributions
+South_Korea_21,Player_21,South Korea,ST,29,False,7,470,2,0,1,0,-0.21,0.533,10,77.9,0.65,synthesized_from_distributions
+South_Korea_22,Player_22,South Korea,LW,33,False,15,1238,0,0,2,0,0.72,0.061,6,84.5,0.65,synthesized_from_distributions
+Australia_0,Player_0,Australia,GK,29,True,26,1866,0,0,0,0,-0.62,0.243,9,84.1,0.75,synthesized_from_distributions
+Australia_1,Player_1,Australia,CB,34,True,15,1093,3,0,2,0,-0.52,0.439,14,77.0,0.75,synthesized_from_distributions
+Australia_2,Player_2,Australia,LB,22,True,18,1236,0,0,1,0,0.59,0.365,11,83.5,0.75,synthesized_from_distributions
+Australia_3,Player_3,Australia,RB,34,True,37,2539,1,0,1,0,0.67,0.049,8,89.4,0.75,synthesized_from_distributions
+Australia_4,Player_4,Australia,CB,26,True,26,2229,1,0,2,0,-2.58,0.266,3,74.0,0.75,synthesized_from_distributions
+Australia_5,Player_5,Australia,CM,20,True,17,1208,1,0,0,0,0.07,0.564,9,81.8,0.75,synthesized_from_distributions
+Australia_6,Player_6,Australia,LM,25,True,31,2649,1,1,1,0,-0.36,0.112,5,84.9,0.75,synthesized_from_distributions
+Australia_7,Player_7,Australia,RM,27,True,30,2054,0,0,1,0,1.16,0.232,13,88.1,0.75,synthesized_from_distributions
+Australia_8,Player_8,Australia,AM,24,True,21,1285,0,0,2,0,-1.77,0.519,0,73.3,0.75,synthesized_from_distributions
+Australia_9,Player_9,Australia,ST,20,True,35,2118,0,0,2,0,0.98,0.268,8,85.9,0.75,synthesized_from_distributions
+Australia_10,Player_10,Australia,LW,27,True,33,2068,0,0,2,0,-1.01,0.151,0,80.8,0.75,synthesized_from_distributions
+Australia_11,Player_11,Australia,RW,32,False,11,760,1,1,1,0,0.78,0.098,7,85.8,0.65,synthesized_from_distributions
+Australia_12,Player_12,Australia,FW,29,False,9,621,3,0,3,0,0.29,0.467,12,76.4,0.65,synthesized_from_distributions
+Australia_13,Player_13,Australia,ST,30,False,19,1246,0,0,1,0,-1.63,0.478,14,75.8,0.65,synthesized_from_distributions
+Australia_14,Player_14,Australia,LW,25,False,13,902,2,0,0,0,-0.25,0.105,11,84.9,0.65,synthesized_from_distributions
+Australia_15,Player_15,Australia,RW,24,False,18,1329,1,0,3,0,0.03,0.407,11,77.4,0.65,synthesized_from_distributions
+Australia_16,Player_16,Australia,FW,36,False,8,628,0,0,2,0,-3.26,0.283,7,69.5,0.65,synthesized_from_distributions
+Australia_17,Player_17,Australia,ST,27,False,8,509,1,0,1,0,1.26,0.269,5,85.2,0.65,synthesized_from_distributions
+Australia_18,Player_18,Australia,LW,31,False,19,1450,0,0,2,0,-0.87,0.659,10,74.3,0.65,synthesized_from_distributions
+Australia_19,Player_19,Australia,RW,35,False,12,1075,1,0,1,0,-0.47,0.167,3,81.5,0.65,synthesized_from_distributions
+Australia_20,Player_20,Australia,FW,33,False,12,936,3,1,2,0,0.68,0.014,6,84.5,0.65,synthesized_from_distributions
+Australia_21,Player_21,Australia,ST,22,False,18,1411,2,1,2,0,-1.88,0.403,1,73.7,0.65,synthesized_from_distributions
+Australia_22,Player_22,Australia,LW,21,False,15,1210,0,0,0,0,-0.51,0.214,0,83.3,0.65,synthesized_from_distributions
+Iran_0,Player_0,Iran,GK,35,True,29,2134,0,0,2,0,-0.56,0.222,0,80.9,0.75,synthesized_from_distributions
+Iran_1,Player_1,Iran,CB,19,True,28,2355,1,0,1,0,0.31,0.587,9,81.8,0.75,synthesized_from_distributions
+Iran_2,Player_2,Iran,LB,26,True,26,2329,1,0,0,0,-0.56,0.471,7,82.0,0.75,synthesized_from_distributions
+Iran_3,Player_3,Iran,RB,23,True,32,2070,1,0,2,0,-0.32,0.364,10,80.6,0.75,synthesized_from_distributions
+Iran_4,Player_4,Iran,CB,23,True,23,2043,1,0,1,0,0.01,0.209,0,84.0,0.75,synthesized_from_distributions
+Iran_5,Player_5,Iran,CM,19,True,23,1628,0,0,1,0,-1.03,0.365,12,79.3,0.75,synthesized_from_distributions
+Iran_6,Player_6,Iran,LM,35,True,20,1390,0,0,3,0,-0.35,0.314,7,77.4,0.75,synthesized_from_distributions
+Iran_7,Player_7,Iran,RM,25,True,16,976,0,1,4,0,-1.01,0.21,7,74.0,0.75,synthesized_from_distributions
+Iran_8,Player_8,Iran,AM,34,True,21,1697,0,0,2,0,-1.25,0.282,14,77.2,0.75,synthesized_from_distributions
+Iran_9,Player_9,Iran,ST,29,True,17,1269,0,0,2,0,0.66,0.175,5,83.5,0.75,synthesized_from_distributions
+Iran_10,Player_10,Iran,LW,29,True,27,1799,1,0,1,0,-1.32,0.482,8,77.8,0.75,synthesized_from_distributions
+Iran_11,Player_11,Iran,RW,36,False,10,818,2,0,0,0,-0.25,0.173,1,83.8,0.65,synthesized_from_distributions
+Iran_12,Player_12,Iran,FW,34,False,7,621,2,0,1,0,-0.28,0.421,12,78.9,0.65,synthesized_from_distributions
+Iran_13,Player_13,Iran,ST,27,False,12,720,2,1,3,0,-0.04,0.15,14,79.0,0.65,synthesized_from_distributions
+Iran_14,Player_14,Iran,LW,34,False,10,636,0,0,1,0,-1.77,0.119,4,77.8,0.65,synthesized_from_distributions
+Iran_15,Player_15,Iran,RW,22,False,13,1061,1,0,2,0,-0.57,0.276,1,78.2,0.65,synthesized_from_distributions
+Iran_16,Player_16,Iran,FW,27,False,5,376,1,1,3,0,0.31,0.103,5,79.5,0.65,synthesized_from_distributions
+Iran_17,Player_17,Iran,ST,25,False,5,424,0,0,1,0,0.88,0.188,1,84.4,0.65,synthesized_from_distributions
+Iran_18,Player_18,Iran,LW,19,False,13,975,1,0,1,0,0.35,0.312,14,82.6,0.65,synthesized_from_distributions
+Iran_19,Player_19,Iran,RW,21,False,10,832,1,0,0,0,1.32,0.162,10,88.6,0.65,synthesized_from_distributions
+Iran_20,Player_20,Iran,FW,23,False,17,1345,0,0,1,0,0.04,0.139,6,84.0,0.65,synthesized_from_distributions
+Iran_21,Player_21,Iran,ST,31,False,16,985,0,0,2,0,-1.21,0.067,13,78.8,0.65,synthesized_from_distributions
+Iran_22,Player_22,Iran,LW,28,False,15,1038,0,0,1,1,0.05,0.562,0,75.5,0.65,synthesized_from_distributions
+Saudi_Arabia_0,Player_0,Saudi Arabia,GK,20,True,28,1698,0,0,2,0,0.82,0.079,10,86.4,0.75,synthesized_from_distributions
+Saudi_Arabia_1,Player_1,Saudi Arabia,CB,22,True,17,1298,2,0,2,1,1.54,0.172,13,82.1,0.75,synthesized_from_distributions
+Saudi_Arabia_2,Player_2,Saudi Arabia,LB,25,True,26,2332,1,0,0,0,0.56,0.263,1,87.5,0.75,synthesized_from_distributions
+Saudi_Arabia_3,Player_3,Saudi Arabia,RB,20,True,30,1931,1,0,0,0,-0.9,0.702,0,79.2,0.75,synthesized_from_distributions
+Saudi_Arabia_4,Player_4,Saudi Arabia,CB,30,True,27,2148,0,1,2,0,0.11,0.341,3,81.5,0.75,synthesized_from_distributions
+Saudi_Arabia_5,Player_5,Saudi Arabia,CM,34,True,26,1901,0,0,0,0,1.09,0.32,1,88.5,0.75,synthesized_from_distributions
+Saudi_Arabia_6,Player_6,Saudi Arabia,LM,27,True,25,1928,0,1,3,0,3.0,0.459,3,86.7,0.75,synthesized_from_distributions
+Saudi_Arabia_7,Player_7,Saudi Arabia,RM,25,True,26,2192,0,0,0,0,0.53,0.216,12,87.9,0.75,synthesized_from_distributions
+Saudi_Arabia_8,Player_8,Saudi Arabia,AM,29,True,23,1674,1,0,1,0,0.93,0.547,0,83.3,0.75,synthesized_from_distributions
+Saudi_Arabia_9,Player_9,Saudi Arabia,ST,24,True,23,1901,0,0,0,0,0.81,0.129,10,89.2,0.75,synthesized_from_distributions
+Saudi_Arabia_10,Player_10,Saudi Arabia,LW,23,True,30,2663,0,0,2,0,-0.75,0.487,7,77.8,0.75,synthesized_from_distributions
+Saudi_Arabia_11,Player_11,Saudi Arabia,RW,20,False,17,1299,2,1,2,0,0.99,0.734,13,78.9,0.65,synthesized_from_distributions
+Saudi_Arabia_12,Player_12,Saudi Arabia,FW,22,False,5,437,1,1,3,0,0.7,0.157,0,80.2,0.65,synthesized_from_distributions
+Saudi_Arabia_13,Player_13,Saudi Arabia,ST,26,False,11,769,2,0,1,1,0.15,0.521,6,75.7,0.65,synthesized_from_distributions
+Saudi_Arabia_14,Player_14,Saudi Arabia,LW,31,False,18,1554,1,0,1,0,-0.35,0.112,10,83.2,0.65,synthesized_from_distributions
+Saudi_Arabia_15,Player_15,Saudi Arabia,RW,30,False,13,922,1,0,0,0,0.45,0.106,3,87.0,0.65,synthesized_from_distributions
+Saudi_Arabia_16,Player_16,Saudi Arabia,FW,19,False,12,954,1,0,1,0,0.2,0.203,0,83.2,0.65,synthesized_from_distributions
+Saudi_Arabia_17,Player_17,Saudi Arabia,ST,31,False,9,721,2,0,6,0,0.72,0.205,14,74.3,0.65,synthesized_from_distributions
+Saudi_Arabia_18,Player_18,Saudi Arabia,LW,35,False,8,668,0,0,1,0,-0.17,0.518,13,78.4,0.65,synthesized_from_distributions
+Saudi_Arabia_19,Player_19,Saudi Arabia,RW,24,False,17,1289,2,0,1,0,3.31,0.316,6,92.0,0.65,synthesized_from_distributions
+Saudi_Arabia_20,Player_20,Saudi Arabia,FW,36,False,18,1235,1,1,0,0,-0.18,0.119,1,85.7,0.65,synthesized_from_distributions
+Saudi_Arabia_21,Player_21,Saudi Arabia,ST,22,False,8,491,1,0,3,0,0.48,0.415,13,77.3,0.65,synthesized_from_distributions
+Saudi_Arabia_22,Player_22,Saudi Arabia,LW,35,False,5,381,2,1,1,0,0.55,0.07,14,84.6,0.65,synthesized_from_distributions
+United_Arab_Emirates_0,Player_0,United Arab Emirates,GK,31,True,34,2141,0,0,0,0,0.6,0.507,3,86.2,0.75,synthesized_from_distributions
+United_Arab_Emirates_1,Player_1,United Arab Emirates,CB,22,True,34,3056,0,0,2,0,-0.3,0.128,0,83.3,0.75,synthesized_from_distributions
+United_Arab_Emirates_2,Player_2,United Arab Emirates,LB,23,True,36,2570,1,0,2,0,-0.32,0.232,5,82.5,0.75,synthesized_from_distributions
+United_Arab_Emirates_3,Player_3,United Arab Emirates,RB,26,True,30,2047,0,0,3,0,-1.0,0.098,0,79.0,0.75,synthesized_from_distributions
+United_Arab_Emirates_4,Player_4,United Arab Emirates,CB,24,True,16,1004,0,0,2,0,0.7,0.474,12,80.5,0.75,synthesized_from_distributions
+United_Arab_Emirates_5,Player_5,United Arab Emirates,CM,33,True,16,1295,0,0,1,0,0.6,0.232,10,84.6,0.75,synthesized_from_distributions
+United_Arab_Emirates_6,Player_6,United Arab Emirates,LM,34,True,25,2145,0,0,1,0,0.86,0.361,6,85.3,0.75,synthesized_from_distributions
+United_Arab_Emirates_7,Player_7,United Arab Emirates,RM,34,True,20,1744,0,0,1,0,-0.17,0.022,2,84.9,0.75,synthesized_from_distributions
+United_Arab_Emirates_8,Player_8,United Arab Emirates,AM,35,True,31,2599,0,0,0,0,1.46,0.123,7,92.2,0.75,synthesized_from_distributions
+United_Arab_Emirates_9,Player_9,United Arab Emirates,ST,36,True,23,1564,1,0,0,0,-0.01,0.288,7,85.1,0.75,synthesized_from_distributions
+United_Arab_Emirates_10,Player_10,United Arab Emirates,LW,21,True,32,1954,1,0,0,0,0.22,0.267,4,87.2,0.75,synthesized_from_distributions
+United_Arab_Emirates_11,Player_11,United Arab Emirates,RW,36,False,11,823,0,1,1,0,-0.75,0.192,2,80.3,0.65,synthesized_from_distributions
+United_Arab_Emirates_12,Player_12,United Arab Emirates,FW,36,False,9,549,0,0,1,0,-0.2,0.311,13,80.5,0.65,synthesized_from_distributions
+United_Arab_Emirates_13,Player_13,United Arab Emirates,ST,29,False,7,446,4,0,0,0,1.19,0.646,6,83.0,0.65,synthesized_from_distributions
+United_Arab_Emirates_14,Player_14,United Arab Emirates,LW,32,False,13,959,1,0,2,0,-0.89,0.108,5,79.0,0.65,synthesized_from_distributions
+United_Arab_Emirates_15,Player_15,United Arab Emirates,RW,21,False,5,397,0,0,2,0,-0.67,0.068,4,79.0,0.65,synthesized_from_distributions
+United_Arab_Emirates_16,Player_16,United Arab Emirates,FW,35,False,14,1257,0,0,2,0,0.81,0.361,7,81.7,0.65,synthesized_from_distributions
+United_Arab_Emirates_17,Player_17,United Arab Emirates,ST,33,False,18,1230,1,0,0,0,0.33,0.295,14,85.4,0.65,synthesized_from_distributions
+United_Arab_Emirates_18,Player_18,United Arab Emirates,LW,22,False,5,329,1,0,0,0,-1.09,0.3,12,79.4,0.65,synthesized_from_distributions
+United_Arab_Emirates_19,Player_19,United Arab Emirates,RW,25,False,7,485,0,0,1,0,1.57,0.254,6,86.1,0.65,synthesized_from_distributions
+United_Arab_Emirates_20,Player_20,United Arab Emirates,FW,32,False,14,900,0,0,0,0,0.27,0.424,10,83.4,0.65,synthesized_from_distributions
+United_Arab_Emirates_21,Player_21,United Arab Emirates,ST,34,False,16,1053,2,0,1,0,-0.36,0.107,7,82.9,0.65,synthesized_from_distributions
+United_Arab_Emirates_22,Player_22,United Arab Emirates,LW,20,False,10,705,1,0,2,0,-1.64,0.239,12,75.0,0.65,synthesized_from_distributions
+Mexico_0,Player_0,Mexico,GK,36,True,22,1919,0,0,2,0,-0.58,0.317,9,79.0,0.75,synthesized_from_distributions
+Mexico_1,Player_1,Mexico,CB,24,True,25,2124,0,0,0,1,-0.13,0.576,9,78.1,0.75,synthesized_from_distributions
+Mexico_2,Player_2,Mexico,LB,29,True,26,2278,1,0,0,0,-0.67,0.157,12,84.8,0.75,synthesized_from_distributions
+Mexico_3,Player_3,Mexico,RB,33,True,16,1395,0,0,1,0,-1.27,0.268,6,78.6,0.75,synthesized_from_distributions
+Mexico_4,Player_4,Mexico,CB,32,True,22,1916,1,0,2,0,-0.44,0.479,8,77.8,0.75,synthesized_from_distributions
+Mexico_5,Player_5,Mexico,CM,34,True,24,2034,0,0,1,0,1.31,0.504,13,85.1,0.75,synthesized_from_distributions
+Mexico_6,Player_6,Mexico,LM,31,True,18,1439,1,1,0,0,-0.28,0.552,11,81.0,0.75,synthesized_from_distributions
+Mexico_7,Player_7,Mexico,RM,34,True,30,2691,0,0,2,0,1.7,0.185,4,88.2,0.75,synthesized_from_distributions
+Mexico_8,Player_8,Mexico,AM,25,True,32,2845,0,0,2,0,0.86,0.164,12,86.1,0.75,synthesized_from_distributions
+Mexico_9,Player_9,Mexico,ST,21,True,21,1679,3,0,1,0,-0.06,0.425,3,81.3,0.75,synthesized_from_distributions
+Mexico_10,Player_10,Mexico,LW,34,True,15,1264,1,0,2,0,-1.45,0.096,3,77.7,0.75,synthesized_from_distributions
+Mexico_11,Player_11,Mexico,RW,25,False,16,1433,0,0,0,0,0.68,0.061,14,88.5,0.65,synthesized_from_distributions
+Mexico_12,Player_12,Mexico,FW,26,False,12,1047,1,0,1,0,-0.19,0.169,11,82.3,0.65,synthesized_from_distributions
+Mexico_13,Player_13,Mexico,ST,20,False,9,722,0,0,1,0,0.59,0.387,10,82.1,0.65,synthesized_from_distributions
+Mexico_14,Player_14,Mexico,LW,28,False,6,519,0,0,1,1,-0.29,0.366,4,75.3,0.65,synthesized_from_distributions
+Mexico_15,Player_15,Mexico,RW,21,False,13,832,1,0,2,0,-1.32,0.124,7,77.5,0.65,synthesized_from_distributions
+Mexico_16,Player_16,Mexico,FW,33,False,7,531,0,0,0,0,0.68,0.077,5,87.2,0.65,synthesized_from_distributions
+Mexico_17,Player_17,Mexico,ST,35,False,9,630,1,0,0,0,-0.05,0.505,2,81.0,0.65,synthesized_from_distributions
+Mexico_18,Player_18,Mexico,LW,27,False,16,1421,0,0,0,0,-2.33,0.304,11,77.1,0.65,synthesized_from_distributions
+Mexico_19,Player_19,Mexico,RW,36,False,11,688,1,0,1,0,-0.67,0.494,11,77.5,0.65,synthesized_from_distributions
+Mexico_20,Player_20,Mexico,FW,31,False,16,1296,0,0,1,0,-0.03,0.664,11,78.4,0.65,synthesized_from_distributions
+Mexico_21,Player_21,Mexico,ST,29,False,13,896,0,0,1,0,-0.38,0.449,14,79.1,0.65,synthesized_from_distributions
+Mexico_22,Player_22,Mexico,LW,32,False,17,1489,2,0,1,0,0.44,0.119,12,85.4,0.65,synthesized_from_distributions
+United_States_0,Player_0,United States,GK,24,True,15,1142,0,0,1,0,0.86,0.191,1,85.6,0.75,synthesized_from_distributions
+United_States_1,Player_1,United States,CB,29,True,15,917,0,0,2,0,-0.18,0.327,7,79.2,0.75,synthesized_from_distributions
+United_States_2,Player_2,United States,LB,25,True,24,1998,0,1,1,0,-1.01,0.699,1,76.1,0.75,synthesized_from_distributions
+United_States_3,Player_3,United States,RB,33,True,17,1123,1,0,2,0,-2.71,0.429,6,70.8,0.75,synthesized_from_distributions
+United_States_4,Player_4,United States,CB,27,True,35,2956,1,1,1,0,-0.92,0.103,1,83.8,0.75,synthesized_from_distributions
+United_States_5,Player_5,United States,CM,33,True,17,1218,0,2,1,0,-1.61,0.347,3,76.9,0.75,synthesized_from_distributions
+United_States_6,Player_6,United States,LM,29,True,30,2465,1,0,1,0,0.42,0.182,2,86.4,0.75,synthesized_from_distributions
+United_States_7,Player_7,United States,RM,28,True,36,2369,0,1,2,0,-0.61,0.185,7,82.0,0.75,synthesized_from_distributions
+United_States_8,Player_8,United States,AM,34,True,20,1789,0,0,1,0,0.28,0.145,8,85.0,0.75,synthesized_from_distributions
+United_States_9,Player_9,United States,ST,23,True,26,2066,1,0,1,0,-0.33,0.15,5,83.9,0.75,synthesized_from_distributions
+United_States_10,Player_10,United States,LW,34,True,32,2616,0,0,1,0,0.61,0.226,14,86.8,0.75,synthesized_from_distributions
+United_States_11,Player_11,United States,RW,35,False,13,1143,1,0,1,0,-0.09,0.432,8,80.1,0.65,synthesized_from_distributions
+United_States_12,Player_12,United States,FW,34,False,12,930,1,1,1,0,0.1,0.11,12,83.8,0.65,synthesized_from_distributions
+United_States_13,Player_13,United States,ST,26,False,9,735,0,0,0,1,-0.17,0.172,9,80.0,0.65,synthesized_from_distributions
+United_States_14,Player_14,United States,LW,36,False,9,777,0,0,4,0,0.22,0.353,10,75.3,0.65,synthesized_from_distributions
+United_States_15,Player_15,United States,RW,22,False,5,320,0,0,1,0,-0.31,0.165,4,81.1,0.65,synthesized_from_distributions
+United_States_16,Player_16,United States,FW,34,False,19,1295,1,0,2,0,0.41,0.196,9,82.8,0.65,synthesized_from_distributions
+United_States_17,Player_17,United States,ST,23,False,13,1049,3,0,2,0,-0.58,0.059,5,80.4,0.65,synthesized_from_distributions
+United_States_18,Player_18,United States,LW,33,False,18,1207,0,0,0,0,1.24,0.322,9,87.9,0.65,synthesized_from_distributions
+United_States_19,Player_19,United States,RW,26,False,16,1248,0,0,0,0,0.24,0.409,12,83.7,0.65,synthesized_from_distributions
+United_States_20,Player_20,United States,FW,35,False,8,544,1,0,1,0,0.25,0.132,8,83.5,0.65,synthesized_from_distributions
+United_States_21,Player_21,United States,ST,23,False,16,1401,1,0,3,0,0.99,0.673,11,77.3,0.65,synthesized_from_distributions
+United_States_22,Player_22,United States,LW,33,False,13,808,1,0,0,0,2.73,0.407,11,90.8,0.65,synthesized_from_distributions
+Canada_0,Player_0,Canada,GK,31,True,35,2942,0,0,2,0,-1.06,0.087,11,81.5,0.75,synthesized_from_distributions
+Canada_1,Player_1,Canada,CB,25,True,37,2242,0,0,4,1,-0.68,0.491,14,70.9,0.75,synthesized_from_distributions
+Canada_2,Player_2,Canada,LB,21,True,32,1967,1,0,1,0,-1.2,0.1,13,82.6,0.75,synthesized_from_distributions
+Canada_3,Player_3,Canada,RB,36,True,18,1600,1,0,1,0,0.78,0.277,1,85.0,0.75,synthesized_from_distributions
+Canada_4,Player_4,Canada,CB,19,True,29,1827,1,0,1,0,0.31,0.39,4,83.9,0.75,synthesized_from_distributions
+Canada_5,Player_5,Canada,CM,23,True,15,1029,1,0,2,0,1.03,0.579,8,80.3,0.75,synthesized_from_distributions
+Canada_6,Player_6,Canada,LM,31,True,34,2880,2,0,1,0,1.54,0.328,8,88.8,0.75,synthesized_from_distributions
+Canada_7,Player_7,Canada,RM,19,True,33,2850,0,1,1,0,-0.58,0.136,11,84.2,0.75,synthesized_from_distributions
+Canada_8,Player_8,Canada,AM,20,True,18,1263,0,0,0,0,0.12,0.099,6,86.7,0.75,synthesized_from_distributions
+Canada_9,Player_9,Canada,ST,34,True,33,2770,1,0,2,0,-1.7,0.272,8,77.5,0.75,synthesized_from_distributions
+Canada_10,Player_10,Canada,LW,28,True,15,1266,0,0,1,0,-0.3,0.316,10,80.9,0.75,synthesized_from_distributions
+Canada_11,Player_11,Canada,RW,31,False,14,1213,1,0,2,0,-1.67,0.207,13,75.8,0.65,synthesized_from_distributions
+Canada_12,Player_12,Canada,FW,23,False,10,877,1,0,0,0,1.76,0.064,9,90.9,0.65,synthesized_from_distributions
+Canada_13,Player_13,Canada,ST,32,False,8,609,1,0,1,0,-0.73,0.063,4,81.2,0.65,synthesized_from_distributions
+Canada_14,Player_14,Canada,LW,36,False,7,605,1,0,0,0,1.2,0.148,8,88.0,0.65,synthesized_from_distributions
+Canada_15,Player_15,Canada,RW,22,False,11,897,0,0,0,0,-1.3,0.221,11,80.3,0.65,synthesized_from_distributions
+Canada_16,Player_16,Canada,FW,30,False,16,1364,0,0,0,0,1.31,0.26,1,88.4,0.65,synthesized_from_distributions
+Canada_17,Player_17,Canada,ST,35,False,17,1277,2,0,0,0,-1.27,0.256,11,80.9,0.65,synthesized_from_distributions
+Canada_18,Player_18,Canada,LW,32,False,14,1052,0,0,0,0,0.82,0.099,4,88.3,0.65,synthesized_from_distributions
+Canada_19,Player_19,Canada,RW,36,False,17,1487,3,0,0,0,1.47,0.355,0,88.1,0.65,synthesized_from_distributions
+Canada_20,Player_20,Canada,FW,23,False,16,1414,0,0,2,0,-0.79,0.534,14,75.4,0.65,synthesized_from_distributions
+Canada_21,Player_21,Canada,ST,22,False,18,1299,1,1,2,0,-0.34,0.218,0,80.2,0.65,synthesized_from_distributions
+Canada_22,Player_22,Canada,LW,20,False,16,1136,1,0,1,0,-0.45,0.091,12,82.8,0.65,synthesized_from_distributions
+Costa_Rica_0,Player_0,Costa Rica,GK,21,True,16,1087,0,0,0,0,0.04,0.359,1,83.7,0.75,synthesized_from_distributions
+Costa_Rica_1,Player_1,Costa Rica,CB,29,True,15,1012,1,0,0,0,-0.54,0.101,14,84.4,0.75,synthesized_from_distributions
+Costa_Rica_2,Player_2,Costa Rica,LB,35,True,24,1853,1,0,0,0,-0.78,0.349,2,82.3,0.75,synthesized_from_distributions
+Costa_Rica_3,Player_3,Costa Rica,RB,20,True,32,2031,0,1,2,0,0.14,0.303,3,82.6,0.75,synthesized_from_distributions
+Costa_Rica_4,Player_4,Costa Rica,CB,23,True,25,1588,0,1,2,0,0.6,0.317,12,82.9,0.75,synthesized_from_distributions
+Costa_Rica_5,Player_5,Costa Rica,CM,32,True,17,1271,1,2,0,0,-1.39,0.257,7,80.5,0.75,synthesized_from_distributions
+Costa_Rica_6,Player_6,Costa Rica,LM,19,True,28,1803,0,1,1,0,0.64,0.505,4,83.6,0.75,synthesized_from_distributions
+Costa_Rica_7,Player_7,Costa Rica,RM,36,True,24,1984,0,0,0,0,-0.6,0.154,5,84.8,0.75,synthesized_from_distributions
+Costa_Rica_8,Player_8,Costa Rica,AM,29,True,25,2120,0,0,2,0,0.32,0.15,10,83.7,0.75,synthesized_from_distributions
+Costa_Rica_9,Player_9,Costa Rica,ST,32,True,22,1704,0,0,2,0,-0.21,0.019,5,83.1,0.75,synthesized_from_distributions
+Costa_Rica_10,Player_10,Costa Rica,LW,26,True,26,2153,0,1,3,0,0.35,0.211,2,81.4,0.75,synthesized_from_distributions
+Costa_Rica_11,Player_11,Costa Rica,RW,31,False,9,556,1,0,1,0,-0.45,0.353,4,79.3,0.65,synthesized_from_distributions
+Costa_Rica_12,Player_12,Costa Rica,FW,20,False,12,1013,2,0,2,0,0.5,0.648,5,77.6,0.65,synthesized_from_distributions
+Costa_Rica_13,Player_13,Costa Rica,ST,35,False,19,1415,1,2,2,0,0.31,0.271,2,81.7,0.65,synthesized_from_distributions
+Costa_Rica_14,Player_14,Costa Rica,LW,19,False,5,407,0,0,4,0,0.07,0.504,4,72.8,0.65,synthesized_from_distributions
+Costa_Rica_15,Player_15,Costa Rica,RW,23,False,10,712,0,0,0,0,1.22,0.034,9,89.6,0.65,synthesized_from_distributions
+Costa_Rica_16,Player_16,Costa Rica,FW,36,False,12,891,1,0,0,0,0.79,0.333,2,85.6,0.65,synthesized_from_distributions
+Costa_Rica_17,Player_17,Costa Rica,ST,27,False,17,1106,0,0,0,1,-0.69,0.519,3,76.0,0.65,synthesized_from_distributions
+Costa_Rica_18,Player_18,Costa Rica,LW,19,False,15,1101,0,0,2,0,0.57,0.407,14,80.6,0.65,synthesized_from_distributions
+Costa_Rica_19,Player_19,Costa Rica,RW,32,False,9,564,0,0,0,0,-1.55,0.334,13,78.2,0.65,synthesized_from_distributions
+Costa_Rica_20,Player_20,Costa Rica,FW,26,False,8,494,1,0,2,0,0.64,0.181,14,82.2,0.65,synthesized_from_distributions
+Costa_Rica_21,Player_21,Costa Rica,ST,23,False,7,477,1,1,0,0,1.49,0.277,13,87.6,0.65,synthesized_from_distributions
+Costa_Rica_22,Player_22,Costa Rica,LW,22,False,7,463,1,2,3,0,-1.93,0.198,11,72.2,0.65,synthesized_from_distributions
+New_Zealand_0,Player_0,New Zealand,GK,24,True,35,2614,0,0,0,0,-1.41,0.272,9,82.6,0.75,synthesized_from_distributions
+New_Zealand_1,Player_1,New Zealand,CB,19,True,22,1495,0,0,0,0,0.51,0.244,2,87.0,0.75,synthesized_from_distributions
+New_Zealand_2,Player_2,New Zealand,LB,23,True,19,1200,1,0,0,0,-2.16,0.287,8,78.2,0.75,synthesized_from_distributions
+New_Zealand_3,Player_3,New Zealand,RB,20,True,22,1347,0,0,1,0,1.07,0.24,3,86.7,0.75,synthesized_from_distributions
+New_Zealand_4,Player_4,New Zealand,CB,36,True,16,1352,2,0,0,0,-0.81,0.392,8,80.8,0.75,synthesized_from_distributions
+New_Zealand_5,Player_5,New Zealand,CM,26,True,23,1985,0,1,2,0,-0.0,0.16,13,82.4,0.75,synthesized_from_distributions
+New_Zealand_6,Player_6,New Zealand,LM,29,True,35,2218,0,0,2,0,1.32,0.513,11,84.4,0.75,synthesized_from_distributions
+New_Zealand_7,Player_7,New Zealand,RM,25,True,22,1869,0,0,2,0,-0.41,0.14,7,81.3,0.75,synthesized_from_distributions
+New_Zealand_8,Player_8,New Zealand,AM,34,True,30,2611,0,0,2,0,-0.79,0.123,0,81.3,0.75,synthesized_from_distributions
+New_Zealand_9,Player_9,New Zealand,ST,26,True,28,1928,0,0,2,0,-0.49,0.27,1,80.5,0.75,synthesized_from_distributions
+New_Zealand_10,Player_10,New Zealand,LW,27,True,22,1892,0,0,2,0,-0.63,0.468,12,77.3,0.75,synthesized_from_distributions
+New_Zealand_11,Player_11,New Zealand,RW,36,False,12,761,0,1,1,0,0.44,0.481,8,81.1,0.65,synthesized_from_distributions
+New_Zealand_12,Player_12,New Zealand,FW,28,False,13,1020,0,0,0,0,0.76,0.123,6,87.8,0.65,synthesized_from_distributions
+New_Zealand_13,Player_13,New Zealand,ST,26,False,13,1114,1,1,0,0,-0.69,0.408,6,80.6,0.65,synthesized_from_distributions
+New_Zealand_14,Player_14,New Zealand,LW,27,False,8,708,2,0,2,0,0.42,0.108,0,82.2,0.65,synthesized_from_distributions
+New_Zealand_15,Player_15,New Zealand,RW,33,False,16,1202,0,1,1,0,0.54,0.555,14,81.2,0.65,synthesized_from_distributions
+New_Zealand_16,Player_16,New Zealand,FW,23,False,11,844,0,0,2,0,2.14,0.568,8,83.2,0.65,synthesized_from_distributions
+New_Zealand_17,Player_17,New Zealand,ST,32,False,9,802,2,0,1,0,-1.28,0.014,6,80.2,0.65,synthesized_from_distributions
+New_Zealand_18,Player_18,New Zealand,LW,33,False,18,1348,2,0,0,0,0.29,0.237,0,85.9,0.65,synthesized_from_distributions
+New_Zealand_19,Player_19,New Zealand,RW,34,False,9,735,0,0,2,0,0.38,0.143,14,81.9,0.65,synthesized_from_distributions
+New_Zealand_20,Player_20,New Zealand,FW,24,False,7,596,0,0,1,0,-0.82,0.388,1,77.6,0.65,synthesized_from_distributions
+New_Zealand_21,Player_21,New Zealand,ST,27,False,13,1117,0,0,1,0,0.46,0.19,14,84.2,0.65,synthesized_from_distributions
+New_Zealand_22,Player_22,New Zealand,LW,32,False,6,410,0,0,1,0,0.37,0.53,12,79.6,0.65,synthesized_from_distributions

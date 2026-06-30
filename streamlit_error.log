@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\owner\fifa-shadow-coach-v2\dashboard\app.py", line 136, in load_live_matches
+    home_score = int(competitors[0].get('score', 0)) if status != 'scheduled' else 0
+                                                        ^^^^^^
+NameError: name 'status' is not defined

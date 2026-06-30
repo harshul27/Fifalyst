@@ -1,0 +1,243 @@
+{
+  "classes": [
+    {
+      "class": "Player",
+      "description": "World Cup player with fitness and performance embeddings",
+      "vectorizer": "none",
+      "vectorIndexType": "hnsw",
+      "vectorIndexConfig": {
+        "skip": false,
+        "cleanupIntervalSeconds": 300,
+        "maxConnections": 64,
+        "efConstruction": 128,
+        "ef": 128,
+        "dynamicEfMin": 100,
+        "dynamicEfMax": 500,
+        "dynamicEfFactor": 8,
+        "flatSearchCutoff": 40000,
+        "distance": "cosine"
+      },
+      "properties": [
+        {
+          "name": "player_id",
+          "dataType": ["int"],
+          "description": "Unique player ID from PostgreSQL"
+        },
+        {
+          "name": "player_name",
+          "dataType": ["text"],
+          "description": "Player name"
+        },
+        {
+          "name": "team",
+          "dataType": ["text"],
+          "description": "Team name"
+        },
+        {
+          "name": "position",
+          "dataType": ["text"],
+          "description": "Playing position (GK, DEF, MID, ATT)"
+        },
+        {
+          "name": "baseline_fitness",
+          "dataType": ["number"],
+          "description": "Baseline fitness score [0-100]"
+        },
+        {
+          "name": "appearances",
+          "dataType": ["int"],
+          "description": "International appearances"
+        },
+        {
+          "name": "goals",
+          "dataType": ["int"],
+          "description": "Career goals"
+        },
+        {
+          "name": "assists",
+          "dataType": ["int"],
+          "description": "Career assists"
+        },
+        {
+          "name": "rating",
+          "dataType": ["number"],
+          "description": "Player rating [0-10]"
+        },
+        {
+          "name": "embedding",
+          "dataType": ["number[]"],
+          "description": "512-dimensional player fitness embedding"
+        }
+      ]
+    },
+    {
+      "class": "Match",
+      "description": "World Cup match patterns and embeddings",
+      "vectorizer": "none",
+      "vectorIndexType": "hnsw",
+      "properties": [
+        {
+          "name": "match_id",
+          "dataType": ["int"],
+          "description": "Unique match ID"
+        },
+        {
+          "name": "home_team",
+          "dataType": ["text"],
+          "description": "Home team name"
+        },
+        {
+          "name": "away_team",
+          "dataType": ["text"],
+          "description": "Away team name"
+        },
+        {
+          "name": "home_pes",
+          "dataType": ["number"],
+          "description": "Home team PES at match time"
+        },
+        {
+          "name": "away_pes",
+          "dataType": ["number"],
+          "description": "Away team PES at match time"
+        },
+        {
+          "name": "final_score_home",
+          "dataType": ["int"],
+          "description": "Final score - home team"
+        },
+        {
+          "name": "final_score_away",
+          "dataType": ["int"],
+          "description": "Final score - away team"
+        },
+        {
+          "name": "match_tempo",
+          "dataType": ["text"],
+          "description": "FAST, MODERATE, SLOW"
+        },
+        {
+          "name": "possession_dominant",
+          "dataType": ["text"],
+          "description": "Which team dominated possession"
+        },
+        {
+          "name": "embedding",
+          "dataType": ["number[]"],
+          "description": "256-dimensional match pattern embedding"
+        }
+      ]
+    },
+    {
+      "class": "FatigueCurve",
+      "description": "Typical fatigue patterns by position and player type",
+      "vectorizer": "none",
+      "vectorIndexType": "hnsw",
+      "properties": [
+        {
+          "name": "curve_id",
+          "dataType": ["int"],
+          "description": "Unique curve ID"
+        },
+        {
+          "name": "position",
+          "dataType": ["text"],
+          "description": "Playing position (GK, DEF, MID, ATT)"
+        },
+        {
+          "name": "player_type",
+          "dataType": ["text"],
+          "description": "ELITE, STRONG, COMPETITIVE, DEVELOPING"
+        },
+        {
+          "name": "fatigue_at_30min",
+          "dataType": ["number"],
+          "description": "Typical fatigue % at 30 minutes"
+        },
+        {
+          "name": "fatigue_at_60min",
+          "dataType": ["number"],
+          "description": "Typical fatigue % at 60 minutes"
+        },
+        {
+          "name": "fatigue_at_75min",
+          "dataType": ["number"],
+          "description": "Typical fatigue % at 75 minutes"
+        },
+        {
+          "name": "fatigue_at_90min",
+          "dataType": ["number"],
+          "description": "Typical fatigue % at 90 minutes"
+        },
+        {
+          "name": "anomaly_threshold",
+          "dataType": ["number"],
+          "description": "Stddev threshold for anomaly detection"
+        },
+        {
+          "name": "embedding",
+          "dataType": ["number[]"],
+          "description": "128-dimensional fatigue pattern embedding"
+        }
+      ]
+    },
+    {
+      "class": "RecommendationContext",
+      "description": "Historical substitution recommendations and outcomes",
+      "vectorizer": "none",
+      "vectorIndexType": "hnsw",
+      "properties": [
+        {
+          "name": "recommendation_id",
+          "dataType": ["int"],
+          "description": "Unique recommendation ID"
+        },
+        {
+          "name": "match_id",
+          "dataType": ["int"],
+          "description": "Match ID"
+        },
+        {
+          "name": "minute",
+          "dataType": ["int"],
+          "description": "Minute when recommendation was made"
+        },
+        {
+          "name": "off_player_team",
+          "dataType": ["text"],
+          "description": "Team of player being substituted off"
+        },
+        {
+          "name": "off_player_name",
+          "dataType": ["text"],
+          "description": "Name of player being substituted off"
+        },
+        {
+          "name": "on_player_name",
+          "dataType": ["text"],
+          "description": "Name of replacement player"
+        },
+        {
+          "name": "was_accepted",
+          "dataType": ["boolean"],
+          "description": "Was the recommendation followed?"
+        },
+        {
+          "name": "team_outcome",
+          "dataType": ["text"],
+          "description": "BETTER, SAME, WORSE after substitution"
+        },
+        {
+          "name": "goals_after_sub",
+          "dataType": ["int"],
+          "description": "Goals scored in remaining minutes"
+        },
+        {
+          "name": "embedding",
+          "dataType": ["number[]"],
+          "description": "Embedding of scenario context"
+        }
+      ]
+    }
+  ]
+}

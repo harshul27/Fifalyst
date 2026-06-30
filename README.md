@@ -1,16 +1,17 @@
-# ⚽ FIFA Shadow Coach
+# ⚽ FIFA Shadow Coach v3.1
 
-**AI-powered football match analytics engine** — Real-time insights, player fatigue tracking, and tactical recommendations powered by Monte Carlo simulations and auto-improving feedback loops.
+**Agent-powered AI football analytics** — Real-time live match data from ESPN/Sofascore, player fitness tracking, and tactical recommendations via multi-agent orchestration.
 
-[![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.32-red.svg)](https://streamlit.io/)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Free-brightgreen.svg)](#cost-breakdown)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![LangChain 1.2+](https://img.shields.io/badge/LangChain-1.2+-green.svg)](https://langchain.com/)
+[![Redis](https://img.shields.io/badge/Redis-Required-orange.svg)](https://redis.io/)
 
 ---
 
 ## 🎯 What It Does
 
-FIFA Shadow Coach is a **real-time match analytics system** that helps football managers make data-driven substitution and tactical decisions during live matches.
+FIFA Shadow Coach is a **multi-agent real-time match analytics system** that uses orchestrated AI agents to analyze live football matches and provide data-driven substitution recommendations.
 
 ### Core Features
 

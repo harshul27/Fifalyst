@@ -1,0 +1,2118 @@
+{
+  "United States": {
+    "team_pes": 66.2,
+    "status": "COMPETITIVE",
+    "squad_size": 25,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "United States_Player_21",
+          "pes": 72.9
+        },
+        {
+          "name": "United States_Player_22",
+          "pes": 71.2
+        },
+        {
+          "name": "United States_Player_6",
+          "pes": 69.1
+        },
+        {
+          "name": "United States_Player_10",
+          "pes": 68.8
+        },
+        {
+          "name": "United States_Player_9",
+          "pes": 68.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "United States_Player_4",
+          "pes": 69.3
+        }
+      ],
+      "ATT": [
+        {
+          "name": "United States_Player_20",
+          "pes": 72.2
+        },
+        {
+          "name": "United States_Player_12",
+          "pes": 70.4
+        }
+      ]
+    }
+  },
+  "Mexico": {
+    "team_pes": 75.0,
+    "status": "COMPETITIVE",
+    "squad_size": 24,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Mexico_Player_6",
+          "pes": 81.2
+        },
+        {
+          "name": "Mexico_Player_10",
+          "pes": 79.1
+        },
+        {
+          "name": "Mexico_Player_16",
+          "pes": 79.1
+        },
+        {
+          "name": "Mexico_Player_5",
+          "pes": 77.5
+        },
+        {
+          "name": "Mexico_Player_12",
+          "pes": 77.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "Mexico_Player_9",
+          "pes": 81.3
+        },
+        {
+          "name": "Mexico_Player_19",
+          "pes": 80.9
+        },
+        {
+          "name": "Mexico_Player_7",
+          "pes": 80.4
+        },
+        {
+          "name": "Mexico_Player_2",
+          "pes": 79.7
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Mexico_Player_23",
+          "pes": 76.8
+        }
+      ]
+    }
+  },
+  "Canada": {
+    "team_pes": 70.9,
+    "status": "COMPETITIVE",
+    "squad_size": 24,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Canada_Player_13",
+          "pes": 76.3
+        },
+        {
+          "name": "Canada_Player_18",
+          "pes": 73.1
+        },
+        {
+          "name": "Canada_Player_7",
+          "pes": 72.6
+        },
+        {
+          "name": "Canada_Player_16",
+          "pes": 72.0
+        },
+        {
+          "name": "Canada_Player_17",
+          "pes": 69.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "Canada_Player_21",
+          "pes": 68.5
+        },
+        {
+          "name": "Canada_Player_20",
+          "pes": 68.4
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Canada_Player_22",
+          "pes": 81.1
+        },
+        {
+          "name": "Canada_Player_15",
+          "pes": 72.6
+        }
+      ]
+    }
+  },
+  "Argentina": {
+    "team_pes": 75.4,
+    "status": "STRONG",
+    "squad_size": 25,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Argentina_Player_21",
+          "pes": 80.2
+        },
+        {
+          "name": "Argentina_Player_8",
+          "pes": 79.3
+        },
+        {
+          "name": "Argentina_Player_16",
+          "pes": 79.0
+        },
+        {
+          "name": "Argentina_Player_2",
+          "pes": 78.3
+        },
+        {
+          "name": "Argentina_Player_22",
+          "pes": 76.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "Argentina_Player_23",
+          "pes": 85.6
+        },
+        {
+          "name": "Argentina_Player_24",
+          "pes": 81.7
+        },
+        {
+          "name": "Argentina_Player_13",
+          "pes": 79.3
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Argentina_Player_19",
+          "pes": 82.9
+        },
+        {
+          "name": "Argentina_Player_14",
+          "pes": 82.7
+        }
+      ]
+    }
+  },
+  "Brazil": {
+    "team_pes": 83.9,
+    "status": "ELITE",
+    "squad_size": 21,
+    "positions": {
+      "GK": [
+        {
+          "name": "Brazil_Player_10",
+          "pes": 86.5
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Brazil_Player_9",
+          "pes": 93.0
+        },
+        {
+          "name": "Brazil_Player_19",
+          "pes": 83.1
+        },
+        {
+          "name": "Brazil_Player_4",
+          "pes": 82.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "Brazil_Player_16",
+          "pes": 95.0
+        },
+        {
+          "name": "Brazil_Player_11",
+          "pes": 89.7
+        },
+        {
+          "name": "Brazil_Player_20",
+          "pes": 86.3
+        },
+        {
+          "name": "Brazil_Player_21",
+          "pes": 85.9
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Brazil_Player_12",
+          "pes": 91.4
+        },
+        {
+          "name": "Brazil_Player_15",
+          "pes": 85.1
+        }
+      ]
+    }
+  },
+  "Colombia": {
+    "team_pes": 76.5,
+    "status": "STRONG",
+    "squad_size": 25,
+    "positions": {
+      "GK": [
+        {
+          "name": "Colombia_Player_22",
+          "pes": 79.7
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Colombia_Player_25",
+          "pes": 87.3
+        }
+      ],
+      "MID": [],
+      "ATT": [
+        {
+          "name": "Colombia_Player_17",
+          "pes": 83.7
+        },
+        {
+          "name": "Colombia_Player_14",
+          "pes": 83.0
+        }
+      ]
+    }
+  },
+  "Ecuador": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 23,
+    "positions": {
+      "GK": [
+        {
+          "name": "Ecuador_Player_6",
+          "pes": 92.3
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Ecuador_Player_15",
+          "pes": 95.0
+        },
+        {
+          "name": "Ecuador_Player_20",
+          "pes": 95.0
+        },
+        {
+          "name": "Ecuador_Player_22",
+          "pes": 95.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Ecuador_Player_23",
+          "pes": 95.0
+        },
+        {
+          "name": "Ecuador_Player_18",
+          "pes": 94.1
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Ecuador_Player_2",
+          "pes": 95.0
+        },
+        {
+          "name": "Ecuador_Player_4",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Paraguay": {
+    "team_pes": 77.7,
+    "status": "STRONG",
+    "squad_size": 23,
+    "positions": {
+      "GK": [
+        {
+          "name": "Paraguay_Player_7",
+          "pes": 86.9
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Paraguay_Player_17",
+          "pes": 79.9
+        },
+        {
+          "name": "Paraguay_Player_15",
+          "pes": 78.9
+        },
+        {
+          "name": "Paraguay_Player_2",
+          "pes": 78.2
+        }
+      ],
+      "MID": [
+        {
+          "name": "Paraguay_Player_4",
+          "pes": 89.9
+        },
+        {
+          "name": "Paraguay_Player_16",
+          "pes": 78.6
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Paraguay_Player_10",
+          "pes": 83.5
+        },
+        {
+          "name": "Paraguay_Player_9",
+          "pes": 81.0
+        }
+      ]
+    }
+  },
+  "Uruguay": {
+    "team_pes": 85.3,
+    "status": "ELITE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Uruguay_Player_2",
+          "pes": 91.8
+        },
+        {
+          "name": "Uruguay_Player_8",
+          "pes": 91.3
+        },
+        {
+          "name": "Uruguay_Player_6",
+          "pes": 91.0
+        },
+        {
+          "name": "Uruguay_Player_11",
+          "pes": 89.5
+        },
+        {
+          "name": "Uruguay_Player_1",
+          "pes": 89.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Uruguay_Player_20",
+          "pes": 91.6
+        },
+        {
+          "name": "Uruguay_Player_19",
+          "pes": 91.4
+        },
+        {
+          "name": "Uruguay_Player_9",
+          "pes": 88.8
+        },
+        {
+          "name": "Uruguay_Player_10",
+          "pes": 88.6
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Uruguay_Player_4",
+          "pes": 91.8
+        },
+        {
+          "name": "Uruguay_Player_13",
+          "pes": 90.4
+        }
+      ]
+    }
+  },
+  "England": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 24,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "England_Player_8",
+          "pes": 95.0
+        },
+        {
+          "name": "England_Player_23",
+          "pes": 95.0
+        },
+        {
+          "name": "England_Player_4",
+          "pes": 93.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "England_Player_10",
+          "pes": 95.0
+        },
+        {
+          "name": "England_Player_7",
+          "pes": 93.2
+        }
+      ],
+      "ATT": [
+        {
+          "name": "England_Player_22",
+          "pes": 95.0
+        },
+        {
+          "name": "England_Player_24",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "France": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "France_Player_4",
+          "pes": 95.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "France_Player_5",
+          "pes": 95.0
+        },
+        {
+          "name": "France_Player_16",
+          "pes": 95.0
+        },
+        {
+          "name": "France_Player_17",
+          "pes": 95.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "France_Player_3",
+          "pes": 95.0
+        },
+        {
+          "name": "France_Player_8",
+          "pes": 95.0
+        },
+        {
+          "name": "France_Player_9",
+          "pes": 95.0
+        },
+        {
+          "name": "France_Player_11",
+          "pes": 95.0
+        }
+      ],
+      "ATT": [
+        {
+          "name": "France_Player_19",
+          "pes": 95.0
+        },
+        {
+          "name": "France_Player_6",
+          "pes": 94.8
+        }
+      ]
+    }
+  },
+  "Germany": {
+    "team_pes": 91.7,
+    "status": "ELITE",
+    "squad_size": 21,
+    "positions": {
+      "GK": [
+        {
+          "name": "Germany_Player_20",
+          "pes": 95.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Germany_Player_11",
+          "pes": 93.0
+        },
+        {
+          "name": "Germany_Player_3",
+          "pes": 92.3
+        },
+        {
+          "name": "Germany_Player_7",
+          "pes": 91.7
+        },
+        {
+          "name": "Germany_Player_2",
+          "pes": 90.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "Germany_Player_12",
+          "pes": 95.0
+        },
+        {
+          "name": "Germany_Player_6",
+          "pes": 93.2
+        },
+        {
+          "name": "Germany_Player_21",
+          "pes": 92.9
+        },
+        {
+          "name": "Germany_Player_13",
+          "pes": 92.5
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Germany_Player_18",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Spain": {
+    "team_pes": 84.5,
+    "status": "ELITE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "Spain_Player_2",
+          "pes": 91.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Spain_Player_10",
+          "pes": 95.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Spain_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Spain_Player_11",
+          "pes": 85.7
+        },
+        {
+          "name": "Spain_Player_3",
+          "pes": 83.6
+        },
+        {
+          "name": "Spain_Player_14",
+          "pes": 83.5
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Spain_Player_19",
+          "pes": 91.3
+        },
+        {
+          "name": "Spain_Player_1",
+          "pes": 88.1
+        }
+      ]
+    }
+  },
+  "Portugal": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Portugal_Player_3",
+          "pes": 95.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Portugal_Player_13",
+          "pes": 95.0
+        },
+        {
+          "name": "Portugal_Player_14",
+          "pes": 95.0
+        },
+        {
+          "name": "Portugal_Player_18",
+          "pes": 95.0
+        },
+        {
+          "name": "Portugal_Player_20",
+          "pes": 94.7
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Portugal_Player_6",
+          "pes": 95.0
+        },
+        {
+          "name": "Portugal_Player_9",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Italy": {
+    "team_pes": 90.5,
+    "status": "ELITE",
+    "squad_size": 21,
+    "positions": {
+      "GK": [
+        {
+          "name": "Italy_Player_18",
+          "pes": 94.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Italy_Player_5",
+          "pes": 95.0
+        },
+        {
+          "name": "Italy_Player_16",
+          "pes": 95.0
+        },
+        {
+          "name": "Italy_Player_21",
+          "pes": 95.0
+        },
+        {
+          "name": "Italy_Player_15",
+          "pes": 93.2
+        }
+      ],
+      "MID": [
+        {
+          "name": "Italy_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Italy_Player_11",
+          "pes": 90.5
+        },
+        {
+          "name": "Italy_Player_8",
+          "pes": 89.6
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Italy_Player_13",
+          "pes": 95.0
+        },
+        {
+          "name": "Italy_Player_7",
+          "pes": 93.9
+        }
+      ]
+    }
+  },
+  "Netherlands": {
+    "team_pes": 84.3,
+    "status": "ELITE",
+    "squad_size": 23,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Netherlands_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Netherlands_Player_5",
+          "pes": 89.3
+        },
+        {
+          "name": "Netherlands_Player_10",
+          "pes": 88.0
+        },
+        {
+          "name": "Netherlands_Player_17",
+          "pes": 85.4
+        }
+      ],
+      "MID": [
+        {
+          "name": "Netherlands_Player_13",
+          "pes": 95.0
+        },
+        {
+          "name": "Netherlands_Player_6",
+          "pes": 92.4
+        },
+        {
+          "name": "Netherlands_Player_23",
+          "pes": 86.5
+        },
+        {
+          "name": "Netherlands_Player_21",
+          "pes": 85.6
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Netherlands_Player_15",
+          "pes": 88.0
+        },
+        {
+          "name": "Netherlands_Player_3",
+          "pes": 86.0
+        }
+      ]
+    }
+  },
+  "Belgium": {
+    "team_pes": 90.3,
+    "status": "ELITE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Belgium_Player_3",
+          "pes": 95.0
+        },
+        {
+          "name": "Belgium_Player_16",
+          "pes": 95.0
+        },
+        {
+          "name": "Belgium_Player_18",
+          "pes": 95.0
+        },
+        {
+          "name": "Belgium_Player_9",
+          "pes": 93.7
+        },
+        {
+          "name": "Belgium_Player_11",
+          "pes": 93.3
+        }
+      ],
+      "MID": [
+        {
+          "name": "Belgium_Player_8",
+          "pes": 95.0
+        },
+        {
+          "name": "Belgium_Player_12",
+          "pes": 95.0
+        },
+        {
+          "name": "Belgium_Player_14",
+          "pes": 95.0
+        },
+        {
+          "name": "Belgium_Player_15",
+          "pes": 94.8
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Belgium_Player_19",
+          "pes": 93.0
+        }
+      ]
+    }
+  },
+  "Denmark": {
+    "team_pes": 91.1,
+    "status": "ELITE",
+    "squad_size": 21,
+    "positions": {
+      "GK": [
+        {
+          "name": "Denmark_Player_13",
+          "pes": 95.0
+        },
+        {
+          "name": "Denmark_Player_20",
+          "pes": 95.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Denmark_Player_12",
+          "pes": 93.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "Denmark_Player_1",
+          "pes": 95.0
+        },
+        {
+          "name": "Denmark_Player_3",
+          "pes": 95.0
+        },
+        {
+          "name": "Denmark_Player_14",
+          "pes": 95.0
+        },
+        {
+          "name": "Denmark_Player_16",
+          "pes": 95.0
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Denmark_Player_9",
+          "pes": 95.0
+        },
+        {
+          "name": "Denmark_Player_19",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Sweden": {
+    "team_pes": 90.2,
+    "status": "ELITE",
+    "squad_size": 22,
+    "positions": {
+      "GK": [
+        {
+          "name": "Sweden_Player_12",
+          "pes": 93.1
+        },
+        {
+          "name": "Sweden_Player_11",
+          "pes": 92.7
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Sweden_Player_6",
+          "pes": 95.0
+        },
+        {
+          "name": "Sweden_Player_13",
+          "pes": 95.0
+        },
+        {
+          "name": "Sweden_Player_2",
+          "pes": 93.5
+        },
+        {
+          "name": "Sweden_Player_22",
+          "pes": 92.5
+        },
+        {
+          "name": "Sweden_Player_5",
+          "pes": 92.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Sweden_Player_18",
+          "pes": 91.6
+        },
+        {
+          "name": "Sweden_Player_8",
+          "pes": 90.3
+        },
+        {
+          "name": "Sweden_Player_3",
+          "pes": 89.5
+        },
+        {
+          "name": "Sweden_Player_1",
+          "pes": 89.3
+        }
+      ],
+      "ATT": []
+    }
+  },
+  "Poland": {
+    "team_pes": 88.7,
+    "status": "ELITE",
+    "squad_size": 23,
+    "positions": {
+      "GK": [
+        {
+          "name": "Poland_Player_20",
+          "pes": 92.5
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Poland_Player_18",
+          "pes": 93.2
+        },
+        {
+          "name": "Poland_Player_4",
+          "pes": 88.5
+        },
+        {
+          "name": "Poland_Player_12",
+          "pes": 88.2
+        },
+        {
+          "name": "Poland_Player_21",
+          "pes": 87.7
+        },
+        {
+          "name": "Poland_Player_10",
+          "pes": 87.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "Poland_Player_8",
+          "pes": 90.6
+        },
+        {
+          "name": "Poland_Player_13",
+          "pes": 89.4
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Poland_Player_1",
+          "pes": 90.5
+        },
+        {
+          "name": "Poland_Player_11",
+          "pes": 89.1
+        }
+      ]
+    }
+  },
+  "Austria": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 24,
+    "positions": {
+      "GK": [
+        {
+          "name": "Austria_Player_13",
+          "pes": 95.0
+        },
+        {
+          "name": "Austria_Player_17",
+          "pes": 95.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Austria_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Austria_Player_10",
+          "pes": 95.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Austria_Player_2",
+          "pes": 95.0
+        },
+        {
+          "name": "Austria_Player_3",
+          "pes": 95.0
+        },
+        {
+          "name": "Austria_Player_12",
+          "pes": 95.0
+        },
+        {
+          "name": "Austria_Player_14",
+          "pes": 95.0
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Austria_Player_19",
+          "pes": 95.0
+        },
+        {
+          "name": "Austria_Player_22",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Czechia": {
+    "team_pes": 86.8,
+    "status": "ELITE",
+    "squad_size": 24,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Czechia_Player_22",
+          "pes": 93.9
+        },
+        {
+          "name": "Czechia_Player_13",
+          "pes": 92.8
+        },
+        {
+          "name": "Czechia_Player_2",
+          "pes": 89.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Czechia_Player_8",
+          "pes": 95.0
+        },
+        {
+          "name": "Czechia_Player_20",
+          "pes": 92.0
+        },
+        {
+          "name": "Czechia_Player_7",
+          "pes": 91.2
+        },
+        {
+          "name": "Czechia_Player_17",
+          "pes": 90.8
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Czechia_Player_14",
+          "pes": 88.5
+        }
+      ]
+    }
+  },
+  "Switzerland": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "Switzerland_Player_18",
+          "pes": 94.3
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Switzerland_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Switzerland_Player_16",
+          "pes": 95.0
+        },
+        {
+          "name": "Switzerland_Player_13",
+          "pes": 94.9
+        },
+        {
+          "name": "Switzerland_Player_14",
+          "pes": 92.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "Switzerland_Player_1",
+          "pes": 95.0
+        },
+        {
+          "name": "Switzerland_Player_7",
+          "pes": 92.2
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Switzerland_Player_8",
+          "pes": 95.0
+        },
+        {
+          "name": "Switzerland_Player_9",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Serbia": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 22,
+    "positions": {
+      "GK": [
+        {
+          "name": "Serbia_Player_3",
+          "pes": 95.0
+        },
+        {
+          "name": "Serbia_Player_10",
+          "pes": 95.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Serbia_Player_21",
+          "pes": 95.0
+        },
+        {
+          "name": "Serbia_Player_11",
+          "pes": 94.2
+        },
+        {
+          "name": "Serbia_Player_19",
+          "pes": 94.2
+        },
+        {
+          "name": "Serbia_Player_15",
+          "pes": 93.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "Serbia_Player_2",
+          "pes": 95.0
+        },
+        {
+          "name": "Serbia_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Serbia_Player_16",
+          "pes": 93.1
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Serbia_Player_14",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Norway": {
+    "team_pes": 92.0,
+    "status": "ELITE",
+    "squad_size": 23,
+    "positions": {
+      "GK": [
+        {
+          "name": "Norway_Player_9",
+          "pes": 95.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Norway_Player_15",
+          "pes": 95.0
+        },
+        {
+          "name": "Norway_Player_1",
+          "pes": 93.8
+        },
+        {
+          "name": "Norway_Player_2",
+          "pes": 92.6
+        },
+        {
+          "name": "Norway_Player_12",
+          "pes": 92.4
+        }
+      ],
+      "MID": [
+        {
+          "name": "Norway_Player_16",
+          "pes": 95.0
+        },
+        {
+          "name": "Norway_Player_21",
+          "pes": 95.0
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Norway_Player_4",
+          "pes": 95.0
+        },
+        {
+          "name": "Norway_Player_6",
+          "pes": 95.0
+        }
+      ]
+    }
+  },
+  "Egypt": {
+    "team_pes": 74.7,
+    "status": "COMPETITIVE",
+    "squad_size": 22,
+    "positions": {
+      "GK": [],
+      "DEF": [],
+      "MID": [
+        {
+          "name": "Egypt_Player_2",
+          "pes": 81.8
+        },
+        {
+          "name": "Egypt_Player_15",
+          "pes": 79.2
+        },
+        {
+          "name": "Egypt_Player_7",
+          "pes": 78.9
+        },
+        {
+          "name": "Egypt_Player_14",
+          "pes": 76.8
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Egypt_Player_20",
+          "pes": 81.1
+        },
+        {
+          "name": "Egypt_Player_11",
+          "pes": 79.9
+        }
+      ]
+    }
+  },
+  "Cameroon": {
+    "team_pes": 64.0,
+    "status": "COMPETITIVE",
+    "squad_size": 24,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Cameroon_Player_5",
+          "pes": 68.7
+        },
+        {
+          "name": "Cameroon_Player_17",
+          "pes": 67.8
+        },
+        {
+          "name": "Cameroon_Player_21",
+          "pes": 65.8
+        },
+        {
+          "name": "Cameroon_Player_11",
+          "pes": 65.6
+        },
+        {
+          "name": "Cameroon_Player_7",
+          "pes": 64.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Cameroon_Player_3",
+          "pes": 71.1
+        },
+        {
+          "name": "Cameroon_Player_12",
+          "pes": 69.6
+        },
+        {
+          "name": "Cameroon_Player_2",
+          "pes": 66.7
+        },
+        {
+          "name": "Cameroon_Player_18",
+          "pes": 66.5
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Cameroon_Player_19",
+          "pes": 75.0
+        },
+        {
+          "name": "Cameroon_Player_9",
+          "pes": 66.0
+        }
+      ]
+    }
+  },
+  "Senegal": {
+    "team_pes": 67.4,
+    "status": "COMPETITIVE",
+    "squad_size": 22,
+    "positions": {
+      "GK": [
+        {
+          "name": "Senegal_Player_17",
+          "pes": 74.2
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Senegal_Player_5",
+          "pes": 71.9
+        },
+        {
+          "name": "Senegal_Player_6",
+          "pes": 69.5
+        }
+      ],
+      "MID": [
+        {
+          "name": "Senegal_Player_22",
+          "pes": 78.1
+        },
+        {
+          "name": "Senegal_Player_15",
+          "pes": 71.9
+        },
+        {
+          "name": "Senegal_Player_4",
+          "pes": 71.3
+        },
+        {
+          "name": "Senegal_Player_9",
+          "pes": 70.6
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Senegal_Player_14",
+          "pes": 75.4
+        },
+        {
+          "name": "Senegal_Player_16",
+          "pes": 73.6
+        }
+      ]
+    }
+  },
+  "Ghana": {
+    "team_pes": 77.9,
+    "status": "STRONG",
+    "squad_size": 25,
+    "positions": {
+      "GK": [
+        {
+          "name": "Ghana_Player_22",
+          "pes": 81.2
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Ghana_Player_17",
+          "pes": 83.7
+        },
+        {
+          "name": "Ghana_Player_9",
+          "pes": 83.6
+        },
+        {
+          "name": "Ghana_Player_3",
+          "pes": 82.1
+        }
+      ],
+      "MID": [
+        {
+          "name": "Ghana_Player_4",
+          "pes": 85.1
+        },
+        {
+          "name": "Ghana_Player_23",
+          "pes": 83.4
+        },
+        {
+          "name": "Ghana_Player_10",
+          "pes": 82.3
+        },
+        {
+          "name": "Ghana_Player_8",
+          "pes": 80.2
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Ghana_Player_25",
+          "pes": 83.2
+        },
+        {
+          "name": "Ghana_Player_11",
+          "pes": 80.3
+        }
+      ]
+    }
+  },
+  "Nigeria": {
+    "team_pes": 78.9,
+    "status": "STRONG",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "Nigeria_Player_10",
+          "pes": 87.2
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Nigeria_Player_4",
+          "pes": 83.8
+        },
+        {
+          "name": "Nigeria_Player_6",
+          "pes": 82.9
+        }
+      ],
+      "MID": [
+        {
+          "name": "Nigeria_Player_5",
+          "pes": 84.0
+        },
+        {
+          "name": "Nigeria_Player_17",
+          "pes": 83.9
+        },
+        {
+          "name": "Nigeria_Player_8",
+          "pes": 82.9
+        },
+        {
+          "name": "Nigeria_Player_11",
+          "pes": 81.0
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Nigeria_Player_13",
+          "pes": 89.2
+        },
+        {
+          "name": "Nigeria_Player_2",
+          "pes": 83.4
+        }
+      ]
+    }
+  },
+  "Morocco": {
+    "team_pes": 78.2,
+    "status": "STRONG",
+    "squad_size": 22,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Morocco_Player_7",
+          "pes": 85.8
+        }
+      ],
+      "MID": [
+        {
+          "name": "Morocco_Player_22",
+          "pes": 87.3
+        },
+        {
+          "name": "Morocco_Player_14",
+          "pes": 82.2
+        },
+        {
+          "name": "Morocco_Player_19",
+          "pes": 80.1
+        },
+        {
+          "name": "Morocco_Player_12",
+          "pes": 79.1
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Morocco_Player_15",
+          "pes": 82.4
+        },
+        {
+          "name": "Morocco_Player_6",
+          "pes": 80.9
+        }
+      ]
+    }
+  },
+  "Ivory Coast": {
+    "team_pes": 59.8,
+    "status": "COMPETITIVE",
+    "squad_size": 25,
+    "positions": {
+      "GK": [
+        {
+          "name": "Ivory Coast_Player_5",
+          "pes": 63.6
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Ivory Coast_Player_2",
+          "pes": 65.7
+        },
+        {
+          "name": "Ivory Coast_Player_25",
+          "pes": 59.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "Ivory Coast_Player_3",
+          "pes": 65.6
+        },
+        {
+          "name": "Ivory Coast_Player_7",
+          "pes": 64.7
+        },
+        {
+          "name": "Ivory Coast_Player_22",
+          "pes": 62.9
+        },
+        {
+          "name": "Ivory Coast_Player_15",
+          "pes": 61.4
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Ivory Coast_Player_6",
+          "pes": 62.8
+        },
+        {
+          "name": "Ivory Coast_Player_20",
+          "pes": 62.6
+        }
+      ]
+    }
+  },
+  "Mali": {
+    "team_pes": 70.1,
+    "status": "COMPETITIVE",
+    "squad_size": 21,
+    "positions": {
+      "GK": [
+        {
+          "name": "Mali_Player_2",
+          "pes": 71.9
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Mali_Player_5",
+          "pes": 74.6
+        },
+        {
+          "name": "Mali_Player_17",
+          "pes": 73.1
+        },
+        {
+          "name": "Mali_Player_14",
+          "pes": 70.3
+        },
+        {
+          "name": "Mali_Player_19",
+          "pes": 69.8
+        }
+      ],
+      "MID": [
+        {
+          "name": "Mali_Player_1",
+          "pes": 73.1
+        },
+        {
+          "name": "Mali_Player_9",
+          "pes": 70.1
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Mali_Player_18",
+          "pes": 77.3
+        },
+        {
+          "name": "Mali_Player_11",
+          "pes": 73.6
+        }
+      ]
+    }
+  },
+  "Tunisia": {
+    "team_pes": 77.2,
+    "status": "STRONG",
+    "squad_size": 22,
+    "positions": {
+      "GK": [
+        {
+          "name": "Tunisia_Player_11",
+          "pes": 80.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Tunisia_Player_17",
+          "pes": 80.6
+        },
+        {
+          "name": "Tunisia_Player_21",
+          "pes": 79.1
+        }
+      ],
+      "MID": [
+        {
+          "name": "Tunisia_Player_12",
+          "pes": 85.3
+        },
+        {
+          "name": "Tunisia_Player_15",
+          "pes": 84.1
+        },
+        {
+          "name": "Tunisia_Player_9",
+          "pes": 78.5
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Tunisia_Player_4",
+          "pes": 94.0
+        },
+        {
+          "name": "Tunisia_Player_1",
+          "pes": 84.6
+        }
+      ]
+    }
+  },
+  "Japan": {
+    "team_pes": 67.3,
+    "status": "COMPETITIVE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "Japan_Player_17",
+          "pes": 68.4
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Japan_Player_9",
+          "pes": 77.3
+        },
+        {
+          "name": "Japan_Player_6",
+          "pes": 70.9
+        },
+        {
+          "name": "Japan_Player_15",
+          "pes": 70.8
+        },
+        {
+          "name": "Japan_Player_1",
+          "pes": 67.0
+        }
+      ],
+      "MID": [
+        {
+          "name": "Japan_Player_20",
+          "pes": 72.5
+        },
+        {
+          "name": "Japan_Player_16",
+          "pes": 67.0
+        },
+        {
+          "name": "Japan_Player_7",
+          "pes": 65.9
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Japan_Player_12",
+          "pes": 71.9
+        },
+        {
+          "name": "Japan_Player_11",
+          "pes": 67.7
+        }
+      ]
+    }
+  },
+  "South Korea": {
+    "team_pes": 75.7,
+    "status": "STRONG",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "South Korea_Player_1",
+          "pes": 78.4
+        },
+        {
+          "name": "South Korea_Player_11",
+          "pes": 77.2
+        }
+      ],
+      "DEF": [
+        {
+          "name": "South Korea_Player_14",
+          "pes": 81.8
+        },
+        {
+          "name": "South Korea_Player_15",
+          "pes": 75.0
+        },
+        {
+          "name": "South Korea_Player_19",
+          "pes": 74.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "South Korea_Player_8",
+          "pes": 86.8
+        },
+        {
+          "name": "South Korea_Player_10",
+          "pes": 80.3
+        },
+        {
+          "name": "South Korea_Player_7",
+          "pes": 78.7
+        }
+      ],
+      "ATT": [
+        {
+          "name": "South Korea_Player_6",
+          "pes": 80.1
+        },
+        {
+          "name": "South Korea_Player_4",
+          "pes": 79.2
+        }
+      ]
+    }
+  },
+  "Saudi Arabia": {
+    "team_pes": 60.8,
+    "status": "COMPETITIVE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [
+        {
+          "name": "Saudi Arabia_Player_5",
+          "pes": 65.0
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Saudi Arabia_Player_18",
+          "pes": 66.6
+        },
+        {
+          "name": "Saudi Arabia_Player_7",
+          "pes": 63.1
+        },
+        {
+          "name": "Saudi Arabia_Player_4",
+          "pes": 62.0
+        },
+        {
+          "name": "Saudi Arabia_Player_3",
+          "pes": 61.9
+        }
+      ],
+      "MID": [
+        {
+          "name": "Saudi Arabia_Player_11",
+          "pes": 66.9
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Saudi Arabia_Player_12",
+          "pes": 71.1
+        },
+        {
+          "name": "Saudi Arabia_Player_9",
+          "pes": 64.7
+        }
+      ]
+    }
+  },
+  "Iran": {
+    "team_pes": 75.0,
+    "status": "COMPETITIVE",
+    "squad_size": 25,
+    "positions": {
+      "GK": [
+        {
+          "name": "Iran_Player_21",
+          "pes": 84.2
+        },
+        {
+          "name": "Iran_Player_4",
+          "pes": 78.8
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Iran_Player_12",
+          "pes": 81.2
+        },
+        {
+          "name": "Iran_Player_14",
+          "pes": 80.8
+        },
+        {
+          "name": "Iran_Player_25",
+          "pes": 78.1
+        },
+        {
+          "name": "Iran_Player_1",
+          "pes": 77.8
+        },
+        {
+          "name": "Iran_Player_11",
+          "pes": 76.1
+        }
+      ],
+      "MID": [
+        {
+          "name": "Iran_Player_7",
+          "pes": 86.0
+        },
+        {
+          "name": "Iran_Player_20",
+          "pes": 77.3
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Iran_Player_16",
+          "pes": 75.4
+        },
+        {
+          "name": "Iran_Player_23",
+          "pes": 75.2
+        }
+      ]
+    }
+  },
+  "Iraq": {
+    "team_pes": 74.2,
+    "status": "COMPETITIVE",
+    "squad_size": 20,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Iraq_Player_12",
+          "pes": 85.1
+        }
+      ],
+      "MID": [
+        {
+          "name": "Iraq_Player_19",
+          "pes": 82.0
+        },
+        {
+          "name": "Iraq_Player_3",
+          "pes": 80.3
+        },
+        {
+          "name": "Iraq_Player_17",
+          "pes": 78.8
+        },
+        {
+          "name": "Iraq_Player_14",
+          "pes": 77.7
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Iraq_Player_1",
+          "pes": 82.7
+        },
+        {
+          "name": "Iraq_Player_2",
+          "pes": 76.4
+        }
+      ]
+    }
+  },
+  "Australia": {
+    "team_pes": 85.9,
+    "status": "ELITE",
+    "squad_size": 21,
+    "positions": {
+      "GK": [],
+      "DEF": [
+        {
+          "name": "Australia_Player_12",
+          "pes": 92.6
+        },
+        {
+          "name": "Australia_Player_13",
+          "pes": 86.3
+        },
+        {
+          "name": "Australia_Player_11",
+          "pes": 86.2
+        }
+      ],
+      "MID": [
+        {
+          "name": "Australia_Player_10",
+          "pes": 88.7
+        },
+        {
+          "name": "Australia_Player_7",
+          "pes": 86.1
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Australia_Player_9",
+          "pes": 90.1
+        },
+        {
+          "name": "Australia_Player_14",
+          "pes": 89.8
+        }
+      ]
+    }
+  },
+  "Uzbekistan": {
+    "team_pes": 87.0,
+    "status": "ELITE",
+    "squad_size": 23,
+    "positions": {
+      "GK": [
+        {
+          "name": "Uzbekistan_Player_19",
+          "pes": 90.4
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Uzbekistan_Player_7",
+          "pes": 95.0
+        },
+        {
+          "name": "Uzbekistan_Player_21",
+          "pes": 95.0
+        },
+        {
+          "name": "Uzbekistan_Player_5",
+          "pes": 93.3
+        }
+      ],
+      "MID": [
+        {
+          "name": "Uzbekistan_Player_12",
+          "pes": 93.9
+        },
+        {
+          "name": "Uzbekistan_Player_1",
+          "pes": 92.9
+        },
+        {
+          "name": "Uzbekistan_Player_17",
+          "pes": 92.8
+        },
+        {
+          "name": "Uzbekistan_Player_18",
+          "pes": 90.9
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Uzbekistan_Player_3",
+          "pes": 93.8
+        },
+        {
+          "name": "Uzbekistan_Player_20",
+          "pes": 93.1
+        }
+      ]
+    }
+  },
+  "Qatar": {
+    "team_pes": 75.4,
+    "status": "STRONG",
+    "squad_size": 24,
+    "positions": {
+      "GK": [
+        {
+          "name": "Qatar_Player_16",
+          "pes": 82.5
+        },
+        {
+          "name": "Qatar_Player_15",
+          "pes": 77.8
+        }
+      ],
+      "DEF": [
+        {
+          "name": "Qatar_Player_13",
+          "pes": 81.6
+        },
+        {
+          "name": "Qatar_Player_6",
+          "pes": 80.1
+        },
+        {
+          "name": "Qatar_Player_18",
+          "pes": 75.7
+        }
+      ],
+      "MID": [
+        {
+          "name": "Qatar_Player_1",
+          "pes": 79.6
+        },
+        {
+          "name": "Qatar_Player_22",
+          "pes": 75.7
+        }
+      ],
+      "ATT": [
+        {
+          "name": "Qatar_Player_7",
+          "pes": 78.4
+        },
+        {
+          "name": "Qatar_Player_10",
+          "pes": 76.2
+        }
+      ]
+    }
+  }
+}
