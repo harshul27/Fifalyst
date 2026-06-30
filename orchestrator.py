@@ -146,8 +146,6 @@ class LiveMatchOrchestrator:
                 'recommendations': recommendations,
                 'timestamp': datetime.now().isoformat()
             }
-
-            self.live_matches[match_id] = result
             return result
         except Exception as e:
             logger.error(f"✗ Failed to process match: {e}")
