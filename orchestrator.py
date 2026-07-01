@@ -13,6 +13,7 @@ from typing import Dict, List, Optional, Any
 from pipeline.live_metrics_fetcher import LiveMetricsFetcher
 from pipeline.match_state_tracker import MatchStateTracker
 from pipeline.live_fitness_calculator import LiveFitnessCalculator
+from pipeline.live_web_scraper import LiveWebDataAggregator
 
 logger = logging.getLogger(__name__)
 
@@ -34,6 +35,7 @@ class LiveMatchOrchestrator:
         self.fetcher = LiveMetricsFetcher()
         self.state_tracker = MatchStateTracker()
         self.fitness_calc = LiveFitnessCalculator()
+        self.web_scraper = LiveWebDataAggregator()  # Live data from Sofascore/FotMob
 
     async def fetch_live_matches(self) -> List[Dict[str, Any]]:
         """Fetch live World Cup matches from ESPN"""
@@ -49,6 +51,26 @@ class LiveMatchOrchestrator:
         except Exception as e:
             logger.error(f"✗ Failed to fetch matches: {e}")
             return []
+
+    async def fetch_enhanced_metrics(
+        self, match_id: str, home_team: str, away_team: str
+    ) -> Dict[str, List[Dict]]:
+        """Fetch enhanced live metrics from Sofascore/FotMob during live matches"""
+        try:
+            # Async fetch from web sources for real-time detailed metrics
+            metrics = await self.web_scraper.fetch_live_player_metrics(
+                match_id, home_team, away_team
+            )
+
+            if metrics.get('home') or metrics.get('away'):
+                logger.info(f"✓ Fetched enhanced metrics for {home_team} vs {away_team}")
+                return metrics
+
+            logger.debug(f"No enhanced metrics available yet for {match_id}")
+            return {'home': [], 'away': []}
+        except Exception as e:
+            logger.debug(f"Enhanced metrics fetch skipped: {e}")
+            return {'home': [], 'away': []}
 
     async def process_match(self, match: Dict[str, Any]) -> Dict[str, Any]:
         """Process single match: update state, calculate fitness, generate recommendations"""
@@ -91,14 +113,32 @@ class LiveMatchOrchestrator:
                 for p in state.away_lineup
             ]
 
-            # Mock live metrics (in production, fetch from Sofascore/ESPN)
-            live_metrics = [
-                {
-                    'player_id': p['player_id'],
-                    'running_load_pct': 80 + (hash(str(p['player_id'])) % 30 - 15)
-                }
-                for p in home_players + away_players
-            ]
+            # Fetch enhanced metrics from web if match is LIVE, else use baseline
+            if minute > 0:  # Live match in progress
+                enhanced = await self.fetch_enhanced_metrics(match_id, home_team, away_team)
+                home_enhanced = {p['player_id']: p for p in enhanced.get('home', [])}
+                away_enhanced = {p['player_id']: p for p in enhanced.get('away', [])}
+            else:
+                home_enhanced, away_enhanced = {}, {}
+
+            # Merge enhanced metrics with baseline, fallback to mock if not available
+            live_metrics = []
+            for p in home_players + away_players:
+                pid = p['player_id']
+                enhanced_data = home_enhanced.get(pid) or away_enhanced.get(pid)
+
+                if enhanced_data:
+                    # Use real running load from web (convert distance to %)
+                    running_load = (enhanced_data.get('distance_km', 5) / 12 * 100)  # 12km is typical max
+                else:
+                    # Fallback to deterministic mock
+                    running_load = 80 + (hash(str(pid)) % 30 - 15)
+
+                live_metrics.append({
+                    'player_id': pid,
+                    'running_load_pct': min(running_load, 120)  # Cap at 120%
+                })
+
 
             # Calculate fitness for both teams
             home_fitness_list = await self.fitness_calc.calculate_fitness(home_players, live_metrics, minute)
