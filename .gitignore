@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.cache/
+*.log
+*.rdb
+.env
+
+# Recorded season data (regenerate: python record.py)
+data/pl_2026_27/
+
+# StatsBomb training corpus (regenerate: python -m pipeline.statsbomb_extract)
+data/statsbomb/
+
+# Live in-match tracking output (runtime data)
+data/live/
+
+# Trained model binaries (regenerate: python train_sub_model.py / train_live_model.py)
+# The JSON reports ARE tracked - they are the record of measured performance.
+models/*.pkl
+models/*.parquet

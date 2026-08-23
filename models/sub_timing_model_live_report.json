@@ -1,0 +1,80 @@
+{
+  "cv_mean": {
+    "roc_auc": 0.840052566204181,
+    "pr_auc": 0.10654384941667597,
+    "brier": 0.02212609692634815,
+    "precision_at_1": 0.2334470549691822
+  },
+  "cv_std": {
+    "roc_auc": 0.004661988343542967,
+    "pr_auc": 0.004188488706095031
+  },
+  "holdout": {
+    "competition": "Premier League",
+    "n_rows": 108680,
+    "n_matches": 418,
+    "base_rate": 0.020463746779536253,
+    "roc_auc": 0.8553354536349127,
+    "pr_auc": 0.09979779165586132,
+    "brier": 0.019093992065642787,
+    "precision_at_1": 0.2198019801980198,
+    "precision_at_3": 0.5836633663366336
+  },
+  "baselines_on_holdout": {
+    "minutes_played": 0.030960975514698345,
+    "fatigue_proxy(-rate_decline)": 0.02012344579138529,
+    "low_recent_involvement": 0.018156389151437358,
+    "random": 0.020463746779536253
+  },
+  "n_train_rows": 580060,
+  "n_train_matches": 2231,
+  "positive_rate": 0.023885460124814673,
+  "calibration": [
+    {
+      "bin": 0,
+      "n": 21484,
+      "mean_predicted": 0.0012085406296409207,
+      "observed": 0.000930925339787749
+    },
+    {
+      "bin": 1,
+      "n": 21981,
+      "mean_predicted": 0.0033614108475786154,
+      "observed": 0.001819753423411128
+    },
+    {
+      "bin": 2,
+      "n": 20632,
+      "mean_predicted": 0.011394171711725687,
+      "observed": 0.005767739433889104
+    },
+    {
+      "bin": 3,
+      "n": 22793,
+      "mean_predicted": 0.02584874583988363,
+      "observed": 0.01645241960250954
+    },
+    {
+      "bin": 4,
+      "n": 21790,
+      "mean_predicted": 0.09229750233833574,
+      "observed": 0.07664066085360258
+    }
+  ],
+  "features": [
+    "minute",
+    "minutes_played",
+    "is_starter",
+    "has_card",
+    "xg_total",
+    "goal_diff",
+    "subs_used",
+    "team_xg_w",
+    "opp_xg_w",
+    "momentum",
+    "pos_DEF",
+    "pos_MID",
+    "pos_FWD"
+  ],
+  "model_name": "sub_timing_model_live"
+}

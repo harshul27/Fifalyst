@@ -1,408 +1,269 @@
-# ⚽ FIFA Shadow Coach v3.1
+# Premier League 2026/27 - Season Stats Recorder
 
-**Agent-powered AI football analytics** — Real-time live match data from ESPN/Sofascore, player fitness tracking, and tactical recommendations via multi-agent orchestration.
+Records **every played gameweek (1-38)** of the 2026/27 Premier League season:
+per-player statistics across all gameplay categories, and per-team attacking /
+midfield / defensive profiles with derived tactical indicators.
 
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
-[![LangChain 1.2+](https://img.shields.io/badge/LangChain-1.2+-green.svg)](https://langchain.com/)
-[![Redis](https://img.shields.io/badge/Redis-Required-orange.svg)](https://redis.io/)
+Season kicked off **21 August 2026**.
 
----
-
-## 🎯 What It Does
-
-FIFA Shadow Coach is a **multi-agent real-time match analytics system** that uses orchestrated AI agents to analyze live football matches and provide data-driven substitution recommendations.
-
-### Core Features
-
-✅ **Live Match Simulation**
-- Runs Monte Carlo trials per minute
-- Forecasts win/draw/loss probabilities in real-time
-
-✅ **Player Fatigue Detection**
-- Exponential decay model (10-day recovery half-life)
-- Tracks cumulative load per player
-- Risk scoring: HIGH/MEDIUM/LOW fatigue levels
-- Substitution recommendations based on energy state
-
-✅ **Auto-Improving System**
-- Post-match backpropagation: compares AI recommendations vs actual manager decisions
-- Updates feature weights automatically
-- Stored in `config/feature_weights.yaml` (version controlled)
-- Learns from every match analyzed
-
-✅ **Interactive Dashboard**
-- Live score updates
-- Squad fatigue matrix with color coding
-- Win probability charts
-- Tactical recommendations with confidence scores
-
----
-
-## 🚀 Quick Start
+## Quick start
 
 ```bash
-# Clone the repository
-git clone https://github.com/harshul27/Fifalyst.git
-cd Fifalyst
-
-# Install dependencies
 pip install -r requirements.txt
 
-# Run the dashboard
-streamlit run app.py
-
-# Opens at http://localhost:8501
+python record.py                       # record every played GW not yet final
+python -m streamlit run pl_season_app.py   # dashboard at http://localhost:8501
 ```
 
----
+## How it works
 
-## 📋 Installation
+```
+FPL API  ──►  SeasonOrchestrator  ──►  parquet per gameweek  ──►  Streamlit
+(per-GW)      + physical adapter       data/pl_2026_27/gw{n}/     dashboard
+              + team aggregation
+              + FBref (optional)
+```
 
-### Prerequisites
-- Python 3.11+
-- pip or conda
-- ~200 MB disk space for dependencies
+1. **Fetch** - `pipeline/fpl_client.py` pulls per-player stats for a gameweek
+   from the official FPL API (public, no key, no bot-blocking).
+2. **Enrich** - `pipeline/physical_adapter.py` adds the physical-stat columns
+   (see caveat below). `--fbref` optionally layers FBref tactical depth.
+3. **Aggregate** - `pipeline/team_stats.py` rolls player rows into per-team
+   attacking / midfield / defensive buckets plus tactical indicators.
+4. **Store** - `pipeline/season_store.py` writes parquet per gameweek.
+   Re-running is idempotent.
+5. **View** - `pl_season_app.py` browses any gameweek or the season to date.
 
-### Setup
+### Recording model
+
+A gameweek is recorded as soon as it has been played, and **re-recorded on each
+run until FPL marks it `finished` and `data_checked`**. This matters: FPL does
+not publish the ICT family (influence / creativity / threat) while a gameweek
+is still in progress, so an in-progress GW self-heals into complete data once
+finalised. `--status` shows which gameweeks are final.
+
+## Commands
 
 ```bash
-# Clone repository
-git clone https://github.com/harshul27/Fifalyst.git
-cd Fifalyst
-
-# Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Verify installation
-python -c "import streamlit, duckdb, pandas; print('All dependencies installed')"
+python record.py                # record played GWs that aren't final yet
+python record.py --gw 5         # record one gameweek
+python record.py --all          # force re-record everything
+python record.py --fbref        # add FBref tactical enrichment (slow, scrapes)
+python record.py --status       # list recorded gameweeks
 ```
 
----
+Run it after each gameweek (or on a weekly cron) to build the season.
 
-## 🎮 Usage
+## What's recorded
 
-### Start the Dashboard
+**Per player** - minutes, starts, goals, assists, xG, xA, xGI, goals conceded,
+xGC, clean sheets, saves, penalties saved/missed, own goals, tackles,
+clearances+blocks+interceptions, recoveries, defensive contribution, yellow and
+red cards, influence, creativity, threat, ICT index, bonus, BPS, total points.
+
+**Per team** - all of the above aggregated, plus `clean_sheet`,
+`finishing_edge` (goals minus xG), `defensive_actions`, `directness`
+(threat vs creativity) and an auto-generated `tactical_label`
+(e.g. *"high-xG, solid, possession-based"*).
+
+With `--fbref`: possession %, pass completion %, long-pass %, progressive
+passes, progressive carries, successful take-ons, touches by third.
+
+## Physical statistics: intentionally empty
+
+Distance covered, sprints, high-speed running and top speed come from tracking
+providers (Opta/Second Spectrum) with **no free public feed**. The columns exist
+in the schema and the dashboard shows a Physical tab, but the values stay empty
+rather than being filled with estimates or mock numbers.
+
+To connect a real source, subclass `PhysicalStatsAdapter` in
+`pipeline/physical_adapter.py` and fill `PHYSICAL_COLS` keyed by
+`player_id` + `gw`. Nothing else needs to change.
+
+## Data layout
+
+```
+data/pl_2026_27/
+  gw1/players.parquet   # one row per player who featured
+  gw1/teams.parquet     # one row per team that played
+  meta.json             # per-GW final/in-progress status
+```
+
+## Verify
 
 ```bash
-streamlit run app.py
-# Opens at http://localhost:8501
+python -m pipeline.fpl_client       # live API self-check
+python -m pipeline.season_store     # storage round-trip
+python -m pipeline.team_stats       # aggregation + tactical labels
+python -m pipeline.fbref_client     # enrichment degrades cleanly when offline
+python test_fpl_client.py           # end-to-end smoke test
 ```
 
-### Dashboard Features
+## Substitution & tactics coach (trained model)
 
-1. **Sidebar: Match Configuration**
-   - Select home and away teams
-   - Choose simulation parameters
+A model that ranks who to bring off, and suggests tactical shifts, from live
+match state. Trained on **StatsBomb open data** (men's competitions) with
+**FBref** previous seasons supplying player-ability baselines.
 
-2. **Squad State & Fatigue**
-   - Interactive table showing each player's energy level
-   - Risk scoring (HIGH/MEDIUM/LOW)
-   - Match count and intensity metrics
+### Two layers, validated differently
 
-3. **Live Match Simulation**
-   - Click "Stream Live" to run Monte Carlo trials
-   - Real-time probability updates
-   - Fatigue decay visualization
+**1. Timing model** - `P(player substituted off within the next 5 minutes)`,
+learned from real coach decisions. Features: minutes played, involvement decay
+vs the player's own match baseline, recent pass accuracy, booking status,
+pressures/duels, position, plus team state (goal difference, subs used, rolling
+xG for/against, possession share, field tilt).
 
----
+Validated with **GroupKFold on match_id** (no match spans folds) and a
+**held-out competition never seen in training**, scored against explicit
+heuristic baselines and checked for probability calibration.
 
-## 🏗️ Architecture
+**2. Impact layer** - measured post-substitution momentum swing, aggregated by
+game state x minute bucket, used to re-rank candidates the timing model already
+surfaced. This is observational and confounded (coaches sub *because* they are
+chasing a game), so it is a bounded prior, never a causal claim.
 
-### System Design
+### What the model actually keys on
 
-```
-┌─────────────────────────────────────────────────┐
-│         Streamlit Frontend Dashboard            │
-│  (Squad fatigue, live scores, recommendations)  │
-└──────────────────┬──────────────────────────────┘
-                   │
-     ┌─────────────┼─────────────┐
-     │             │             │
-┌────▼───┐  ┌─────▼────┐  ┌─────▼────┐
-│ Model  │  │ Pipeline │  │ Storage  │
-│ (Monte │  │ (ETL +   │  │ (DuckDB) │
-│ Carlo) │  │ Backprop)│  │          │
-└────────┘  └──────────┘  └──────────┘
-```
+Measured by holding every other feature constant and sweeping one:
 
-### Technology Stack
+| Driver | Effect on withdrawal probability | Verdict |
+|---|---|---|
+| Minutes played (35' -> 85') | 0.003 -> 0.127 | dominant, monotonic |
+| Position (DEF / MID / FWD) | 0.040 / 0.109 / 0.114 | strong - defenders are rotated far less |
+| Booking | +0.023 | correct direction |
+| Recent involvement | weak, U-shaped | see below |
+| Recent pass accuracy | ~flat | not used |
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Frontend** | Streamlit | Interactive dashboard |
-| **Analytics** | NumPy + Pandas | Vectorized computation |
-| **Database** | DuckDB | File-based, zero setup |
-| **Scraping** | BeautifulSoup4 | Data collection |
-| **Automation** | GitHub Actions | Daily pipeline runs |
+The intuitive "tired player fades, therefore gets subbed" signal is **much weaker
+than expected**. In the corpus the relationship is U-shaped: players who fade
+badly are withdrawn (3.1%), and so are players with surging involvement (2.9%) -
+usually the attackers coaches rotate - while steady players stay on (1.9%).
+An explicit `involvement_anomaly` feature was added to express that shape; it
+moved the metrics by less than noise, and is kept only because the shape is real.
 
----
+Practical consequence: this behaves like a **workload-and-role model**, not a
+fatigue detector. Real fatigue detection needs the physical/tracking data that
+`pipeline/physical_adapter.py` is the slot for - distance, sprints and
+high-speed-running decay are the signals that would actually carry it.
 
-## 🔧 Configuration
+### Honest scope
 
-### Simulation Parameters (`config/sim_config.yaml`)
+The timing model learns **what coaches do**, not what is provably optimal.
+That is the only target this data can support rigorously. It is genuinely
+useful - it catches fatigue, fading influence and booking risk the way
+experienced coaches do - but it is not proof that a recommended change wins
+matches.
 
-```yaml
-simulation:
-  n_simulations: 10000
-  base_goal_intensity_lambda: 2.5
-  tau_decay: 0.5
-  min_pes_floor: 15.0
-  max_pes_ceiling: 100.0
+### Train it
 
-match:
-  total_minutes: 90
-  substitute_window_start: 45
-  substitute_window_end: 85
-  max_substitutions: 3
-
-feature_weights:
-  alpha_fatigue: 1.0
-  alpha_intensity: 0.8
-  alpha_recovery: 0.6
+```bash
+python train_sub_model.py --extract     # extract corpus, then train (slow first time)
+python train_sub_model.py               # retrain from cached features
+python train_sub_model.py --holdout "La Liga"
 ```
 
-### Player Metadata (`config/player_metadata.yaml`)
+Prints CV + held-out metrics, baseline comparison, calibration table and the
+impact prior. Saves `models/sub_timing_model.pkl` and `sub_model_report.json`.
 
-Position-based baseline stamina and substitution thresholds:
-
-```yaml
-baseline_stamina:
-  GK: 85.0
-  CB: 90.0
-  CM: 92.0
-  CF: 88.0
-  LW: 86.0
-  # ...
-
-substitution_thresholds:
-  GK: 30.0
-  CB: 35.0
-  CM: 38.0
-  CF: 36.0
-  # ...
-```
-
-### Feature Weights (`config/feature_weights.yaml`)
-
-**Auto-updated after each match** via backpropagation.
-
----
-
-## 📊 How It Works
-
-### Player Energy Score (PES)
-
-Each player has an energy level [15-100] based on:
-
-```
-PES = 100 - Σ(strain_i * exp(-λ * days_ago_i))
-
-where:
-  strain_i = minutes_played_i * intensity_i / 90
-  λ = ln(2) / 10 ≈ 0.0693 (10-day half-life)
-```
-
-**Example:**
-- Fresh player: PES = 100.0
-- After 90-min intense match (yesterday): PES ≈ 70-80
-- After 90-min match (10 days ago): PES ≈ 92 (half decayed)
-
-### Match Outcome Prediction
-
-Monte Carlo simulation:
+### Use it
 
 ```python
-# For each of N trials:
-remaining_minutes = 90 - current_minute
-home_lambda = 2.5 * (remaining_minutes/90) * (home_pes/100)
-away_lambda = 2.5 * (remaining_minutes/90) * (away_pes/100)
+from orchestrator import get_orchestrator
+from pipeline.sub_recommender import MatchState, PlayerState
 
-home_goals ~ Poisson(home_lambda)
-away_goals ~ Poisson(away_lambda)
-
-if home_goals > away_goals: home_win += 1
-elif home_goals == away_goals: draw += 1
-else: away_win += 1
-
-# Return percentages
+orch = get_orchestrator()
+match = MatchState(minute=70, goal_diff=-1, subs_used=1,
+                   team_xg_w=0.2, opp_xg_w=0.7, possession_w=0.38, field_tilt_w=0.18)
+recs = orch.recommend_subs(players, match, bench=bench, tracker=tracker)
+advice = orch.tactical_advice(match)
 ```
 
-### Auto-Improving Feedback Loop
+Pass a `SubstitutionTracker` and the 5-substitution limit is enforced and
+players already withdrawn are excluded automatically.
 
-After each match:
+The **Match Coach** tab in the dashboard exposes this interactively, with the
+model's report card shown up front.
 
-```
-1. Get match outcome (actual result)
-2. Compare vs AI recommendation
-3. Calculate loss: how wrong was the prediction?
-4. Backpropagate error into feature_weights
-5. Update config/feature_weights.yaml (committed to Git)
-6. Next match: use updated weights
-```
-
----
-
-## 💰 Cost Breakdown
-
-| Component | Cost | Notes |
-|-----------|------|-------|
-| **Database** | $0/month | DuckDB file-based, no server needed |
-| **Dependencies** | $0/month | All open-source |
-| **Total** | **$0/month** | 100% free to run locally |
-
----
-
-## 📁 Project Structure
-
-```
-Fifalyst/
-├── app.py                       # Streamlit frontend dashboard
-├── model.py                     # Monte Carlo engine, player energy model
-├── pipeline.py                  # ETL, feature engineering, backpropagation
-├── requirements.txt             # Python dependencies
-├── match_pipeline.yml           # GitHub Actions workflow
-│
-├── data/
-│   └── database.duckdb          # DuckDB file-based database
-│
-├── fifa-shadow-coach/           # Packaged project
-│   ├── src/
-│   │   ├── app.py               # Streamlit app (packaged)
-│   │   ├── model.py             # Monte Carlo engine (packaged)
-│   │   ├── pipeline.py          # ETL pipeline (packaged)
-│   │   └── __init__.py
-│   ├── config/
-│   │   ├── sim_config.yaml      # Simulation hyperparameters
-│   │   ├── player_metadata.yaml # Player attributes by position
-│   │   └── feature_weights.yaml # Model weights (auto-updated)
-│   ├── .github/
-│   │   └── workflows/
-│   │       └── match_pipeline.yml
-│   ├── data/
-│   ├── tests/
-│   ├── .gitignore
-│   ├── QUICKSTART.md
-│   ├── README.md
-│   └── requirements.txt
-│
-└── README.md                    # This file
-```
-
----
-
-## 🧪 Testing
+## Live in-match tracking & coaching
 
 ```bash
-# Install test dependencies
-pip install pytest pytest-cov
-
-# Run all tests
-pytest tests/
-
-# Run with coverage
-pytest --cov=src tests/
+python train_live_model.py        # one-time: train the FPL-feedable model
+python live_coach.py              # follow the current gameweek, poll every 2 min
+python live_coach.py --once       # single poll
+python live_coach.py --evaluate   # score logged recommendations vs real subs
 ```
 
----
+Also exposed as the **Live Tracking** tab in the dashboard.
 
-## 🤝 Contributing
+### How it reconstructs live state
 
-Contributions are welcome! Areas we'd like help with:
+FPL publishes cumulative per-player totals, not events. The poller diffs
+consecutive snapshots to recover what a live coach needs:
 
-- [ ] Additional player attributes (sprint speed, positional awareness)
-- [ ] Integration with more football data APIs (StatsBomb, Wyscout, Understat)
-- [ ] Machine learning model improvements (gradient boosting, neural networks)
-- [ ] Performance optimizations
-- [ ] Additional test coverage
+| Signal | How |
+|---|---|
+| Minutes on the pitch | `stats.minutes` per poll |
+| **Substitutions** | minutes stop advancing while the match clock runs |
+| Rolling team xG | xG accrued between two snapshots |
+| Goal difference, match minute | fixtures endpoint |
+| Bookings | per-fixture card stats |
 
-**To contribute:**
+Substitution detection needs **at least two polls** - on a cold start nobody can
+yet be known to have been withdrawn.
+
+### Measured accuracy cost
+
+Only 13 of the 28 features survive a live FPL feed (all pass, spatial,
+possession, pressure and duel data is unavailable). The cost was measured
+before building - `python measure_live_ceiling.py`:
+
+| Variant | Feat | ROC | PR-AUC | Top-3 |
+|---|---|---|---|---|
+| Full event data | 28 | 0.864 | 0.111 | **67.7%** |
+| Live + involvement proxy | 19 | 0.856 | 0.098 | 60.6% |
+| **Live core (deployed)** | **13** | **0.855** | **0.100** | **58.4%** |
+
+Dropping 15 features costs ~1% of ROC-AUC but ~14% relative on top-3 ranking:
+the survivors carry the population-level signal, while the lost ones did the
+finer work of separating players *within* one team at one moment.
+
+The 19-feature proxy variant scored no better than the 13-feature one, so the
+poller deliberately does **not** reconstruct event-count proxies.
+
+### What gets stored
+
+```
+data/live/gw{n}/
+  timeline.parquet        one row per (poll, fixture, player):
+                          minutes, xG, on/off pitch, booking, team state
+  recommendations.jsonl   every recommendation set + the state that produced it
+```
+
+Keeping the recommendations means accuracy can be scored against what the real
+coach subsequently did (`--evaluate`), not only against historical data.
+
+### Replay a real match
 
 ```bash
-# 1. Fork repository
-# 2. Create feature branch
-git checkout -b feature/my-feature
-
-# 3. Make changes and add tests
-# 4. Commit
-git commit -m "feat: add my feature"
-
-# 5. Push and create Pull Request
-git push origin feature/my-feature
+python -m pipeline.replay
 ```
 
----
+Walks a match forward in time, ranking players using only information available
+at each minute, and compares against the coach's actual decisions.
 
-## 🙋 Support & Feedback
+### Fidelity note
 
-- **Issues:** [GitHub Issues](https://github.com/harshul27/Fifalyst/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/harshul27/Fifalyst/discussions)
-- **Email:** harshul2705@gmail.com
+Full-fidelity coaching (the 28-feature model) needs event-level data and runs
+today via replay. Live 2026/27 coaching runs on the 13-feature model above.
 
----
+## Project history
 
-## 🗺️ Roadmap
+This repo previously tracked live World Cup 2026 matches via ESPN and
+Sofascore/FotMob scrapers. Those sources were bot-blocked and their player
+metrics stubbed, so the live path fell back to generated numbers. That data
+layer was replaced by the FPL/FBref pipeline above.
 
-### Phase 1 (Current)
-- ✅ Real-time match simulation
-- ✅ Player fatigue tracking
-- ✅ Auto-improving feedback loop
-- ✅ Interactive Streamlit dashboard
-
-### Phase 2 (Coming)
-- [ ] Multi-league support (Premier League, La Liga, Serie A)
-- [ ] Advanced fatigue metrics (sprint distance, acceleration, deceleration)
-- [ ] Formation analysis
-- [ ] Set-piece probability
-
-### Phase 3 (Future)
-- [ ] Mobile app
-- [ ] Team collaboration features
-- [ ] Historical match replay analysis
-
----
-
-## 🎯 Key Metrics
-
-- **Lines of Code:** ~1,200 (highly vectorized)
-- **Dependencies:** 6 (minimal, well-maintained)
-- **Startup Time:** <1 second
-- **Simulation Time:** <100ms per 10k trials
-
----
-
-## 👨‍💻 Authors
-
-**Harshul Shah** (harshul2705@gmail.com)
-
----
-
-## 🙏 Acknowledgments
-
-- **Streamlit** team for the amazing dashboard framework
-- **DuckDB** team for blazing-fast analytics database
-- **NumPy/Pandas** for high-performance computation
-- Football analytics community for inspiration
-
----
-
-![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
-![Version](https://img.shields.io/badge/Version-3.1-green.svg)
-
----
-
-**Star ⭐ this repo if you find it useful!**
-
----
-
-<div align="center">
-
-Made with ❤️ for football analytics
-
-[⬆ Back to top](#-fifa-shadow-coach)
-
-</div>
+The match-analysis modules from that system are retained and unwired
+(`live_fitness_calculator`, `online_model_trainer`, `match_event_detector`,
+`match_state_tracker`, `substitution_tracker`) - the fitness model becomes
+usable again once real physical data is connected.

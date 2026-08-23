@@ -1,216 +1,65 @@
 # ============================================
-# FIFA World Cup 2026 Multi-Agent System
-# Configuration File
+# Premier League 2026/27 - Season Stats Recorder
 # ============================================
 
-# ============================================
-# Database Configuration
-# ============================================
-database:
-  postgres:
-    host: localhost
-    port: 5432
-    user: fifa_admin
-    password: fifa_dev_password
-    database: fifa_wc_2026
-    pool_size: 20
-    max_overflow: 40
-
-  redis:
-    host: localhost
-    port: 6379
-    db: 0
-    decode_responses: true
-    socket_keepalive: true
-
-  duckdb:
-    path: data/fifa_analytics.duckdb
-    memory_limit: "2GB"
-
-  weaviate:
-    url: http://localhost:8080
-    api_key: null  # Not needed for dev
-
-  minio:
-    endpoint: localhost:9000
-    access_key: minioadmin
-    secret_key: miniopass
-    bucket: fifa-artifacts
-    secure: false
+competition:
+  name: "Premier League"
+  season: "2026-27"
+  gameweeks: 38
+  season_start: "2026-08-21"
 
 # ============================================
-# Agent Configuration
+# Data sources
 # ============================================
-agents:
-  data_collection:
-    name: "Data Collection Agent"
-    model: "claude-3-5-sonnet-20241022"
-    temperature: 0.1
-    max_iterations: 10
-    cache_ttl: 300  # 5 minutes for live data
-    tools:
-      - fetch_espn_live
-      - fetch_sofascore_events
-      - fetch_transfermarkt_data
-      - store_to_redis
-
-  fitness_model:
-    name: "Fitness Model Agent"
-    model: "claude-3-5-sonnet-20241022"
-    temperature: 0.0  # Deterministic predictions
-    max_iterations: 5
-    cache_ttl: 300
-    tools:
-      - load_baseline_fitness
-      - compute_live_metrics
-      - predict_xgboost
-      - predict_neural_network
-      - vectorize_player
-
-  live_match:
-    name: "Live Match Agent"
-    model: "claude-3-5-sonnet-20241022"
-    temperature: 0.1
-    max_iterations: 8
-    cache_ttl: 60  # 1 minute for match state
-    tools:
-      - parse_espn_lineup
-      - track_substitutions
-      - update_match_state
-      - detect_injury_signals
-
-  recommendation_engine:
-    name: "Recommendation Engine Agent"
-    model: "claude-3-5-sonnet-20241022"
-    temperature: 0.3  # Some variation for creativity
-    max_iterations: 10
-    cache_ttl: 60
-    tools:
-      - rag_similar_players
-      - rank_tired_starters
-      - rank_fresh_bench
-      - score_confidence
-      - check_sub_constraints
-
-  feedback:
-    name: "Feedback & Learning Agent"
-    model: "claude-3-5-sonnet-20241022"
-    temperature: 0.2
-    max_iterations: 5
-    cache_ttl: 3600  # 1 hour (not real-time)
-    tools:
-      - log_recommendation_outcome
-      - track_accuracy_metrics
-      - adjust_thresholds
-      - retrain_models
-
-# ============================================
-# API Configuration
-# ============================================
-apis:
-  espn:
-    base_url: "https://site.api.espn.com/apis/site/v2"
-    timeout: 10
-    rate_limit: 6  # Calls per minute
-    retry_attempts: 3
-
-  sofascore:
-    base_url: "https://api.sofascore.com/api/v1"
-    timeout: 10
-    rate_limit: 10
-    retry_attempts: 3
-
-  transfermarkt:
-    base_url: "https://www.transfermarkt.com"
+sources:
+  fpl:
+    # Official Fantasy Premier League API. Public, no auth, no rate-limit issues.
+    # Natively organised by gameweek, which is why it is the primary source.
+    base_url: "https://fantasy.premierleague.com/api"
     timeout: 15
-    rate_limit: 3
-    retry_attempts: 3
+    endpoints:
+      bootstrap: "bootstrap-static/"      # teams, players, positions, gameweeks
+      live: "event/{gw}/live/"            # per-player stats for one gameweek
+
+  fbref:
+    # Optional tactical depth (possession, pass completion, progressive passes)
+    # via the `soccerdata` package. Scrapes and rate-limits, so it is opt-in:
+    #   python record.py --fbref
+    enabled: false
+    league: "ENG-Premier League"
+    season: "2026-2027"
+    stat_types: [possession, passing]
+
+  physical:
+    # Distance / sprints / high-speed running / top speed have no free public
+    # feed. Columns exist but stay empty until a real provider is wired into
+    # pipeline/physical_adapter.py. No estimates are ever substituted.
+    enabled: false
+    adapter: "pipeline.physical_adapter.PhysicalStatsAdapter"
 
 # ============================================
-# Processing Configuration
+# Storage
 # ============================================
-processing:
-  cycle_interval: 300  # 5 minutes in seconds
-  match_poll_interval: 300
-  default_timezone: "UTC"
-
-  parallel:
-    max_concurrent_matches: 8
-    max_concurrent_player_inferences: 100
-    max_concurrent_api_calls: 5
+storage:
+  format: parquet
+  base_dir: "data/pl_2026_27"
+  layout: "gw{n}/players.parquet + gw{n}/teams.parquet + meta.json"
+  # A gameweek is re-recorded until FPL marks it finished AND data_checked,
+  # which is when stats like the ICT family are finalised.
+  refresh_until_final: true
 
 # ============================================
-# Model Configuration
+# Team tactical buckets (dashboard grouping)
 # ============================================
-models:
-  fitness:
-    type: "xgboost"  # or "neural_network", "rule_based"
-    artifact_path: "models/fitness_xgboost_model.pkl"
-    feature_count: 10
-    inference_batch_size: 500
-
-  embeddings:
-    model: "sentence-transformers/all-MiniLM-L6-v2"
-    dimension: 384
-    device: "cpu"  # or "cuda"
+tactics:
+  attacking: [goals_scored, assists, expected_goals, expected_goal_involvements, threat, finishing_edge]
+  midfield: [expected_assists, creativity, influence, recoveries, ict_index]
+  defensive: [goals_conceded, expected_goals_conceded, clean_sheet, tackles,
+              clearances_blocks_interceptions, saves, defensive_actions]
 
 # ============================================
-# Caching Strategy
-# ============================================
-caching:
-  redis:
-    ttl:
-      match_state: 60  # 1 minute
-      player_fitness: 300  # 5 minutes
-      recommendations: 60  # 1 minute
-      embeddings: 86400  # 24 hours
-
-  duckdb:
-    retention_days: 30
-
-# ============================================
-# Logging Configuration
+# Logging
 # ============================================
 logging:
-  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
-  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-  file: "logs/fifa_multiagent.log"
-  max_size: "10GB"
-  backup_count: 5
-
-# ============================================
-# Monitoring Configuration
-# ============================================
-monitoring:
-  prometheus:
-    enabled: true
-    port: 8000
-    metrics_path: "/metrics"
-
-  grafana:
-    enabled: true
-    port: 3000
-    dashboards:
-      - system_health
-      - agent_performance
-      - accuracy_metrics
-
-# ============================================
-# Feature Flags
-# ============================================
-features:
-  use_rag: true
-  use_embeddings: true
-  auto_model_retraining: true
-  parallel_agent_execution: true
-  cache_results: true
-  monitor_agents: true
-
-# ============================================
-# Development Settings
-# ============================================
-development:
-  debug: false
-  mock_apis: false  # Use mock data if true
-  skip_model_inference: false
-  verbose_logging: false
+  level: "INFO"
+  format: "%(levelname)s %(message)s"
