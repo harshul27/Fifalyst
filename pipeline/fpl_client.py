@@ -11,6 +11,8 @@ Endpoints used:
 import asyncio
 import logging
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from typing import List, Dict, Any
 
 logger = logging.getLogger(__name__)
@@ -46,6 +48,18 @@ class FPLClient:
     def __init__(self):
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": "Mozilla/5.0"})
+        # A 90-minute poller cannot die on one dropped connection. FPL resets
+        # sockets under load (ConnectionResetError 10054) and rate-limits at the
+        # edge, so every request retries with backoff: 0/1.5/3/6/12s, ~22s worst
+        # case, well inside the 120s poll interval.
+        # ponytail: urllib3's Retry, already a requests dependency. Only network
+        # and 5xx/429 failures are covered -- a bug in poll() still stops the run.
+        retry = Retry(
+            total=5, connect=5, read=5, backoff_factor=1.5,
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=frozenset(["GET"]),
+        )
+        self.session.mount("https://", HTTPAdapter(max_retries=retry))
         self._bootstrap: Dict[str, Any] | None = None
 
     def _get(self, path: str) -> dict:
