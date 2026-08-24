@@ -386,13 +386,55 @@ with tab_live:
                                 "on_pitch", "goal_diff", "subs_used"] if c in trail.columns]
             st.dataframe(trail[cols], width="stretch", hide_index=True)
 
-        ev = store.evaluate(gw_live)
-        if ev.get("evaluated"):
-            st.metric("Recommendation hit rate vs real withdrawals",
-                      f"{ev['hit_rate']:.1%}",
-                      help=f"scored over {ev['evaluated']} recommendation sets")
-        else:
-            st.caption("No substitutions observed yet to score recommendations against.")
+    st.divider()
+    st.subheader("Substitution review")
+    st.caption("Every substitution actually made, whether we ranked it, and what "
+               "the team's metrics did afterwards.")
+
+    from pipeline.live_review import (substitution_hits, substitution_impact,
+                                      impact_by_position)
+
+    hits = substitution_hits(gw_live, store)
+    if hits.empty:
+        st.info("No substitutions detected yet. Detection needs two polls with "
+                "the match clock advancing between them.")
+    else:
+        n, hit = len(hits), int(hits["recommended"].sum())
+        h1, h2, h3 = st.columns(3)
+        h1.metric("Substitutions seen", n)
+        h2.metric("We ranked in top 3", hit)
+        h3.metric("Hit rate", f"{hit / n:.0%}" if n else "-",
+                  help="Small samples are noisy - the validated figure is 58.4% "
+                       "on 418 held-out matches.")
+
+        show = [c for c in ["minute", "team", "player_off", "position",
+                            "recommended", "rank", "probability", "reasons"]
+                if c in hits.columns]
+        st.dataframe(hits[show], width="stretch", hide_index=True)
+
+        imp = substitution_impact(gw_live, store)
+        if not imp.empty and "momentum_delta" in imp.columns:
+            st.markdown("**Impact — team metrics before vs after**")
+            icols = [c for c in ["minute", "team", "player_off", "position",
+                                 "momentum_before", "momentum_after",
+                                 "momentum_delta", "goal_diff_before",
+                                 "goal_diff_after", "note"] if c in imp.columns]
+            st.dataframe(imp[icols], width="stretch", hide_index=True)
+
+            bypos = impact_by_position(gw_live, store)
+            if not bypos.empty:
+                st.markdown("**By position withdrawn**")
+                st.dataframe(bypos, width="stretch", hide_index=True)
+                if bypos["subs"].max() < 3:
+                    st.warning(
+                        "Too few substitutions to read anything from this. When "
+                        "two players come off together the team-level swing is "
+                        "identical for both, so it cannot be attributed to either "
+                        "position. Meaningful only across many single changes.")
+            st.caption(
+                "Observational: a coach substitutes *because* of how the game is "
+                "going, so a swing after a change is association, not cause."
+            )
 
     st.caption("Substitution detection needs at least two polls - on a cold "
                "start no player can yet be known to have been withdrawn.")

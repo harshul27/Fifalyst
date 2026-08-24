@@ -20,6 +20,7 @@ be known to have been withdrawn yet.
 """
 import argparse
 import logging
+import sys
 import time
 
 from pipeline.live_poller import LivePoller
@@ -33,9 +34,11 @@ def _print_match(m, side, recs, advice):
     team = m.home_team if side == "home" else m.away_team
     opp = m.away_team if side == "home" else m.home_team
     state = m.state_for(side)
-    print(f"\n  {team} vs {opp} — {m.minute}' "
-          f"({m.home_score}-{m.away_score}, gd {state.goal_diff:+d}, "
-          f"subs {state.subs_used}, momentum {state.momentum:+.2f})")
+    us = m.home_score if side == "home" else m.away_score
+    them = m.away_score if side == "home" else m.home_score
+    print(f"\n  {team} {us}-{them} {opp} - {m.minute}' "
+          f"(gd {state.goal_diff:+d}, subs {state.subs_used}, "
+          f"momentum {state.momentum:+.2f})")
     if not recs:
         print("    no candidates")
         return
@@ -80,12 +83,22 @@ def main():
     p.add_argument("--gw", type=int, help="gameweek (default: current)")
     p.add_argument("--interval", type=int, default=120, help="poll seconds (default 120)")
     p.add_argument("--once", action="store_true", help="single poll then exit")
+    p.add_argument("--until-finished", action="store_true",
+                   help="stop once every match that was in progress has finished")
     p.add_argument("--evaluate", action="store_true", help="score logged recommendations")
     p.add_argument("--top-k", type=int, default=3)
     p.add_argument("--model", default="sub_timing_model_live",
                    help="'sub_timing_model_live' (default) or 'sub_timing_model'")
     args = p.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+
+    # Line-buffer so output streams when redirected to a file, and force UTF-8
+    # so player names with non-ASCII characters cannot kill the poller on a
+    # cp1252 console (Windows default).
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+    except AttributeError:  # pragma: no cover - very old Python
+        pass
 
     poller, store = LivePoller(), LiveStore()
     gw = args.gw or next((r["gw"] for r in poller.fpl.recordable_gameweeks()), 1)
@@ -111,14 +124,27 @@ def main():
         return
 
     print(f"following GW{gw}, polling every {args.interval}s (ctrl-c to stop)")
+    seen_live, idle = False, 0
     try:
         while True:
             n = run_once(gw, poller, coach, store, top_k=args.top_k)
-            if n == 0:
+            if n:
+                seen_live, idle = True, 0
+            else:
+                idle += 1
                 logger.info("nothing in progress; still polling")
+                # two consecutive idle polls after live football means done
+                if args.until_finished and seen_live and idle >= 2:
+                    print("\nall tracked matches finished")
+                    break
             time.sleep(args.interval)
     except KeyboardInterrupt:
         print("\nstopped")
+
+    ev = store.evaluate(gw)
+    if ev.get("evaluated"):
+        print(f"\nrecommendations scored against real withdrawals: "
+              f"{ev['hit_rate']:.1%} over {ev['evaluated']} sets")
 
 
 if __name__ == "__main__":

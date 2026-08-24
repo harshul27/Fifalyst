@@ -52,10 +52,12 @@ class MatchState:
     subs_used: int
     team_xg_w: float = 0.0        # rolling 10-minute windows
     opp_xg_w: float = 0.0
-    possession_w: float = 0.5
-    field_tilt_w: float = 0.0
-    shots_w: int = 0
-    opp_shots_w: int = 0
+    # These four are unavailable from a live FPL feed. None means "not measured"
+    # so tactical rules can skip rather than quote a fabricated zero.
+    possession_w: Optional[float] = None
+    field_tilt_w: Optional[float] = None
+    shots_w: Optional[int] = None
+    opp_shots_w: Optional[int] = None
 
     @property
     def momentum(self) -> float:
@@ -89,10 +91,11 @@ def build_row(p: PlayerState, m: MatchState) -> Dict[str, float]:
         "team_xg_w": m.team_xg_w,
         "opp_xg_w": m.opp_xg_w,
         "momentum": m.momentum,
-        "possession_w": m.possession_w,
-        "field_tilt_w": m.field_tilt_w,
-        "shots_w": m.shots_w,
-        "opp_shots_w": m.opp_shots_w,
+        # neutral fill for the feature vector; the live model does not use these
+        "possession_w": 0.5 if m.possession_w is None else m.possession_w,
+        "field_tilt_w": 0.0 if m.field_tilt_w is None else m.field_tilt_w,
+        "shots_w": 0 if m.shots_w is None else m.shots_w,
+        "opp_shots_w": 0 if m.opp_shots_w is None else m.opp_shots_w,
         "pos_DEF": int(p.position == "DEF"),
         "pos_MID": int(p.position == "MID"),
         "pos_FWD": int(p.position == "FWD"),
@@ -224,16 +227,22 @@ class SubRecommender:
         if m.goal_diff < 0 and m.minute >= 65:
             out.append({"change": "Commit an extra attacker",
                         "why": f"trailing by {abs(m.goal_diff)} with {max(0, 90 - m.minute)}' left"})
-        if m.goal_diff < 0 and m.field_tilt_w < 0.25:
-            out.append({"change": "Push the line higher / go more direct",
-                        "why": f"only {m.field_tilt_w * 100:.0f}% of actions in the final third"})
         if m.goal_diff > 0 and m.momentum < -0.25:
             out.append({"change": "Shore up midfield, drop the block",
                         "why": f"leading but conceding momentum ({m.momentum:+.2f} xG swing)"})
-        if m.possession_w < 0.4 and m.goal_diff <= 0:
+        if m.goal_diff < 0 and m.momentum < -0.25:
+            out.append({"change": "Change the approach - you are being outplayed",
+                        "why": f"trailing and losing the xG battle ({m.momentum:+.2f})"})
+
+        # Rules below need signals a live FPL feed cannot supply. They are
+        # skipped rather than fired against a placeholder value.
+        if m.field_tilt_w is not None and m.goal_diff < 0 and m.field_tilt_w < 0.25:
+            out.append({"change": "Push the line higher / go more direct",
+                        "why": f"only {m.field_tilt_w * 100:.0f}% of actions in the final third"})
+        if m.possession_w is not None and m.possession_w < 0.4 and m.goal_diff <= 0:
             out.append({"change": "Add a ball-retention midfielder",
                         "why": f"possession share {m.possession_w * 100:.0f}%"})
-        if m.opp_shots_w >= 3:
+        if m.opp_shots_w is not None and m.opp_shots_w >= 3:
             out.append({"change": "Reinforce the defensive line",
                         "why": f"{m.opp_shots_w} opposition shots in the last 10'"})
         return out or [{"change": "Hold current shape", "why": "no adverse momentum signal"}]
