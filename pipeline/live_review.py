@@ -42,25 +42,22 @@ def substitution_hits(gw: int, store: Optional[LiveStore] = None) -> pd.DataFram
     off = rederive_withdrawals(tl)
     if off.empty:
         return pd.DataFrame()
-    # match each withdrawal to the recommendation set that preceded it
-    first_ts = (tl.sort_values("ts").groupby(["fixture_id", "side"])["ts"].first())
 
     rows = []
     for _, w in off.iterrows():
         w = dict(w)
-        # the poll at which we noticed, for aligning against recommendations
-        noticed = tl[(tl["fixture_id"] == w["fixture_id"])
-                     & (tl["minute"] >= w["detected_at_minute"])].sort_values("ts")
-        w["ts"] = noticed["ts"].iloc[0] if not noticed.empty else first_ts.get(
-            (w["fixture_id"], w["side"]), tl["ts"].max())
         rank, prob, reasons, covered = None, None, "", False
         if not recs.empty:
+            # Align on the minute the player actually left the pitch, NOT the
+            # minute we noticed. Detection lags the substitution by 7-19 minutes,
+            # so scoring against the detection poll grades the model on a list
+            # built for a decision point that had already passed.
             prior = recs[(recs["fixture_id"] == w["fixture_id"])
                          & (recs["side"] == w["side"])
-                         & (recs["ts"] < w["ts"])].sort_values("ts")
-            # covered = we were tracking this side before the change. A sub made
-            # before polling began can be neither hit nor missed, so it must not
-            # count against the hit rate.
+                         & (recs["minute"] <= w["minute"])].sort_values(["minute", "ts"])
+            # covered = we had issued a recommendation by the time of the change.
+            # A sub made before polling began can be neither hit nor missed, so
+            # it must not count against the hit rate.
             covered = not prior.empty
             if covered:
                 latest = prior.iloc[-1]["recommendations"]
@@ -271,6 +268,22 @@ def demo():
 
         r = report(1, st)
         assert r["substitutions"] == 1 and r["recommended"] == 1
+
+        # A change that predates every recommendation is not scorable. Scoring
+        # used to align on the detection poll, which always has a prior set, so
+        # subs made before tracking began were counted as misses.
+        st2 = LiveStore(base=f"{tmp}/live2")
+        for minute, txg, oxg in [(70, 0.1, 0.4), (75, 0.1, 0.4),
+                                 (80, 0.5, 0.1), (85, 0.5, 0.1)]:
+            st2.append_snapshot(1, [M(minute, 66, txg, oxg)])
+            st2.log_recommendations(1, 1, "home", minute, {"goal_diff": 0},
+                                    [{"off": "Alpha", "sub_probability": 0.4,
+                                      "reasons": []}])
+        h2 = substitution_hits(1, st2)
+        assert not h2.empty, "Alpha frozen at 66' should still be detected"
+        assert int(h2.iloc[0]["minute"]) == 66
+        assert not bool(h2.iloc[0]["covered"]), \
+            "a sub at 66' predates the first recommendation at 70' - not scorable"
     print("live_review self-check OK")
 
 
