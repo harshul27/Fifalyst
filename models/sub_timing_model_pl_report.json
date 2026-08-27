@@ -1,0 +1,149 @@
+{
+  "data": {
+    "seasons": [
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25"
+    ],
+    "n_rows": 488901,
+    "n_matches": 1900,
+    "split": "70% train / 30% test by match, per season",
+    "seed": 42
+  },
+  "n_train_rows": 342194,
+  "n_train_matches": 1330,
+  "cv_mean": {
+    "roc_auc": 0.8469913528137516,
+    "pr_auc": 0.13867938218381273,
+    "brier": 0.02437066273024313
+  },
+  "cv_std": {
+    "roc_auc": 0.00441711881037193,
+    "pr_auc": 0.0037493596987857257,
+    "brier": 0.00032523132846868264
+  },
+  "test": {
+    "n_rows": 146707,
+    "n_matches": 570,
+    "base_rate": 0.026788087821303687,
+    "roc_auc": 0.8459996791024191,
+    "pr_auc": 0.14161559373578786,
+    "brier": 0.024326856356793037,
+    "precision_at_1": 0.37765062268596433,
+    "precision_at_3": 0.7277011107371255
+  },
+  "test_per_season": {
+    "2020-21": {
+      "n_rows": 29470,
+      "n_matches": 114,
+      "base_rate": 0.020427553444180523,
+      "roc_auc": 0.85092547496521,
+      "pr_auc": 0.12092316789448919,
+      "brier": 0.018864283534672618,
+      "precision_at_1": 0.3157894736842105,
+      "precision_at_3": 0.6973684210526315
+    },
+    "2021-22": {
+      "n_rows": 29515,
+      "n_matches": 114,
+      "base_rate": 0.021243435541250213,
+      "roc_auc": 0.8522364545335293,
+      "pr_auc": 0.126221302806438,
+      "brier": 0.01957726775683844,
+      "precision_at_1": 0.31494661921708184,
+      "precision_at_3": 0.6743772241992882
+    },
+    "2022-23": {
+      "n_rows": 29316,
+      "n_matches": 114,
+      "base_rate": 0.03029062627916496,
+      "roc_auc": 0.8482539895319547,
+      "pr_auc": 0.15127933400504237,
+      "brier": 0.02734861543861504,
+      "precision_at_1": 0.44299674267100975,
+      "precision_at_3": 0.7850162866449512
+    },
+    "2023-24": {
+      "n_rows": 29208,
+      "n_matches": 114,
+      "base_rate": 0.03016296904957546,
+      "roc_auc": 0.8328801706773983,
+      "pr_auc": 0.14835961327195274,
+      "brier": 0.0273077178880481,
+      "precision_at_1": 0.390282131661442,
+      "precision_at_3": 0.7272727272727273
+    },
+    "2024-25": {
+      "n_rows": 29198,
+      "n_matches": 114,
+      "base_rate": 0.03191999452017261,
+      "roc_auc": 0.8533351842353558,
+      "pr_auc": 0.16624504489755002,
+      "brier": 0.028625617770176047,
+      "precision_at_1": 0.4096,
+      "precision_at_3": 0.7456
+    }
+  },
+  "baselines_on_test": {
+    "minutes_played": 0.04626444935565174,
+    "late_and_level(minute)": 0.036111321681746016,
+    "random": 0.026788087821303687
+  },
+  "calibration": [
+    {
+      "bin": 0,
+      "n": 29108,
+      "mean_predicted": 0.0012510039916676647,
+      "observed": 0.0011337089459942285
+    },
+    {
+      "bin": 1,
+      "n": 29514,
+      "mean_predicted": 0.004029103331409983,
+      "observed": 0.0035915158907637054
+    },
+    {
+      "bin": 2,
+      "n": 29367,
+      "mean_predicted": 0.010315877711409672,
+      "observed": 0.009636667007184935
+    },
+    {
+      "bin": 3,
+      "n": 29350,
+      "mean_predicted": 0.026447179839666272,
+      "observed": 0.024497444633730835
+    },
+    {
+      "bin": 4,
+      "n": 29368,
+      "mean_predicted": 0.08957974287175861,
+      "observed": 0.09496731135930264
+    }
+  ],
+  "features": [
+    "minute",
+    "minutes_played",
+    "is_starter",
+    "is_home",
+    "has_card",
+    "goal_diff",
+    "total_goals",
+    "goals_for_w",
+    "goals_against_w",
+    "subs_used",
+    "opp_subs_used",
+    "prev_minutes",
+    "prev3_minutes",
+    "days_rest",
+    "pos_DEF",
+    "pos_MID",
+    "pos_FWD"
+  ],
+  "sources": [
+    "schochastics/football-data (ODC-BY): timed incidents",
+    "vaastav/Fantasy-Premier-League: lineups, minutes, positions"
+  ]
+}

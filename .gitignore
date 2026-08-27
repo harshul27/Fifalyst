@@ -11,6 +11,9 @@ data/pl_2026_27/
 # StatsBomb training corpus (regenerate: python -m pipeline.statsbomb_extract)
 data/statsbomb/
 
+# PL 2020-2025 timeline corpus (regenerate: python -m pipeline.pl_timeline_extract)
+data/pl_timeline/
+
 # Live in-match tracking output (runtime data)
 data/live/
 
