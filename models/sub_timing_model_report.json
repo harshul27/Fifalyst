@@ -1,64 +1,95 @@
 {
   "cv_mean": {
-    "roc_auc": 0.8501375747836196,
-    "pr_auc": 0.11972002701258637,
-    "brier": 0.02194649717927568,
-    "precision_at_1": 0.27900941362554843
+    "roc_auc": 0.8368128783151914,
+    "pr_auc": 0.12861910467397028,
+    "brier": 0.02676237663608554,
+    "precision_at_1": 0.30991401645117916
   },
   "cv_std": {
-    "roc_auc": 0.0039596204649351464,
-    "pr_auc": 0.004288221849887069
+    "roc_auc": 0.014137295153265768,
+    "pr_auc": 0.014567594422327423
   },
   "holdout": {
     "competition": "Premier League",
-    "n_rows": 108680,
-    "n_matches": 418,
-    "base_rate": 0.020463746779536253,
-    "roc_auc": 0.8635390236037668,
-    "pr_auc": 0.11055988009535403,
-    "brier": 0.01896572643716166,
-    "precision_at_1": 0.2638613861386139,
-    "precision_at_3": 0.6767326732673268
+    "n_rows": 9100,
+    "n_matches": 35,
+    "base_rate": 0.0289010989010989,
+    "roc_auc": 0.8414542897969176,
+    "pr_auc": 0.1266952885747817,
+    "brier": 0.026457030805526374,
+    "precision_at_1": 0.28061224489795916,
+    "precision_at_3": 0.6683673469387755
   },
   "baselines_on_holdout": {
-    "minutes_played": 0.030960975514698345,
-    "fatigue_proxy(-rate_decline)": 0.02012344579138529,
-    "low_recent_involvement": 0.018156389151437358,
-    "random": 0.020463746779536253
+    "minutes_played": 0.05126064096090504,
+    "fatigue_proxy(-rate_decline)": 0.031602417339758306,
+    "low_recent_involvement": 0.030737040670074614,
+    "random": 0.0289010989010989
   },
-  "n_train_rows": 580060,
-  "n_train_matches": 2231,
-  "positive_rate": 0.023885460124814673,
+  "n_train_rows": 36140,
+  "n_train_matches": 139,
+  "positive_rate": 0.029136690647482016,
   "calibration": [
     {
       "bin": 0,
-      "n": 21623,
-      "mean_predicted": 0.0011213942915445974,
-      "observed": 0.0009249410350090181
+      "n": 1654,
+      "mean_predicted": 0.00039413209203717487,
+      "observed": 0.0012091898428053204
     },
     {
       "bin": 1,
-      "n": 21845,
-      "mean_predicted": 0.0032179759413437804,
-      "observed": 0.0016937514305333029
+      "n": 1944,
+      "mean_predicted": 0.0026315299769934255,
+      "observed": 0.00051440329218107
     },
     {
       "bin": 2,
-      "n": 21739,
-      "mean_predicted": 0.010132777563440321,
-      "observed": 0.0049220295321771934
+      "n": 1856,
+      "mean_predicted": 0.01195236315723293,
+      "observed": 0.01293103448275862
     },
     {
       "bin": 3,
-      "n": 21731,
-      "mean_predicted": 0.026812176505428137,
-      "observed": 0.015599834338042427
+      "n": 1826,
+      "mean_predicted": 0.035019130157664044,
+      "observed": 0.033406352683461114
     },
     {
       "bin": 4,
-      "n": 21742,
-      "mean_predicted": 0.0925272976894726,
-      "observed": 0.07915555146720633
+      "n": 1820,
+      "mean_predicted": 0.09889684953216303,
+      "observed": 0.09615384615384616
     }
-  ]
+  ],
+  "features": [
+    "minute",
+    "minutes_played",
+    "is_starter",
+    "has_card",
+    "actions_total",
+    "actions_recent",
+    "action_rate",
+    "recent_rate",
+    "rate_decline",
+    "involvement_anomaly",
+    "pass_acc",
+    "pass_acc_recent",
+    "pressures_recent",
+    "duels_recent",
+    "xg_total",
+    "avg_x",
+    "goal_diff",
+    "subs_used",
+    "team_xg_w",
+    "opp_xg_w",
+    "momentum",
+    "possession_w",
+    "field_tilt_w",
+    "shots_w",
+    "opp_shots_w",
+    "pos_DEF",
+    "pos_MID",
+    "pos_FWD"
+  ],
+  "model_name": "sub_timing_model"
 }

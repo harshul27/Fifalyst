@@ -1,64 +1,64 @@
 {
   "cv_mean": {
-    "roc_auc": 0.840052566204181,
-    "pr_auc": 0.10654384941667597,
-    "brier": 0.02212609692634815,
-    "precision_at_1": 0.2334470549691822
+    "roc_auc": 0.8319360507720956,
+    "pr_auc": 0.12257494751326566,
+    "brier": 0.026833312140806254,
+    "precision_at_1": 0.3092179223071189
   },
   "cv_std": {
-    "roc_auc": 0.004661988343542967,
-    "pr_auc": 0.004188488706095031
+    "roc_auc": 0.008947304110546258,
+    "pr_auc": 0.00807136767910372
   },
   "holdout": {
     "competition": "Premier League",
-    "n_rows": 108680,
-    "n_matches": 418,
-    "base_rate": 0.020463746779536253,
-    "roc_auc": 0.8553354536349127,
-    "pr_auc": 0.09979779165586132,
-    "brier": 0.019093992065642787,
-    "precision_at_1": 0.2198019801980198,
-    "precision_at_3": 0.5836633663366336
+    "n_rows": 9100,
+    "n_matches": 35,
+    "base_rate": 0.0289010989010989,
+    "roc_auc": 0.8263279909781335,
+    "pr_auc": 0.11321114406230545,
+    "brier": 0.02670153269516554,
+    "precision_at_1": 0.20918367346938777,
+    "precision_at_3": 0.6224489795918368
   },
   "baselines_on_holdout": {
-    "minutes_played": 0.030960975514698345,
-    "fatigue_proxy(-rate_decline)": 0.02012344579138529,
-    "low_recent_involvement": 0.018156389151437358,
-    "random": 0.020463746779536253
+    "minutes_played": 0.05126064096090504,
+    "fatigue_proxy(-rate_decline)": 0.031602417339758306,
+    "low_recent_involvement": 0.030737040670074614,
+    "random": 0.0289010989010989
   },
-  "n_train_rows": 580060,
-  "n_train_matches": 2231,
-  "positive_rate": 0.023885460124814673,
+  "n_train_rows": 36140,
+  "n_train_matches": 139,
+  "positive_rate": 0.029136690647482016,
   "calibration": [
     {
       "bin": 0,
-      "n": 21484,
-      "mean_predicted": 0.0012085406296409207,
-      "observed": 0.000930925339787749
+      "n": 1803,
+      "mean_predicted": 0.00044440975267269044,
+      "observed": 0.0011092623405435386
     },
     {
       "bin": 1,
-      "n": 21981,
-      "mean_predicted": 0.0033614108475786154,
-      "observed": 0.001819753423411128
+      "n": 1747,
+      "mean_predicted": 0.0026813997860007065,
+      "observed": 0.0017172295363480253
     },
     {
       "bin": 2,
-      "n": 20632,
-      "mean_predicted": 0.011394171711725687,
-      "observed": 0.005767739433889104
+      "n": 1910,
+      "mean_predicted": 0.01297596502461951,
+      "observed": 0.011518324607329843
     },
     {
       "bin": 3,
-      "n": 22793,
-      "mean_predicted": 0.02584874583988363,
-      "observed": 0.01645241960250954
+      "n": 1776,
+      "mean_predicted": 0.0363237752956077,
+      "observed": 0.039414414414414414
     },
     {
       "bin": 4,
-      "n": 21790,
-      "mean_predicted": 0.09229750233833574,
-      "observed": 0.07664066085360258
+      "n": 1864,
+      "mean_predicted": 0.09221846819317224,
+      "observed": 0.0890557939914163
     }
   ],
   "features": [
