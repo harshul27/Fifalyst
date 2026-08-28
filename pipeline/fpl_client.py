@@ -10,6 +10,7 @@ Endpoints used:
 """
 import asyncio
 import logging
+import os
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -17,7 +18,9 @@ from typing import List, Dict, Any
 
 logger = logging.getLogger(__name__)
 
-BASE = "https://fantasy.premierleague.com/api"
+# Override to point at a mirror or local simulator (e.g. fpl_match_sim.py)
+# when fantasy.premierleague.com is unreachable.
+BASE = os.environ.get("FPL_API_BASE", "https://fantasy.premierleague.com/api")
 
 # Per-GW stat fields we keep from event/{gw}/live element['stats'].
 # Everything FPL exposes at gameplay level; physical stats come separately.

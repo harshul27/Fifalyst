@@ -81,30 +81,46 @@ def rederive_withdrawals(timeline: "pd.DataFrame") -> "pd.DataFrame":
     """
     import pandas as pd
 
-    onp = timeline[timeline["on_pitch"].astype(bool)].copy()
+    # Use every row, on-pitch or not, and group by name rather than player_id:
+    # the poller flips `on_pitch` to False on the very poll that confirms a
+    # withdrawal, and the store writes withdrawn rows with player_id/minutes
+    # as null - so an on-pitch-only, id-keyed pass severs every player's trail
+    # one frozen observation short of REQUIRED_CONFIRMATIONS and re-derives a
+    # correctly-labelled trail to zero substitutions. The frozen-minutes rule
+    # itself does not care about the stored label, which is exactly why
+    # history is re-derived. Null minutes count as frozen, never as movement.
+    onp = timeline.copy()
     if onp.empty:
         return pd.DataFrame()
-    onp["player_id"] = onp["player_id"].astype(str)
 
     rows = []
-    for (fx, side, pid), g in onp.groupby(["fixture_id", "side", "player_id"]):
+    for (fx, side, nm), g in onp.groupby(["fixture_id", "side", "name"]):
         g = g.sort_values("ts")
-        stall, prev = 0, None
+        stall, prev, last_mins, pid, pos = 0, None, None, None, None
         for _, r in g.iterrows():
+            mins = r["minutes_played"]
             if prev is not None:
-                stall = advance_stall(stall,
-                                      r["minute"] - prev["minute"],
-                                      r["minutes_played"] - prev["minutes_played"])
-                if stall >= REQUIRED_CONFIRMATIONS and r["minute"] < 90:
+                mins_moved = (0.0 if pd.isna(mins) or last_mins is None
+                              else mins - last_mins)
+                stall = advance_stall(stall, r["minute"] - prev["minute"],
+                                      mins_moved)
+                if (stall >= REQUIRED_CONFIRMATIONS and r["minute"] < 90
+                        and last_mins is not None):
                     rows.append({
                         "fixture_id": fx, "side": side, "player_id": pid,
-                        "name": r["name"], "team": r["team"],
-                        "position": r.get("position"),
+                        "name": nm, "team": r["team"],
+                        "position": pos,
                         # the frozen minutes value is the minute they came off
-                        "minute": int(prev["minutes_played"]),
+                        "minute": int(last_mins),
                         "detected_at_minute": int(r["minute"]),
                     })
                     break
+            if not pd.isna(mins):
+                last_mins = mins
+            if not pd.isna(r["player_id"]):
+                pid = str(r["player_id"])
+            if isinstance(r.get("position"), str):
+                pos = r["position"]
             prev = r
 
     out = pd.DataFrame(rows)
