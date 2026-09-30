@@ -1,0 +1,198 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{--bg0:#07110c;--bg1:#0f2a1b;--chalk:rgba(235,255,240,.07);--g:#7ed957;--y:#fdd835;--r:#ff4b4b;--ink:#f3f7f2;--mute:#9fb8a8}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg0)}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;
+  background:radial-gradient(ellipse 90% 80% at 50% 45%,var(--bg1),var(--bg0) 75%);
+  font-family:'Source Sans 3',sans-serif;color:var(--ink)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;opacity:0}
+.anton{font-family:'Anton',sans-serif;letter-spacing:.01em;text-transform:uppercase}
+.mono{font-family:'JetBrains Mono',monospace}
+#pitch{position:absolute;inset:0}
+.cap{position:absolute;left:0;right:0;text-align:center;font-weight:900;font-size:64px;letter-spacing:-.01em}
+.cap em{font-style:normal;color:var(--g)}
+.win{position:absolute;background:#fff;border-radius:18px;overflow:hidden;
+  box-shadow:0 40px 120px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08)}
+.bar{height:46px;background:#eef1ee;display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid #dde3de}
+.dot{width:14px;height:14px;border-radius:50%}
+.url{margin-left:18px;flex:1;height:28px;border-radius:14px;background:#fff;color:#5b6b61;font-size:17px;display:flex;align-items:center;padding-left:16px}
+.win img{display:block}
+.bug{position:absolute;display:flex;align-items:stretch;height:64px;border-radius:10px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.bug div{display:flex;align-items:center;padding:0 20px;font-family:'Anton';font-size:34px}
+.chip{position:absolute;border-radius:999px;padding:10px 26px;font-weight:700;font-size:34px}
+.hl{position:absolute;border-radius:10px;border:4px solid var(--r);background:rgba(255,75,75,.10)}
+</style></head>
+<body><div id="stage">
+<svg id="pitch" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <g fill="none" stroke="rgba(235,255,240,.06)" stroke-width="3">
+    <line x1="960" y1="-20" x2="960" y2="1100"/>
+    <circle cx="960" cy="540" r="190"/>
+    <rect x="-10" y="290" width="260" height="500"/>
+    <rect x="1670" y="290" width="260" height="500"/>
+  </g>
+</svg>
+
+<!-- S1 hook -->
+<div class="scene" id="s1">
+  <div class="bug" id="bug1" style="left:80px;top:70px">
+    <div style="background:#fff;color:#07110c">ARG</div>
+    <div style="background:#07110c;color:#fff;border:2px solid #fff;border-left:0;border-right:0">1–0</div>
+    <div style="background:#fff;color:#07110c">MEX</div>
+    <div id="clk1" style="background:var(--r);color:#fff;min-width:110px;justify-content:center">12'</div>
+  </div>
+  <svg class="abs" id="ring" width="700" height="700" style="left:610px;top:95px" viewBox="0 0 700 700">
+    <circle cx="350" cy="350" r="320" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="24"/>
+    <circle id="arc" cx="350" cy="350" r="320" fill="none" stroke-width="24" stroke-linecap="round"
+      transform="rotate(-90 350 350)" stroke-dasharray="2010.6" stroke-dashoffset="0"/>
+  </svg>
+  <div class="abs anton" id="lbl1" style="left:0;right:0;top:250px;text-align:center;font-size:40px;color:var(--mute);letter-spacing:.12em">Striker #9</div>
+  <div class="abs anton" id="num" style="left:0;right:0;top:318px;text-align:center;font-size:230px;line-height:1">60%</div>
+  <div class="abs anton" id="lbl2" style="left:0;right:0;top:600px;text-align:center;font-size:34px;color:var(--mute);letter-spacing:.12em">Fitness</div>
+  <div class="abs" id="empty" style="left:0;right:0;top:860px;text-align:center;font-weight:900;font-size:80px">Running on <span style="color:var(--r)">empty.</span></div>
+</div>
+
+<!-- S2 reveal -->
+<div class="scene" id="s2">
+  <div class="abs anton" id="wm" style="left:0;right:0;top:330px;text-align:center;font-size:190px;line-height:1">FIFA Shadow <span style="color:var(--g)">Coach</span></div>
+  <div class="abs" id="sub2" style="left:0;right:0;top:600px;text-align:center;font-size:58px;font-weight:600;color:var(--ink)">Live World Cup 2026 fitness <span style="color:var(--g)">+</span> sub calls</div>
+  <div class="abs" id="pills2" style="left:0;right:0;top:720px;display:flex;justify-content:center;gap:22px;font-size:40px;font-weight:700">
+    <span id="p0" style="color:var(--g)">🟢 PEAK</span><span id="p1" style="color:var(--y)">🟡 FAIR</span><span id="p2" style="color:var(--r)">🔴 CRITICAL</span>
+  </div>
+</div>
+
+<!-- S3 live scores -->
+<div class="scene" id="s3">
+  <div class="cap" id="cap3" style="top:120px">Live scores, straight from <em>ESPN.</em></div>
+  <div class="win" id="win3" style="left:260px;top:360px;width:1400px">
+    <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="url">localhost:8501 · FIFA World Cup 2026 - Live Analytics</div></div>
+    <div style="padding:34px 40px 40px;background:#fff">
+      <img src="ui/title.png" style="width:1100px">
+      <div style="height:18px"></div>
+      <div style="position:relative;border:1px solid #d6dbd7;border-radius:12px;overflow:hidden">
+        <img src="ui/score.png" style="width:1318px">
+        <div id="pulse" class="abs" style="left:1091px;top:21px;width:48px;height:48px;border-radius:50%;border:4px solid #5cb85c"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S4 fitness -->
+<div class="scene" id="s4">
+  <div class="cap" id="cap4" style="top:92px">Every player's fitness, <em>minute by minute.</em></div>
+  <div class="win" id="win4" style="left:260px;top:220px;width:1400px">
+    <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="url">localhost:8501 · ⚡ Player Fitness</div></div>
+    <div style="position:relative;height:601px;background:#fff">
+      <img src="ui/fit12.png" class="abs" style="left:0;top:0;width:1400px">
+      <div id="wipe" class="abs" style="left:0;top:0;width:1400px;height:0;overflow:hidden"><img src="ui/fit34.png" style="width:1400px;display:block"></div>
+      <div id="wline" class="abs" style="left:0;width:1400px;height:4px;background:var(--r);top:0;opacity:0"></div>
+    </div>
+  </div>
+  <div class="chip anton" id="chip4" style="left:1540px;top:190px;background:var(--r);color:#fff;font-weight:400;font-size:44px;padding:6px 26px">12'</div>
+</div>
+
+<!-- S5 sub call -->
+<div class="scene" id="s5">
+  <div class="cap" id="cap5" style="top:120px">The sub call. <em>Before the manager makes it.</em></div>
+  <div class="win" id="win5" style="left:200px;top:320px;width:1520px">
+    <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="url">localhost:8501 · 💡 Substitution Recommendations</div></div>
+    <div style="position:relative;background:#fff">
+      <img src="ui/rec.png" style="width:1520px">
+      <div class="hl" id="hl1"></div>
+      <div class="hl" id="hl2" style="border-color:#3fa64a;background:rgba(126,217,87,.14)"></div>
+    </div>
+  </div>
+  <div class="chip" id="chip5" style="left:1180px;top:460px;background:var(--g);color:#07110c;font-size:44px;padding:12px 32px;box-shadow:0 12px 40px rgba(0,0,0,.4)">81% confidence</div>
+</div>
+
+<!-- S6 outro -->
+<div class="scene" id="s6">
+  <div class="abs anton" id="wm6" style="left:0;right:0;top:300px;text-align:center;font-size:170px;line-height:1">FIFA Shadow <span style="color:var(--g)">Coach</span></div>
+  <div class="abs mono" id="cmd" style="left:560px;top:540px;width:800px;height:84px;border-radius:14px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12);font-size:34px;display:flex;align-items:center;padding-left:34px;white-space:pre"></div>
+  <div class="abs" id="repo" style="left:0;right:0;top:690px;text-align:center;font-size:46px;font-weight:600;color:var(--mute)">github.com/harshul27/<span style="color:var(--ink)">fifalyst</span></div>
+</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const lin=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const back=x=>{const c=1.5;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+// scene envelope: in over [a,a+fi], out over [b-fo,b]
+const env=(t,a,b,fi=.25,fo=.22)=>Math.min(lin(t,a,a+fi),1-lin(t,b-fo,b));
+function show(id,o){$(id).style.opacity=o;$(id).style.visibility=o>0?'visible':'hidden'}
+function tf(id,s){$(id).style.transform=s}
+function op(id,o){$(id).style.opacity=o}
+function mix(c1,c2,k){return c1.map((v,i)=>Math.round(v+(c2[i]-v)*k))}
+const Y=[253,216,53],R=[255,75,75];
+
+window.render=function(t){
+  // subtle pitch drift
+  tf('pitch',`scale(${1.04+0.02*Math.sin(t*0.3)}) translateX(${-10*t}px)`);
+
+  // S1 hook 0–3
+  show('s1',Math.min(1,1-lin(t,2.8,3.0)));
+  const k=eio(lin(t,0.35,1.85));
+  const v=60-27*k; const minute=Math.round(12+22*k);
+  $('num').textContent=Math.round(v)+'%';
+  const col=v>50?Y:mix(Y,R,cl((50-v)/6));
+  $('num').style.color=`rgb(${col})`;
+  $('arc').style.stroke=`rgb(${col})`;
+  $('arc').style.strokeDashoffset=2010.6*(1-v/100);
+  $('clk1').textContent=minute+"'";
+  const i1=eo(lin(t,0,0.35));
+  tf('bug1',`translateY(${-(1-i1)*120}px)`);
+  tf('ring',`scale(${0.85+0.15*i1})`); op('ring',i1);
+  op('num',i1); tf('num',`scale(${0.9+0.1*i1})`); op('lbl1',i1); op('lbl2',i1);
+  const e1=eo(lin(t,1.85,2.1)); op('empty',e1); tf('empty',`translateY(${(1-e1)*40}px)`);
+
+  // S2 reveal 3–6
+  show('s2',env(t,3.0,6.0,.12,.22));
+  const w=back(lin(t,3.0,3.45)); tf('wm',`scale(${0.7+0.3*w})`); op('wm',cl(lin(t,3.0,3.2)));
+  const s2=eo(lin(t,3.35,3.7)); op('sub2',s2); tf('sub2',`translateY(${(1-s2)*30}px)`);
+  for(let i=0;i<3;i++){const p=eo(lin(t,3.8+i*.18,4.1+i*.18)); op('p'+i,p); tf('p'+i,`translateY(${(1-p)*24}px)`)}
+
+  // S3 live scores 6–10
+  show('s3',env(t,6.0,10.0,.18,.22));
+  const c3=eo(lin(t,6.05,6.4)); op('cap3',c3); tf('cap3',`translateY(${(1-c3)*30}px)`);
+  const w3=eo(lin(t,6.15,6.75)); tf('win3',`translateY(${(1-w3)*160}px) scale(${1+0.08*eio(lin(t,6.75,10))})`);
+  const ph=((t-6)%1.0); op('pulse',(1-ph)*(t>6.8?1:0)); tf('pulse',`scale(${0.6+ph*1.3})`);
+
+  // S4 fitness 10–14
+  show('s4',env(t,10.0,14.0,.18,.22));
+  const c4=eo(lin(t,10.05,10.4)); op('cap4',c4); tf('cap4',`translateY(${(1-c4)*30}px)`);
+  const w4=eo(lin(t,10.15,10.7)); tf('win4',`translateY(${(1-w4)*160}px)`);
+  const wp=eio(lin(t,11.6,12.4));
+  $('wipe').style.height=(601*wp)+'px';
+  $('wline').style.top=(601*wp-2)+'px'; op('wline',wp>0&&wp<1?1:0);
+  $('chip4').textContent=Math.round(12+22*wp)+"'";
+  const ch=back(lin(t,10.5,10.85)); tf('chip4',`scale(${ch}) rotate(-4deg)`);
+
+  // S5 sub call 14–18
+  show('s5',env(t,14.0,18.0,.18,.2));
+  const c5=eo(lin(t,14.05,14.4)); op('cap5',c5); tf('cap5',`translateY(${(1-c5)*30}px)`);
+  const w5=eo(lin(t,14.15,14.7));
+  tf('win5',`translateY(${(1-w5)*160}px) scale(${1+0.035*lin(t,14.7,18)})`);
+  const S=1520/820;
+  const box=(id,x,y,w,h,a)=>{const e=eo(lin(t,a,a+.3));const el=$(id);
+    el.style.left=(x*S)+'px';el.style.top=(y*S)+'px';el.style.height=(h*S)+'px';el.style.width=(w*S*e)+'px';el.style.opacity=e>0?1:0};
+  box('hl1',9,113,226,29,15.0);
+  box('hl2',9,143,243,29,15.6);
+  const c6=back(lin(t,16.2,16.55)); tf('chip5',`scale(${c6})`); op('chip5',cl(lin(t,16.2,16.3)));
+
+  // S6 outro 18–21
+  show('s6',Math.min(lin(t,18.0,18.2),1-lin(t,20.75,21.0)));
+  const o6=back(lin(t,18.0,18.45)); tf('wm6',`scale(${0.75+0.25*o6})`); op('wm6',cl(lin(t,18,18.15)));
+  const cmd='$ streamlit run world_cup_app.py';
+  const n=Math.floor(cmd.length*lin(t,18.5,19.4));
+  $('cmd').innerHTML='<span style="color:var(--g)">'+cmd.slice(0,Math.min(n,1))+'</span>'+cmd.slice(1,n)+((Math.floor(t*3)%2||n<cmd.length)?'<span style="color:var(--g)">▍</span>':'');
+  op('cmd',cl(lin(t,18.35,18.5)));
+  const r6=eo(lin(t,19.4,19.7)); op('repo',r6); tf('repo',`translateY(${(1-r6)*24}px)`);
+};
+window.ready=Promise.all([document.fonts.ready,...[...document.images].map(i=>i.decode())]);
+window.render(0);
+</script></body></html>
