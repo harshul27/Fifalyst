@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>FIFA Shadow Coach — brag</title>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/audio-data.js"></script>
+    <style>
+      @font-face { font-family: "Anton"; font-weight: 400; src: url(assets/fonts/f2.woff2) format("woff2"); }
+      @font-face { font-family: "JetBrains Mono"; font-weight: 500; src: url(assets/fonts/f8.woff2) format("woff2"); }
+      @font-face { font-family: "Source Sans 3"; font-weight: 400; src: url(assets/fonts/f15.woff2) format("woff2"); }
+      @font-face { font-family: "Source Sans 3"; font-weight: 600; src: url(assets/fonts/f22.woff2) format("woff2"); }
+      @font-face { font-family: "Source Sans 3"; font-weight: 700; src: url(assets/fonts/f29.woff2) format("woff2"); }
+      @font-face { font-family: "Source Sans 3"; font-weight: 900; src: url(assets/fonts/f36.woff2) format("woff2"); }
+      :root {
+        --bg0: #07110c; --bg1: #0f2a1b; --ink: #f3f7f2; --mute: #a9c2b2;
+        --g: #7ed957; --y: #fdd835; --r: #ff4b4b;
+      }
+      body { margin: 0; background: var(--bg0); color: var(--ink); font-family: "Source Sans 3", sans-serif; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: radial-gradient(ellipse 90% 80% at 50% 45%, var(--bg1), var(--bg0) 75%); }
+      .clip { position: absolute; inset: 0; }
+      .fill { position: absolute; inset: 0; }
+      .abs { position: absolute; }
+      .anton { font-family: "Anton", sans-serif; text-transform: uppercase; letter-spacing: 0.01em; }
+      .mono { font-family: "JetBrains Mono", monospace; }
+      .cap { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; font-size: 66px; letter-spacing: -0.01em; }
+      .cap em { font-style: normal; color: var(--g); }
+      .win { position: absolute; background: #fff; border-radius: 18px; overflow: hidden;
+        box-shadow: 0 40px 120px rgba(0,0,0,.55), 0 0 0 2px rgba(255,255,255,.08); }
+      .bar { height: 46px; background: #eef1ee; display: flex; align-items: center; gap: 10px; padding: 0 20px; border-bottom: 1px solid #dde3de; }
+      .dot { width: 14px; height: 14px; border-radius: 50%; }
+      .url { margin-left: 18px; flex: 1; height: 28px; border-radius: 14px; background: #fff; color: #4a5a50; font-size: 18px; display: flex; align-items: center; padding-left: 16px; }
+      .win img { display: block; }
+      .bug { position: absolute; left: 80px; top: 70px; display: flex; height: 64px; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.4); }
+      .bug div { display: flex; align-items: center; padding: 0 20px; font-family: "Anton"; font-size: 34px; }
+      .chip { position: absolute; border-radius: 999px; font-weight: 700; }
+      .hl { position: absolute; border-radius: 10px; border: 4px solid #e03c3c; background: rgba(255,75,75,.10); transform-origin: left center; }
+      #glow { position: absolute; left: 460px; top: 40px; width: 1000px; height: 1000px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(126,217,87,.22), rgba(126,217,87,0) 65%); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1920" data-height="1080" data-duration="21">
+
+      <!-- persistent pitch backdrop (audio-reactive) -->
+      <div id="backdrop" class="clip" data-start="0" data-duration="21" data-track-index="0">
+        <div id="glow"></div>
+        <svg id="pitch" class="fill" width="1920" height="1080" viewBox="0 0 1920 1080">
+          <g fill="none" stroke="#ebfff0" stroke-width="3" id="pitch-lines" opacity="0.07">
+            <line x1="960" y1="-20" x2="960" y2="1100" />
+            <circle id="centre" cx="960" cy="540" r="190" />
+            <circle cx="960" cy="540" r="6" fill="#ebfff0" />
+            <rect x="-10" y="290" width="260" height="500" />
+            <rect x="1670" y="290" width="260" height="500" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- S1 hook -->
+      <section id="s1" class="clip" data-start="0" data-duration="3.02" data-track-index="1">
+        <div id="s1-in" class="fill">
+          <div class="bug" id="bug">
+            <div style="background:#fff;color:#07110c">ARG</div>
+            <div style="background:#07110c;color:#fff;border-top:2px solid #fff;border-bottom:2px solid #fff">1–0</div>
+            <div style="background:#fff;color:#07110c">MEX</div>
+            <div style="background:#d63333;color:#fff;min-width:110px;justify-content:center"><span id="clk">12</span>'</div>
+          </div>
+          <svg class="abs" id="ring" width="700" height="700" style="left:610px;top:95px" viewBox="0 0 700 700">
+            <circle cx="350" cy="350" r="320" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="24" />
+            <circle id="arc" cx="350" cy="350" r="320" fill="none" stroke="#fdd835" stroke-width="24" stroke-linecap="round"
+              transform="rotate(-90 350 350)" stroke-dasharray="2010.6" stroke-dashoffset="804.2" />
+          </svg>
+          <div class="abs anton" id="lbl1" style="left:0;right:0;top:236px;text-align:center;font-size:40px;color:var(--mute);letter-spacing:.12em">Striker #9</div>
+          <div class="abs anton" id="num" style="left:0;right:0;top:332px;text-align:center;font-size:206px;line-height:1;color:#fdd835"><span id="numv">60</span>%</div>
+          <div class="abs anton" id="lbl2" style="left:0;right:0;top:612px;text-align:center;font-size:34px;color:var(--mute);letter-spacing:.12em">Fitness</div>
+          <div class="abs" id="empty" style="left:0;right:0;top:860px;text-align:center;font-weight:900;font-size:80px">Running on <span style="color:var(--r)">empty.</span></div>
+        </div>
+      </section>
+
+      <!-- S2 reveal -->
+      <section id="s2" class="clip" data-start="3.02" data-duration="3" data-track-index="1">
+        <div id="s2-in" class="fill">
+          <div class="abs anton" id="wm" style="left:0;right:0;top:330px;text-align:center;font-size:190px;line-height:1">FIFA Shadow <span style="color:var(--g)">Coach</span></div>
+          <div class="abs" id="sub2" style="left:0;right:0;top:600px;text-align:center;font-size:58px;font-weight:600">Live World Cup 2026 fitness <span style="color:var(--g)">+</span> sub calls</div>
+          <div class="abs" style="left:0;right:0;top:720px;display:flex;justify-content:center;gap:34px;font-size:42px;font-weight:700">
+            <span id="p0" style="display:block;color:var(--g)">🟢 PEAK</span>
+            <span id="p1" style="display:block;color:var(--y)">🟡 FAIR</span>
+            <span id="p2" style="display:block;color:var(--r)">🔴 CRITICAL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- S3 live scores -->
+      <section id="s3" class="clip" data-start="6.02" data-duration="4" data-track-index="1">
+        <div id="s3-in" class="fill">
+          <div class="cap" id="cap3" style="top:120px">Live scores, straight from <em>ESPN.</em></div>
+          <div class="win" id="win3" style="left:260px;top:360px;width:1400px">
+            <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="url">localhost:8501 · FIFA World Cup 2026 - Live Analytics</div></div>
+            <div style="padding:34px 40px 40px;background:#fff">
+              <img src="assets/ui/title.png" style="width:1100px" alt="" />
+              <div style="height:18px"></div>
+              <div style="position:relative;border:1px solid #d6dbd7;border-radius:12px;overflow:hidden">
+                <img src="assets/ui/score.png" style="width:1318px" alt="" />
+                <div id="pulse" data-layout-allow-overflow class="abs" style="left:1091px;top:21px;width:48px;height:48px;border-radius:50%;border:4px solid #5cb85c"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- S4 fitness -->
+      <section id="s4" class="clip" data-start="10.02" data-duration="4" data-track-index="1">
+        <div id="s4-in" class="fill">
+          <div class="cap" id="cap4" style="top:92px">Every player's fitness, <em>minute by minute.</em></div>
+          <div class="win" id="win4" style="left:260px;top:220px;width:1400px">
+            <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="url">localhost:8501 · ⚡ Player Fitness</div></div>
+            <div style="position:relative;height:602px;background:#fff">
+              <img src="assets/ui/fit12.png" class="abs" style="left:0;top:0;width:1400px" alt="" />
+              <img id="fit34" src="assets/ui/fit34.png" class="abs" style="left:0;top:0;width:1400px;clip-path:inset(0 0 100% 0)" alt="" />
+              <div id="scan" class="abs" style="left:0;top:0;width:1400px;height:4px;background:var(--r);opacity:0"></div>
+            </div>
+          </div>
+          <div class="chip anton" id="chip4" style="left:1540px;top:190px;background:#d63333;color:#fff;font-weight:400;font-size:44px;padding:6px 26px"><span id="chipm">12</span>'</div>
+        </div>
+      </section>
+
+      <!-- S5 sub call -->
+      <section id="s5" class="clip" data-start="14.02" data-duration="4" data-track-index="1">
+        <div id="s5-in" class="fill">
+          <div class="cap" id="cap5" style="top:120px">The sub call. <em>Before the manager makes it.</em></div>
+          <div class="win" id="win5" style="left:200px;top:320px;width:1520px">
+            <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="url">localhost:8501 · 💡 Substitution Recommendations</div></div>
+            <div style="position:relative;background:#fff">
+              <img src="assets/ui/rec.png" style="width:1520px" alt="" />
+              <div class="hl" id="hl1" style="left:17px;top:209px;width:419px;height:54px"></div>
+              <div class="hl" id="hl2" style="left:17px;top:265px;width:450px;height:54px;border-color:#2f8f3a;background:rgba(126,217,87,.14)"></div>
+            </div>
+          </div>
+          <div class="chip" id="chip5" style="left:1180px;top:460px;background:var(--g);color:#07110c;font-size:44px;padding:12px 32px;box-shadow:0 12px 40px rgba(0,0,0,.4)">81% confidence</div>
+        </div>
+      </section>
+
+      <!-- S6 outro -->
+      <section id="s6" class="clip" data-start="18.02" data-duration="2.98" data-track-index="1">
+        <div id="s6-in" class="fill">
+          <div class="abs anton" id="wm6" style="left:0;right:0;top:300px;text-align:center;font-size:170px;line-height:1">FIFA Shadow <span style="color:var(--g)">Coach</span></div>
+          <div class="abs" id="cmd" style="left:540px;top:540px;width:840px;height:84px;border-radius:14px;background:rgba(0,0,0,.45);border:2px solid rgba(255,255,255,.14);display:flex;align-items:center;padding-left:34px">
+            <div class="mono" style="font-size:34px;white-space:pre;color:var(--g)">$ </div>
+            <div id="typed" class="mono" style="font-size:34px;white-space:pre;overflow:hidden;width:0ch">streamlit run world_cup_app.py</div>
+            <div id="caret" class="mono" style="font-size:34px;color:var(--g)">▍</div>
+          </div>
+          <div class="abs" id="repo" style="left:0;right:0;top:690px;text-align:center;font-size:48px;font-weight:600;color:var(--mute)">github.com/harshul27/<span style="color:var(--ink)">fifalyst</span></div>
+        </div>
+      </section>
+
+      <!-- audio: music bed + motion-matched SFX -->
+      <audio id="music" src="assets/music/happy-beats-business-moves-vol-1-by-ende-dot-app.mp3" data-start="0" data-duration="21" data-track-index="10" data-volume="1"
+        data-automation='{"version":1,"lanes":[{"target":"volume","points":[{"t":0,"v":0},{"t":0.3,"v":0.46},{"t":15.9,"v":0.46},{"t":16.1,"v":0.5},{"t":20.2,"v":0.5},{"t":21,"v":0}]}]}'></audio>
+      <audio id="sfx-tick1" src="assets/sfx/interface/click_003.ogg" data-start="0.62" data-duration="0.01" data-track-index="11" data-volume="0.45"></audio>
+      <audio id="sfx-tick2" src="assets/sfx/interface/click_003.ogg" data-start="1.02" data-duration="0.01" data-track-index="12" data-volume="0.45"></audio>
+      <audio id="sfx-tick3" src="assets/sfx/interface/click_003.ogg" data-start="1.42" data-duration="0.01" data-track-index="13" data-volume="0.45"></audio>
+      <audio id="sfx-empty" src="assets/sfx/impact/impactSoft_medium_001.ogg" data-start="1.85" data-duration="0.18" data-track-index="14" data-volume="0.5"></audio>
+      <audio id="sfx-wm" src="assets/sfx/impact/impactSoft_heavy_003.ogg" data-start="3.0" data-duration="0.54" data-track-index="15" data-volume="0.5"></audio>
+      <audio id="sfx-p0" src="assets/sfx/interface/drop_001.ogg" data-start="4.0" data-duration="0.11" data-track-index="16" data-volume="0.4"></audio>
+      <audio id="sfx-p1" src="assets/sfx/interface/drop_002.ogg" data-start="4.5" data-duration="0.19" data-track-index="17" data-volume="0.4"></audio>
+      <audio id="sfx-p2" src="assets/sfx/interface/drop_003.ogg" data-start="5.0" data-duration="0.19" data-track-index="18" data-volume="0.4"></audio>
+      <audio id="sfx-win3" src="assets/sfx/casino/card-slide-1.ogg" data-start="6.15" data-duration="0.60" data-track-index="19" data-volume="0.45"></audio>
+      <audio id="sfx-wipe" src="assets/sfx/casino/card-slide-1.ogg" data-start="11.5" data-duration="0.60" data-track-index="20" data-volume="0.4"></audio>
+      <audio id="sfx-hl1" src="assets/sfx/interface/click_002.ogg" data-start="15.0" data-duration="0.01" data-track-index="21" data-volume="0.7"></audio>
+      <audio id="sfx-hl2" src="assets/sfx/interface/click_002.ogg" data-start="15.5" data-duration="0.01" data-track-index="22" data-volume="0.7"></audio>
+      <audio id="sfx-chip" src="assets/sfx/interface/bong_001.ogg" data-start="16.0" data-duration="0.12" data-track-index="23" data-volume="0.5"></audio>
+      <audio id="sfx-bell" src="assets/sfx/impact/impactBell_heavy_000.ogg" data-start="18.0" data-duration="1.48" data-track-index="24" data-volume="0.45"></audio>
+      <audio id="sfx-k1" src="assets/sfx/keyboard/keypress-003.wav" data-start="18.52" data-duration="0.25" data-track-index="25" data-volume="0.35"></audio>
+      <audio id="sfx-k2" src="assets/sfx/keyboard/keypress-012.wav" data-start="18.68" data-duration="0.25" data-track-index="26" data-volume="0.35"></audio>
+      <audio id="sfx-k3" src="assets/sfx/keyboard/keypress-007.wav" data-start="18.84" data-duration="0.25" data-track-index="27" data-volume="0.35"></audio>
+      <audio id="sfx-k4" src="assets/sfx/keyboard/keypress-018.wav" data-start="19.0" data-duration="0.25" data-track-index="28" data-volume="0.35"></audio>
+      <audio id="sfx-k5" src="assets/sfx/keyboard/keypress-024.wav" data-start="19.16" data-duration="0.25" data-track-index="29" data-volume="0.35"></audio>
+      <audio id="sfx-k6" src="assets/sfx/keyboard/keypress-003.wav" data-start="19.32" data-duration="0.25" data-track-index="30" data-volume="0.35"></audio>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const Y = "#fdd835", R = "#ff4b4b";
+
+      // ambient pitch drift
+      tl.fromTo("#pitch", { scale: 1.04, x: 0 }, { scale: 1.08, x: -160, duration: 21, ease: "none" }, 0);
+
+      // ---------- S1 hook (0–3.02) ----------
+      tl.fromTo("#bug", { y: -130 }, { y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+      tl.fromTo("#ring", { scale: 0.85, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" }, 0);
+      tl.fromTo(["#num", "#lbl1", "#lbl2"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.04 }, 0.05);
+      // fitness drains 60 → 33 while the clock rolls 12' → 34'
+      tl.fromTo("#numv", { innerText: 60 }, { innerText: 33, snap: { innerText: 1 }, duration: 1.5, ease: "power2.inOut" }, 0.35);
+      tl.fromTo("#clk", { innerText: 12 }, { innerText: 34, snap: { innerText: 1 }, duration: 1.5, ease: "power2.inOut" }, 0.35);
+      tl.to("#arc", { strokeDashoffset: 1347.1, duration: 1.5, ease: "power2.inOut" }, 0.35);
+      tl.to("#num", { color: R, duration: 0.5, ease: "none" }, 1.05);
+      tl.to("#arc", { stroke: R, duration: 0.5, ease: "none" }, 1.05);
+      tl.fromTo("#empty", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.85);
+      tl.to("#s1-in", { opacity: 0, duration: 0.2, ease: "power1.in" }, 2.8);
+
+      // ---------- S2 reveal (3.02–6.02) ----------
+      tl.fromTo("#wm", { scale: 0.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.6)" }, 3.02); // beat-locked: 3.02s
+      tl.fromTo("#sub2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.52);
+      // beat-grid: pill 1 at 4.02s, pill 2 at 4.52s, pill 3 at 5.02s (short labels; full set holds to 5.8s)
+      tl.fromTo(["#p0", "#p1", "#p2"], { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out", stagger: 0.5 }, 4.02);
+      tl.to("#s2-in", { opacity: 0, duration: 0.2, ease: "power1.in" }, 5.82);
+
+      // ---------- S3 live scores (6.02–10.02) ----------
+      tl.fromTo("#cap3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 6.07);
+      tl.fromTo("#win3", { y: 170, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "expo.out" }, 6.17);
+      tl.to("#win3", { scale: 1.08, duration: 3.1, ease: "sine.inOut" }, 6.72);
+      tl.fromTo("#pulse", { scale: 0.6, opacity: 1 }, { scale: 1.9, opacity: 0, duration: 0.9, ease: "power1.out", repeat: 2 }, 6.9);
+      tl.to("#s3-in", { opacity: 0, duration: 0.2, ease: "power1.in" }, 9.82);
+
+      // ---------- S4 fitness (10.02–14.02) ----------
+      tl.fromTo("#cap4", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 10.07);
+      tl.fromTo("#win4", { y: 170, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "expo.out" }, 10.17);
+      tl.fromTo("#chip4", { scale: 0, rotation: -4 }, { scale: 1, rotation: -4, duration: 0.35, ease: "back.out(2)" }, 10.52);
+      // time-lapse wipe 12' → 34' (beat-grid: starts 11.52s)
+      tl.fromTo("#fit34", { clipPath: "inset(0% 0% 100% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 1.0, ease: "power2.inOut" }, 11.52);
+      tl.fromTo("#scan", { y: 0, opacity: 1 }, { y: 600, opacity: 1, duration: 1.0, ease: "power2.inOut" }, 11.52);
+      tl.to("#scan", { opacity: 0, duration: 0.1 }, 12.52);
+      tl.fromTo("#chipm", { innerText: 12 }, { innerText: 34, snap: { innerText: 1 }, duration: 1.0, ease: "power2.inOut" }, 11.52);
+      tl.to("#s4-in", { opacity: 0, duration: 0.2, ease: "power1.in" }, 13.82);
+
+      // ---------- S5 sub call (14.02–18.02) ----------
+      tl.fromTo("#cap5", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 14.07);
+      tl.fromTo("#win5", { y: 170, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "expo.out" }, 14.17);
+      tl.to("#win5", { scale: 1.035, duration: 3.1, ease: "sine.inOut" }, 14.72);
+      // beat-grid: off-highlight 15.02s, on-highlight 15.52s
+      tl.fromTo("#hl1", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 15.02);
+      tl.fromTo("#hl2", { scaleX: 0, opacity: 1 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 15.52);
+      tl.fromTo("#chip5", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(2)" }, 16.02); // beat-locked: 16.02s
+      tl.to("#s5-in", { opacity: 0, duration: 0.2, ease: "power1.in" }, 17.82);
+
+      // ---------- S6 outro (18.02–21) ----------
+      tl.fromTo("#wm6", { scale: 0.75, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.6)" }, 18.02); // beat-locked: 18.02s
+      tl.fromTo("#cmd", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, 18.35);
+      tl.fromTo("#typed", { width: "0ch" }, { width: "30ch", duration: 0.9, ease: "steps(30)" }, 18.5);
+      tl.fromTo("#caret", { opacity: 1 }, { opacity: 0, duration: 0.3, ease: "steps(1)", repeat: 3, yoyo: true }, 19.4);
+      tl.fromTo("#repo", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 19.52);
+      tl.to("#s6-in", { opacity: 0, duration: 0.35, ease: "power1.in" }, 20.62);
+
+      // ---------- audio-reactive: bass breathes the pitch glow + markings ----------
+      const AD = window.AUDIO_DATA;
+      for (let f = 0; f < AD.totalFrames; f++) {
+        const b = AD.frames[f].bands;
+        const bass = (b[0] + b[1] + b[2]) / 3;
+        tl.call(
+          (function (v) {
+            return function () {
+              gsap.set("#glow", { opacity: 0.55 + 0.45 * v, scale: 0.94 + 0.1 * v });
+              gsap.set("#pitch-lines", { opacity: 0.06 + 0.07 * v });
+            };
+          })(bass),
+          [],
+          f / AD.fps
+        );
+      }
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

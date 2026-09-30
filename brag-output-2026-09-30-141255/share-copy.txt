@@ -1,0 +1,2 @@
+Made FIFA Shadow Coach. It watches World Cup 2026 matches live, tracks every player's fitness, and makes the sub call before the manager does.
+"Off: Striker #9 (33% fitness). On: Forward #19 (89% fitness)." ⚽ github.com/harshul27/fifalyst
